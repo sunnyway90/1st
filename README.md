@@ -25,6 +25,7 @@ python3 scripts/download_us_daily.py \
 - `--symbols-file symbols.txt`：从文本文件读取股票代码，每行一个。
 - `--limit 10`：只下载前 10 只股票，适合先做烟测。
 - `--include-etfs`：同时下载 ETF；默认只下载股票。
+- `--include-non-stocks`：同时下载权证、单位、权利、票据、优先股等非普通股票证券。
 - `--force`：覆盖已存在的 CSV；默认会跳过已有文件，便于断点续跑。
 
 示例烟测：
@@ -35,6 +36,6 @@ python3 scripts/download_us_daily.py --symbols AAPL,MSFT --limit 2 --output data
 
 数据源说明：
 
-- 股票清单来自 Nasdaq Trader 的 `nasdaqlisted.txt` 和 `otherlisted.txt`，覆盖当前美国主要交易所上市证券。
+- 股票清单来自 Nasdaq Trader 的 `nasdaqlisted.txt` 和 `otherlisted.txt`，覆盖当前美国主要交易所上市证券；脚本默认排除 ETF、权证、单位、权利、票据和优先股。
 - 价格数据来自 Yahoo Finance 图表接口。
 - 这个免费组合不包含完整历史退市股票，因此不能消除幸存者偏差。如果你需要“2010 年至今曾经上市过的全部股票”，应使用 Polygon、Tiingo、Nasdaq Data Link、CRSP 等包含退市证券和历史代码变更的数据源。

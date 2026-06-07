@@ -78,20 +78,23 @@ def _is_yes(value: str | None) -> bool:
     return (value or "").strip().upper() == "Y"
 
 
-def parse_nasdaq_listed(text: str, *, include_etfs: bool) -> list[ListedSymbol]:
+def parse_nasdaq_listed(text: str, *, include_etfs: bool, include_non_stocks: bool = False) -> list[ListedSymbol]:
     rows = csv.DictReader(_pipe_rows(text), delimiter="|")
     symbols: list[ListedSymbol] = []
     for row in rows:
         ticker = (row.get("Symbol") or "").strip()
+        name = (row.get("Security Name") or "").strip()
         if not ticker or _is_yes(row.get("Test Issue")):
             continue
         is_etf = _is_yes(row.get("ETF"))
         if is_etf and not include_etfs:
             continue
+        if not include_non_stocks and not is_stock_like_security(name):
+            continue
         symbols.append(
             ListedSymbol(
                 ticker=ticker,
-                name=(row.get("Security Name") or "").strip(),
+                name=name,
                 exchange="NASDAQ",
                 is_etf=is_etf,
                 source="nasdaqlisted",
@@ -100,7 +103,7 @@ def parse_nasdaq_listed(text: str, *, include_etfs: bool) -> list[ListedSymbol]:
     return symbols
 
 
-def parse_other_listed(text: str, *, include_etfs: bool) -> list[ListedSymbol]:
+def parse_other_listed(text: str, *, include_etfs: bool, include_non_stocks: bool = False) -> list[ListedSymbol]:
     exchange_names = {
         "A": "NYSE American",
         "N": "NYSE",
@@ -112,22 +115,41 @@ def parse_other_listed(text: str, *, include_etfs: bool) -> list[ListedSymbol]:
     symbols: list[ListedSymbol] = []
     for row in rows:
         ticker = (row.get("ACT Symbol") or "").strip()
+        name = (row.get("Security Name") or "").strip()
         if not ticker or _is_yes(row.get("Test Issue")):
             continue
         is_etf = _is_yes(row.get("ETF"))
         if is_etf and not include_etfs:
             continue
+        if not include_non_stocks and not is_stock_like_security(name):
+            continue
         exchange_code = (row.get("Exchange") or "").strip()
         symbols.append(
             ListedSymbol(
                 ticker=ticker,
-                name=(row.get("Security Name") or "").strip(),
+                name=name,
                 exchange=exchange_names.get(exchange_code, exchange_code or "OTHER"),
                 is_etf=is_etf,
                 source="otherlisted",
             )
         )
     return symbols
+
+
+def is_stock_like_security(name: str) -> bool:
+    """Filter out exchange-listed instruments that are not operating-company stock."""
+    lower_name = name.lower()
+    hard_exclusions = [
+        r"\bunits?\b",
+        r"\bwarrants?\b",
+        r"\brights?\b",
+        r"\bnotes?\b",
+        r"\bbonds?\b",
+        r"\bdebentures?\b",
+        r"\bpreferred\b",
+        r"\bpreference\b",
+    ]
+    return not any(re.search(pattern, lower_name) for pattern in hard_exclusions)
 
 
 def to_yahoo_symbol(ticker: str) -> str:
@@ -143,6 +165,7 @@ def load_symbols(
     explicit_symbols: Sequence[str],
     symbols_file: pathlib.Path | None,
     include_etfs: bool,
+    include_non_stocks: bool,
     timeout: int,
     retries: int,
     backoff: float,
@@ -162,8 +185,8 @@ def load_symbols(
 
     nasdaq_text = request_text(NASDAQ_LISTED_URL, timeout=timeout, retries=retries, backoff=backoff)
     other_text = request_text(OTHER_LISTED_URL, timeout=timeout, retries=retries, backoff=backoff)
-    symbols = parse_nasdaq_listed(nasdaq_text, include_etfs=include_etfs)
-    symbols.extend(parse_other_listed(other_text, include_etfs=include_etfs))
+    symbols = parse_nasdaq_listed(nasdaq_text, include_etfs=include_etfs, include_non_stocks=include_non_stocks)
+    symbols.extend(parse_other_listed(other_text, include_etfs=include_etfs, include_non_stocks=include_non_stocks))
     return dedupe_symbols(symbols)
 
 
@@ -296,6 +319,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--symbols", default="", help="Comma-separated tickers, useful for smoke tests")
     parser.add_argument("--symbols-file", type=pathlib.Path, help="Newline-separated tickers")
     parser.add_argument("--include-etfs", action="store_true", help="Include ETFs in addition to common stocks")
+    parser.add_argument("--include-non-stocks", action="store_true", help="Include warrants, units, rights, notes, and preferreds")
     parser.add_argument("--limit", type=int, help="Limit number of symbols, useful for smoke tests")
     parser.add_argument("--workers", type=int, default=4, help="Concurrent downloads, default: 4")
     parser.add_argument("--timeout", type=int, default=30, help="HTTP timeout seconds, default: 30")
@@ -317,6 +341,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         explicit_symbols=explicit_symbols,
         symbols_file=args.symbols_file,
         include_etfs=args.include_etfs,
+        include_non_stocks=args.include_non_stocks,
         timeout=args.timeout,
         retries=args.retries,
         backoff=args.backoff,

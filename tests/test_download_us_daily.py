@@ -2,6 +2,7 @@ import json
 import unittest
 
 from scripts.download_us_daily import (
+    is_stock_like_security,
     parse_nasdaq_listed,
     parse_other_listed,
     parse_yahoo_chart,
@@ -17,6 +18,7 @@ class DownloadUsDailyTests(unittest.TestCase):
                 "Symbol|Security Name|Market Category|Test Issue|Financial Status|Round Lot Size|ETF|NextShares",
                 "AAPL|Apple Inc. - Common Stock|Q|N|N|100|N|N",
                 "QQQ|Invesco QQQ Trust|G|N|N|100|Y|N",
+                "AACBU|Artius II Acquisition Inc. - Unit|G|N|N|100|N|N",
                 "TEST|Test Company|Q|Y|N|100|N|N",
                 "File Creation Time: 0607202600:00|||||||",
             ]
@@ -42,6 +44,13 @@ class DownloadUsDailyTests(unittest.TestCase):
         self.assertEqual([symbol.ticker for symbol in symbols], ["BRK.B", "SPY"])
         self.assertEqual(symbols[0].exchange, "NYSE")
         self.assertTrue(symbols[1].is_etf)
+
+    def test_is_stock_like_security_excludes_non_stock_instruments(self):
+        self.assertTrue(is_stock_like_security("Apple Inc. - Common Stock"))
+        self.assertTrue(is_stock_like_security("Infosys Limited American Depositary Shares"))
+        self.assertFalse(is_stock_like_security("Example Corp. - Unit"))
+        self.assertFalse(is_stock_like_security("Example Corp. - Warrants"))
+        self.assertFalse(is_stock_like_security("Example Corp. 6.50% Senior Notes due 2030"))
 
     def test_yahoo_symbol_and_safe_filename(self):
         self.assertEqual(to_yahoo_symbol("BRK.B"), "BRK-B")
