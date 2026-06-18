@@ -22,5 +22,5 @@ python3 -m yield_curve
 ## 运行测试
 
 ```bash
-PYTHONPATH=src python3 -m unittest
+PYTHONPATH=src python3 -m unittest discover -s tests
 ```
