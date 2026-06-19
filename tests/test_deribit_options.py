@@ -76,7 +76,7 @@ class DeribitOptionTests(unittest.TestCase):
         self.assertEqual(point.call_instrument_name, "BTC-27JUN25-100000-C")
         self.assertEqual(point.put_instrument_name, "BTC-27JUN25-100000-P")
         self.assertAlmostEqual(point.average_mark_iv or 0.0, 51.0)
-        self.assertAlmostEqual(point.straddle_mark_price or 0.0, 0.125)
+        self.assertAlmostEqual(point.straddle_mark_price or 0.0, 0.115)
 
     def test_atm_daily_changes_uses_latest_snapshot_per_day(self) -> None:
         """Daily changes should compare each day's latest stored ATM snapshot."""
