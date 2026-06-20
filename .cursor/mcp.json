@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "pubmed-mcp-server": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${workspaceFolder}/node_modules/@cyanheads/pubmed-mcp-server/dist/index.js"
+      ],
+      "env": {
+        "MCP_TRANSPORT_TYPE": "stdio",
+        "MCP_LOG_LEVEL": "info"
+      }
+    }
+  }
+}

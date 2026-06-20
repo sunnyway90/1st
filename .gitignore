@@ -3,3 +3,6 @@ __pycache__/
 .pytest_cache/
 *.egg-info/
 yield_curve_demo.png
+node_modules/
+package-lock.json
+package.json
