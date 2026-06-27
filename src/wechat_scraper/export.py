@@ -5,6 +5,7 @@ import re
 from pathlib import Path
 
 from .article import Article
+from .assets import html_body_to_markdown, localize_article_images
 
 
 def sanitize_filename(name: str, *, max_length: int = 80) -> str:
@@ -15,37 +16,58 @@ def sanitize_filename(name: str, *, max_length: int = 80) -> str:
     return cleaned[:max_length]
 
 
-def export_article(article: Article, output_dir: Path, *, fmt: str) -> Path:
-    output_dir.mkdir(parents=True, exist_ok=True)
+def prepare_article_for_export(
+    article: Article,
+    output_dir: Path,
+    *,
+    localize_images: bool = False,
+) -> Article:
+    if not localize_images:
+        return article
+
     stem = sanitize_filename(article.title)
+    asset_dir = output_dir / f"{stem}_assets"
+    return localize_article_images(article, asset_dir, referer=article.url)
+
+
+def export_article(
+    article: Article,
+    output_dir: Path,
+    *,
+    fmt: str,
+    localize_images: bool = False,
+) -> Path:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    prepared = prepare_article_for_export(article, output_dir, localize_images=localize_images)
+    stem = sanitize_filename(prepared.title)
 
     if fmt == "json":
         path = output_dir / f"{stem}.json"
         path.write_text(
-            json.dumps(article.to_dict(), ensure_ascii=False, indent=2),
+            json.dumps(prepared.to_dict(), ensure_ascii=False, indent=2),
             encoding="utf-8",
         )
         return path
 
     if fmt == "html":
         path = output_dir / f"{stem}.html"
-        path.write_text(render_html_document(article), encoding="utf-8")
+        path.write_text(render_html_document(prepared), encoding="utf-8")
         return path
 
     if fmt == "md":
         path = output_dir / f"{stem}.md"
-        path.write_text(render_markdown(article), encoding="utf-8")
+        path.write_text(render_markdown(prepared, localized_images=localize_images), encoding="utf-8")
         return path
 
     if fmt == "txt":
         path = output_dir / f"{stem}.txt"
-        path.write_text(render_plain_text(article), encoding="utf-8")
+        path.write_text(render_plain_text(prepared), encoding="utf-8")
         return path
 
     raise ValueError(f"Unsupported format: {fmt}")
 
 
-def render_markdown(article: Article) -> str:
+def render_markdown(article: Article, *, localized_images: bool = False) -> str:
     meta = [
         f"# {article.title}",
         "",
@@ -56,7 +78,12 @@ def render_markdown(article: Article) -> str:
     ]
     if article.summary:
         meta.append(f"- **摘要**: {article.summary}")
-    meta.extend(["", article.content_text, ""])
+    body = (
+        html_body_to_markdown(article.content_html)
+        if localized_images
+        else article.content_text
+    )
+    meta.extend(["", body, ""])
     return "\n".join(meta)
 
 
