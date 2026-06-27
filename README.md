@@ -51,3 +51,38 @@ PYTHONPATH=src python3 -m deribit_options --history-csv data/btc_option_snapshot
 ```
 
 模块会在每个交易日选取最新快照，按目标到期日或目标剩余期限选择期权到期月，再用标的价格与行权价距离最小的 call/put 组合计算 ATM 的标的价格、行权价、平均 mark IV、跨式 mark price 及其日度变化。
+
+## 微信公众号文章抓取工具 (`wechat_scraper`)
+
+项目包含 `wechat_scraper` 模块，用于抓取微信公众号文章并导出为 Markdown / HTML / JSON / TXT。
+
+### 模式 1：单篇文章（无需登录）
+
+直接抓取公开文章链接：
+
+```bash
+python3 -m pip install -e .
+python3 -m wechat_scraper fetch "https://mp.weixin.qq.com/s/YCs1l2lkHeoqcuYMdxY6ZA" --format md
+```
+
+### 模式 2：批量抓取（需要自己的公众号后台登录态）
+
+1. 浏览器打开 [微信公众平台](https://mp.weixin.qq.com/) 并扫码登录
+2. 打开开发者工具 (F12) → Network，刷新页面
+3. 从任意请求中复制 `Cookie`，以及 URL 里的 `token=...` 参数
+
+```bash
+export WECHAT_MP_COOKIE='你的cookie'
+export WECHAT_MP_TOKEN='你的token'
+
+# 搜索公众号，拿到 fakeid
+python3 -m wechat_scraper search "人民日报"
+
+# 列出最近文章
+python3 -m wechat_scraper list --fakeid <fakeid> --count 10
+
+# 批量下载正文
+python3 -m wechat_scraper download --fakeid <fakeid> --limit 20 --format md
+```
+
+注意：批量模式调用的是公众号后台搜索/列表接口，请控制频率，避免账号被限制。仅建议用于个人学习、备份自己关注的公开内容。
