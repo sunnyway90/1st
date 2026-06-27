@@ -83,6 +83,21 @@ python3 -m wechat_scraper list --fakeid <fakeid> --count 10
 
 # 批量下载正文
 python3 -m wechat_scraper download --fakeid <fakeid> --limit 20 --format md
+
+# 一键按公众号名搜索并下载
+python3 -m wechat_scraper download-account "人民日报" --limit 20 --format html --localize-images
+
+# 把导出的 HTML 批量转成 PDF（依赖 WeasyPrint）
+python3 -m wechat_scraper html-to-pdf output/wechat/人民日报 --output-dir output/wechat/pdf --group-size 10
+python3 -m wechat_scraper html-to-pdf output/wechat/人民日报 --output-dir output/wechat/pdf --group-size 10 --merge-volumes 6
+```
+
+### 图片本地化
+
+下载文章时加上 `--localize-images`，会把正文图片保存到 `<标题>_assets/` 目录，并改写 HTML / Markdown 里的图片路径：
+
+```bash
+python3 -m wechat_scraper fetch "https://mp.weixin.qq.com/s/..." --format html --localize-images
 ```
 
 注意：批量模式调用的是公众号后台搜索/列表接口，请控制频率，避免账号被限制。仅建议用于个人学习、备份自己关注的公开内容。

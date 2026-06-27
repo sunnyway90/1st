@@ -8,8 +8,10 @@ dependencies = [
     "beautifulsoup4",
     "matplotlib",
     "numpy",
+    "pypdf",
     "requests",
     "scipy",
+    "weasyprint",
 ]
 
 [build-system]

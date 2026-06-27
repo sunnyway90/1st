@@ -178,6 +178,39 @@ class MpClient:
             begin += page_size
             time.sleep(delay_seconds)
 
+    def find_account(self, keyword: str, *, exact: bool = False) -> AccountInfo:
+        accounts = self.search_accounts(keyword, count=10)
+        if not accounts:
+            raise RuntimeError(f"No account found for keyword: {keyword}")
+
+        if exact:
+            for account in accounts:
+                if account.nickname == keyword or account.alias == keyword:
+                    return account
+            raise RuntimeError(f"No exact account match for keyword: {keyword}")
+
+        keyword_lower = keyword.lower()
+        for account in accounts:
+            if account.nickname.lower() == keyword_lower or account.alias.lower() == keyword_lower:
+                return account
+        return accounts[0]
+
+    def download_account(
+        self,
+        keyword: str,
+        *,
+        max_articles: int = 10,
+        delay_seconds: float = 1.5,
+        exact: bool = False,
+    ) -> tuple[AccountInfo, list[Article]]:
+        account = self.find_account(keyword, exact=exact)
+        articles = self.download_articles(
+            account.fakeid,
+            max_articles=max_articles,
+            delay_seconds=delay_seconds,
+        )
+        return account, articles
+
     def download_articles(
         self,
         fakeid: str,
