@@ -194,6 +194,18 @@ Colab 中建议顺序：
 
 **所以对你：最简单且仍算 CT-CLIP 的方法 = 准备好影像，用 Colab 笔记本跑。**
 
+### 若只想先网页随便试试（不是 CT-CLIP）
+
+| 工具 | 链接 | 能干什么 | 注意 |
+|------|------|----------|------|
+| ReadYourLab | https://readyourlab.com/zh/ | 上传 DICOM 文件夹，出通俗 CT 解读（宣称 MedGemma） | 偏消费级报告；**不是** CT-CLIP；上传前去标识 |
+| TotalSegmentator 网页 | https://totalsegmentator.com/ | 上传 NIfTI/DICOM zip；可选 `lung_nodules` 等任务 | 学术分割工具较扎实；主要是**分割/检出**，不专门做「结节 vs 肺炎」鉴别问答 |
+| HF：LungTumorMask | https://huggingface.co/spaces/andreped/LungTumorMask | 肺肿瘤相关分割演示 | 研究 demo，稳定性/输入格式因 Space 而异 |
+| HF：肺结节检测类 Space | 如 https://huggingface.co/spaces/harshtd/lung-nodule-ct-detection | 结节检出演示 | 多为个人/课程项目，**学术强度参差** |
+| 国内识图类网页 | 如 DPYAI 医学影像识别等 | 常支持上传 JPG/PNG 截图 | 更简单，但多是 2D 截图，不是完整 3D 体积 |
+
+**和你目标的匹配度：** 想「网页上问这灶像结节还是肺炎」→ 相对最接近的是 **ReadYourLab 这类通读工具**；想「学术上更靠谱的开源网页」→ **TotalSegmentator**（但任务不同）。都替代不了 CT-CLIP 对比实验。
+
 ---
 
 ## 十、执行清单（打勾用）
