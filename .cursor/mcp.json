@@ -10,6 +10,9 @@
         "MCP_TRANSPORT_TYPE": "stdio",
         "MCP_LOG_LEVEL": "info"
       }
+    },
+    "consensus": {
+      "url": "https://mcp.consensus.app/mcp"
     }
   }
 }

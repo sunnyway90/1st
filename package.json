@@ -1,0 +1,8 @@
+{
+  "name": "bond-yield-curve-mcp",
+  "private": true,
+  "description": "MCP server dependencies for Cloud Agent and local Cursor",
+  "dependencies": {
+    "@cyanheads/pubmed-mcp-server": "^1.0.0"
+  }
+}
