@@ -86,3 +86,15 @@ python3 -m wechat_scraper download --fakeid <fakeid> --limit 20 --format md
 ```
 
 注意：批量模式调用的是公众号后台搜索/列表接口，请控制频率，避免账号被限制。仅建议用于个人学习、备份自己关注的公开内容。
+
+## 美股多因子资料库 (`multifactor_kb`)
+
+项目包含面向 LLM 检索的美股多因子知识库，路径为 `knowledge_base/us_multifactor/`：开放获取经典论文 PDF、抽取文本、中文导读、推荐书籍导读（无盗版全文），以及可检索文本块。
+
+```bash
+PYTHONPATH=src python3 -m multifactor_kb list
+PYTHONPATH=src python3 -m multifactor_kb search "价值与动量为什么负相关"
+PYTHONPATH=src python3 -m multifactor_kb ask "五因子里 HML 为什么可能冗余"
+```
+
+把 `ask` 生成的提示词交给大模型，即可基于资料库回答。详见 `knowledge_base/us_multifactor/README.md`。

@@ -1,0 +1,2775 @@
+
+
+--- PAGE 1 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 650 650–705
+Digesting Anomalies: An Investment
+Approach
+Kewei Hou
+The Ohio State University and China Academy of Financial Research
+Chen Xue
+University of Cincinnati
+Lu Zhang
+The Ohio State University and National Bureau of Economic Research
+An empirical q-factor model consisting of the market factor, a size factor, an investment
+factor, and a proﬁtability factor largely summarizes the cross section of average stock
+returns. A comprehensive examination of nearly 80 anomalies reveals that about one-half
+of the anomalies are insigniﬁcant in the broad cross section. More importantly, with a few
+exceptions, the q-factor model’s performance is at least comparable to, and in many cases
+better than that of the Fama-French (1993) 3-factor model and the Carhart (1997) 4-factor
+model in capturing the remaining signiﬁcant anomalies. ( JEL G12, G14)
+In a highly inﬂuential article, Fama and French (1996) show that, except for
+momentum, their 3-factor model, which consists of the market factor, a factor
+based on market equity (small-minus-big, SMB), and a factor based on book-
+to-market equity (high-minus-low, HML), summarizes the cross section of
+average stock returns as of the mid-1990s. Over the past 2 decades, however, it
+has become clear that the Fama-French model fails to account for a wide array
+of asset pricing anomalies.
+1
+We thank Roger Loh, René Stulz, Mike Weisbach, Ingrid Werner, Jialin Y u, and other seminar participants at
+the 2013 China International Conference in Finance and the Ohio State University for helpful comments. Geert
+Bekaert (the editor) and three anonymous referees deserve special thanks. All remaining errors are our own.
+The ﬁrst draft of this work appeared in October 2012 as NBER working paper 18435. More generally, this
+paper is a new incarnation of the previous work circulated under various titles, including “Neoclassical factors”
+(as NBER working paper 13282, dated July 2007), “An equilibrium three-factor model,” “Production-based
+factors,” “A better three-factor model that explains more anomalies,” and “An alternative three-factor model.”
+We are extremely grateful to Robert Novy-Marx for identifying a timing error in the empirical analysis of the
+previous work. Finally, the economic insight that investment and proﬁtability are fundamental forces in the cross
+section of expected stock returns in investment-based asset pricing ﬁrst appeared in NBER working paper 11322,
+titled “Anomalies,” dated May 2005. The data for the
+q-factors and the underlying portfolios used in this study
+are available at https://sites.google.com/site/theqfactormodel/. Supplementary data can be found on The Review
+of Financial Studies web site. Send correspondence to Lu Zhang, Department of Finance, Fisher College of
+Business, The Ohio State University, 760A Fisher Hall, 2100 Neil Avenue, Columbus, OH 43210; telephone:
+(614) 292-8644. E-mail: zhanglu@ﬁsher.osu.edu.
+1 See, for example, Ball and Brown (1968); Bernard and Thomas (1990); Ritter (1991); Jegadeesh
+and Titman (1993); Ikenberry, Lakonishok, and V ermaelen (1995); Loughran and Ritter (1995);
+© The Author 2014. Published by Oxford University Press on behalf of The Society for Financial Studies.
+All rights reserved. For Permissions, please e-mail: journals.permissions@oup.com.
+doi:10.1093/rfs/hhu068 Advance Access publication September 26, 2014
+
+--- PAGE 2 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 651 650–705
+Digesting Anomalies: An Investment Approach
+Our contribution is to construct a new empirical model that largely
+summarizes the cross section of average stock returns. In particular, many (but
+not all) of the anomalies that prove challenging for the Fama-French model can
+be captured.
+2 Our model is in part inspired by investment-based asset pricing,
+which is in turn built on the neoclassical q-theory of investment. In our model
+(dubbed the q-factor model), the expected return of an asset in excess of the
+risk-free rate, denoted E[ri ]−rf , is described by the sensitivities of its returns
+to 4 factors: the market excess return (MKT), the difference between the return
+on a portfolio of small size stocks and the return on a portfolio of big size stocks
+(r
+ME), the difference between the return on a portfolio of low investment stocks
+and the return on a portfolio of high investment stocks (rI/A), and the difference
+between the return on a portfolio of high proﬁtability (return on equity,
+ROE) stocks and the return on a portfolio of low proﬁtability stocks ( r
+ROE).
+Formally,
+E[ri ]−rf =βi
+MKTE[MKT]+ βi
+MEE[rME]+ βi
+I/A E[rI/A]+ βi
+ROEE[rROE], (1)
+in whichE[MKT],E[rME],E[rI/A], andE[rROE] are expected factor premiums,
+and βi
+MKT, βi
+ME, βi
+I/A, and βi
+ROE are the factor loadings on MKT ,rME,rI/A, and
+rROE, respectively.
+We construct theq-factors from a triple 2-by-3-by-3 sort on size, investment-
+to-assets, and ROE. From January 1972 to December 2012, the size factor earns
+an average return of 0.31% per month ( t =2.12); the investment factor 0.45%
+(t =4.95); and the ROE factor 0.58% (t =4.81). The investment factor has a high
+correlation of 0.69 with HML, and the ROE factor has a high correlation of 0.50
+with the Carhart (1997) momentum factor (up-minus-down, UMD). The alphas
+of HML and UMD in the q-factor model are small and insigniﬁcant, but the
+alphas of the investment and ROE factors in the Carhart model (that augments
+the Fama-French model with UMD) are large and signiﬁcant. As such, HML
+and UMD might be noisy versions of the q-factors.
+To evaluate the empirical performance of the q-factor model, we start with a
+wide array of nearly 80 variables that cover all major categories of anomalies.
+Following Fama and French (1996), we construct testing deciles based on the
+breakpoints from the New Y ork Stock Exchange (NYSE), and calculate value-
+weighted decile returns. Surprisingly, the high-minus-low deciles formed on
+Chan, Jegadeesh, and Lakonishok (1996); Sloan (1996); Ang, Hodrick, Xing, and Zhang (2006); Daniel and
+Titman (2006); Campbell, Hilscher, and Szilagyi (2008); Cooper, Gulen, and Schill (2008); and Hafzalla,
+Lundholm, and V an Winkle (2011).
+2 The need for a new factor model is evident in Cochrane (2011, p. 1060–61, original emphasis): “We are going to
+have to repeat Fama and French’s anomaly digestion, but with many more dimensions. We have a lot of questions
+to answer: First, which characteristics really provide independent information about average returns? Which are
+subsumed by others? Second, does each new anomaly variable also correspond to a new factor formed on those
+same anomalies?... Third, how many of these new factors are really important? Can we again account for
+N
+independent dimensions of expected returns withK<N factor exposures?... [T]he world would be much simpler
+if betas on only a few factors, important in the covariance matrix of returns, accounted for a larger number of
+mean characteristics.”
+651
+
+--- PAGE 3 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 652 650–705
+The Review of Financial Studies / v 28 n 3 2015
+about one-half of the anomaly variables, including the vast majority of variables
+related to trading frictions, have average returns that are insigniﬁcant at the 5%
+level. As such, echoing Schwert (2003) and Harvey, Liu, and Zhu (2013), we
+suggest that many claims in the anomalies literature seem exaggerated.
+More importantly, in the playing ﬁeld consisting of 35 anomalies that
+are signiﬁcant in the broad cross section, the q-factor model performs well,
+compared to the Fama-French and Carhart models. Across the 35 high-minus-
+low deciles, the average magnitude of the alphas is 0.20% per month in the
+q-factor model, in contrast to 0.33% in the Carhart model and 0.55% in the
+Fama-French model. Five high-minus-low alphas are signiﬁcant at the 5% level
+in theq-factor model, in contrast to 19 in the Carhart model and 27 in the Fama-
+French model. In addition, the q-factor model is rejected by the Gibbons, Ross,
+and Shanken (1989, GRS) test in 20 sets of deciles. In contrast, the Carhart
+model is rejected in 24, and the Fama-French model in 28 sets of deciles.
+In particular, the q-factor model outperforms the Fama-French and Carhart
+models in capturing momentum. The high-minus-low earnings momentum
+decile has a Fama-French alpha of 0.55% per month and a Carhart alpha of
+0.34%, both of which are signiﬁcant. The alpha in the q-factor model (the
+q-alpha) is 0.16% (t =1.12). The high-minus-low price momentum decile has
+a Fama-French alpha of 1.12% (t =4.47) and a Carhart alpha of 0.06% (t =0.51).
+The q-alpha is 0.24% ( t =0.71). The q-factor model performs similarly as
+the other 2 models in ﬁtting the 25 size and book-to-market portfolios. The
+average magnitude of the alphas across the 25 portfolios is 0.11% in the
+q-factor model, which is close to 0.10% in the Fama-French model and 0.11%
+in the Carhart model. However, the q-factor model underperforms the Fama-
+French and Carhart models in capturing the operating accrual anomaly and the
+R&D-to-market anomaly.
+Intuitively, investment predicts returns because given expected cash ﬂows,
+high costs of capital imply low net present values of new capital and low
+investment, and low costs of capital imply high net present values of new
+capital and high investment. ROE predicts returns because high expected ROE
+relative to low investment must imply high discount rates. The high discount
+rates are necessary to offset the high expected ROE to induce low net present
+values of new capital and low investment. If the discount rates were not high
+enough, ﬁrms would instead observe high net present values of new capital
+and invest more. Conversely, low expected ROE relative to high investment
+must imply low discount rates. If the discount rates were not low enough to
+counteract the low expected ROE, ﬁrms would instead observe low net present
+values of new capital and invest less.
+The traditional approach in asset pricing is to look for common factors from
+the consumption side of the economy (e.g., Breeden, Gibbons, and Litzenberger
+1989). We instead exploit a direct link between stock returns and ﬁrm charac-
+teristics from the production side, following Cochrane (1991). Berk, Green,
+and Naik (1999); Carlson, Fisher, and Giammarino (2004); and Zhang (2005)
+652
+
+--- PAGE 4 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 653 650–705
+Digesting Anomalies: An Investment Approach
+construct fully speciﬁed dynamic models for the cross section of expected stock
+returns. Liu, Whited, and Zhang (2009) estimate the characteristics-expected
+return relation derived from q-theory via generalized method of moments.
+Kogan and Papanikolaou (2013) relate the investment and proﬁtability effects
+to embodied technology shocks. We differ by using the Black, Jensen, and
+Scholes (1972) portfolio approach to build a new factor model. A factor model
+is more ﬂexible in practice because of its simplicity and the availability of
+high frequency returns data. Finally, the investment and proﬁtability effects
+are not new to our work.
+3 However, recognizing their fundamental importance
+in investment-based asset pricing, we build a new workhorse model on these
+effects for the cross section of expected stock returns.
+4
+1. Conceptual Framework
+The q-factor model is in part inspired from investment-based asset pricing. In
+this section, we use a simple economic model to illustrate the key intuitions
+behind the q-factor model.
+1.1 An economic model
+Consider a 2-period stochastic general equilibrium model as in Lin and
+Zhang (2013). There are 2 dates, 0 and 1. The economy is populated
+by a representative household and heterogeneous ﬁrms, indexed by i =
+1,2,...,N . The representative household maximizes its expected utility,
+U (C
+0)+ ρE0[U (C1)], in which ρ is time preference, and C0 and C1 are
+consumption in dates 0 and 1, respectively. Firms produce a single commodity
+to be consumed or invested. Firm i starts with productive assets, A
+i0, and
+produces in both dates. Firms exit at the end of date 1, with a liquidation value
+of zero, meaning that the depreciation rate of assets is 100%.
+Firms differ in date-0 assets, A
+i0, and date-0 proﬁtability, /Pi1i0, which is
+known at the beginning of date 0. The operating cash ﬂow of ﬁrm i is /Pi1it Ait ,
+for t =0,1, in which the ﬁrm’s stochastic date-1 proﬁtability, /Pi1i1, is subject to
+a vector of aggregate shocks affecting all ﬁrms simultaneously, as well as a
+vector of ﬁrm-speciﬁc shocks affecting only ﬁrm i. Let I
+i0 denote investment
+for date 0, then Ai1 =Ii0, because Ai0 depreciates fully at the beginning of date
+1. Investment entails quadratic adjustment costs, ( a/2)(Ii0/Ai0)2Ai0, in which
+a> 0 is a constant parameter.
+3 See Fairﬁeld, Whisenant, and Y ohn (2003); Titman, Wei, and Xie (2004); Cooper, Gulen, and Schill (2008);
+Xing (2008); and Polk and Sapienza (2009) for the investment effect, and Ball and Brown (1968); Bernard and
+Thomas (1990); Chan, Jegadeesh, and Lakonishok (1996); Haugen and Baker (1996); Piotroski (2000); Fama
+and French (2006); and Novy-Marx (2013) for the earnings (proﬁtability) effect.
+4 Fama and French (2013, 2014), circulated after the ﬁrst draft of our work dated October 2012, have recently
+incorporated variables that resemble our 2
+q-factors into their 3-factor model to form a 5-factor asset pricing
+model. Their 2013 draft adds only a proﬁtability factor, and the 2014 draft subsequently adds an investment
+factor. 653
+
+--- PAGE 5 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 654 650–705
+The Review of Financial Studies / v 28 n 3 2015
+The household side is standard. LetPit and Dit denote the ex-dividend equity
+and dividend for ﬁrm i, respectively. The ﬁrst principle for consumption says
+that Pi0 =E0[M1(Pi1 +Di1)] or E0[M1rS
+i1] = 1, in which rS
+i1 ≡ (Pi1 +Di1)/Pi0 is
+the stock return, and M1 ≡ρU ′(C1)/U ′(C0) is the stochastic discount factor.
+On the production side, ﬁrm i uses the date-0 operating cash ﬂow to pay
+investment and adjustment costs. If the free cash ﬂow, Di0 ≡/Pi1i0Ai0 −Ii0 −
+(a/2)(Ii0/Ai0)2Ai0, is positive, the ﬁrm distributes it back to the household. A
+negativeDi0 means external equity. At date 1, the ﬁrm uses assets,Ai1, to obtain
+the operating cash ﬂow, /Pi1i1Ai1, which is in turn distributed as dividends, Di1.
+With only 2 dates, the ﬁrm does not invest in date 1, Ii1 = 0, and the ex-dividend
+equity value, Pi1, is zero. Taking the household’s stochastic discount factor,
+M1, as given, ﬁrm i chooses Ii0 to maximize the cum-dividend equity value at
+the beginning of date 0:
+Pi0 +Di0 ≡ max
+{Ii0}
+/Pi1i0Ai0 −Ii0 − a
+2
+(Ii0
+Ai0
+)2
+Ai0 +E0[M1/Pi1i1Ai1]. (2)
+The ﬁrst principle for investment is given by:
+1+ a Ii0
+Ai0
+=E0[M1/Pi1i1]. (3)
+Intuitively, to obtain an extra unit of assets at the beginning of date 1, ﬁrm i
+must pay the purchasing price of unity and the marginal adjustment costs. The
+marginal beneﬁt of this extra unit of assets over period 1 is the marginal product
+of assets (proﬁtability), /Pi1
+i1. Discounting this marginal beneﬁt back to date 0
+using M1 yields marginal q, which equals the marginal costs of investment.
+Using the deﬁnition of Di0, we can derive the ex-dividend equity value
+from Equation (2) as Pi0 =E0[M1/Pi1i1Ai1] at the optimum. As such, we
+can rewrite the stock return as rS
+i1 =(Pi1 +Di1)/Pi0 =/Pi1i1Ai1/E0[M1/Pi1i1Ai1]=
+/Pi1i1/E0[M1/Pi1i1]. Equation (3) then implies rS
+i1 =/Pi1i1/(1+ a(Ii0/Ai0)). Intu-
+itively, ﬁrm i will keep investing until the marginal costs of investment at
+date 0, 1+ a(Ii0/Ai0), equal the marginal beneﬁt of investment at date 1, /Pi1i1,
+discounted to date 0 with the stock return,rS
+i1, as the discount rate. Equivalently,
+the ratio of the date-1 marginal beneﬁt of investment over the date-0 marginal
+costs of investment should equal the discount rate.
+5
+5 We opt to derive the characteristics-return relation in the simplest setting possible. However, the relation
+holds under substantially more general conditions. Cochrane (1991) derives this relation in a dynamic setting.
+Incorporating taxes and debt, Liu, Whited, and Zhang (2009) show that the investment return (the ratio of the
+next period marginal beneﬁt of investment over the current period marginal costs of investment) equals the
+weighted average cost of capital (W ACC),
+wit rBa
+it +1 +(1 −wit )rS
+it +1, in which wit is the market leverage at the
+beginning of period t, and rBa
+it +1 is the after-tax corporate bond return over period t. This equivalence in effect
+provides the microfoundation for the standard W ACC approach to capital budgeting in corporate ﬁnance. With the
+notations in our 2-period setup, the present value of the marginal project is /Pi1i1/[wi0rBa
+i1 +(1 −wi0)rS
+i1], which
+uses the W ACC as the discount rate. The costs of the marginal project remain 1+ a(Ii0/Ai0). The ﬁrst principle
+requires the marginal costs to equal the present value of the marginal project, meaning that its net present value is
+zero.
+654
+
+--- PAGE 6 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 655 650–705
+Digesting Anomalies: An Investment Approach
+Figure 1
+The investment channel
+1.2 Implications
+Taking the expectation on both sides of rS
+i1 =/Pi1i1/(1+ a(Ii0/Ai0)) yields:
+E0[rS
+i1]= E0[/Pi1i1]
+1+ a(Ii0/Ai0). (4)
+This equation predicts that, all else equal, high investment stocks should earn
+lower expected returns than low investment stocks earn, and that, all else equal,
+high expected proﬁtability stocks should earn higher expected returns than low
+expected proﬁtability stocks earn. When expected returns vary over time and
+across ﬁrms, stock prices would adjust in a way that connects expected returns to
+investment and proﬁtability per Equation (4). In particular, stock prices would
+not adjust to give rise to a cross-sectionally constant discount rate, which would
+mean that investment and proﬁtability do not predict returns in the cross section.
+A cross-sectionally constant discount rate can only arise if all ﬁrms are equally
+risky, and stock prices follow a random walk.
+1.2.1 The investment channel. Equation (4) predicts that given the
+expected proﬁtability, expected returns decrease with investment-to-assets.
+This investment channel is consistent with many cross-sectional patterns
+including the negative relations of average returns with net stock issues,
+composite issuance, accruals, valuation ratios, and long-term prior returns
+(reversal). Figure 1 illustrates this insight.
+The negative investment-expected return relation is intuitive. Firms invest
+more when their marginalq (the net present value of future cash ﬂows generated
+from an additional unit of assets) is high. Given expected proﬁtability or cash
+ﬂows, low discount rates imply high marginal q and high investment, and
+high discount rates imply low marginal q and low investment. This intuition is
+probably most transparent in the capital budgeting context. In our setting, assets
+655
+
+--- PAGE 7 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 656 650–705
+The Review of Financial Studies / v 28 n 3 2015
+are homogeneous, meaning no difference between project costs of capital and
+ﬁrm costs of capital. Given expected cash ﬂows, high costs of capital imply
+low net present values of new projects and low investment, and low costs of
+capital imply high net present values of new projects and high investment.
+6
+The negative investment-return relation is conditional on expected
+proﬁtability. Investment is linked to proﬁtability because ﬁrms that are more
+proﬁtable tend to invest more than less proﬁtable ﬁrms. This conditional relation
+provides a natural portfolio interpretation for the investment channel. Sorting
+on net stock issues, composite issuance, book-to-market, and other valuation
+ratios is closer to sorting on investment than on expected proﬁtability. These
+sorts produce wider cross-sectional expected return spreads associated with
+investment than those associated with expected proﬁtability. As such, we can
+interpret these diverse sorts using their common implied sort on investment.
+The negative relation between average returns and equity issues is consistent
+with the negative investment-expected return relation. The balance-sheet
+constraint of ﬁrms implies that a ﬁrm’s uses of funds must equal its sources of
+funds, meaning that, all else equal, issuers must invest more and earn lower
+average returns than nonissuers.
+7 Cooper, Gulen, and Schill (2008) show that
+asset growth predicts future returns with a negative slope. However, asset
+growth is the most comprehensive measure of investment-to-assets, in which
+investment is measured as the change in total assets. As such, the asset growth
+effect seems to be the premier manifestation of the investment channel.
+The value premium is also consistent with the negative investment-return
+relation. Investment increases in marginal q (the denominator of Equation (4)),
+and the marginal q equals the average q under constant returns to scale. The
+average q and market-to-book are highly correlated and are identical without
+debt. Consequently, value ﬁrms with high book-to-market (low market-to-
+book) should invest less and earn higher expected returns than growth ﬁrms
+with low book-to-market (high market-to-book). In general, compared to ﬁrms
+6 The negative investment-expected return relation (a downward-sloping investment demand curve) has a long
+tradition in ﬁnancial economics. Fisher (1930) and Fama and Miller (1972, Figure 2.4) show that the interest
+rate and investment are negatively correlated. As noted, Cochrane (1991) and Liu, Whited, and Zhang (2009)
+extend this insight into a dynamic world with uncertainty. In our simple economic model, project-level discount
+rates equal ﬁrm-level expected returns. This equivalence no longer holds in more general settings with project
+heterogeneity as in real options models such as Berk, Green, and Naik (1999); Carlson, Fisher, and Giammarino
+(2004); and Kogan and Papanikolaou (2013). However, these real options models also predict the negative
+investment-expected return relation. Intuitively, expansion options are riskier than assets in place. Investment
+converts riskier expansion options into less risky assets in place, causing high investment ﬁrms to be less risky and
+earn lower expected returns than low investment ﬁrms. A notable exception is Gomes, Kogan, and Zhang (2003),
+in which projects are assumed to be distributed randomly across ﬁrms, implying a ﬂat investment-expected return
+relation. However, as pointed out in Zhang (2005), this ﬂat relation gives rise to a counterfactual prediction that
+value stocks have higher cash ﬂow durations than growth stocks, inconsistent with the evidence in Dechow,
+Sloan, and Soliman (2004).
+7 Lyandres, Sun, and Zhang (2008) show that adding an investment factor to the Capital Asset Pricing Model
+(CAPM) and the Fama-French model reduces the magnitude of the underperformance following initial public
+offerings, seasoned equity offerings, and convertible debt offerings. Lyandres et al. also report the part of Figure
+1 that is related to the new issues puzzle.
+656
+
+--- PAGE 8 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 657 650–705
+Digesting Anomalies: An Investment Approach
+with low valuation ratios, ﬁrms with high valuation ratios should have more
+growth opportunities, invest more, and earn lower expected returns.
+High valuation ratios often result from a stream of positive shocks on
+fundamentals, and low valuation ratios from a stream of negative shocks on
+fundamentals. High valuation ratios of growth ﬁrms can manifest as high long-
+term prior returns, and low valuation ratios of value ﬁrms as low long-term prior
+returns. As such, ﬁrms with high long-term prior returns should invest more
+and earn lower expected returns than ﬁrms with low long-term prior returns,
+meaning that the investment channel also helps interpret the De Bondt and
+Thaler (1985) long-term reversal effect.
+1.2.2 The proﬁtability channel. Equation (4) also gives rise to the
+proﬁtability channel that works in parallel with the investment channel.
+Given investment-to-assets, ﬁrms with high expected proﬁtability should
+earn higher expected returns than ﬁrms with low expected proﬁtability. The
+proﬁtability-expected return relation is consistent with momentum, post-
+earnings-announcement drift, and the ﬁnancial distress effect.
+Why should high expected proﬁtability ﬁrms earn higher expected returns
+than low expected proﬁtability ﬁrms? Equation (4) says that the expected
+return equals the expected proﬁtability divided by an increasing function of
+investment-to-assets. From the capital budgeting perspective, high expected
+proﬁtability relative to low investment must mean high discount rates, which
+are necessary to offset the high expected proﬁtability to induce low net present
+values of new capital and low investment. If the discount rates were not
+high enough to counteract the high expected proﬁtability, ﬁrms would instead
+observe high net present values of new capital and invest more. Similarly, low
+expected proﬁtability relative to high investments must mean low discount
+rates (as in small-growth ﬁrms in the 1990s). If the discount rates were not low
+enough to counteract the low expected proﬁtability, these ﬁrms would instead
+observe low net present values of new capital and invest less.
+The proﬁtability-expected return relation is also consistent with the standard
+discounting model. The marginal costs of investment in the denominator of
+the right-hand side of Equation (4) equal marginal q, which in turn equals
+average q or market-to-book. As such, the expected return equals the expected
+proﬁtability divided by market-to-book. Multiplying the numerator and the
+denominator with book equity equates the expected return with the ratio of the
+expected cash ﬂows over the market equity. This relation is analogous to
+the Gordon Growth model. In a 2-period world, the equity value equals the
+expected cash ﬂows divided by the discount rate. High expected cash ﬂows
+relative to low market equity (high expected proﬁtability relative to low market-
+to-book) imply high discount rates. Analogously, low expected cash ﬂows
+relative to high market equity (low expected proﬁtability relative to high
+market-to-book) imply low discount rates (e.g., Berk 1995).
+657
+
+--- PAGE 9 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 658 650–705
+The Review of Financial Studies / v 28 n 3 2015
+The proﬁtability-expected return relation has important implications. For
+any sorts that produce wider cross-sectional expected return spreads associated
+with expected proﬁtability than with investment, their average returns can be
+interpreted with the common implied sort on expected proﬁtability. Examples
+include momentum, distress, and earning surprises. In particular, momentum
+winners have higher expected proﬁtability and should earn higher expected
+returns than momentum losers. Intuitively, shocks to proﬁtability are positively
+correlated with stock returns. Firms with positive proﬁtability shocks tend
+to experience immediate stock price increases, whereas ﬁrms with negative
+proﬁtability shocks tend to experience immediate stock price decreases.
+In addition, less ﬁnancially distressed ﬁrms are more proﬁtable, meaning
+higher expected proﬁtability, and, all else equal, should earn higher expected
+returns than more ﬁnancially distressed ﬁrms. As such, the distress effect
+is consistent with the positive proﬁtability-expected return relation. Finally,
+sorting on earnings surprises should produce an expected proﬁtability spread
+between extreme portfolios. Intuitively, all else equal, ﬁrms that have
+experienced large positive shocks to earnings tend to be more proﬁtable than
+ﬁrms that have experienced large negative shocks to earnings.
+8
+1.3 Limitations
+We implement the economic model in Equation (4) with factor regressions.
+We construct factor mimicking portfolios on investment and proﬁtability (as a
+proxy for expected proﬁtability) in a way that is analogous to the size and book-
+to-market factors in Fama and French (1993, 1996). We then use the investment
+and proﬁtability factors as right-hand side variables in factor regressions.
+The factor approach often delivers better empirical performance than the
+economic model itself. One reason is that stock returns data are available at
+high frequencies and are less subject to measurement errors than accounting
+variables. More important, implementing the economic model directly via
+structural estimation involves speciﬁcation errors in the production and capital
+adjustment technologies that are absent in the factor model.
+However, although in part inspired by Equation (4) derived from q-theory,
+the q-factor model is largely a reduced form, empirical model. In particular,
+the factor model requires that returns of stocks with similar investment (and
+returns of stocks with similar proﬁtability) comove together, a prediction that
+Equation (4) does not make, at least not directly. To ground the q-factor model
+more rigorously in theories of investment-based asset pricing, one would need
+8 We have so far only described anomaly variables that are directly related to investment and proﬁtability. In our
+empirical tests, we confront the q-factor model with a substantially broader set of anomalies. As argued in Lin
+and Zhang (2013), the consumption model and the investment model of asset pricing are equivalent in general
+equilibrium, delivering identical expected returns. While the consumption model says that consumption risks
+are sufﬁcient for accounting for expected returns, the investment model says that characteristics are sufﬁcient.
+We take the latter prediction seriously and confront the
+q-factor model with a wide array of anomaly variables
+that are not directly related to investment and proﬁtability.
+658
+
+--- PAGE 10 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 659 650–705
+Digesting Anomalies: An Investment Approach
+to go beyond the ﬁrst principle in Equation (4). To this end, one would need
+to specify fully a dynamic investment model to quantify the comovement
+behind the q-factors, as well as the sources of the cross-sectional heterogeneity
+in investment, proﬁtability, and their factor loadings. While offering some
+useful guidance, our empirical work makes little theoretical contribution in
+this direction.
+2. Factors
+Monthly returns, dividends, and prices are from the Center for Research in
+Security Prices (CRSP), and accounting information is from the Compustat
+Annual and Quarterly Fundamental Files. The sample is from January 1972 to
+December 2012. The starting date is restricted by the availability of quarterly
+earnings announcement dates, as well as quarterly book equity data. Financial
+ﬁrms and ﬁrms with negative book equity are excluded.
+2.1 Factor construction
+We measure investment-to-assets, I /A, as the annual change in total assets
+(Compustat annual item A T) divided by 1-year-lagged total assets. We measure
+proﬁtability as ROE, which is income before extraordinary items (Compustat
+quarterly item IBQ) divided by 1-quarter-lagged book equity.
+9 We construct
+the q-factors from a triple 2-by-3-by-3 sort on size, I /A, and ROE. Because
+both the investment and earnings effects in the data are stronger in small ﬁrms
+than in big ﬁrms (e.g., Bernard and Thomas 1990; Fama and French 2008),
+we control for size when constructing the investment and ROE factors. Sorting
+jointly with size is also standard in constructing the value factor, HML, and
+the momentum factor, UMD. HML is from a double 2-by-3 sort on size and
+book-to-market, and UMD is from a double 2-by-3 sort on size and prior 2–12
+month returns. Finally, sorting on investment and ROE independently helps
+orthogonalize the 2 new factors.
+Speciﬁcally, at the end of June of each year t, we use the median NYSE size
+(stock price per share times shares outstanding from CRSP) to split NYSE,
+Amex, and NASDAQ stocks into 2 groups, small and big. Independently, at
+the end of June of yeart, we break all stocks into 3 I/A groups, using the NYSE
+breakpoints for the low 30%, middle 40%, and high 30% of the ranked values
+of I/A for the ﬁscal year ending in calendar year t −1.
+9 Our measure of the book equity is the quarterly version of the annual book equity measure in Davis, Fama, and
+French (2000). In particular, book equity is shareholders’ equity, plus balance-sheet deferred taxes and investment
+tax credit (item TXDITCQ) if available, minus the book value of preferred stock. Depending on availability,
+we use stockholders’ equity (item SEQQ), or common equity (item CEQQ) plus the carrying value of preferred
+stock (item PSTKQ), or total assets (item A TQ) minus total liabilities (item LTQ) in that order as shareholders’
+equity. We use redemption value (item PSTKRQ) if available, or carrying value for the book value of preferred
+stock. Fama and French (2006) measure shareholders’ equity as total assets minus total liabilities. We follow
+Davis et al. because Compustat quarterly items SEQQ (stockholders’ equity) and CEQQ (common equity) have
+a broader coverage than items A TQ (total assets) and LTQ (total liabilities) before 1980.
+659
+
+--- PAGE 11 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 660 650–705
+The Review of Financial Studies / v 28 n 3 2015
+In addition, independently, at the beginning of each month, we sort all
+stocks into 3 groups based on the NYSE breakpoints for the low 30%, middle
+40%, and high 30% of the ranked values of ROE. Earnings data in Compustat
+quarterly ﬁles are used in the months immediately after the most recent public
+quarterly earnings announcement dates (Compustat quarterly item RDQ). For
+example, if the earnings for the fourth ﬁscal quarter of year t −1 are publicly
+announced on March 5 (or March 25) of year t, we use the announced earnings
+(divided by the book equity from the third quarter of year t −1) to form
+portfolios at the beginning of April of year t. In addition, for a ﬁrm to enter the
+factor construction, we require the end of the ﬁscal quarter that corresponds
+to its most recently announced quarterly earnings to be within 6 months
+prior to the portfolio formation. We impose this restriction to exclude stale
+earnings.
+Taking the intersections of the 2 size, 3 I /A, and 3 ROE groups, we form
+18 portfolios. Monthly value-weighted portfolio returns are calculated for the
+current month, and the portfolios are rebalanced monthly. (The ROE portfolios
+are rebalanced monthly at the beginning of each month, and the size and
+I/A portfolios are rebalanced annually at the end of each June.) The size
+factor, r
+ME, is the difference (small-minus-big), each month, between the
+simple average of the returns on the 9 small size portfolios and the simple
+average of the returns on the 9 big size portfolios. Designed to mimic the
+common variation in returns related to I /A, the investment factor, r
+I/A,i s
+the difference (low-minus-high), each month, between the simple average
+of the returns on the 6 low I /A portfolios and the simple average of the
+returns on the 6 high I /A portfolios. Finally, designed to mimic the common
+variation in returns related to ROE, the ROE factor is the difference (high-
+minus-low), each month, between the simple average of the returns on the 6
+high ROE portfolios and the simple average of the returns on the 6 low ROE
+portfolios.
+2.2 Empirical properties
+From Panel A of Table 1, the size factor earns an average return of 0.31% per
+month from January 1972 to December 2012 ( t =2.12). The average return
+of SMB is 0.19% ( t =1.35). From Panel B, our size factor and SMB have an
+almost perfect correlation of 0.95. The data for SMB, HML, and UMD are from
+Kenneth French’s Web site. We construct MKT as the value-weighted market
+return minus the 1-month Treasury bill rate from CRSP .
+The investment factor, r
+I/A, earns an average return of 0.45% per month
+(t =4.95). Its CAPM alpha is 0.52% (t =5.93). The Fama-French alpha is 0.33%
+(t =4.85), and the Carhart alpha 0.28% ( t =3.85). The investment factor and
+HML have a signiﬁcant correlation of 0.69, suggesting that the investment
+factor would play a similar role as HML in factor regressions.
+The ROE factor,r
+ROE, earns an average return of 0.58% per month (t =4.81).
+The Fama-French alpha of 0.77% ( t =6.94) and the R2 of only 20% suggest
+660
+
+--- PAGE 12 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 661 650–705
+Digesting Anomalies: An Investment Approach
+Table 1
+Empirical properties of the q-factors
+Panel A: Descriptive statistics Panel B: Correlation matrix (p-values)
+Mean αβ MKT βSMB βHML βUMD R2 rI/A rROE MKT SMB HML UMD
+rME 0.31 0 .23 0 .17 0 .06 rME −0.11 −0.31 0 .25 0 .95 −0.07 0 .01
+(2.12) (1 .62) (4 .33) (0 .02) (0 .00) (0 .00) (0 .00) (0 .13) (0 .90)
+0.04 0 .02 0 .99 0 .17 0 .93 rI/A 0.06 −0.36 −0.22 0 .69 0 .05
+(1.09) (1 .59) (57 .37) (7 .05) (0 .20) (0 .00) (0 .00) (0 .00) (0 .31)
+0.01 0 .02 0 .99 0 .19 0 .03 0 .94 rROE −0.19 −0.38 −0.09 0 .50
+(0.15) (2 .40) (61 .51) (7 .34) (2 .16) (0 .00) (0 .00) (0 .06) (0 .00)
+rI/A 0.45 0 .52 −0.15 0 .13 MKT 0.28 −0.32 −0.15
+(4.95) (5 .93) ( −5.58) (0.00) (0 .00) (0 .00)
+0.33 −0.06 −0.02 0 .39 0 .50 SMB −0.23 −0.01
+(4.85) ( −3.66) ( −0.81) (11 .98) (0.00) (0 .79)
+0.28 −0.05 −0.02 0 .41 0 .05 0 .52 HML −0.15
+(3.85) ( −3.24) ( −0.87) (11 .94) (1 .97) (0.00)
+rROE 0.58 0 .63 −0.11 0 .04
+(4.81) (5 .62) ( −2.38)
+0.77 −0.09 −0.33 −0.20 0 .20
+(6.94) ( −2.08) ( −5.75) ( −2.38)
+0.50 −0.03 −0.33 −0.10 0 .28 0 .40
+(4.75) ( −0.98) ( −4.38) ( −1.48) (6 .27)
+Size (ME) is price per share times shares outstanding. Investment-to-assets ( I/A) is the annual change in total assets (Compustat annual item A T) divided by lagged total assets. ROE
+is income before extraordinary items (Compustat quarterly item IBQ) divided by 1-quarter-lagged book equity. Book equity is the shareholders’ equi ty, plus balance-sheet deferred
+taxes and investment tax credit (item TXDITCQ) if available, minus the book value of preferred stock. Depending on availability, we use the stockhold ers’ equity (item SEQQ), or
+common equity (item CEQQ) plus the carrying value of the preferred stock (item PSTKQ), or total assets (item A TQ) minus liabilities (item LTQ) in that o rder as the shareholders’
+equity. We use redemption value (item PSTKRQ) if available, or carrying value for the book value of the preferred stock. At the end of June of each year t, we use the median NYSE
+size at the end of June to split NYSE, Amex, and NASDAQ stocks into 2 groups, small and big. Independently, at the end of June of each year t, we also sort stocks into 3 I/A
+groups, using the NYSE breakpoints for the low 30%, middle 40%, and high 30% of the ranked I/A for the ﬁscal year ending in calendar year t −1. In addition, independently, at
+the beginning of each month, we sort stocks into 3 groups based on NYSE breakpoints for the low 30%, middle 40%, and high 30% of the ranked ROE. Earnings da ta in Compustat
+quarterly ﬁles are used in the sorts in the months immediately after the most recent public quarterly earnings announcement dates (item RDQ). Taking t he intersections of the 2
+size, 3 I/A, and 3 ROE groups, we form 18 portfolios. Monthly value-weighted returns on the 18 portfolios are calculated for the current month, and the portfolios are rebalanced
+monthly. The size factor, rME, is the difference (small-minus-big), each month, between the average returns on the 9 small portfolios and the average returns on the 9 big portfolio s.
+The investment factor, rI/A , is the difference (low-minus-high), each month, between the average returns on the 6 low I/A portfolios and the average returns on the 6 high I/A
+portfolios. The ROE factor, rROE, is the difference (high-minus-low), each month, between the average returns on the 6 high ROE portfolios and the average returns on the 6 low
+ROE portfolios. The data for SMB, HML, and UMD are from Kenneth French’s Web site. MKT is the value-weighted market return minus the 1-month Treasury bi ll rate from CRSP .
+The t-statistics (in parentheses) in Panel A are adjusted for heteroscedasticity and autocorrelations, and the p-values (in parentheses) in Panel B test that a given correlation is zero.
+661
+
+--- PAGE 13 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 662 650–705
+The Review of Financial Studies / v 28 n 3 2015
+that rROE represents an important source of common return variation missing
+from the Fama-French model. The Carhart model cannot capture the average
+ROE factor return either, with an alpha of 0.50% (t =4.75). From Panel B, r
+ROE
+has a high correlation of 0.50 with UMD, suggesting that rROE would play a
+similar role as UMD in factor regressions. Finally, the investment and the ROE
+factors have a small, insigniﬁcant correlation of 0.06, meaning that the triple
+sort succeeds in orthogonalizing the 2 q-factors.
+Raising an important concern on data mining in empirical ﬁnance, Harvey,
+Liu, and Zhu (2013) argue that the standard signiﬁcance criterion with a
+t-statistic (testing that the average return is zero) greater than 2 is inappropriate
+for newly discovered factors. Instead, new factors must clear a much higher
+hurdle, with t-statistics greater than 3. Harvey et al. also argue that factors
+based on ﬁrst principles should have a lower hurdle of signiﬁcance than
+empirically motivated factors. The investment and ROE factors, with at least
+some connection to investment-based asset pricing and t-statistics of 4.95 and
+4.81, respectively, seem to clear their high hurdle.
+The average returns of HML and UMD are 0 .40% per month ( t =2.60) and
+0.72% (t =3.41), respectively, in our sample. More importantly, the alphas of
+HML and UMD in the q-factor model are only 0.06% and 0.13%, respectively;
+both of which are within 1 standard error from zero. As such, the q-factor
+model captures the average returns of HML and UMD, but the Fama-French
+and Carhart models cannot capture the average returns of the 2 q-factors.
+The evidence suggests that HML and UMD might be noisy versions of the
+investment and ROE factors, respectively.
+2.3 Methodological issues
+A few clariﬁcations are in order. First, we design the q-factors to account for
+anomalies in the broad cross section of returns, as opposed to anomalies that
+exist only in extremely small and highly illiquid stocks. This design is reﬂected
+in our use of NYSE breakpoints and value-weighted portfolio returns in forming
+the q-factors. Consequently, the stocks that reside in theq-factors represent the
+broad cross section. The percentages of the total market capitalization for stocks
+in the size, investment, and ROE factors are 92.76%, 50.42%, and 58.07%
+of our entire sample, respectively. The percentage for the size factor is not
+100% because we require stocks to have valid investment and ROE data. These
+percentages are largely in line with those for SMB, HML, and UMD, which
+are 97.20%, 66.92%, and 54.48%, respectively, in our sample.
+Second, sorting on investment and ROE jointly is consistent with the
+economic model in Equation (4), which shows that the investment and ROE
+effects are conditional in nature. Firms will invest a lot if either the ROE of
+their investment is high or the cost of capital is low or both. As such, the
+negative relation between investment and the cost of capital is conditional on
+a given level of ROE. Investment and the cost of capital could be positively
+correlated unconditionally, if large investment delivers disproportionately high
+662
+
+--- PAGE 14 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 663 650–705
+Digesting Anomalies: An Investment Approach
+ROE. Analogously, the positive relation between ROE and the cost of capital
+is conditional on a given level of investment. ROE and the cost of capital
+could be negatively correlated unconditionally, if high ROE comes with
+disproportionately large investment. Sorting on investment and ROE jointly
+controls for these conditional relations.
+Third, when constructing the q-factors, we form the investment portfolios
+annually but the ROE portfolios monthly. This design is also consistent
+with Equation (4). The equation implies, for the most part, contemporaneous
+correlations between investment and anomaly variables, such as equity issues,
+accruals, and book-to-market, which the investment factor is hypothesized
+to capture. Because these anomaly portfolios are all constructed annually, it
+seems natural to use the same frequency to construct the investment factor.
+Analogously, Equation (4) implies contemporaneous correlations between
+ROE and anomaly variables, such as price momentum, earnings surprise, and
+ﬁnancial distress, which the ROE factor is hypothesized to capture. Because
+these anomaly portfolios are all constructed monthly, it seems natural to adopt
+the same frequency to construct the ROE factor. In addition, Equation (4) says
+that ROE predicts future stock returns to the extent that it predicts future ROE.
+Because the most recent ROE contains the most up-to-date information about
+future ROE, we use the latest ROE in our monthly sorts.
+3. Empirical Results
+To evaluate the performance of the q-factor model, we use factor regressions:
+r
+i
+t −rf
+t =αi
+q +βi
+MKT MKTt +βi
+MErME,t +βi
+I/A rI/A,t +βi
+ROErROE,t +ϵi. (5)
+If the model is well speciﬁed, αi
+q should be economically small and statistically
+insigniﬁcant from zero. Because we neutralize the 2 q-factors against size, we
+include the size factor in theq-factor model. Including the size factor also brings
+the q-factor model to the same footing, in terms of the number of factors, as
+the Carhart model. Finally, Equation (4) is primarily a cross-sectional model.
+As such, we include the market factor to capture the common variation in
+returns over time, while accounting for the cross-sectional variation with the
+q-factors.
+3.1 Testing portfolios and overall performance
+We report our key empirical results in this subsection.
+3.1.1 The playing ﬁeld. Table 2 lists the 74 primary anomalies that we
+study. Adding 6 momentum-reversal variables (momentum strategies for
+holding periods longer than 6 months, see Section 3.2.1), we examine in
+total 80 anomaly variables. Our goal is to be conceptually comprehensive
+yet empirically parsimonious. To be comprehensive, we cover all the major
+663
+
+--- PAGE 15 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 664 650–705
+The Review of Financial Studies / v 28 n 3 2015
+Table 2
+List of anomalies
+Panel A: Momentum
+SUE-1 Earnings surprise (1-month holding period), SUE-6 Earnings surprise (6-month holding period),
+Foster, Olsen, and Shevlin (1984) Foster, Olsen, and Shevlin (1984)
+Abr-1 Cumulative abnormal stock returns Abr-6 Cumulative abnormal stock returns
+around earnings announcements around earnings announcements
+(1-month holding period), (6-month holding period),
+Chan, Jegadeesh, and Lakonishok (1996) Chan, Jegadeesh, and Lakonishok (1996)
+RE-1 Revisions in analysts’ earnings forecasts RE-6 Revisions in analysts’ earnings forecasts
+(1-month holding period), (6-month holding period),
+Chan, Jegadeesh, and Lakonishok (1996) Chan, Jegadeesh, and Lakonishok (1996)
+R6-1 Price momentum (6-month prior returns, R6-6 Price momentum (6-month prior returns,
+1-month holding period), 6-month holding period),
+Jegadeesh and Titman (1993) Jegadeesh and Titman (1993)
+R11-1 Price momentum (11-month prior returns, I-Mom Industry momentum,
+1-month holding period), Moskowitz and Grinblatt (1999)
+Fama and French (1996)
+Panel B: V alue-versus-growth
+B/M Book-to-market equity, A/ME Market leverage, Bhandari (1988)
+Rosenberg, Reid, and Lanstein (1985)
+Rev Reversal, De Bondt and Thaler (1985) E/P Earnings-to-price, Basu (1983)
+EF/P Analysts’ earnings forecasts-to-price, CF/P Cash ﬂow-to-price,
+Elgers, Lo, and Pfeiffer (2001) Lakonishok, Shleifer, and Vishny (1994)
+D/P Dividend yield, O/P Payout yield,
+Litzenberger and Ramaswamy (1979) Boudoukh et al. (2007)
+NO/P Net payout yield, SG Sales growth,
+Boudoukh et al. (2007) Lakonishok, Shleifer, and Vishny (1994)
+LTG Long-term growth forecasts of analysts, Dur Equity duration,
+La Porta (1996) Dechow, Sloan, and Soliman (2004)
+Panel C: Investment
+ACI Abnormal corporate investment, I/A Investment-to-assets,
+Titman, Wei, and Xie (2004) Cooper, Gulen, and Schill (2008)
+NOA Net operating assets, △ PI/A Changes in property, plant, and equipment
+Hirshleifer et al. (2004) plus changes in inventory scaled by assets,
+Lyandres, Sun, and Zhang (2008)
+IG Investment growth, Xing (2008) NSI Net stock issues, Pontiff and Woodgate (2008)
+CEI Composite issuance, NXF Net external ﬁnancing,
+Daniel and Titman (2006) Bradshaw, Richardson, and Sloan (2006)
+IvG Inventory growth, Belo and Lin (2011) IvC Inventory changes, Thomas and Zhang (2002)
+OA Operating accruals, Sloan (1996) TA Total accruals,
+Richardson et al. (2005)
+POA Percent operating accruals, PTA Percent total accruals,
+Hafzalla, Lundholm, and V an Winkle (2011) Hafzalla, Lundholm, and V an Winkle (2011)
+Panel D: Proﬁtability
+ROE Return on equity, ROA Return on assets,
+Haugen and Baker (1996) Balakrishnan, Bartov, and Faurel (2010)
+RNA Return on net operating assets, PM Proﬁt margin, Soliman (2008)
+Soliman (2008)
+A TO Asset turnover, Soliman (2008) CTO Capital turnover, Haugen and Baker (1996)
+GP/A Gross proﬁts-to-assets, Novy-Marx (2013) FF -score, Piotroski (2000)
+TES Tax expense surprise, TI/BI Taxable income-to-book income,
+Thomas and Zhang (2011) Green, Hand, and Zhang (2013)
+RS Revenue surprise, NEI Number of consecutive quarters with earnings
+Jegadeesh and Livnat (2006) increases, Barth, Elliott, and Finn (1999)
+FP Failure probability, OO -score, Dichev (1998)
+Campbell, Hilscher, and Szilagyi (2008)
+(continued)
+664
+
+--- PAGE 16 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 665 650–705
+Digesting Anomalies: An Investment Approach
+Table 2
+Continued
+Panel E: Intangibles
+OC/A Organizational capital-to-assets, BC/A Brand capital-to-assets,
+Eisfeldt and Papanikolaou (2013) Belo, Lin, and Vitorino (2014)
+Ad/M Advertisement expense-to-market, RD/S R&D-to-sales,
+Chan, Lakonishok, and Sougiannis (2001) Chan, Lakonishok, and Sougiannis (2001)
+RD/M R&D-to-market, RC/A R&D capital-to-assets, Li (2011)
+Chan, Lakonishok, and Sougiannis (2001)
+H/N Hiring rate, Belo, Lin, and Bazdresch (2014) OL Operating leverage, Novy-Marx (2011)
+G Corporate governance, AccQ Accrual quality,
+Gompers, Ishii, and Metrick (2003) Francis et al. (2005)
+Ind Industries, Fama and French (1997)
+Panel F: Trading frictions
+ME The market equity, Banz (1981) Ivol Idiosyncratic volatility,
+Ang et al. (2006)
+Tvol Total volatility, Svol Systematic volatility,
+Ang et al. (2006) Ang et al. (2006)
+MDR Maximum daily return, β Market beta, Frazzini and Pedersen (2014)
+Bali, Cakici, and Whitelaw (2011)
+D-β Dimson’s beta, Dimson (1979) S-Rev Short-term reversal, Jegadeesh (1990)
+Disp Dispersion of analysts’ earnings forecasts, Turn Share turnover,
+Diether, Malloy, and Scherbina (2002) Datar, Naik, and Radcliffe (1998)
+1/P 1/share price, Miller and Scholes (1982) Dvol Dollar trading volume,
+Brennan, Chordia, and Subrahmanyam (1998)
+Illiq Illiquidity as absolute return-to-volume,
+Amihud (2002)
+This table lists the anomalies that we study. The anomalies are grouped into 6 categories: (i) momentum; (ii) value-
+versus-growth; (iii) investment; (iv) proﬁtability; (v) intangibles; and (vi) trading frictions. For each anomaly
+variable, we list its symbol, brief description, and source in the academic literature. Appendix A details variable
+deﬁnition and portfolio construction.
+anomaly categories, including momentum, value-versus-growth, investment,
+proﬁtability, intangibles, as well as trading frictions.
+To be parsimonious, we select the most important variables in each category
+to avoid (excessive) redundancy. For example, we use the Daniel and Titman
+(2006) composite issuance and the Pontiff and Woodgate (2008) net stock issues
+as representative examples of equity ﬁnancing anomalies, but do not separately
+study the Loughran and Ritter (1995) underperformance anomaly following
+seasoned equity offerings or the Ikenberry, Lakonishok, and V ermaelen
+(1995) overperformance anomaly following open market share repurchases.
+In addition, we have examined 2 different holding periods (1-month and 6-
+month) for many anomaly portfolios that are monthly rebalanced, such as the
+Ang et al. (2006) total, idiosyncratic, and systematic volatilities; the Campbell,
+Hilscher, and Szilagyi (2008) failure probability; and the Balakrishnan, Bartov,
+and Faurel (2010) return on assets. However, we only report for a given variable
+the holding period that delivers the higher average return spread across the
+deciles. Doing so raises the hurdle on the q-factor model.
+Our scope of nearly 80 anomalies is comparable to that of McLean and Pontiff
+(2013), who use 82 variables (but do not provide the detailed list). Green, Hand,
+and Zhang (2013) identify more than 330 return predictive signals but use only
+60 in their tests. Harvey, Liu, and Zhu (2013) identify 314 factors, but many are
+665
+
+--- PAGE 17 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 666 650–705
+The Review of Financial Studies / v 28 n 3 2015
+macro factors, such as Treasury bill return and aggregate consumption growth.
+In contrast, we examine ﬁrm-level anomalies. Moreover, our universe covers
+most (if not all) of the major categories of anomalies in Harvey et al.’s work.
+We detail the variable deﬁnition and the construction of testing portfolios
+in Appendix A. As the benchmark procedure in constructing these portfolios,
+we use NYSE breakpoints and value-weighted portfolio returns. Doing so is
+consistent with the construction of the q-factors and SMB, HML, and UMD.
+Another important reason for the benchmark practice is to alleviate the impact
+of microcaps, which are stocks with market capitalization below the 20th NYSE
+percentile. As shown in Fama and French (2008), despite accounting for about
+60% of the total number of stocks, microcaps are on average only about 3% of
+the market capitalization of the NYSE-Amex-NASDAQ universe. Because of
+transaction costs and lack of liquidity, the portion of anomalies in microcaps is
+unlikely to be exploitable in practice.
+10
+When constructing annually sorted testing portfolios, such as the book-to-
+market deciles, we follow the Fama and French (1993) timing. At the end of
+June of each year t, we sort all stocks into deciles, using NYSE breakpoints
+for book-to-market measured at the ﬁscal year ending in calendar year t −1,
+and calculate value-weighted decile returns from July of year t to June of
+t +1. To construct monthly sorted testing portfolios involving latest earnings
+data, such as the ROE deciles, we follow our timing in constructing the ROE
+factor. In particular, earnings data in Compustat quarterly ﬁles are used in the
+months immediately after the quarterly earnings announcement dates. Finally,
+to construct monthly sorted testing portfolios involving quarterly accounting
+data other than earnings, such as the failure probability deciles, we follow the
+accounting literature in imposing a 4-month lag between the sorting variable
+and holding period returns (e.g., Hirshleifer et al. 2004). Unlike earnings, other
+quarterly data items might not be available upon earnings announcement dates.
+As such, we impose the 4-month lag to guard against look-ahead bias.
+3.1.2 Insigniﬁcant anomalies in the broad cross section. Out of our list of
+anomalies, 38 are insigniﬁcant in the broad cross section. Table 3 reports their
+average high-minus-low decile returns and t-statistics.
+Most importantly, 12 out of 13 anomalies in the trading frictions category
+are insigniﬁcant at the 5% level. The only signiﬁcant anomaly is the Ang et al.
+(2006) systematic volatility. However, their idiosyncratic volatility anomaly
+is not. The high-minus-low decile earns on average −0.54% per month
+(t =−1.56). Even the Jegadeesh (1990) short-term reversal anomaly earns an
+10 We document that extreme deciles under the benchmark procedure assign only modest portfolio weights to
+microcaps, but those under an alternative procedure with NYSE-Amex-NASDAQ breakpoints and equal-
+weighted returns assign excessively large weights (see the Online Appendix). For example, across the momentum
+variables, the loser deciles allocate on average 10.85% of the portfolio weights to microcaps under the benchmark
+procedure, but 63.58% under the alternative procedure. For the winner deciles, the comparison is between 5.17%
+and 52.50%.
+666
+
+--- PAGE 18 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 667 650–705
+Digesting Anomalies: An Investment Approach
+Table 3
+Insigniﬁcant anomalies in the broad cross section
+R6-1 A/ME Rev EF/P D/P O/P SG LTG ACI NXF
+m 0.48 0 .43 −0.39 0 .45 0 .27 0 .35 −0.27 0 .01 −0.27 −0.30
+tm 1.43 1 .82 −1.57 1 .73 0 .94 1 .53 −1.34 0 .02 −1.70 −1.55
+TA RNA PM A TO CTO F TES TI/BI RS O
+m −0.19 0 .13 0 .10 0 .22 0 .20 0 .37 0 .32 0 .13 0 .29 −0.08
+tm −1.31 0 .61 0 .40 1 .11 1 .11 1 .28 1 .92 0 .86 1 .82 −0.37
+BC/A RD/S RC/A H/N G AccQ ME Ivol Tvol MDR
+m 0.18 0 .01 0 .32 −0.25 0 .03 −0.18 −0.24 −0.54 −0.37 −0.31
+tm 0.73 0 .06 1 .27 −1.47 0 .09 −0.79 −0.90 −1.56 −0.95 −0.94
+β D-β S-Rev Disp Turn 1/P Dvol Illiq
+m −0.13 0 .07 −0.31 −0.33 −0.12 −0.00 −0.26 0 .27
+tm −0.36 0 .30 −1.39 −1.24 −0.43 −0.01 −1.30 1 .14
+For each anomaly variable, we report the average return ( m) of the high-minus-low decile and its t-statistic (tm)
+adjusted for heteroscedasticity and autocorrelations. Table 2 provides a brief description of the symbols. We form
+all of the deciles using NYSE breakpoints, and calculate value-weighted portfolio returns. Appendix A details
+variable deﬁnition and portfolio construction.
+insigniﬁcant −0.31% ( t =−1.39). Other notable examples are the Diether,
+Malloy, and Scherbina (2002) dispersion of analysts’ earnings forecasts and
+the Amihud (2002) illiquidity. The evidence suggests that trading frictions play
+a limited role in the broad cross section.
+Outside trading frictions, the Titman, Wei, and Xie (2004) abnormal
+investment anomaly yields −0.27% per month, the Richardson et al. (2005)
+total accrual anomaly yields −0.19%, and the Piotroski (2000) F -score earns
+0.37%.All 3 are insigniﬁcant. The Gompers, Ishii, and Metrick (2003) corporate
+governance index earns a tiny 0 .03% (t =0.09), and the Francis et al. (2005)
+accrual quality measure earns −0.18% (t =−0.79).
+It is surprising that 38 anomalies (about one-half across all categories),
+including 12 out of 13 anomalies in the trading frictions category, are
+insigniﬁcant in the broad cross section. Lending support to Harvey, Liu, and
+Zhu (2013), we suggest that many claims in the anomalies literature are
+likely exaggerated. While Harvey et al. adopt a sophisticated multiple testing
+framework to raise the statistical hurdle for signiﬁcance, we use simple NYSE
+breakpoints and value-weighted portfolio returns to ensure that the anomalies
+we study are relevant for the broad cross section.
+3.1.3 Signiﬁcant anomalies: Pricing errors and tests of overall perfor-
+mance. Table 4 reports the overall performance of various factor models in
+ﬁtting the 35 signiﬁcant anomalies in the broad cross section. The q-factor
+model performs well relative to the Carhart model and even more so relative to
+the Fama-French model. In particular, across the 35 high-minus-low deciles,
+the average magnitude of the q-alphas is 0.20% per month, which is lower than
+0.33% in the Carhart model and 0.55% in the Fama-French model. Moreover,
+only 5 out of 35 high-minus-low deciles have q-alphas that are signiﬁcant at
+667
+
+--- PAGE 19 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 668 650–705
+The Review of Financial Studies / v 28 n 3 2015
+Table 4
+Signiﬁcant anomalies in the broad cross section: Pricing errors and tests of overall performance
+SUE-1 SUE-6 Abr-1 Abr-6 RE-1 RE-6 R6-6 R11-1 I-Mom B/M E/P CF/P NO/P Dur I/A NOA △ PI/A IG
+m 0.45 0 .24 0 .73 0 .30 0 .89 0 .60 0 .85 1 .18 0 .51 0 .70 0 .59 0 .52 0 .66 −0.54 −0.42 −0.38 −0.51 −0.41
+α 0.50 0 .27 0 .76 0 .31 1 .02 0 .71 0 .92 1 .29 0 .58 0 .75 0 .69 0 .63 0 .84 −0.62 −0.50 −0.38 −0.57 −0.45
+αFF 0.55 0 .39 0 .84 0 .38 1 .20 0 .94 1 .12 1 .52 0 .68 0 .01 0 .05 0 .01 0 .52 −0.06 −0.15 −0.52 −0.41 −0.26
+αC 0.34 0 .18 0 .62 0 .19 0 .56 0 .37 0 .06 0 .09 −0.18 −0.01 0 .01 −0.06 0 .49 −0.08 −0.09 −0.41 −0.36 −0.20
+αq 0.16 0 .02 0 .64 0 .26 0 .12 0 .03 0 .24 0 .24 0 .00 0 .21 0 .17 0 .22 0 .36 −0.27 0 .14 −0.38 −0.26 0 .05
+tm 3.59 2 .17 5 .50 3 .11 3 .43 2 .58 3 .17 3 .52 2 .33 2 .88 2 .63 2 .44 3 .23 −2.59 −2.45 −2.55 −3.43 −2.93
+t 4.26 2 .68 5 .84 3 .33 4 .13 3 .28 3 .63 4 .18 2 .68 3 .05 3 .12 3 .01 4 .45 −2.98 −2.94 −2.52 −3.91 −3.16
+tFF 4.50 3 .62 5 .93 3 .89 4 .81 4 .52 4 .47 4 .99 3 .25 0 .04 0 .34 0 .08 3 .51 −0.44 −1.09 −3.30 −2.93 −1.99
+tC 2.62 1 .69 4 .37 2 .06 2 .56 2 .15 0 .51 0 .67 −1.11 −0.06 0 .03 −0.40 3 .33 −0.56 −0.61 −2.69 −2.48 −1.51
+tq 1.12 0 .18 4 .07 2 .18 0 .43 0 .14 0 .71 0 .54 0 .01 1 .15 0 .76 1 .04 2 .38 −1.32 1 .08 −1.90 −1.85 0 .39
+|α| 0.16 0 .11 0 .13 0 .08 0 .19 0 .14 0 .17 0 .21 0 .16 0 .22 0 .23 0 .20 0 .23 0 .24 0 .17 0 .15 0 .15 0 .13
+|αFF | 0.17 0 .13 0 .16 0 .11 0 .27 0 .23 0 .19 0 .26 0 .15 0 .07 0 .10 0 .08 0 .17 0 .11 0 .12 0 .17 0 .13 0 .13
+|αC| 0.11 0 .09 0 .12 0 .08 0 .11 0 .09 0 .10 0 .13 0 .06 0 .06 0 .09 0 .07 0 .15 0 .08 0 .10 0 .14 0 .12 0 .11
+|αq| 0.05 0 .07 0 .13 0 .07 0 .10 0 .11 0 .08 0 .13 0 .13 0 .08 0 .10 0 .14 0 .12 0 .08 0 .09 0 .12 0 .14 0 .09
+p 0.00 0 .00 0 .00 0 .01 0 .04 0 .21 0 .00 0 .00 0 .09 0 .04 0 .01 0 .05 0 .00 0 .00 0 .00 0 .00 0 .00 0 .00
+pFF 0.00 0 .00 0 .00 0 .00 0 .00 0 .00 0 .00 0 .00 0 .09 0 .19 0 .18 0 .43 0 .00 0 .15 0 .01 0 .00 0 .00 0 .00
+pC 0.00 0 .00 0 .00 0 .01 0 .16 0 .12 0 .00 0 .00 0 .45 0 .29 0 .38 0 .37 0 .00 0 .41 0 .02 0 .00 0 .01 0 .00
+pq 0.42 0 .04 0 .00 0 .02 0 .46 0 .08 0 .00 0 .01 0 .03 0 .35 0 .13 0 .02 0 .00 0 .72 0 .01 0 .00 0 .00 0 .01
+(continued)
+668
+
+--- PAGE 20 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 669 650–705
+Digesting Anomalies: An Investment Approach
+Table 4
+Continued
+NSI CEI IvG IvC OA POA PTA ROE ROA GP/A NEI FP OC/A Ad/M RD/M OL Svol
+m −0.68 −0.57 −0.41 −0.45 −0.30 −0.46 −0.40 0 .80 0 .62 0 .34 0 .39 −0.67 0 .56 0 .79 0 .63 0 .39 −0.60
+α −0.78 −0.79 −0.47 −0.51 −0.33 −0.53 −0.50 0 .96 0 .78 0 .32 0 .40 −1.06 0 .65 0 .82 0 .47 0 .44 −0.72
+αFF −0.64 −0.50 −0.29 −0.38 −0.37 −0.32 −0.29 1 .17 1 .00 0 .50 0 .63 −1.44 0 .61 0 .15 0 .22 0 .37 −0.66
+αC −0.54 −0.40 −0.19 −0.30 −0.33 −0.25 −0.27 0 .85 0 .67 0 .45 0 .43 −0.67 0 .40 0 .32 0 .31 0 .33 −0.62
+αq −0.26 −0.22 −0.03 −0.28 −0.56 −0.12 −0.10 0 .05 0 .09 0 .11 0 .18 −0.17 0 .09 0 .11 0 .60 −0.05 −0.37
+tm −4.13 −2.96 −2.77 −3.05 −2.32 −3.02 −2.57 3 .11 2 .70 2 .18 3 .31 −1.98 4 .07 2 .96 2 .31 2 .06 −2.57
+t −4.86 −4.79 −3.29 −3.35 −2.47 −3.64 −3.50 4 .02 3 .67 2 .02 3 .45 −3.80 4 .69 3 .08 1 .81 2 .22 −3.12
+tFF −4.28 −3.72 −2.10 −2.61 −2.84 −2.42 −2.06 5 .43 5 .40 3 .25 6 .03 −6.44 4 .52 0 .79 0 .93 1 .91 −2.88
+tC −3.58 −2.93 −1.34 −1.97 −2.32 −1.88 −1.82 4 .03 3 .59 2 .85 3 .73 −3.79 2 .97 1 .37 1 .40 1 .76 −2.59
+tq −1.75 −1.50 −0.20 −1.84 −3.90 −0.87 −0.67 0 .37 0 .72 0 .71 1 .68 −0.57 0 .66 0 .39 2 .40 −0.27 −1.42
+|α| 0.18 0 .19 0 .14 0 .16 0 .15 0 .12 0 .12 0 .18 0 .15 0 .06 0 .19 0 .16 0 .14 0 .23 0 .13 0 .11 0 .18
+|αFF | 0.18 0 .15 0 .11 0 .12 0 .13 0 .11 0 .11 0 .24 0 .23 0 .14 0 .23 0 .23 0 .15 0 .13 0 .17 0 .11 0 .19
+|αC| 0.15 0 .15 0 .10 0 .10 0 .12 0 .11 0 .10 0 .15 0 .14 0 .14 0 .15 0 .12 0 .13 0 .18 0 .21 0 .12 0 .16
+|αq| 0.11 0 .12 0 .11 0 .08 0 .15 0 .12 0 .08 0 .09 0 .07 0 .11 0 .09 0 .13 0 .11 0 .11 0 .27 0 .12 0 .11
+p 0.00 0 .00 0 .01 0 .00 0 .00 0 .01 0 .01 0 .01 0 .07 0 .25 0 .00 0 .00 0 .00 0 .04 0 .24 0 .54 0 .01
+pFF 0.00 0 .00 0 .03 0 .01 0 .00 0 .00 0 .01 0 .00 0 .00 0 .01 0 .00 0 .00 0 .00 0 .18 0 .02 0 .07 0 .01
+pC 0.00 0 .00 0 .11 0 .04 0 .00 0 .01 0 .02 0 .00 0 .04 0 .01 0 .00 0 .00 0 .00 0 .07 0 .01 0 .06 0 .06
+pq 0.02 0 .01 0 .08 0 .56 0 .00 0 .00 0 .11 0 .05 0 .75 0 .38 0 .05 0 .00 0 .02 0 .07 0 .00 0 .09 0 .20
+For each anomaly variable, m,α,αFF ,αC , and αq are the average return, the CAPM alpha, the Fama-French alpha, the Carhart alpha, and the q-alpha for the high-minus-low decile, and
+tm,t,t FF ,tC , andtq are theirt-statistics adjusted for heteroscedasticity and autocorrelations, respectively.|α|,|αFF |, |αC|, and|αq| are the average magnitude of the alphas, andp,pFF ,pC ,
+andpq are thep-values of the GRS test on the null hypothesis that all of the alphas are jointly zero across the deciles formed on the variable. Table 2 provides a brief description of the symbols.
+669
+
+--- PAGE 21 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 670 650–705
+The Review of Financial Studies / v 28 n 3 2015
+the 5% level. In contrast, 19 high-minus-low deciles have signiﬁcant Carhart
+alphas, and 27 have signiﬁcant Fama-French alphas.
+To measure a model’s overall performance, we also use the mean absolute
+value of alphas across the deciles formed on a given anomaly variable, as well as
+the p-value associated with the GRS test (on the null that the alphas are jointly
+zero across a given set of deciles). Table 4 shows that the q-factor model has
+the lowest average magnitude of alphas across all 35 sets of deciles, 0.11% per
+month. The average magnitude is 0.12% in the Carhart model and 0.16% in the
+Fama-French model. In addition, the GRS test rejects the q-factor model at the
+5% level in 20 out of 35 sets of deciles, the Carhart model in 24 sets of deciles,
+and the Fama-French model in 28 sets of deciles.
+Looking at different categories of anomalies, we observe that the q-factor
+model outperforms the Fama-French and Carhart models in all except for the
+value-versus-growth category, in which the 3 models are largely comparable.
+Across the 9 anomalies in the momentum category, the average magnitude of
+the high-minus-low alphas is 0.19% per month in the q-factor model, 0.29% in
+the Carhart model, and 0.85% in the Fama-French model. Out of 9 high-minus-
+low deciles, 2 have signiﬁcant alphas in the q-factor model, in contrast to 5 in
+the Carhart model and all 9 in the Fama-French model. Across the 9 sets of
+momentum deciles, the average magnitude of the alphas is 0.10% in both the
+q-factor model and the Carhart model but 0.19% in the Fama-French model.
+The GRS test rejects the q-factor model and the Carhart model in 6 out of 9
+sets of deciles, but rejects the Fama-French model in all 9.
+Across the 5 value-versus-growth anomalies, the high-minus-low net payout
+yield decile has signiﬁcant alphas in all 3 models. However, the high-minus-
+low q-alpha is 0.36% per month, which is lower than the Carhart alpha, 0.49%,
+and the Fama-French alpha, 0.52%. All 3 models are rejected by the GRS
+test across the net payout yield deciles. In addition, none of the high-minus-
+low alphas for the book-to-market, earnings-to-price, cash ﬂow-to-price, and
+duration deciles are signiﬁcant in the q-factor model, the Carhart model, or
+the Fama-French model. The GRS statistics are mostly insigniﬁcant. However,
+while the q-factor model is rejected across the cash ﬂow-to-price deciles, the
+Carhart and Fama-French models are not.
+In the investment category, only 1 out of 11 high-minus-low q-alpha is
+signiﬁcant, compared to 6 Carhart alphas and 10 Fama-French alphas. The
+average magnitude of the high-minus-low alphas is 0.22% per month in the
+q-factor model, which is lower than 0.30% in the Carhart model and 0.38% in
+the Fama-French model. However, all 3 models are rejected by the GRS test in
+most sets of deciles in the investment category. The q-factor model performs
+the best in the proﬁtability category. None of the 5 high-minus-low alphas are
+signiﬁcant in the q-factor model, but all 5 are signiﬁcant in the Carhart and
+Fama-French models. The average magnitude of the high-minus-low alphas is
+0.12% in the q-factor model, which is substantially lower than 0.61% in the
+Carhart model and 0.95% in the Fama-French model. The q-factor model is
+670
+
+--- PAGE 22 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 671 650–705
+Digesting Anomalies: An Investment Approach
+rejected by the GRS test in only 1 out of 5 sets of deciles, but the Carhart and
+Fama-French models are rejected in all 5.
+However, the q-factor model underperforms the Fama-French and Carhart
+models in ﬁtting Sloan (1996) operating accrual anomaly (see Section 3.2.2)
+and Chan, Lakonishok, and Sougiannis (2001) R&D-to-market anomaly. In
+particular, the high-minus-low R&D-to-market decile earns an average return
+of 0.63% per month (t =2.31). The Fama-French alpha is 0.22% ( t =0.93), the
+Carhart alpha is 0.31% ( t =1.40), but the q-alpha is 0.60% (t =2.40).
+Finally, as noted, we include the size factor in the q-factor model to bring it
+to the same footing as the Carhart model in terms of the number of factors.
+Including the size factor helps the q-factor model ﬁt the average returns
+across the size deciles. The small-minus-big decile earns an average return
+of 0.24% per month (t =0.90). The Fama-French and Carhart alphas are small
+and insigniﬁcant. The q-alpha is tiny, 0 .03% (t =0.29), but would be 0 .66%
+(t =2.16) without the size factor.
+More importantly, however, the incremental effect of the size factor in
+capturing the 35 signiﬁcant anomalies is rather limited, probably because the
+anomaly variables are not directly related to size. Table 5 replicates Table 4,
+but for an alternative 3-factor q-model without the size factor. As noted, the
+magnitude of the high-minus-low alphas averaged across the 35 anomalies is
+0.20% per month in the 4-factor q-model. Dropping the size factor raises it to
+0.23%, which still beats 0.33% in the Carhart model and 0.55% in the Fama-
+French model. The mean absolute alpha averaged across the deciles is 0.11% in
+the 4-factorq-model. Dropping the size factor raises it to only 0.12%, compared
+to 0.12% in the Carhart model and 0.16% in the Fama-French model.
+Overall, except for the operating accrual and R&D-to-market anomalies,
+the q-factor model performs as well as, and often outperforms the Fama-
+French and Carhart models across major categories of anomalies. The
+q-factor model beats the Carhart model and by a bigger margin the Fama-French
+model in the momentum category. The q-factor model also outperforms in the
+investment category and dominates the 2 competing models in the proﬁtability
+category. The 3 models are largely comparable in the value-versus-growth
+category. Finally, the size factor plays only a limited role in theq-factor model’s
+success.
+3.1.4 Q-factor loadings and economic fundamentals. To shed light on the
+sources of the superior performance of the q-factor model, we examine the
+q-factor loadings and their underlying characteristics, including size,
+investment-to-assets, and ROE for the high-minus-low deciles. We align
+the timing of characteristics with the timing of portfolio returns as in the
+construction of the q-factors. In particular, for size and investment-to-assets,
+we align returns from July of year t to June of t +1 with size at the end of June
+of year t and investment-to-assets for the ﬁscal year ending in calendar year
+671
+
+--- PAGE 23 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 672 650–705
+The Review of Financial Studies / v 28 n 3 2015
+Table 5
+Signiﬁcant anomalies in the broad cross section: An alternative q-factor model without the size factor
+SUE-1 SUE-6 Abr-1 Abr-6 RE-1 RE-6 R6-6 R11-1 I-Mom B/M E/P CF/P NO/P Dur I/A NOA △ PI/A IG
+αq
+3 0.21 0 .07 0 .67 0 .30 0 .05 −0.05 0 .37 0 .42 0 .15 0 .42 0 .29 0 .30 0 .21 −0.38 0 .09 −0.35 −0.28 0 .00
+tq
+3 1.43 0 .42 3 .95 2 .48 0 .18 −0.22 0 .96 0 .85 0 .48 2 .13 1 .21 1 .42 1 .26 −1.72 0 .68 −1.71 −2.00 0 .00
+|αq
+3 | 0.05 0 .07 0 .12 0 .08 0 .14 0 .15 0 .10 0 .16 0 .09 0 .11 0 .12 0 .15 0 .12 0 .11 0 .09 0 .12 0 .11 0 .13
+pq
+3 0.62 0 .13 0 .00 0 .00 0 .20 0 .02 0 .00 0 .00 0 .10 0 .15 0 .04 0 .01 0 .01 0 .31 0 .01 0 .01 0 .03 0 .00
+NSI CEI IvG IvC OA POA PTA ROE ROA GP/A NEI FP OC/A Ad/M RD/M OL Svol
+αq
+3 −0.18 −0.10 0 .03 −0.28 −0.44 −0.06 −0.01 −0.14 −0.09 0 .12 0 .14 0 .03 0 .21 0 .37 0 .89 0 .07 −0.25
+tq
+3 −1.18 −0.65 0 .23 −1.86 −2.83 −0.38 −0.05 −0.84 −0.60 0 .79 1 .26 0 .09 1 .31 1 .24 2 .86 0 .37 −0.91
+|αq
+3 | 0.10 0 .12 0 .15 0 .11 0 .13 0 .09 0 .11 0 .10 0 .09 0 .12 0 .10 0 .17 0 .13 0 .12 0 .30 0 .12 0 .11
+pq
+3 0.04 0 .01 0 .01 0 .26 0 .02 0 .07 0 .04 0 .03 0 .55 0 .36 0 .05 0 .00 0 .01 0 .06 0 .00 0 .11 0 .12
+For each anomaly variable, αq
+3 is the high-minus-low alpha from an alternative 3-factor q-model without the size factor, and tq
+3 is the t-statistics adjusted for heteroscedasticity and
+autocorrelations. |αq
+3 | is the average magnitude of the alphas across a given set of deciles, and pq
+3 is the p-value of the GRS test on the null hypothesis that all of the alphas are jointly zero
+across a given set of deciles. Table 2 provides a brief description of the symbols.
+672
+
+--- PAGE 24 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 673 650–705
+Digesting Anomalies: An Investment Approach
+t −1. For ROE, we align returns for month t with the ROE calculated with the
+most recently announced quarterly earnings.
+Firm-level characteristics are aggregated to the portfolio level as in Fama
+and French (1995). Size is the average market capitalization (in billions of
+dollars) across all ﬁrms in a given decile. Investment-to-assets (in percent) is
+the sum of changes in total assets across all ﬁrms in a given decile divided
+by the sum of 1-year-lagged assets across the same set of ﬁrms. ROE (in
+percent) is the sum of the most recently announced quarterly earnings across
+all ﬁrms in a given decile divided by the sum of their 1-quarter-lagged book
+equity.
+Table 6 shows that many signiﬁcant anomalies in Table 4 are basically
+different combinations of the investment and ROE effects. The ﬁrst 9 columns
+in the upper panel suggest that price and earnings momentum are mainly
+linked to the ROE factor. Across the 9 high-minus-low deciles, the ROE factor
+loadings vary from 0.18 to 1.48, all of which are signiﬁcant. Consistent with
+the pattern in ROE factor loadings, the spreads in ROE characteristic between
+winners and losers are economically large, ranging from 1.49% to 6.58% per
+quarter. In contrast, the investment factor loadings are mostly insigniﬁcant for
+the high-minus-low deciles.
+The next 5 columns (from “B/M” to “Dur”) in the upper panel of Table 6 show
+that the value-versus-growth anomalies are mainly linked to the investment
+factor. The loadings vary from−0.85 to 1.45 across the high-minus-low deciles,
+all of which are more than 5 standard errors from zero. Accordingly, the
+corresponding spreads in investment-to-assets vary from −14.43% to 3.95%
+per annum. In contrast, the ROE factor loadings for the high-minus-low deciles
+are mostly insigniﬁcant.
+The last 4 columns in the upper panel and the ﬁrst 7 columns in the lower panel
+show that the investment, equity ﬁnancing, inventory, and accrual anomalies
+are primarily linked to the investment factor. The net operating assets (NOA)
+anomaly is one exception, for which none of the factor loadings are signiﬁcant
+for the high-minus-low decile. Leaving aside NOA and operating accruals
+(OA, which we examine in depth in Section 3.2.2), the investment factor
+loadings vary from −0.65 to −1.37 across the high-minus-low deciles, all
+of which are more than 5 standard errors from zero. The corresponding spreads
+in investment-to-assets are also economically large, varying from 11.12% to
+83.89% per annum. In addition, similar to the value-versus-growth deciles, the
+ROE factor loadings for the high-minus-low deciles in the investment category
+are mostly insigniﬁcant.
+The next 5 columns (from “ROE” to “FP”) show that the proﬁtability and
+distress anomalies are captured by the ROE factor. The ROE factor loadings
+of the high-minus-low deciles vary from −1.62 to 1.50, all of which are more
+than 7 standard errors from zero. The corresponding ROE spreads are large,
+ranging from −8.74% per quarter to 16.95%. In contrast, the investment factor
+loadings are all small and often insigniﬁcant.
+673
+
+--- PAGE 25 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 674 650–705
+The Review of Financial Studies / v 28 n 3 2015
+Table 6
+Q-factor loadings and underlying characteristics for signiﬁcant anomalies in the broad cross section
+SUE-1 SUE-6 Abr-1 Abr-6 RE-1 RE-6 R6-6 R11-1 I-Mom B/M E/P CF/P NO/P Dur I/A NOA △ PI/A IG
+βMKT −0.08 −0.06 −0.06 −0.03 −0.05 −0.07 −0.09 −0.14 −0.11 −0.03 −0.12 −0.15 −0.18 0 .11 0 .02 −0.02 0 .05 −0.02
+βME 0.10 0 .09 0 .07 0 .09 −0.15 −0.19 0 .27 0 .40 0 .31 0 .46 0 .25 0 .19 −0.32 −0.23 −0.11 0 .06 −0.05 −0.11
+βI/A 0.02 −0.11 −0.13 −0.16 0 .04 −0.12 −0.07 0 .04 −0.03 1 .45 0 .99 1 .01 1 .03 −0.85 −1.37 −0.01 −0.77 −0.82
+βROE 0.48 0 .45 0 .28 0 .18 1 .33 1 .12 1 .02 1 .48 0 .82 −0.51 −0.09 −0.24 0 .02 0 .24 0 .15 −0.01 0 .16 −0.07
+tβMKT −1.82 −1.53 −1.31 −1.20 −0.76 −1.24 −1.17 −1.43 −1.72 −0.59 −2.02 −2.41 −3.86 1 .67 0 .62 −0.55 1 .33 −0.71
+tβME 1.94 1 .27 0 .67 1 .82 −1.42 −1.98 1 .43 1 .74 1 .86 5 .37 1 .90 1 .66 −4.40 −1.61 −1.81 0 .54 −0.94 −1.95
+tβI/A 0.18 −0.97 −1.25 −2.24 0 .25 −0.82 −0.27 0 .12 −0.13 12 .74 5 .76 6 .79 10 .25 −5.69 −15.50 −0.04 −6.98 −10.91
+tβROE 5.75 5 .95 3 .26 2 .94 10 .09 9 .96 5 .31 5 .67 4 .90 −5.98 −0.66 −1.78 0 .19 1 .87 2 .29 −0.12 1 .93 −1.06
+ME 0.69 0 .75 −0.01 0 .03 0 .77 0 .87 0 .40 0 .52 0 .62 −2.46 −0.73 −0.89 1 .23 0 .41 0 .88 0 .07 0 .63 0 .22
+I/A −1.46 −0.96 −1.37 −1.13 −0.80 0 .72 −4.07 −3.83 −1.18 −9.70 −1.11 −5.63 −14.43 3 .95 83 .89 55 .72 61 .16 34 .03
+ROE 5.80 3 .38 1 .59 1 .49 6 .58 6 .47 4 .14 5 .34 1 .61 −5.68 0 .21 −0.72 1 .18 0 .49 1 .63 −1.24 0 .84 0 .50
+tME 4.91 5 .38 −0.29 1 .31 8 .75 9 .65 4 .92 4 .95 3 .67 −10.31 −4.09 −4.57 7 .74 5 .23 7 .75 1 .71 7 .56 6 .16
+tI/A −3.30 −2.57 −2.36 −2.58 −1.22 1 .13 −5.54 −4.66 −1.79 −17.06 −1.20 −5.47 −13.81 2 .73 32 .74 18 .28 30 .77 22 .38
+tROE 16.46 19 .07 13 .38 15 .47 29 .77 27 .86 16 .00 17 .06 10 .24 −29.57 1 .30 −4.83 7 .27 2 .22 10 .00 −7.89 5 .10 3 .24
+NSI CEI IvG IvC OA POA PTA ROE ROA GP/A NEI FP OC/A Ad/M RD/M OL Svol
+βMKT 0.04 0 .24 −0.03 0 .04 0 .03 −0.01 0 .06 −0.10 −0.14 0 .05 0 .02 0 .44 −0.13 0 .04 0 .16 −0.06 0 .04
+βME 0.17 0 .26 0 .12 0 .00 0 .28 0 .15 0 .21 −0.41 −0.38 0 .03 −0.10 0 .43 0 .25 0 .50 0 .66 0 .26 0 .31
+βI/A −0.68 −1.06 −0.96 −0.65 −0.02 −0.90 −0.90 0 .10 −0.10 −0.24 −0.30 0 .17 0 .35 1 .42 0 .21 0 .16 −0.21
+βROE −0.32 −0.12 0 .05 0 .18 0 .29 0 .05 0 .04 1 .50 1 .31 0 .52 0 .63 −1.61 0 .51 −0.27 −0.58 0 .54 −0.43
+tβMKT 0.99 6 .27 −0.77 1 .01 0 .80 −0.19 1 .50 −2.57 −4.48 1 .20 0 .88 6 .46 −3.74 0 .50 2 .51 −1.22 0 .53
+tβME 2.24 3 .79 2 .85 −0.07 4 .41 3 .20 3 .28 −6.56 −6.41 0 .51 −2.53 2 .45 5 .69 2 .85 6 .75 2 .63 2 .30
+tβI/A −6.14 −13.11 −11.81 −5.49 −0.21 −9.61 −8.72 1 .05 −1.23 −2.35 −3.78 0 .63 3 .52 6 .03 1 .21 1 .34 −1.30
+tβROE −4.07 −1.42 0 .56 1 .95 4 .59 1 .04 0 .55 20 .71 16 .86 7 .08 10 .83 −8.79 7 .12 −1.37 −4.10 4 .85 −3.54
+ME −1.37 −1.79 0 .26 0 .19 −0.24 −0.36 −0.36 2 .81 2 .66 0 .39 2 .34 −3.09 −1.31 −1.34 −4.39 −1.31 −0.19
+I/A2 7 .04 14 .80 37 .85 44 .80 10 .15 11 .12 16 .14 3 .56 5 .32 −1.29 5 .35 −3.91 −13.77 −10.71 −3.22 −5.71 0 .66
+ROE −1.71 −1.41 0 .42 1 .07 0 .88 1 .02 0 .36 16 .95 14 .71 3 .94 4 .32 −8.74 1 .52 −3.33 −2.80 1 .86 −0.64
+tME −6.44 −7.77 4 .27 4 .86 −5.13 −9.39 −6.76 10 .56 10 .50 10 .84 11 .58 −10.76 −9.44 −9.83 −9.47 −8.43 −3.95
+tI/A 13.85 14 .37 23 .42 34 .89 5 .19 7 .90 12 .93 4 .16 6 .88 −2.05 11 .45 −4.18 −11.38 −12.17 −2.54 −4.70 1 .37
+tROE −11.87 −9.07 3 .31 8 .13 5 .06 7 .42 2 .56 29 .02 27 .97 23 .88 27 .36 −25.56 7 .97 −12.60 −9.21 11 .42 −4.03
+For the high-minus-low decile formed on each anomaly variable, βMKT,βME,βI/A , and βROE are the loadings on the market, size, investment, and ROE factors in the q-factor model, and
+tβMKT ,tβME ,tβI/A , and tβROE are their t-statistics, respectively. ME is the average market capitalization (in billions of dollars) across all ﬁrms in the high decile, minus that in the low
+decile. I/A (in percent) is the sum of changes in assets across all ﬁrms in the high decile divided by the sum of their 1-year-lagged assets, minus the sum of changes i n assets across all
+ﬁrms in the low decile divided by the sum of their 1-year-lagged assets. ROE (in percent) is the sum of the latest announced quarterly earnings across al l ﬁrms in the high decile divided by
+the sum of their 1-quarter-lagged book equity, minus the sum of the latest announced quarterly earnings across all ﬁrms in the low decile divided by the sum of their 1-quarter-lagged book
+equity. tME, tI/A , and tROE are the corresponding t-statistics. All t-statistics are adjusted for heteroscedasticity and autocorrelations. Table 2 provides a brief description of the symbols.
+674
+
+--- PAGE 26 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 675 650–705
+Digesting Anomalies: An Investment Approach
+We comment on 3 results from the remaining columns in the lower panel.
+First, the organizational capital (OC) effect can be captured by the q-factor
+model. The high-minus-low decile has an investment factor loading of 0.35
+(t =3.52) and an ROE factor loading of 0.51 ( t =7.12). Consistent with the
+loadings, despite being more proﬁtable by 1.52% per quarter, high OC ﬁrms
+invest less than low OC ﬁrms by 13.77% per annum. As a result, the q-factor
+model does a good job in ﬁtting the average return spread of 0.56% per month
+(t =4.07), leaving an alpha of 0.09% (t =0.66, Table 4). In contrast, the Carhart
+alpha is 0.40% (t =2.97), and the Fama-French alpha is 0.61% ( t =4.52).
+Second, column “R&D/M” in Table 6 sheds light on why theq-factor model
+fails to capture the R&D-to-market anomaly. High R&D ﬁrms have lower ROE
+than low R&D ﬁrms, with a spread of 2.80% per quarter. Intuitively, because
+R&D is expensed per standard accounting practice, high R&D expenses give
+rise to artiﬁcially low ROE. As a result, the ROE factor loading of the high-
+minus-low R&D/M decile is −0.58 ( t =−4.10), which goes in the wrong
+direction in ﬁtting the average returns. Adjusting the earnings data for R&D
+ﬁrms by capitalizing instead of expensing R&D might improve the q-factor
+model’s performance in ﬁtting this anomaly.
+Third, the ROE factor largely captures the Ang et al. (2006) systematic
+volatility (Svol) effect. As shown in Table 4, the high-minus-low Svol decile
+earns a signiﬁcant average return of −0.60% per month. Whereas the Carhart
+model leaves a signiﬁcant alpha of −0.62%, the q-factor model delivers an
+insigniﬁcant alpha of −0.37% (t =−1.42). From the last column in Table 6,
+the high-minus-low decile has an ROE factor loading of −0.43 (t =−3.54) and
+an ROE spread of −0.64% per quarter. In contrast, both the investment factor
+loading and the investment-to-assets spread are insigniﬁcant.
+11
+Overall, many anomalies are basically different manifestations of the
+investment and ROE effects. The ROE factor is the main source of the q-
+factor model’s empirical power to capture anomalies in the momentum and
+proﬁtability categories. The investment factor is the main source for capturing
+anomalies in the value-versus-growth and investment categories. Finally, a
+combination of the 2 factors helps the q-factor model ﬁt the other anomalies.
+3.2 Detailed results for selected anomalies
+In this subsection, we report more detailed results for earnings and price
+momentum, which are classic anomalies to the Fama-French model. We also
+present detailed results for the accrual anomaly, which the q-factor model fails
+11 The Ang et al. (2006) idiosyncratic volatility (Ivol) anomaly has received more attention in the literature than
+their Svol effect. As shown in Table 3, the high-minus-low Ivol decile earns an average return of −0.54% per
+month (t =−1.56). In the Online Appendix, we show that the high-minus-low Ivol decile has a Fama-French
+alpha of −0.92% (t =−4.66) and a Carhart alpha of −0.59% (t =−2.75). The q-alpha is only −0.08% (t =−0.39).
+Differing from the Svol effect, both q-factors help capture the Ivol anomaly. The investment and ROE factor
+loadings of the high-minus-low Ivol decile are both −0.94 and are more than 5 standard errors from zero.
+675
+
+--- PAGE 27 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 676 650–705
+The Review of Financial Studies / v 28 n 3 2015
+to capture, as well as the 25 size and book-to-market portfolios, which are the
+key testing portfolios for Fama and French (1993, 1996). 12
+3.2.1 Earnings momentum (SUE-1) and price momentum (R6-6). Table 7
+reports factor regressions for individual SUE-1 and R6-6 deciles. Across the
+SUE-1 deciles, 5 have signiﬁcant alphas in the Fama-French model versus 3
+in the Carhart model and 1 in the q-factor model. Across the R6-6 deciles, 4
+alphas are signiﬁcant in the Fama-French model versus 3 in the Carhart model
+and zero in the q-factor model.
+The q-factor model captures momentum via the ROE factor. Moving from
+SUE-1 decile 1 to 10, the ROE factor loadings increase from −0.22 to 0.26,
+and moving from R6-6 decile 1 to 10, the loadings increase from−0.74 to 0.28.
+Accordingly, moving from SUE-1 decile 1 to 10, ROE increases from −0.80%
+to 5.00% per quarter, and moving from R6-6 decile 1 to 10, it increases from
+−0.71% to 3.43%. Intuitively, earnings and price momentum winners are more
+proﬁtable and load more heavily on the ROE factor than earnings and price
+momentum losers, respectively.
+Chan, Jegadeesh, and Lakonishok (1996) show that momentum proﬁts are
+short-lived. To examine this issue, we calculate the returns of earnings and
+price momentum deciles for holding periods longer than 6 months. At the
+beginning of month t, we sort all stocks on their most recent SUE and calculate
+value-weighted decile returns for the holding periods from month t to t +1 1,
+from t +12 to t +35, and from t +36 to t +59. In addition, at the beginning
+of month t, we sort all stocks on their prior 6-month returns from t −7t o
+t −2, skipping month t −1, and calculate value-weighted decile returns for the
+holding periods from month t to t +11, from t +12 to t +35, and from t +36 to
+t +59. We call these portfolios designed to capture the reversal of momentum
+proﬁts momentum-reversal deciles.
+Conﬁrming the short-lived nature of momentum, Table 8 shows that none
+of the earnings momentum-reversal high-minus-low deciles earn signiﬁcant
+average returns. Except for the 12-month holding period, the price momentum-
+reversal high-minus-low deciles do not earn signiﬁcant average returns either.
+More importantly, the q-factor model succeeds in capturing the short-lived
+nature of momentum. In particular, the q-factor model does not produce
+signiﬁcant alphas for any of the momentum-reversal high-minus-low deciles.
+3.2.2 Operating accruals (OA) and percent operating accruals (POA).
+Sloan (1996) shows that ﬁrms with high operating accruals earn lower average
+returns than ﬁrms with low operating accruals. Accruals are often scaled by
+lagged assets or average assets over the prior 2 years. Hafzalla, Lundholm, and
+12 The q-factor model’s performance across the Fama-French (1997) 10 industry portfolios is largely comparable
+to that of the Fama-French model and that of the Carhart model (see the Online Appendix).
+676
+
+--- PAGE 28 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 677 650–705
+Digesting Anomalies: An Investment Approach
+Table 7
+Earnings momentum (SUE-1) and price momentum (R6-6) deciles
+Panel A: SUE-1 Panel B: R6-6
+L o w 23456789 H i g h L o w 23456789 H i g h
+m 0.36 0 .34 0 .35 0 .28 0 .44 0 .43 0 .64 0 .64 0 .64 0 .80 0 .02 0 .28 0 .45 0 .52 0 .46 0 .47 0 .50 0 .55 0 .66 0 .87
+α −0.13 −0.15 −0.15 −0.20 −0.01 −0.03 0 .20 0 .18 0 .19 0 .38 −0.61 −0.24 −0.02 0 .07 0 .03 0 .04 0 .07 0 .11 0 .18 0 .31
+αFF −0.12 −0.15 −0.15 −0.18 −0.01 −0.02 0 .21 0 .24 0 .21 0 .43 −0.68 −0.29 −0.07 0 .03 −0.01 0 .01 0 .05 0 .10 0 .21 0 .44
+αC 0.00 −0.06 −0.07 −0.10 0 .01 0 .02 0 .21 0 .16 0 .13 0 .34 −0.03 0 .16 0 .25 0 .24 0 .11 0 .03 −0.02 −0.05 −0.04 0 .03
+tm 1.47 1 .41 1 .36 1 .17 2 .00 1 .86 3 .01 3 .06 2 .96 3 .89 0 .06 1 .02 1 .89 2 .38 2 .24 2 .37 2 .49 2 .58 2 .85 2 .83
+t −1.39 −1.92 −1.88 −2.38 −0.18 −0.35 2 .58 2 .54 2 .64 5 .14 −3.60 −2.07 −0.28 1 .00 0 .47 0 .84 1 .61 1 .78 2 .40 2 .13
+tFF −1.29 −1.73 −1.75 −2.30 −0.08 −0.28 2 .81 3 .43 2 .87 5 .86 −4.34 −2.49 −0.89 0 .40 −0.23 0 .18 0 .92 1 .64 2 .76 3 .38
+tC 0.01 −0.69 −0.80 −1.18 0 .07 0 .29 2 .63 2 .13 1 .69 4 .55 −0.29 2 .18 4 .24 4 .27 1 .77 0 .55 −0.27 −0.88 −0.63 0 .34
+The q-factor model regressions The q-factor model regressions
+αq 0.05 0 .00 0 .04 0 .05 0 .00 −0.03 0 .09 0 .02 0 .04 0 .21 0 .00 0 .04 0 .11 0 .11 −0.01 −0.07 −0.10 −0.11 −0.04 0 .24
+βMKT 1.03 1 .00 1 .02 0 .94 0 .96 0 .98 0 .98 1 .01 0 .97 0 .95 1 .19 1 .05 1 .00 0 .96 0 .94 0 .94 0 .95 0 .97 1 .03 1 .10
+βME −0.16 0 .04 0 .00 0 .02 0 .00 −0.04 −0.05 −0.03 0 .01 −0.05 0 .16 −0.04 −0.08 −0.08 −0.06 −0.05 −0.02 0 .04 0 .13 0 .43
+βI/A 0.00 −0.16 −0.12 −0.25 0 .06 0 .03 0 .06 0 .07 0 .06 0 .02 −0.34 −0.08 0 .02 0 .07 0 .09 0 .14 0 .16 0 .12 0 .02 −0.40
+βROE −0.22 −0.12 −0.20 −0.19 −0.06 −0.01 0 .13 0 .21 0 .20 0 .26 −0.74 −0.36 −0.20 −0.09 0 .00 0 .09 0 .15 0 .23 0 .28 0 .28
+tq 0.42 −0.04 0 .37 0 .53 −0.04 −0.32 1 .21 0 .31 0 .44 2 .63 −0.02 0 .24 0 .92 1 .21 −0.09 −1.32 −1.73 −1.71 −0.45 1 .34
+tβMKT 32.75 39 .64 39 .24 34 .70 43 .64 41 .42 51 .90 55 .30 42 .68 37 .45 24 .15 25 .44 35 .35 40 .62 42 .64 49 .23 55 .21 55 .07 38 .75 27 .49
+tβME −3.61 0 .97 0 .09 0 .55 0 .09 −0.85 −1.37 −1.22 0 .18 −1.50 1 .42 −0.48 −1.23 −1.76 −1.22 −1.25 −0.53 1 .50 3 .25 4 .71
+tβI/A −0.01 −2.39 −1.99 −3.30 1 .04 0 .48 1 .12 1 .23 0 .99 0 .36 −2.39 −0.69 0 .21 0 .95 1 .65 3 .22 3 .93 2 .80 0 .32 −3.27
+tβROE −3.19 −2.56 −3.62 −3.48 −1.53 −0.20 2 .81 5 .77 4 .15 7 .30 −5.87 −3.93 −2.86 −1.53 0 .05 2 .50 4 .42 6 .62 5 .26 3 .26
+Characteristics in the q-factor model Characteristics in the q-factor model
+ME 1.51 1 .53 1 .38 1 .41 1 .39 1 .64 1 .93 1 .85 1 .77 2 .20 0 .46 1 .15 1 .61 1 .90 2 .07 2 .18 2 .16 2 .07 1 .73 0 .86
+I/A1 1 .60 11 .42 10 .26 8 .54 6 .59 7 .33 7 .96 8 .26 9 .00 10 .14 12 .62 10 .46 9 .48 8 .83 8 .79 8 .62 8 .71 8 .63 8 .44 8 .56
+ROE −0.80 1 .94 2 .05 2 .34 2 .72 3 .24 3 .59 3 .75 3 .95 5 .00 −0.71 1 .73 2 .45 2 .74 2 .94 3 .11 3 .24 3 .34 3 .43 3 .43
+m,α,αFF ,αC , and αq are the average excess return, the CAPM alpha, the Fama-French alpha, the Carhart alpha, and the q-alpha, and tm,t,t FF ,tC , and tq are their t-statistics,
+respectively. βMKT,βME,βI/A , and βROE are the loadings on the market, size, investment, and ROE factors in the q-factor model, and tβMKT ,tβME ,tβI/A , and tβROE are
+their t-statistics, respectively. ME is the average market capitalization (in billions of dollars) across all of the ﬁrms in a given decile. I/A (in percent) is the sum of changes
+in assets across all of the ﬁrms in a given decile divided by the sum of their 1-year-lagged assets. ROE (in percent) is the sum of the most recently announ ced quarterly
+earnings across all of the ﬁrms in a given decile divided by the sum of their 1-quarter-lagged book equity. All t-statistics are adjusted for heteroscedasticity and autocorrelations.
+677
+
+--- PAGE 29 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 678 650–705
+The Review of Financial Studies / v 28 n 3 2015
+Table 8
+Momentum-reversal deciles
+Panel A: Earnings momentum Panel B: Price momentum
+SUE-12 SUE-13-36 SUE-37-60 R6-12 R6-13-36 R6-37-60
+m 0.16 −0.11 0 .13 0 .57 −0.24 −0.03
+α 0.19 −0.08 0 .16 0 .60 −0.25 −0.05
+αFF 0.31 −0.04 0 .14 0 .86 −0.04 0 .07
+αC 0.10 0 .01 0 .14 0 .09 −0.02 0 .06
+αq −0.01 0 .04 0 .07 0 .17 −0.09 0 .08
+tm 1.57 −1.58 1 .69 2 .67 −1.84 −0.29
+t 2.09 −1.09 2 .09 2 .86 −1.91 −0.56
+tFF 3.31 −0.56 1 .90 4 .41 −0.37 0 .85
+tC 1.17 0 .11 1 .83 0 .83 −0.18 0 .76
+tq −0.06 0 .51 0 .80 0 .71 −0.70 0 .86
+|α| 0.09 0 .07 0 .07 0 .13 0 .11 0 .08
+|αFF | 0.11 0 .09 0 .09 0 .17 0 .09 0 .08
+|αC| 0.08 0 .09 0 .09 0 .07 0 .09 0 .09
+|αq| 0.07 0 .07 0 .07 0 .06 0 .08 0 .08
+p 0.01 0 .10 0 .10 0 .01 0 .00 0 .08
+pFF 0.00 0 .01 0 .01 0 .00 0 .00 0 .05
+pC 0.01 0 .02 0 .05 0 .04 0 .04 0 .02
+pq 0.03 0 .00 0 .03 0 .08 0 .00 0 .00
+At the beginning of each month t, we use NYSE breakpoints to sort all stocks based on their latest earnings
+surprises. Monthly value-weighted decile returns are calculated, separately, for the holding periods from month
+t to t +1 1 (SUE-12); from month t +12 to t +35 (SUE-13-36); and from month t +36 to t +59 (SUE-37-60). In
+addition, at the beginning of each month t, we use NYSE breakpoints to sort all stocks based on their prior
+6-month returns from month t −7 to t −2. Skipping month t −1, we calculate monthly value-weighted decile
+returns, separately, for the holding periods from month t to t +1 1(R6-12); from month t +12 to t +35 (R6-13-36);
+and from month t +36 to t +59 (R6-37-60). m,α,αFF ,αC , and αq are the average return, the CAPM alpha, the
+Fama-French alpha, the Carhart alpha, and the q-alpha for the high-minus-low decile, and tm,t,t FF ,tC , and tq
+are their t-statistics adjusted for heteroscedasticity and autocorrelations, respectively. |α|,|αFF |, |αC|, and |αq|
+are the average magnitude of the alphas, and p,pFF ,pC , and pq are the p-values of the GRS test on the null
+that all the alphas are jointly zero across a given set of the deciles.
+V an Winkle (2011) show that scaling accruals by the absolute value of earnings
+(percent accruals) is more effective in selecting ﬁrms for which the differences
+between sophisticated and naive earnings forecasts are the most extreme.
+Panel A of Table 9 shows why theq-factor model fails to ﬁt the OA anomaly.
+The low OA decile, despite having lower investment-to-assets (13.87% per
+annum) than the high OA decile (24.02%), has a large, negative investment
+factor loading ( −0.56), which is close to that of the high OA decile ( −0.58).
+More important, the ROE factor loading is−0.26 for the low decile and 0.03 for
+the high decile, and the spread is more than 4 standard errors from zero (Table 6).
+Intuitively, because earnings equal operating cash ﬂows plus accruals, high OA
+ﬁrms tend to be more proﬁtable and load more heavily on the ROE factor than
+low OA ﬁrms. This pattern in ROE factor loadings goes in the wrong direction
+in capturing the OA anomaly.
+Panel B shows why theq-factor model performs better for the POA anomaly.
+The ROE factor loadings are largely ﬂat across the deciles. Intuitively, because
+POA scales accruals with earnings, the earnings in the denominator work
+against the positive correlation between accruals and earnings in the numerator.
+In addition, the investment factor loadings fall from 0.35 for the low POA
+678
+
+--- PAGE 30 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 679 650–705
+Digesting Anomalies: An Investment Approach
+Table 9
+Operating accrual (OA) and percent operating accrual (POA) deciles
+Panel A: OA Panel B: POA
+L o w 23456789 H i g h L o w 23456789 H i g h
+m 0.50 0 .56 0 .66 0 .60 0 .57 0 .60 0 .52 0 .40 0 .40 0 .20 0 .64 0 .56 0 .60 0 .61 0 .46 0 .52 0 .55 0 .43 0 .39 0 .18
+α −0.06 0 .08 0 .22 0 .18 0 .16 0 .20 0 .07 −0.03 −0.08 −0.39 0 .12 0 .07 0 .16 0 .14 0 .00 0 .09 0 .09 −0.03 −0.10 −0.41
+αFF 0.10 0 .14 0 .22 0 .13 0 .11 0 .16 0 .10 −0.04 −0.05 −0.27 −0.01 0 .03 0 .13 0 .12 0 .01 0 .11 0 .22 0 .08 −0.06 −0.32
+αC 0.11 0 .19 0 .20 0 .08 0 .13 0 .13 0 .10 0 .00 −0.02 −0.22 −0.03 0 .05 0 .07 0 .15 0 .00 0 .12 0 .22 0 .12 −0.02 −0.28
+tm 1.71 2 .38 3 .15 2 .97 2 .77 3 .07 2 .40 1 .76 1 .67 0 .65 2 .39 2 .35 2 .82 2 .60 2 .04 2 .49 2 .53 1 .87 1 .62 0 .58
+t −0.50 0 .81 2 .96 2 .38 2 .01 2 .51 1 .10 −0.39 −0.96 −3.65 1 .04 0 .77 1 .92 1 .75 0 .05 1 .32 1 .27 −0.28 −1.09 −3.26
+tFF 0.86 1 .47 3 .11 1 .77 1 .40 2 .05 1 .53 −0.47 −0.65 −3.22 −0.05 0 .33 1 .48 1 .40 0 .19 1 .53 3 .13 0 .86 −0.73 −3.32
+tC 0.98 1 .74 2 .58 1 .08 1 .54 1 .56 1 .46 0 .02 −0.21 −2.49 −0.30 0 .50 0 .75 1 .68 0 .06 1 .85 3 .20 1 .15 −0.22 −2.95
+The q-factor model regressions The q-factor model regressions
+αq 0.39 0 .22 0 .24 −0.06 0 .06 −0.02 0 .00 −0.12 −0.21 −0.17 −0.04 0 .07 0 .12 0 .26 0 .06 −0.04 0 .19 0 .10 −0.20 −0.16
+βMKT 1.08 1 .02 0 .96 0 .95 0 .93 0 .91 0 .98 0 .93 1 .04 1 .11 1 .11 1 .05 0 .96 1 .00 0 .98 0 .95 0 .97 0 .93 1 .03 1 .10
+βME 0.02 −0.09 −0.12 −0.03 −0.09 −0.04 −0.09 0 .05 0 .03 0 .30 0 .23 −0.04 −0.06 −0.10 −0.07 −0.04 −0.12 −0.03 0 .09 0 .37
+βI/A −0.56 −0.09 0 .06 0 .27 0 .22 0 .22 0 .01 0 .01 −0.03 −0.58 0 .35 0 .26 0 .14 0 .05 −0.05 0 .06 −0.25 −0.30 −0.11 −0.55
+βROE −0.26 −0.12 −0.05 0 .16 0 .00 0 .17 0 .14 0 .11 0 .22 0 .03 −0.12 −0.20 −0.04 −0.19 −0.02 0 .17 0 .09 0 .07 0 .22 −0.06
+tq 3.13 1 .62 3 .02 −0.78 0 .66 −0.19 0 .00 −1.23 −2.23 −1.86 −0.40 0 .75 1 .41 2 .89 0 .71 −0.55 2 .54 0 .95 −1.91 −1.34
+tβMKT 32.16 35 .50 56 .68 48 .78 38 .87 42 .85 44 .43 41 .06 35 .50 39 .68 43 .24 37 .37 30 .61 43 .73 47 .87 40 .75 41 .32 35 .95 50 .05 34 .83
+tβME 0.46 −2.09 −4.28 −1.17 −2.16 −1.19 −2.55 1 .19 0 .82 6 .79 6 .54 −0.91 −1.34 −3.12 −2.22 −1.54 −3.55 −0.85 1 .94 7 .96
+tβI/A −6.04 −0.80 1 .05 5 .83 2 .75 3 .14 0 .12 0 .08 −0.42 −9.86 6 .29 3 .76 2 .36 0 .95 −0.67 1 .13 −4.84 −5.17 −1.25 −6.41
+tβROE −3.55 −1.79 −1.08 4 .17 0 .05 4 .06 3 .21 2 .13 3 .83 0 .69 −2.42 −2.70 −0.70 −4.44 −0.46 4 .34 2 .02 1 .23 3 .57 −1.24
+Characteristics in the q-factor model Characteristics in the q-factor model
+ME 0.81 1 .48 1 .93 2 .21 2 .37 2 .14 2 .37 1 .78 1 .46 0 .58 0 .90 1 .10 1 .41 1 .69 1 .73 1 .97 2 .47 2 .35 1 .49 0 .54
+I/A1 3 .87 9 .06 7 .72 7 .37 7 .45 7 .78 8 .63 7 .13 11 .49 24 .02 5 .16 6 .97 6 .48 8 .85 8 .52 8 .38 10 .81 11 .41 14 .22 16 .28
+ROE 1.88 2 .61 2 .90 2 .91 2 .86 2 .90 3 .09 2 .94 2 .89 2 .75 1 .22 1 .82 2 .24 2 .47 2 .69 3 .21 3 .75 3 .96 3 .51 2 .24
+m,α,αFF ,αC , and αq are the average excess return, the CAPM alpha, the Fama-French alpha, the Carhart alpha, and the q-alpha, and tm,t,t FF ,tC , and tq are their t-statistics, respectively.
+βMKT,βME,βI/A , and βROE are the loadings on the market, size, investment, and ROE factors in the q-factor model, and tβMKT ,tβME ,tβI/A , and tβROE are their t-statistics, respectively.
+ME is the average market capitalization (in billions of dollars) across all of the ﬁrms in a given decile. I/A (in percent) is the sum of changes in assets across all of the ﬁrms in a given
+decile divided by the sum of their 1-year-lagged assets. ROE (in percent) is the sum of the most recently announced quarterly earnings across all of the ﬁrms in a given decile divided by
+the sum of their 1-quarter-lagged book equity. All t-statistics are adjusted for heteroscedasticity and autocorrelations.
+679
+
+--- PAGE 31 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 680 650–705
+The Review of Financial Studies / v 28 n 3 2015
+decile to −0.55 for the high POA decile, going in the right direction in ﬁtting
+the average returns.
+3.2.3 25 size (ME) and book-to-market (B/M) portfolios. Table 10 reports
+that the high-minus-low B/M quintile earns an average return of 1.02% per
+month (t =4.59) in small stocks but only 0.16% ( t =0.79) in big stocks. The
+Fama-French model does a good job in ﬁtting the average returns of the 25
+portfolios. The average magnitude of the alphas is only 0.10%, but their model is
+still rejected by the GRS test. Only 5 out of 25 portfolios have signiﬁcant alphas.
+In particular, the small-growth portfolio has an alpha of −0.54% (t =−4.84).
+13
+The performance of the Carhart model is largely comparable.
+The q-factor model’s performance is also similar. The average magnitude of
+the alphas is 0.11% per month, which is close to 0.10% in the Fama-French
+model and 0.11% in the Carhart model. Out of 25, 4 portfolios have signiﬁcant
+alphas in the q-factor model, compared with 5 in the Fama-French model and
+5 in the Carhart model. More importantly, only 1 out of 5 high-minus-low B/M
+quantiles has a signiﬁcant alpha in the q-factor model, compared with 3 in the
+Fama-French model and 2 in the Carhart model. The small-growth portfolio
+has an insigniﬁcant q-alpha of only −0.25% (t =−1.48), but the small-value
+q-alpha is 0.32% (t =2.72).
+Theq-factor model’s performance is mostly from the investment factor. From
+the panel denoted “ β
+I/A,” value stocks have signiﬁcantly higher investment
+factor loadings than growth stocks. The loadings spreads range from 1.19 to
+1.56 across the size quintiles. The panel denoted “I/A” shows that value stocks
+invest less than growth stocks, and the investment-to-assets spreads vary from
+6.14% per annum to 13.94% across the size quintiles. In contrast, the value-
+minus-growth loadings on the other factors are mostly small and insigniﬁcant.
+3.3 Sharpe ratios
+In the mean-variance framework, a factor model can account for all the
+anomalies if and only if the efﬁcient portfolio from combining all the anomaly
+portfolios lies in the span of the factors. As such, the efﬁcient combination of the
+factors should have a Sharpe ratio that is greater than or equal to the maximum
+Sharpe ratio from combining all the anomaly portfolios. Complementing the
+results from factor regressions, Table 11 reports Sharpe ratios for different
+(combinations of) factors and anomaly portfolios.
+Panel A reports the monthly Sharpe ratio for each individual factor, calculated
+as the mean return divided by its volatility. The investment and ROE factors
+have the highest Sharpe ratios, 0.24 and 0.22, compared with the Sharpe ratios of
+0.13 and 0.16, respectively, for HML and UMD. Following MacKinlay (1995),
+13 The small-growth anomaly is notoriously difﬁcult to capture (e.g., Fama and French 1993, 1996; Davis, Fama,
+and French 2000; and Campbell and Vuolteenaho 2004).
+680
+
+--- PAGE 32 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 681 650–705
+Digesting Anomalies: An Investment Approach
+Table 10
+Twenty-ﬁve size and book-to-market portfolios
+Low 2 3 4 High H-L Low 234 High H–L Low 2 3 4 High H–L
+mα (|α| =0.29) αFF (|αFF | =0.10)
+Small 0.08 0 .72 0 .84 0 .95 1 .11 1 .02 −0.60 0 .13 0 .30 0 .45 0 .59 1 .19 −0.54 0 .02 0 .13 0 .18 0 .16 0 .70
+2 0.32 0 .69 0 .86 0 .87 0 .99 0 .67 −0.34 0 .12 0 .33 0 .39 0 .48 0 .82 −0.21 0 .00 0 .09 0 .07 0 .04 0 .25
+3 0.38 0 .71 0 .77 0 .77 1 .02 0 .65 −0.25 0 .16 0 .28 0 .32 0 .56 0 .81 −0.09 0 .04 0 .03 0 .00 0 .13 0 .22
+4 0.52 0 .59 0 .73 0 .74 0 .84 0 .32 −0.07 0 .08 0 .24 0 .29 0 .40 0 .47 0 .14 −0.02 0 .03 0 .00 0 .02 −0.12
+Big 0.40 0 .54 0 .54 0 .61 0 .56 0 .16 −0.07 0 .10 0 .14 0 .25 0 .19 0 .26 0 .16 0 .11 0 .09 0 .00 −0.16 −0.32
+tm t (p =0.00) tFF (pFF =0.00)
+Small 0.20 2 .02 2 .57 3 .07 3 .30 4 .59 −2.55 0 .64 1 .66 2 .54 2 .98 5 .62 −4.84 0 .23 1 .58 2 .53 1 .97 5 .66
+2 0.90 2 .20 3 .03 3 .29 3 .31 2 .93 −1.94 0 .77 2 .34 2 .77 2 .60 3 .70 −2.59 0 .01 1 .36 0 .92 0 .45 2 .19
+3 1.15 2 .49 3 .03 3 .05 3 .93 2 .76 −1.77 1 .40 2 .27 2 .52 3 .37 3 .63 −1.21 0 .52 0 .35 0 .02 1 .28 1 .70
+4 1.73 2 .35 2 .91 3 .08 3 .24 1 .43 −0.57 0 .76 2 .11 2 .33 2 .53 2 .09 1 .74 −0.23 0 .27 0 .03 0 .17 −0.87
+Big 1.70 2 .53 2 .71 3 .04 2 .43 0 .79 −0.79 1 .27 1 .42 2 .10 1 .17 1 .24 2 .66 1 .29 0 .92 −0.02 −1.31 −2.32
+αC (|αC| =0.11) αq (|αq| =0.11) βMKT
+Small −0.48 0 .03 0 .12 0 .18 0 .22 0 .70 −0.25 0 .27 0 .31 0 .30 0 .32 0 .57 1 .11 0 .96 0 .92 0 .88 0 .96 −0.15
+2 −0.18 0 .03 0 .09 0 .10 0 .04 0 .22 −0.14 0 .02 0 .03 0 .07 0 .10 0 .24 1 .14 1 .02 1 .01 0 .94 1 .01 −0.13
+3 −0.04 0 .04 0 .09 0 .03 0 .16 0 .20 −0.01 −0.03 −0.04 −0.01 0 .14 0 .15 1 .10 1 .05 1 .01 0 .95 1 .01 −0.09
+4 0.15 −0.01 0 .07 0 .03 0 .09 −0.06 0 .18 −0.14 −0.01 0 .02 0 .06 −0.12 1 .09 1 .07 1 .06 0 .98 1 .02 −0.08
+Big 0.17 0 .07 0 .07 −0.03 −0.13 −0.31 0 .10 −0.04 0 .06 −0.01 −0.04 −0.13 0 .98 0 .98 0 .93 0 .86 0 .90 −0.09
+tC (pC =0.00) tq (pq =0.00) tβMKT
+Small −4.00 0 .36 1 .58 2 .59 2 .53 5 .72 −1.48 2 .24 3 .09 3 .68 2 .72 2 .91 25 .50 29 .26 36 .30 39 .11 27 .04 −2.63
+2 −2.28 0 .37 1 .34 1 .40 0 .44 1 .88 −1.21 0 .29 0 .37 0 .67 0 .89 1 .25 33 .73 51 .06 53 .11 42 .18 34 .08 −2.43
+3 −0.50 0 .53 0 .93 0 .28 1 .40 1 .43 −0.09 −0.30 −0.37 −0.05 1 .16 0 .92 39 .22 53 .02 28 .69 37 .92 26 .87 −1.60
+4 1.87 −0.16 0 .74 0 .24 0 .75 −0.42 1 .50 −1.58 −0.06 0 .21 0 .44 −0.61 34 .34 42 .24 31 .78 31 .00 25 .98 −1.30
+Big 2.89 0 .91 0 .70 −0.36 −1.02 −2.12 1 .32 −0.49 0 .65 −0.06 −0.23 −0.70 52 .33 40 .01 30 .63 30 .86 25 .72 −2.09
+(continued)
+681
+
+--- PAGE 33 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 682 650–705
+The Review of Financial Studies / v 28 n 3 2015
+Table 10
+Continued
+Low 2 3 4 High H–L Low 2 3 4 High H–L Low 2 3 4 High H–L
+βME βI/A βROE
+Small 1.14 1 .18 1 .08 1 .01 0 .99 −0.15 −0.66 −0.32 −0.11 0 .17 0 .53 1 .19 −0.40 −0.39 −0.31 −0.26 −0.35 0 .05
+2 0.93 0 .94 0 .83 0 .72 0 .85 −0.07 −0.72 −0.13 0 .25 0 .42 0 .59 1 .31 −0.05 −0.08 −0.02 −0.09 −0.20 −0.14
+3 0.72 0 .63 0 .49 0 .43 0 .47 −0.24 −0.77 0 .03 0 .37 0 .54 0 .78 1 .56 0 .00 0 .05 0 .04 −0.09 −0.16 −0.16
+4 0.40 0 .33 0 .24 0 .20 0 .18 −0.21 −0.70 0 .18 0 .39 0 .60 0 .77 1 .47 0 .04 0 .09 −0.01 −0.14 −0.16 −0.21
+Big −0.22 −0.09 −0.21 −0.10 −0.14 0 .08 −0.39 0 .12 0 .30 0 .61 0 .80 1 .20 0 .14 0 .16 −0.05 −0.06 −0.25 −0.39
+tβME tβI/A tβROE
+Small 16.49 18 .22 23 .29 33 .68 14 .79 −1.31 −5.09 −3.64 −1.46 3 .06 5 .90 8 .59 −3.34 −4.73 −5.43 −7.53 −6.82 0 .40
+2 16.68 32 .58 19 .26 12 .82 13 .78 −0.70 −9.48 −2.32 3 .93 6 .26 8 .97 10 .46 −0.68 −1.84 −0.56 −1.76 −3.24 −1.25
+3 14.60 16 .16 5 .21 7 .05 4 .85 −1.80 −11.40 0 .43 3 .35 6 .24 9 .13 12 .41 0 .02 0 .93 0 .54 −1.23 −2.08 −1.50
+4 6.26 6 .97 3 .22 3 .63 2 .14 −1.54 −8.47 2 .51 4 .05 5 .50 7 .28 9 .57 0 .68 1 .62 −0.19 −1.82 −1.98 −1.65
+Big −7.59 −2.67 −5.22 −1.63 −2.15 1 .06 −9.47 2 .19 4 .98 4 .87 6 .25 8 .00 4 .37 3 .89 −0.89 −0.68 −2.93 −3.99
+ME I/A ROE
+Small 0.07 0 .07 0 .07 0 .06 0 .05 −0.03 10 .90 12 .67 9 .00 7 .02 1 .77 −9.13 −1.38 0 .65 0 .79 0 .56 −0.91 0 .46
+2 0.33 0 .33 0 .33 0 .33 0 .32 −0.01 17 .87 14 .63 11 .22 7 .57 3 .92 −13.94 2 .10 2 .34 2 .01 1 .47 0 .05 −2.05
+3 0.76 0 .76 0 .76 0 .76 0 .76 0 .00 18 .30 13 .64 9 .95 8 .14 4 .47 −13.82 3 .35 2 .86 2 .20 1 .63 0 .65 −2.70
+4 1.86 1 .83 1 .78 1 .77 1 .82 −0.04 15 .28 11 .31 8 .86 7 .06 5 .18 −10.09 4 .24 3 .14 2 .28 1 .58 0 .74 −3.50
+Big 15.98 13 .55 11 .19 9 .94 8 .45 −7.53 12 .59 11 .36 7 .49 8 .22 6 .44 −6.14 5 .44 3 .71 2 .64 2 .24 1 .05 −4.38
+m,α,αFF ,αC , and αq are the average excess return, the CAPM alpha, the Fama-French alpha, the Carhart alpha, and the q-alpha, and tm,t,t FF ,tC , and tq are their t-statistics, respectively.
+|α|,|αFF |, |αC|, and |αq| are the average magnitude of the alphas, and p,pFF ,pC , and pq are the p-values of the GRS test across the 25 portfolios. βMKT,βME,βI/A , and βROE are the
+market, size, investment, and ROE factor loadings in the q-factor model, and tβMKT ,tβME ,tβI/A , and tβROE are their t-statistics, respectively. ME is the average market capitalization
+(in billions of dollars) across all of the ﬁrms in a given portfolio. I/A (in percent) is the sum of changes in assets across all of the ﬁrms in a given portfolio divided by the sum of their
+1-year-lagged assets. ROE (in percent) is the sum of the most recently announced quarterly earnings across all of the ﬁrms in a given portfolio divided by the sum of their 1-quarter-lagged
+book equity. The t-statistics are adjusted for heteroscedasticity and autocorrelations.
+682
+
+--- PAGE 34 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 683 650–705
+Digesting Anomalies: An Investment Approach
+Table 11
+Maximum Sharpe ratios
+Panel A: Sharpe ratios Panel B: Maximum Sharpe ratios
+MKT SMB HML UMD rME rI/A rROE CAPM FF Carhart q
+0.10 0.06 0.13 0.16 0.10 0.24 0.22 0.10 0.21 0.30 0.43
+Panel C: Anomaly portfolios
+SUE-1 SUE-6 Abr-1 Abr-6 RE-1 RE-6 R6-6 R11-1 I-Mom B/M E/P CF/P NO/P Dur I/A NOA △ PI/A IG
+SH−L 0.14 0.09 0.23 0.15 0.16 0.13 0.15 0.16 0.10 0.14 0.12 0.11 0.16 0.12 0.11 0.12 0.17 0.14
+Sm 0.27 0.26 0.28 0.23 0.25 0.21 0.31 0.28 0.20 0.21 0.24 0.21 0.30 0.24 0.24 0.29 0.25 0.26
+NSI CEI IvG IvC OA POA PTA ROE ROA GP/A NEI FP OC/A Ad/M RD/M OL Svol All
+SH−L 0.21 0.14 0.13 0.14 0.10 0.15 0.12 0.15 0.13 0.10 0.14 0.10 0.18 0.14 0.12 0.10 0.14 0.48
+Sm 0.30 0.32 0.23 0.25 0.25 0.23 0.23 0.24 0.21 0.18 0.26 0.28 0.26 0.23 0.21 0.17 0.29 1.60
+Panel A reports the monthly Sharpe ratio for each individual factor, calculated as the ratio of the mean factor return to its standard deviation. Panel B reports the maximum
+monthly Sharpe ratio achievable from each factor model, including the CAPM, the Fama-French (FF) model, the Carhart model, and the q-factor model. The maximum Sharpe
+ratio is calculated as
+√
+μ′
+f V −1
+f μf , in which μf is the vector of mean factor returns for a given factor model, and Vf is the variance-covariance matrix for the vector of factor
+returns. In Panel C, SH−L is the monthly Sharpe ratio for the high-minus-low decile formed on each anomaly variable, calculated as the mean high-minus-low return divided by
+its standard deviation. Sm is the maximum monthly Sharpe ratio achievable from a given set of deciles, calculated as
+√
+μ′V −1μ, in which μ is the vector of average returns in
+excess of the 1-month Treasury bill rate for a given set of deciles, and V is the variance-covariance matrix for the vector of decile excess returns. In column “All,” SH−L is the
+maximum Sharpe ratio achievable from pooling together 28 out of the 35 high-minus-low deciles that have valid data from January 1972 to December 2012, and it is calculated as√
+μ′
+f V −1
+f μf , with each high-minus-low decile treated as a different portfolio. Sm is the maximum Sharpe ratio achievable from pooling together 28 out of the 35 sets of deciles
+that have valid data from January 1972 to December 2012. Table 2 provides a brief description of the symbols. Appendix A details variable deﬁnition and portfolio construction.
+683
+
+--- PAGE 35 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 684 650–705
+The Review of Financial Studies / v 28 n 3 2015
+we also calculate the maximum Sharpe ratio achievable from a given factor
+model as
+√
+μ′
+f V −1
+f μf , in which μf is the vector of mean factor returns, and
+Vf is the variance-covariance matrix of the factor returns. Panel B shows that
+the Fama-French model produces a maximum Sharpe ratio of 0.21, the Carhart
+model 0.30, and the q-factor model 0.43.
+Panel C reports the Sharpe ratios for the high-minus-low deciles and the
+maximum Sharpe ratios from combining deciles formed on a given anomaly
+variable. In general, these Sharpe ratios are lower than the maximum Sharpe
+ratio of 0.43 for the q-factor model. However, once we pool together 28 out of
+the 35 high-minus-low deciles that cover the entire sample from January 1972
+to December 2012, we obtain a maximum Sharpe ratio of 0.48. We also obtain
+a maximum Sharpe ratio of 1.60 from pooling together all 28 sets of deciles
+that have valid data for the entire sample.
+14
+Overall, the Sharpe ratios in Table 11 suggest that theq-factor model is more
+effective than the Carhart and Fama-French models, but that theq-factor model
+is by no means perfect in capturing all the anomalies.
+The Sharpe ratios also help in interpreting the q-factor model, which we
+view as a parsimonious empirical model for estimating expected stock returns.
+In particular, we emphasize that the q-factor model is silent about the debate
+between rational asset pricing and mispricing. This interpretation is weaker
+than the risk factors interpretation per Fama and French (1993, 1996).
+Consistent with Fama and French (1993, 1996), our factor regressions
+provide direct evidence that the q-factors capture shared variation in returns
+across a wide array of anomaly portfolios. To the extent that the q-factors,
+constructed on economic fundamentals, represent common variation in returns,
+their loadings represent covariances between an asset’s returns with the factor
+returns. The Sharpe ratios in Table 11 lend further support to the common
+variation captured by the q-factors. If stocks with similar investment or stocks
+with similar proﬁtability do not comove together, it would be possible to
+diversify away the variances of the q-factors, giving rise to extremely high
+Sharpe ratios. Table 11 shows otherwise. The Sharpe ratios for the q-factors
+are high, but not excessively high, indicating comovement in returns.
+However, our evidence is not inconsistent with mispricing. If waves of
+investor sentiment affect stocks with similar investment or stocks with similar
+proﬁtability simultaneously, the q-factor model would work in the data as well.
+Moreover, under the mispricing hypothesis, trading opportunities with mild
+14 Calculating the maximum Sharpe ratio achievable from pooling together all the 35 sets of deciles on their common
+sample starting in February 1986 (the starting date of the sample for the Svol deciles) is infeasible. The reason is
+that the number of observations is not large enough to estimate the large number of parameters in the variance-
+covariance matrix. Instead, we calculate the maximum Sharpe ratios from pooling together all the deciles in each
+category of anomalies. The estimates are 0.67 across the 9 sets of momentum deciles (from “SUE-1” to “I-Mom”)
+on their common sample starting in January 1977; 0.49 across the 5 sets of value-versus-growth deciles on the
+sample starting in July 1972; 0.65 across the 11 sets of investment deciles on the full sample; 0.49 over the 5 sets
+of proﬁtability deciles on the sample starting in January 1976; and 0.59 across the remaining 5 sets of deciles on
+the sample starting in February 1986.
+684
+
+--- PAGE 36 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 685 650–705
+Digesting Anomalies: An Investment Approach
+Sharpe ratios can persist, even though opportunities with extreme Sharpe ratios
+are arbitraged away. MacKinlay (1995), in particular, argues that the maximum
+Sharpe ratio for the Fama-French model is too high to be consistent with rational
+asset pricing. As shown in Table 11, the maximum Sharpe ratio for theq-factor
+model is even higher. Finally, our work is silent about the structural sources
+behind the common variation in the q-factors and the heterogeneity in their
+loadings across the diverse anomaly portfolios (Section 1.3).
+4. Conclusion
+Our examination of nearly 80 anomalies yields 2 major ﬁndings. About
+one-half of the anomalies earn insigniﬁcant average returns for the high-
+minus-low deciles formed with NYSE breakpoints and value-weighted returns.
+The evidence suggests that many claims in the anomalies literature seem
+exaggerated, likely by excessively weighting on microcaps. More importantly,
+an empirical q-factor model consisting of the market factor, a size factor, an
+investment factor, and a proﬁtability factor outperforms the Fama-French and
+Carhart models in capturing many (but not all) of the signiﬁcant anomalies.
+Many seemingly unrelated anomalies turn out to be different manifestations of
+the investment and proﬁtability effects. These empirical results highlight the
+importance of understanding the driving forces behind the q-factors and their
+broad empirical power in the cross section.
+Appendix A
+A.1 Variable Deﬁnition and Portfolio Construction
+For each anomaly variable, we describe its detailed deﬁnition and portfolio construction.
+A.1.1 Momentum. This category includes 10 momentum variables, including SUE-1, SUE-
+6, Abr-1, Abr-6, RE-1, RE-6, R6-1, R6-6, R11-1, and I-Mom, as well as 6 momentum-reversal
+variables: SUE-12, SUE-13-36, SUE-37-60, R6-12, R6-13-36, and R6-37-60.
+A.1.1.1 SUE-1, SUE-6, SUE-12, SUE-13-36, and SUE-37-60. Following Foster, Olsen, and
+Shevlin (1984), we measure earnings surprise as standardized unexpected earnings (SUE). We
+calculate SUE as the change in the most recently announced quarterly earnings per share (Compustat
+quarterly item EPSPXQ) from its value 4 quarters ago, divided by the standard deviation of this
+change in quarterly earnings over the prior 8 quarters (6 quarters minimum).
+For a ﬁrm to enter our portfolio formation, we require the end of the ﬁscal quarter that
+corresponds to the most recently announced earnings to be within 6 months prior to the portfolio
+formation. We do so to exclude stale information on earnings. We impose this restriction when
+constructing the ROE factor and portfolios that use quarterly earnings data. To avoid potentially
+erroneous records, we also require the earnings announcement date (Compustat quarterly item
+RDQ) to be after the corresponding ﬁscal quarter end.
+At the beginning of each month t, we split all NYSE, Amex, and NASDAQ stocks into deciles
+based on their most recent past SUE using NYSE breakpoints. Monthly value-weighted portfolio
+returns are calculated, separately, for the current month t (SUE-1), from month t to t +5 (SUE-6),
+from month t to t +11 (SUE-12), from month t +12 to t +35 (SUE-13-36), and from month t +36
+to t +59 (SUE-37-60). The deciles are rebalanced monthly. The holding period that is longer than
+685
+
+--- PAGE 37 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 686 650–705
+The Review of Financial Studies / v 28 n 3 2015
+1 month as in, for instance, SUE-6, means that for a given SUE-6 decile in each month there exist
+6 subdeciles, each of which is initiated in a different month in the prior 6-month period. We take
+the simple average of the subdecile returns as the monthly return of the SUE-6 decile.
+A.1.1.2 R6-1, R6-6, R6-12, R6-13-36, R6-37-60, and R11-1. At the beginning of each month t,
+we split all stocks into deciles based on their prior 6-month returns from month t −7t o t −2 using
+NYSE breakpoints. Skipping month t −1, we calculate monthly value-weighted decile returns,
+separately, for month t (R6-1), from month t to t +5 (R6-6), from month t to t +11 (R6-12), from
+month t +12 to t +35 (R6-13-36), and from month t +36 to t +59 (R6-37-60). All the deciles are
+rebalanced at the beginning of month t +1. The holding period that is longer than 1 month as in,
+for instance, R6-6, means that for a given R6-6 decile in each month there exist 6 subdeciles, each
+of which is initiated in a different month in the prior 6-month period. We take the simple average
+of the subdeciles returns as the monthly return of the R6-6 decile.
+To construct the R11-1 deciles as in Fama and French (1996), we split all stocks into deciles at
+the beginning of each montht based on their prior 11-month returns from montht −12 tot −2 using
+NYSE breakpoints. Skipping month t −1, we calculate monthly value-weighted decile returns for
+month t, and the deciles are rebalanced at the beginning of month t +1.
+A.1.1.3 Abr-1 and Abr-6. Following Chan, Jegadeesh, and Lakonishok (1996), we measure
+cumulative abnormal stock return (Abr) around the latest quarterly earnings announcement date:
+Abr
+i =
++1∑
+d=−2
+rid −rmd, (A1)
+in which rid is stock i’s return on day d (with the earnings announced on day 0), and rmd is the
+return on the market index. We cumulate returns until 1 (trading) day after the announcement date
+to account for the possibility of 1-day-delayed stock price reaction to earnings news. r
+md is the
+value-weighted return on the market index. For a ﬁrm to enter our portfolio formation, we require
+the end of the ﬁscal quarter that corresponds to the most recently announced earnings to be within
+6 months prior to the portfolio formation month.
+At the beginning of each month t, we split all stocks into deciles based on their most recent
+past Abr using NYSE breakpoints. Monthly value-weighted decile returns are calculated for the
+current month t (Abr-1), and, separately, from month t to t +5 (Abr-6). The deciles are rebalanced
+monthly. The 6-month holding period for Abr-6 means that for a given decile in each month there
+exist 6 subdeciles, each of which is initiated in a different month in the prior 6-month period. We
+take the simple average of the subdecile returns as the monthly return of the Abr-6 decile.
+A.1.1.4 RE-1 and RE-6. Following Chan, Jegadeesh, and Lakonishok (1996), we also measure
+earnings surprise as changes in analysts’ forecasts of earnings. The earnings forecast data are from
+the Institutional Brokers’ Estimate System (IBES). Because analysts’ forecasts are not necessarily
+revised each month, we construct a 6-month moving average of past changes in analysts’ forecasts:
+RE
+it =
+6∑
+j =1
+fit−j −fit−j−1
+pit−j−1
+, (A2)
+in which fit−j is the consensus mean forecast (IBES unadjusted ﬁle, item MEANEST) issued in
+month t −j for ﬁrm i’s current ﬁscal year earnings (ﬁscal period indicator = 1), and pit−j−1 is the
+prior month’s share price (unadjusted ﬁle, item PRICE). We adjust for any stock splits and require
+a minimum of 4 monthly forecast changes when constructing RE.
+At the beginning of each montht, we split all stocks into deciles, based on their RE using NYSE
+breakpoints. Monthly value-weighted decile returns are calculated for the current month t (RE-1),
+686
+
+--- PAGE 38 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 687 650–705
+Digesting Anomalies: An Investment Approach
+and, separately, from month t to t +5 (RE-6). The deciles are rebalanced monthly. The 6-month
+holding period for RE-6 means that for a given decile in each month there exist 6 subdeciles, each
+of which is initiated in a different month in the prior 6-month period. We take the simple average
+of the subdecile returns as the monthly return of the RE-6 decile. Because of the availability of
+analysts’ forecasts data, the sample for RE-1 and RE-6 decile returns starts in January 1977.
+A.1.1.5 I-Mom. Moskowitz and Grinblatt (1999) document proﬁtable industry momentum
+strategies that buy stocks in past winning industries and sell stocks in past losing industries. We
+use the Fama-French 49-industry classiﬁcations. Excluding ﬁnancial ﬁrms from the sample leaves
+45 industries. At the beginning of each month t, we sort industries based on their prior six-month
+value-weighted returns from t −6t o t −1. Following Moskowitz and Grinblatt, we do not skip
+month t −1 when measuring industry momentum. We form 9 portfolios (9×5 = 45), each of which
+contains 5 different industries. We deﬁne the return of a given portfolio as the equal-weighted
+average of the 5 industry returns within the portfolio. We hold the 9 portfolios for 6 months from
+t to t +5, and rebalance the portfolios at the beginning of t +1. For a given I-Mom portfolio in
+each month there exist 6 subportfolios, each of which is initiated in a different month in the prior
+6-month period. We take their simple average as the monthly return of the I-Mom portfolio.
+A.1.2 Value-versus-growth. We start by describing the construction of the 25 size (ME) and
+book-to-market (B/M) portfolios. In addition, Table 2 lists 12 anomaly variables in this category
+including B/M, A/ME, Rev, E/P , EF/P , CF/P , D/P , O/P , NO/P , SG , LTG , and Dur.
+A.1.2.1 The 25 ME and B/M Portfolios. At the end of June of each year t, we split stocks into
+quintiles based on the June-end ME (price times shares outstanding from CRSP). Independently,
+we split stocks into quintiles based on B/M, which is the book equity for the ﬁscal year ending in
+calendar year t −1 divided by the ME at the end of December of t −1. We use NYSE breakpoints
+for both ME and B/M. Taking intersections, we form 25 ME and B/M portfolios and calculate
+monthly value-weighted portfolio returns from July of year t to June of t +1.
+As in Davis, Fama, and French (2000), book equity is stockholders’ book equity, plus balance-
+sheet deferred taxes and investment tax credit (Compustat annual item TXDITC) if available,
+minus the book value of preferred stock. Stockholders’ equity is the value reported by Compustat
+(item SEQ), if available. If not, stockholders’ equity is the book value of common equity (item
+CEQ) plus the par value of preferred stock (item PSTK), or the book value of assets (item A T)
+minus total liabilities (item LT). Depending on availability, we use redemption (item PSTKRV),
+liquidating (item PSTKL), or par value (item PSTK) for the book value of preferred stock.
+A.1.2.2 B/M. At the end of June of each year t, we use NYSE breakpoints to split stocks into
+deciles based on B/M, which is the book equity for the ﬁscal year ending in calendar year t −1
+divided by the ME at the end of December of t −1. We calculate monthly value-weighted decile
+returns from July of year t to June of t +1, and the deciles are rebalanced in June of t +1. W e
+measure book equity as in Davis, Fama, and French (2000, see Section A.1.2.1).
+A.1.2.3 A/ME. We measure A/ME as the ratio of total book assets to ME. At the end of June
+of each year t, we use NYSE breakpoints to sort stocks into deciles based on A/ME. Total assets
+(Compustat annual item A T) are from the ﬁscal year ending in calendar year t −1 and the ME
+(price per share times shares outstanding from Compustat or CRSP) is at the end of December of
+t −1. Monthly value-weighted decile returns are calculated from July of year t to June of t +1, and
+the deciles are rebalanced in June of t +1.
+A.1.2.4 Rev. To capture the long-term reversal (Rev) effect, at the beginning of each month t,
+we use NYSE breakpoints to split stocks into deciles based on the prior returns from month t −60
+to t
+−13. Monthly value-weighted decile returns are computed for month t, and the deciles are
+687
+
+--- PAGE 39 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 688 650–705
+The Review of Financial Studies / v 28 n 3 2015
+rebalanced at the beginning of t +1. To be included in a portfolio for month t, a stock must have a
+valid price at the end of t −61 and a valid return for t −13. In addition, any missing returns from
+month t −60 to t −14 must be −99.0, which is the CRSP code for a missing price.
+A.1.2.5 E/P . To construct the Basu (1983) earnings-to-price (E/P) deciles, we use NYSE
+breakpoints to split stocks into deciles based on E/P at the end of June of each year t. E/P is
+calculated as income before extraordinary items (Compustat annual item IB) for the ﬁscal year
+ending in calendar yeart −1 divided by the ME (from Compustat or CRSP) at the end of December
+of t −1. Stocks with negative earnings are excluded. Monthly value-weighted decile returns are
+calculated from July of year t to June of t +1, and the deciles are rebalanced in June of t +1.
+A.1.2.6 EF/P . Following Elgers, Lo, and Pfeiffer (2001), we measure analysts’earnings forecasts-
+to-price (EF/P) as the consensus median forecasts (IBES unadjusted ﬁle, item MEDEST) for the
+current ﬁscal year (ﬁscal period indicator = 1) divided by share price (unadjusted ﬁle, item PRICE).
+At the beginning of each month t, we use NYSE breakpoints to sort stocks into deciles based on
+EF/P estimated with forecasts in montht −1. Monthly value-weighted decile returns are calculated
+for the current montht, and the deciles are rebalanced at the beginning oft +1. Because the earnings
+forecast data start in January 1976, the EF/P decile returns start in February 1976.
+A.1.2.7 CF/P . We measure cash ﬂows (CF) as income before extraordinary items (Compustat
+annual item IB), plus equity’s share of depreciation (item DP), plus deferred taxes (if available,
+item TXDI). The equity’s share is deﬁned as ME divided by total assets (item A T) minus book
+equity plus ME. ME is share price times shares outstanding from Compustat or CRSP . We measure
+book equity as in Davis, Fama, and French (2000, see Section A.1.2.1).
+At the end of June of each year t, we use NYSE breakpoints to sort stocks into deciles, based on
+CF for the ﬁscal year ending in calendar year t −1 divided by the ME at the end of December of
+t −1. We exclude ﬁrms with negative CFs. Monthly value-weighted decile returns are calculated
+from July of year t to June of t +1, and the deciles are rebalanced in June of t +1.
+A.1.2.8 D/P . At the end of June of each year t, we use NYSE breakpoints to sort stocks into
+deciles based on their dividend yields, which are the total dividends paid out from July of year
+t −1 to June of t divided by the ME (from CRSP) at the end of June of t. We calculate monthly
+dividends as the begin-of-month ME times the difference between cum- and ex-dividend returns.
+Monthly dividends are then accumulated from July of t −1 to June of t. We exclude ﬁrms that
+do not pay dividends. Monthly value-weighted decile returns are calculated from July of year t to
+June of t +1, and the deciles are rebalanced in June of t
++1.
+A.1.2.9 O/P and NO/P . As in Boudoukh et al. (2007), total payouts are dividends on common
+stock (Compustat annual item DVC) plus repurchases. Repurchases are the total expenditure on
+the purchase of common and preferred stocks (item PRSTKC) plus any reduction (negative change
+over the prior year) in the value of the net number of preferred stocks outstanding (item PSTKRV).
+Net payouts equal total payouts minus equity issuances, which are the sale of common and preferred
+stock (item SSTK) minus any increase (positive change over the prior year) in the value of the net
+number of preferred stocks outstanding.
+At the end of June of each year t, we use NYSE breakpoints to sort stocks into deciles based
+on total payouts (O/P) (net payouts, NO/P) for the ﬁscal year ending in calendar year t −1 divided
+by the ME at the end of December of t −1. We exclude ﬁrms with non-positive total payouts
+(zero net payouts). Monthly value-weighted decile returns are from July of year t to June of t +1,
+and the deciles are rebalanced in June of t +1. Because the data on total expenditure and the
+sale of common and preferred stocks start in 1971, the O/P (NO/P) decile returns start in July
+1972.
+688
+
+--- PAGE 40 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 689 650–705
+Digesting Anomalies: An Investment Approach
+A.1.2.10 SG. Following Lakonishok, Shleifer, and Vishny (1994), we measure sales growth
+(SG) in June of year t as the weighted average of the annual SG ranks for the prior 5 years,∑ 5
+j =1 (6−j )×Rank(t −j ). The SG for year t −j is the growth rate in sales (COMPUSTA T annual
+item SALE) from ﬁscal year ending in t −j −1 to ﬁscal year ending in t −j . Only ﬁrms with data
+for all 5 prior years are used to determine the annual SG ranks. For each year from t −5t o t −1, we
+rank stocks into deciles based on their annual SG , and then assign ranki (i =1,..., 10) to a ﬁrm if its
+annual SG falls into the ith decile. At the end of June of each year t, we use NYSE breakpoints to
+assign stocks into deciles based on SG , and calculate monthly value-weighted decile returns from
+July of year t to June of t +1.
+A.1.2.11 LTG. At the beginning of each month t, we use NYSE breakpoints to sort stocks
+into deciles based on analysts’ consensus median forecast of the long-term earnings growth
+rate (IBES item MEDEST, ﬁscal period indictor = 0). Monthly value-weighted decile returns
+are calculated for the current month t, and the deciles are rebalanced monthly. Because the
+long-term growth forecast data start in December 1981, the LTG decile returns start in January
+1982.
+A.1.2.12 Dur . Per Dechow, Sloan, and Soliman (2004), we calculate equity duration as:
+Dur =
+∑
+T
+t=1 t ×CDt /(1+ r)t
+ME +
+(
+T + 1+ r
+r
+)P −∑ T
+t=1 CDt /(1+ r)t
+ME , (A3)
+in which CDt is the net cash distribution in yeart, ME is market equity,T is the length of forecasting
+period, andr is the cost of equity. ME is price per share times shares outstanding (Compustat annual
+item PRCC_F times item CSHO). Net cash distribution, CDt =B Et−1(ROEt −gt ), in which BEt−1
+is the book equity at the end of year t −1, ROEt is return on equity in year t, and gt is the book
+equity growth in t. We model ROE as a ﬁrst-order autoregressive process with an autocorrelation
+coefﬁcient of 0.57 and a long-run mean of 0.12, and the growth in book equity as a ﬁrst-order
+autoregressive process with an autocorrelation coefﬁcient of 0.24 and a long-run mean of 0.06. For
+the starting year (t = 0), we measure ROE as income before extraordinary items (item IB) divided
+by 1-year-lagged book equity (item CEQ), and the book equity growth rate as the annual change
+in sales (item SALE). Finally, we use a forecasting period of T = 10 years and a cost of equity of
+r =0.12.
+At the end of June of each year t, we use NYSE breakpoints to split stocks into deciles based
+on Dur for the ﬁscal year ending in calendar year t −1. Monthly value-weighted decile returns are
+calculated from July of year t to June of t +1, and the deciles are rebalanced in June of t +1.
+A.1.3 Investment. Table 2 lists 14 anomaly variables in this category, including ACI, I/A, NOA,
+△ PI/A, IG , NSI, CEI, NXF, IvG , IvC, OA, TA, POA, and PTA.
+A.1.3.1 ACI. Following Titman, Wei, and Xie (2004), we measure ACI at the end of June of year
+t as CE
+t−1/[(CEt−2 +CEt−3 +CEt−4)/3]−1, in which CE t−j is capital expenditure (Compustat
+annual item CAPX) scaled by sales (item SALE) for the ﬁscal year ending in calendar year t −j .
+The last 3-year average capital expenditure is designed to project the benchmark investment at
+the portfolio formation year. We exclude ﬁrms with sales less than 10 million dollars. At the end
+of June of each year t, we use NYSE breakpoints to sort stocks into deciles based on their ACI.
+Monthly value-weighted decile returns are computed from July of year t to June of t +1.
+A.1.3.2 I/A. Following Cooper, Gulen, and Schill (2008), we measure investment-to-assets, I/A,
+for the portfolio formation year t as total assets (Compustat annual item A T) for the ﬁscal year
+ending in calendar year t −1 divided by total assets for the ﬁscal year ending in t −2 minus 1. At
+the end of June of each year t, we use NYSE breakpoints to split stocks into deciles based on I/A,
+and calculate monthly value-weighted decile returns from July of year t to June of t +1.
+689
+
+--- PAGE 41 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 690 650–705
+The Review of Financial Studies / v 28 n 3 2015
+A.1.3.3 NOA. Following Hirshleifer et al. (2004), we deﬁne net operating assets (NOA) as
+operating assets minus operating liabilities. Operating assets are total assets (COMPUSTA T annual
+item A T) minus cash and short-term investment (item CHE). Operating liabilities are total assets
+minus debt included in current liabilities (item DLC, zero if missing), minus long-term debt (item
+DLTT, zero if missing), minus minority interests (item MIB, zero if missing), minus preferred
+stocks (item PSTK, zero if missing), and minus common equity (item CEQ). At the end of June of
+each year t, we use NYSE breakpoints to assign stocks into deciles based on NOA for the ﬁscal
+year ending in calendar year t −1 scaled by total assets for the ﬁscal year ending in t −2, and
+calculate monthly value-weighted decile returns from July of year t to June of t +1.
+A.1.3.4 △ PI/A. Following Lyandres, Sun, and Zhang (2008), we measure △ PI/A as changes in
+gross property, plant, and equipment (Compustat annual item PPEGT) plus changes in inventory
+(item INVT) scaled by lagged total assets (item A T). At the end of June of each yeart, we use NYSE
+breakpoints to assign stocks into deciles based on △ PI/A for the ﬁscal year ending in calendar year
+t −1, and calculate monthly value-weighted decile returns from July of year t to June of t +1.
+A.1.3.5 IG. Following Xing (2008), we measure investment growth (IG) for the portfolio
+formation year t as the growth rate in capital expenditure (Compustat annual item CAPX) from
+the ﬁscal year ending in calendar year t −2 to the ﬁscal year ending in t −1. At the end of June
+of each year t, we use NYSE breakpoints to split stocks into deciles based on IG , and calculate
+monthly value-weighted decile returns from July of year t to June of t +1.
+A.1.3.6 NSI. Following Fama and French (2008), at the end of June of year t, we measure net
+stock issues (NSI) as the natural log of the ratio of the split-adjusted shares outstanding at the ﬁscal
+year ending in calendar year t −1 to the split-adjusted shares outstanding at the ﬁscal year ending
+in t −2. We measure the split-adjusted shares outstanding as shares outstanding (Compustat annual
+item CSHO) times the adjustment factor (item AJEX). At the end of June of each year t,w eu s e
+NYSE breakpoints to sort all stocks into deciles based on NSI. We exclude ﬁrms with zero NSI.
+Monthly value-weighted decile returns are from July of year t to June of t +1, and the deciles are
+rebalanced in June of t +1.
+A.1.3.7 CEI. We measure CEI as the growth rate in the ME not attributable to the stock return,
+log(ME
+t/MEt−5)−r(t −5,t ). For the portfolio formation at the end of June of year t, r(t −5,t )
+is the cumulative log return on the stock from the last trading day of June in year t −5 to the last
+trading day of June in year t, and ME t is the ME on the last trading day of June in year t from
+CRSP . Equity issuance such as seasoned equity issues, employee stock option plans, and share-
+based acquisitions increase the composite issuance, whereas repurchase activities such as share
+repurchases and cash dividends reduce the composite issuance. At the end of June of each year t,
+we use NYSE breakpoints to sort stocks into deciles on CEI, and calculate monthly value-weighted
+decile returns from July of year t to June of year t +1.
+A.1.3.8 NXF . Following Bradshaw, Richardson, and Sloan (2006), we measure net external
+ﬁnancing (NXF) as the sum of net equity ﬁnancing and net debt ﬁnancing. Net equity ﬁnancing
+is the proceeds from the sale of common and preferred stocks (Compustat annual item SSTK)
+less cash payments for the repurchases of common and preferred stocks (item PRSTKC) less cash
+payments for dividends (item DV). Net debt ﬁnancing is the cash proceeds from the issuance of
+long-term debt (item DLTIS) less cash payments for long-term debt reductions (item DLTR) plus
+the net changes in current debt (item DLCCH, zero if missing). At the end of June of each year t,
+we use NYSE breakpoints to sort stocks into deciles based on NXF for the ﬁscal year ending in
+calendar year t −1 scaled by the average of total assets for ﬁscal years ending in t −2 and t −1.
+We exclude ﬁrms with zero NXF. Monthly value-weighted decile returns are calculated from July
+690
+
+--- PAGE 42 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 691 650–705
+Digesting Anomalies: An Investment Approach
+of year t to June of t +1, and the deciles are rebalanced in June of t +1. Because the coverage of
+the ﬁnancing data starts in 1971, the NXF decile returns start in July 1972.
+A.1.3.9 IvG. We deﬁne inventory growth (IvG) for the portfolio formation year t as the growth
+rate in inventory (Compustat annual item INVT) from the ﬁscal year ending in calendar year t −2
+to the ﬁscal year ending in t −1. At the end of June of each year t, we use NYSE breakpoints to
+split stocks into deciles based on IvG . We exclude ﬁrms with zero IvC (most of these ﬁrms carry
+no inventory). Monthly value-weighted decile returns are calculated from July of year t to June of
+t +1, and the decile returns are rebalanced in June of t +1.
+A.1.3.10 IvC. Following Thomas and Zhang (2002), we deﬁne inventory changes (IvC) for the
+portfolio formation year t as the change in inventory (Compustat annual item INVT) from the
+ﬁscal year ending in calendar year t −2 to the ﬁscal year ending in t −1, scaled by the average
+of total assets for ﬁscal years ending in t −2 and t −1. At the end of June of each year t,w eu s e
+NYSE breakpoints to split stocks into deciles based on IvC. We exclude ﬁrms with zero IvC (most
+of these ﬁrms carry no inventory). Monthly value-weighted decile returns are calculated from July
+of year t to June of t +1, and the deciles are rebalanced in June of t +1.
+A.1.3.11 OA. Prior to 1988, we use the balance-sheet approach of Sloan (1996) to measure
+operating accruals (OA) as changes in noncash working capital minus depreciation, in which the
+noncash working capital is changes in noncash current assets minus changes in current liabilities
+less short-term debt and taxes payable. In particular, OA equals ( △CA−△ CASH )−(△CL−
+△STD −△ TP )−DP, in which △CA is the change in current assets (Compustat annual item
+ACT), △CASH is the change in cash or cash equivalents (item CHE), △CL is the change in
+current liabilities (item LCT), △STD is the change in debt included in current liabilities (item
+DLC, zero if missing), △TP is the change in income taxes payable (item TXP , zero if missing),
+and DP is depreciation and amortization (item DP , zero if missing). Starting from 1988, we follow
+Hribar and Collins (2002) to measure OA using the statement of cash ﬂows as net income (item
+NI) minus net cash ﬂow from operations (item OANCF). Doing so helps mitigate measurement
+errors that can arise from nonoperating activities such as acquisitions and divestitures. Data from
+the statement of cash ﬂows are only available since 1988. To construct the OA deciles, at the end
+of June of each year t, we use NYSE breakpoints to sort stocks into deciles based on OA for the
+ﬁscal year ending in calendar year
+t −1 scaled by total assets (item A T) for the ﬁscal year ending
+in t −2. Monthly value-weighted decile returns are calculated from July of year t to June of t +1,
+and the deciles are rebalanced in June of t +1.
+A.1.3.12 TA. Prior to 1988, we use the balance-sheet approach in Richardson et al. (2005) to
+measure total accruals (TA) as △WC +△NCO +△FIN . △WC is the change in net non-cash
+working capital. Net non-cash working capital is current operating asset ( COA ) minus current
+operating liabilities ( COL ), with COA = current assets (Compustat annual item ACT) minus
+cash and short-term investments (item CHE) and COL = current liabilities (item LCT) minus
+debt in current liabilities (item DLC, zero if missing). △NCO is the change in net non-current
+operating assets. Net non-current operating assets is non-current operating assets ( NCOA ) minus
+non-current operating liabilities ( NCOL ), with NCOA = total assets (item A T) minus current
+assets (item ACT) minus investments and advances (item IV AO, zero if missing), and NCOL =
+total liabilities (item LT) minus current liabilities (item LCT) minus long-term debt (item DLTT,
+zero if missing). △FIN is the change in net ﬁnancial assets. Net ﬁnancial assets is ﬁnancial assets
+(FINA ) minus ﬁnancial liabilities ( FINL ), with FINA = short-term investments (item IVST,
+zero if missing) plus long-term investments (item IV AO, zero if missing), and FINL = long-term
+debt (item DLTT, zero if missing) plus debt in current liabilities (item DLC, zero if missing) plus
+preferred stock (item PSTK, zero if missing).
+691
+
+--- PAGE 43 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 692 650–705
+The Review of Financial Studies / v 28 n 3 2015
+Starting from 1988, we use the cash ﬂow approach to measure TA as net income (Compustat
+annual item NI) minus total operating, investing, and ﬁnancing cash ﬂows (items OANCF, IVNCF,
+and FINCF) plus sales of stocks (item SSTK, zero if missing) minus stock repurchases and dividends
+(items PRSTKC and DV , zero if missing). Data from the statement of cash ﬂows are only available
+since 1988. We use NYSE breakpoints to sort stocks at the end of June of each year t into deciles
+based on TA for the ﬁscal year ending in calendar year t −1 scaled by total assets (Compustat
+annual item A T) for the ﬁscal year ending in t −2. We calculate monthly value-weighted decile
+returns from July of year t to June of t +1, and rebalance the deciles in June of t +1.
+A.1.3.13 POA. Accruals are traditionally scaled by total assets. Hafzalla, Lundholm, and V an
+Winkle (2011) show that scaling accruals by the absolute value of earnings (percent accruals) is
+more effective in selecting ﬁrms for which the differences between sophisticated and naive forecasts
+of earnings are the most extreme. To construct the percent operating accruals (POA) deciles, at
+the end of June of each year t, we use NYSE breakpoints to sort stocks into deciles based on OA
+scaled by the absolute value of net income (Compustat annual item NI) for the ﬁscal year ending
+in calendar year t −1. Monthly value-weighted decile returns are calculated from July of year t to
+June of t +1, and the deciles are rebalanced in June of t +1.
+A.1.3.14 PTA. We use NYSE breakpoints to sort stocks at the end of June of each year t into
+deciles based on total accurals (TA) scaled by the absolute value of net income (Compustat annual
+item NI) for the ﬁscal year ending in calendar yeart −1. We calculate value-weighted decile returns
+from July of year t to June of t +1, and rebalance the deciles in June of t +1.
+A.1.4 Proﬁtability. Table 2 lists 14 anomaly variables in this category, including ROE, ROA,
+RNA, PM, A TO, CTO, GP/A,F , TES, TI/BI, RS, NEI, FP , and O.
+A.1.4.1 ROE. ROE is income before extraordinary items (Compustat quarterly item IBQ)
+divided by 1-quarter-lagged book equity. Book equity is shareholders’ equity, plus balance-sheet
+deferred taxes and investment tax credit (item TXDITCQ) if available, minus the book value of
+preferred stock. Depending on availability, we use stockholders’ equity (item SEQQ), or common
+equity (item CEQQ) plus the carrying value of preferred stock (item PSTKQ), or total assets
+(item A TQ) minus total liabilities (item LTQ), in that order, as shareholders’ equity. We use
+redemption value (item PSTKRQ) if available, or carrying value for the book value of preferred
+stock.
+At the beginning of each month t, we use NYSE breakpoints to sort all stocks into deciles
+based on ROE computed with the most recently announced quarterly earnings. Monthly value-
+weighted decile returns are calculated for the current month t, and the deciles are rebalanced
+monthly. Earnings data in Compustat quarterly ﬁles are used in the monthly sorts in the months
+immediately after the most recent public earnings announcement dates (item RDQ). For a ﬁrm to
+enter the portfolio formation, we require the end of the ﬁscal quarter that corresponds to the most
+recently announced earnings to be within 6 months prior to the portfolio formation. This restriction
+is imposed to exclude stale earnings information.
+A.1.4.2 ROA. We measure ROA as income before extraordinary items (Compustat quarterly
+item IBQ) divided by 1-quarter-lagged total assets (item A TQ). At the beginning of each month
+t, we use NYSE breakpoints to sort all stocks into deciles based on ROA computed with the
+most recently announced quarterly earnings. Monthly value-weighted decile returns are calculated
+for month t, and the deciles are rebalanced at the beginning of t +1. For a ﬁrm to enter the
+portfolio formation, we require the end of the ﬁscal quarter that corresponds to the most recently
+announced earnings to be within 6 months prior to the portfolio formation to exclude stale earnings
+information.
+692
+
+--- PAGE 44 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 693 650–705
+Digesting Anomalies: An Investment Approach
+A.1.4.3 RNA, PM, and A TO. Following Soliman (2008), we use DuPont analysis to decompose
+ROE as RNA + FLEV× SPREAD, in which ROE is return on equity, RNA is return on net operating
+assets, FLEV is ﬁnancial leverage, and SPREAD is the difference between return on net operating
+assets and borrowing costs. We further decompose RNA = PM × A TO, in which PM is proﬁt
+margin (operating income/sales) and A TO is asset turnover (sales/net operating assets).
+We use annual sorts to form RNA, PM, and A TO deciles. At the end of June of yeart, we measure
+RNA as operating income after depreciation (Compustat annual item OIADP) for the ﬁscal year
+ending in calendar year t −1 divided by net operating assets (NOA) for the ﬁscal year ending in
+t −2. NOA is operating assets minus operating liabilities. Operating assets are total assets (item
+A T) less cash and short-term investments (item CHE) less other investment and advances (item
+IV AO, zero if missing). Operating liabilities are total assets (item A T), less the long- and short-term
+portions of debt (items DLTT and DLC, zero if missing), less minority interest (item MIB, zero
+if missing), less book value of preferred equity (items PSTK, zero if missing), less book value of
+common equity (items CEQ). PM is operating income after depreciation (item OIADP) divided
+by sales (item SALE) for the ﬁscal year ending in calendar year t −1. A TO is sales (item SALE)
+for the ﬁscal year ending in calendar year t −1 divided by NOA for the ﬁscal year ending in t −2.
+At the end of June of each year t, we use NYSE breakpoints to sort stocks into 3 sets of deciles
+based on RNA, PM, and A TO. We exclude ﬁrms with nonpositive NOA for the ﬁscal year ending
+in calendar year t −2 when forming the RNA and the A TO deciles. Monthly value-weighted decile
+returns are calculated from July of year t to June of t +1, and the deciles are rebalanced in June of
+t +1.
+A.1.4.4 CTO. To construct the Haugen and Baker (1996) capital turnover (CTO) deciles, at the
+end of June of each year t, we use NYSE breakpoints to split stocks into deciles based on sales
+(Compustat annual item SALE) divided by 1-year-lagged total assets (item A T) for the ﬁscal year
+ending in calendar year t −1. Monthly value-weighted decile returns are calculated from July of
+year t to June of t +1, and the deciles are rebalanced in June of t +1.
+A.1.4.5 GP/A. Following Novy-Marx (2013), we measure gross proﬁts-to-assets (GP/A) as total
+revenue (Compustat annual item REVT) minus cost of goods sold (item COGS) divided by total
+assets (item A T, the denominator is current, not lagged, total assets). At the end of June of each year
+t, we use NYSE breakpoints to sort stocks into deciles based on GP/A for the ﬁscal year ending
+in calendar year t −1. Monthly value-weighted decile returns are calculated from July of year t to
+June of t +1, and the deciles are rebalanced in June of t +1.
+A.1.4.6 F . Piotroski (2000) classiﬁes each ﬁrm’s fundamental signal as either good or bad
+depending on the signal’s implication for future stock prices and proﬁtability. An indicator variable
+for a particular signal is 1 if its realization is good and zero if it is bad. The aggregate signal, denoted
+F , is the sum of the 9 binary signals. F is designed to measure the overall quality, or strength, of
+the ﬁrm’s ﬁnancial position. Nine fundamental signals are chosen to measure 3 areas of a ﬁrm’s
+ﬁnancial condition, proﬁtability, liquidity, and operating efﬁciency.
+Four variables are selected to measure proﬁtability-related factors:
+• ROA is income before extraordinary items (Compustat annual item IB) scaled by 1-year-
+lagged total assets (item A T). If the ﬁrm’s ROA is positive, the indicator variable F
+ROA
+equals 1, and zero otherwise.
+• CFO is cash ﬂow from operation scaled by 1-year-lagged total assets (Compustat annual
+item A T). Cash ﬂow from operation is item OANCF, available after 1988. Prior to that,
+we use funds from operation (item FOPT) minus the annual change in working capital
+(item WCAP). If the ﬁrm’s CFO is positive, the indicator variable F
+CFO equals 1, and zero
+otherwise.
+693
+
+--- PAGE 45 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 694 650–705
+The Review of Financial Studies / v 28 n 3 2015
+• /Delta1ROA is the current year’s ROA less the prior year’s ROA. If /Delta1ROA is positive, the
+indicator variable F/Delta1ROA is 1, and zero otherwise.
+• Sloan (1996) shows that earnings driven by positive accrual adjustments are a bad signal
+about future earnings. As such, the indicator FACC equals 1, if CFO is greater than ROA,
+and zero otherwise.
+Three variables are selected to measure changes in capital structure and a ﬁrm’s ability to meet
+future debt obligations. Piotroski (2000) assumes that an increase in leverage, a deterioration of
+liquidity, or the use of external ﬁnancing is a bad signal about ﬁnancial risk.
+• /Delta1LEVER is the change in the ratio of total long-term debt (Compustat annual item DLTT)
+to average total assets over the prior 2 years. F
+/Delta1LEVER is 1 if the ﬁrm’s leverage ratio falls
+(i.e., /Delta1LEVER< 0) in the year preceding portfolio formation, and zero otherwise.
+• /Delta1LIQUID measures the change in a ﬁrm’s current ratio between the current and prior
+years, in which the current ratio is the ratio of current assets (Compustat annual item ACT)
+to current liabilities (item LCT). An improvement in liquidity ( /Delta1LIQUID> 0) is a good
+signal about the ﬁrm’s ability to service current debt obligations. The indicator F
+/Delta1LIQUID
+equals 1 if the ﬁrm’s liquidity improves, and zero otherwise.
+• The indicator, EQ, equals 1 if the ﬁrm does not issue common equity in the year prior to
+portfolio formation, and zero otherwise. The issuance of common equity is sales of common
+and preferred stocks (Compustat annual item SSTK) minus any increase in preferred stock
+(item PSTK). Issuing equity is interpreted as a bad signal (inability to generate sufﬁcient
+internal funds to service future obligations).
+The remaining 2 signals are designed to measure changes in the efﬁciency of the ﬁrm’s
+operations that reﬂect 2 key constructs underlying the decomposition of return on assets.
+• /Delta1MARGIN is the ﬁrm’s current gross margin ratio, measured as gross margin (Compustat
+annual item SALE minus item COGS) scaled by sales (item SALE), less the prior year’s
+gross margin ratio. An improvement in margins signiﬁes a potential improvement in factor
+costs, a reduction in inventory costs, or a rise in the price of the ﬁrm’s product. The indictor
+F
+/Delta1MARGIN equals 1 if /Delta1MARGIN> 0 and zero otherwise.
+• /Delta1TURN is the ﬁrm’s current year asset turnover ratio, measured as total sales (Compustat
+annual item SALE) scaled by 1-year-lagged total assets (item A T), minus the prior year’s
+asset-turnover ratio. An improvement in this ratio signiﬁes greater asset productivity. The
+indicator, F
+/Delta1TURN , equals 1 if /Delta1TURN is positive, and zero otherwise.
+Piotroski (2000) forms a composite score, F , as the sum of the individual binary signals:
+F =FROA +F/Delta1ROA +FCFO +FACC +F/Delta1MARGIN +F/Delta1TURN +F/Delta1LEVER +F/Delta1LIQUID +EQ. (A4)
+At the end of June of each year t, we sort stocks based on F for the ﬁscal year ending in calender
+year t −1 to form 7 portfolios: low ( F =0,1,2), 3, 4, 5, 6, 7, and high ( F =8,9). Because extreme
+F scores are rare, we combine scores 0, 1, and 2 into the low portfolio, and scores 8 and 9 into
+the high portfolio. Monthly value-weighted portfolio returns are calculated from July of year t to
+June of t +1, and the portfolios are rebalanced in June of t +1. Because the data on equity offering
+start in 1971, the F portfolio returns start in July 1972.
+A.1.4.7 TES. Following Thomas and Zhang (2011), we measure tax expense surprise (TES) as
+changes in tax expense, which is tax expense per share (Compustat quarterly item TXTQ/(item
+CSHPRQ times item AJEXQ)) in quarter q minus tax expense per share in quarter q−4, scaled by
+assets per share (item A TQ/(item CSHPRQ times item AJEXQ)) in quarterq−4. At the beginning
+of each month t, we use NYSE breakpoints to sort stocks into deciles based on their TES calculated
+with Compustat quarterly data items from at least 4 months ago. We exclude ﬁrms with zero TES
+694
+
+--- PAGE 46 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 695 650–705
+Digesting Anomalies: An Investment Approach
+(most of these ﬁrms pay no taxes). We calculate deciles returns for the subsequent 3 months from
+t to t +2, and the portfolios are rebalanced at the beginning of month t +1. The 3-month holding
+period means that in each month for any given TES decile there exist 3 subdeciles. We take the
+simple average of the value-weighted subdecile returns as the monthly return of the TES decile.
+For sufﬁcient data coverage, we start the TES deciles in January 1976.
+A.1.4.8 TI/BI. Following Green, Hand, and Zhang (2013), we measure taxable income-to-book
+income (TI/BI) as pretax income (Compustat annual item PI) divided by net income (item NI).
+At the end of June of each year t, we use NYSE breakpoints to sort stocks into deciles, based on
+TI/BI for the ﬁscal year ending in calendar year t −1. We exclude ﬁrms with negative or zero net
+income. Monthly value-weighted decile returns are calculated from July of year t to June of t +1.
+A.1.4.9 RS. Following Jegadeesh and Livnat (2006), we measure revenue surprise (RS) as
+the change in revenue per share (Compustat quarterly item SALEQ/(item CSHPRQ times item
+AJEXQ)) from its value 4 quarters ago divided by the standard deviation of this change in quarterly
+revenue per share over the prior 8 quarters (6 quarters minimum). Jegadeesh and Livnat argue that
+quarterly revenue data are available when earnings are announced. As such, we use the same timing
+convention as for the SUE-1 deciles. At the beginning of each month t, we use NYSE breakpoints
+to split stocks into deciles, based on RS at the most recent quarterly earnings announcement date
+(item RDQ). Monthly value-weighted deciles returns are calculated for the current month t.T o
+avoid stale information, we require the end of the ﬁscal quarter that corresponds to the most recent
+quarterly earnings announcement to be within 6 months prior to the portfolio formation.
+A.1.4.10 NEI. We follow Barth, Elliott, and Finn (1999) and Green, Hand, and Zhang (2013) in
+measuring NEI as the number of consecutive quarters (up to 8 quarters) with an increase in earnings
+(Compustat quarterly item IBQ) over the same quarter in the prior year. At the beginning of each
+month t, we sort stocks into 9 portfolios (with NEI = 0,1,2,..., 7, and 8, respectively) based on NEI
+calculated at the most recent earnings announcement date (item RDQ). To avoid stale information,
+we require the end of the ﬁscal quarter that corresponds to the most recent earnings announcement to
+be within 6 months prior to the portfolio formation. We calculate monthly value-weighted portfolio
+returns for the current month t and rebalance the portfolios at the beginning of t +1.
+A.1.4.11 FP . We construct failure probability (FP) following Campbell, Hilscher, and Szilagyi
+(2008, the third column in Table IV):
+FP
+t ≡− 9.164−20.264NIMT AAV Gt +1.416TL MTAt −7.129EXRETAVG t
++1.411SIGMA t − 0.045RSIZE t −2.132CASHMTA t +0.075MBt −0.058PRICE t
+(A5)
+in which
+NIMT AAV Gt−1,t−12 ≡ 1−φ3
+1−φ12
+(
+NIMTA t−1,t−3 +··· +φ9NIMTA t−10,t−12
+)
+(A6)
+EXRETAVG t−1,t−12 ≡ 1−φ
+1−φ12
+(
+EXRET t−1 +··· +φ11EXRET t−12
+)
+, (A7)
+and φ =2−1/3. NIMTA is net income (Compustat quarterly item NIQ) divided by the sum of
+market equity (share price times the number of shares outstanding from CRSP) and total liabilities
+(item LTQ). The moving average NIMTAA VGcaptures the idea that a long history of losses is a
+better predictor of bankruptcy than 1 large quarterly loss in a single month. EXRET ≡ log(1+
+695
+
+--- PAGE 47 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 696 650–705
+The Review of Financial Studies / v 28 n 3 2015
+Rit )−log(1+ RS&P500,t ) is the monthly log excess return on each ﬁrm’s equity relative to the S&P
+500 index. The moving average EXRETAVG captures the idea that a sustained decline in stock
+market value is a better predictor of bankruptcy than a sudden stock price decline in a single month.
+TL MTA is the ratio of total liabilities divided by the sum of market equity and total liabilities.
+SIGMA is the annualized 3-month rolling sample standard deviation:
+√
+252
+N−1
+∑
+k∈{t−1,t−2,t−3}r2
+k ,
+in whichk is the index of trading days in monthst −1,t −2, andt −3,rk is the ﬁrm-level daily return,
+and N is the total number of trading days in the 3-month period. SIGMA is treated as missing if
+there are less than ﬁve nonzero observations over the three months in the rolling window. RSIZE
+is the relative size of each ﬁrm measured as the log ratio of its market equity to that of the S&P
+500 index. CASHMTA , used to capture the liquidity position of the ﬁrm, is the ratio of cash and
+short-term investments (Compustat quarterly item CHEQ) divided by the sum of market equity
+and total liabilities (item LTQ).
+MB is the market-to-book equity, in which book equity is measured in the same way as the
+denominator of ROE. Following Campbell et al., we add 10% of the difference between the market
+equity and the book equity to the book equity to alleviate measurement issues for extremely small
+book equity values. For ﬁrm-month observations that still have negative book equity after this
+adjustment, we replace these negative values with $1, to ensure that the market-to-book ratios
+for these ﬁrms are in the right tail of the distribution. PRICE is each ﬁrm’s log price per share,
+truncated above at $15. We further eliminate stocks with prices less than $1 at the portfolio formation
+date. We winsorize the variables on the right-hand side of Equation (A5) at the 5th and 95th
+percentiles of their pooled distribution across all ﬁrm-month observations.
+To construct the FP deciles, at the beginning of each month t, we use NYSE breakpoints to
+split stocks into deciles based on FP calculated with accounting data from the ﬁscal quarter ending
+at least 4 months ago. Because unlike earnings, other quarterly data items in the deﬁnition of FP
+might not be available upon earnings announcement, we impose a 4-month gap between the ﬁscal
+quarter end and portfolio formation to guard against look-ahead bias. We calculate decile returns
+for the subsequent 6 months after the portfolio formation from month t to t +5 and rebalance the
+deciles at the beginning of t +1. (Holding the decile returns for only the current month t yields an
+insigniﬁcant average return of −0.47% per month ( t =−1.25) for the high-minus-low FP decile.)
+Because of the 6-month holding period, there exist 6 subdeciles for a given FP decile in each month.
+We take the simple average of the value-weighted subdecile returns as the monthly return of the
+FP decile. Because of the limited data coverage, we start the FP deciles in January 1976.
+A.1.4.12 O. We follow Ohlson (1980, Model 1 in Table 4) to construct O-score:
+−1.32−0.407 log(TA )+6 .03TL TA−1.43WCTA +0.076CLCA
+−1.72OENEG −2.37NITA −1.83FUTL +0.285INTWO −0.521CHIN,
+in which TA is total assets (Compustat annual item A T).TL TA
+is the leverage ratio deﬁned as the
+book value of debt (item DLC plus item DLTT) divided by total assets. WCTA is working capital
+divided by total assets, (item ACT minus item LCT)/item A T. CLCA is current liability (item
+LCT) divided by current assets (item ACT). OENEG is 1 if total liabilities (item LT) exceeds
+total assets (item A T) and is zero otherwise.NITA is net income (item NI) divided by total assets.
+FUTL is the fund provided by operations (item PI) divided by total liabilities (item LT).INTWO
+is equal to 1 if net income (item NI) is negative for the last 2 years, and zero otherwise. CHIN is
+(NIt −NIt−1)/(|NIt |+|NIt−1|), in which NIt is net income (item NI).
+At the end of June of each year t, we use NYSE breakpoints to split stocks into deciles based
+on O-score for the ﬁscal year ending in calendar year t −1. Monthly value-weighted decile returns
+are calculated from July of year t to June of t +1, and the deciles are rebalanced in June of t +1.
+A.1.5 Intangibles. Table 2 lists 11 anomaly variables in this category, including OC/A, BC/A,
+Ad/M, RD/S, RD/M, RC/A, H/N, OL, G, AccQ, and Ind.
+696
+
+--- PAGE 48 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 697 650–705
+Digesting Anomalies: An Investment Approach
+A.1.5.1 OC/A. Following Eisfeldt and Papanikolaou (2013), we construct the stock of
+organization capital (OC) using Selling, General, and Administrative (SG&A) expenses
+(Compustat annual item XSGA). OC is constructed with the perpetual inventory method:
+OC
+it =( 1−δ)OCit−1 +SG&Ait /CPI t , (A8)
+in which CPI t is the consumer price index during year t and δ is the annual depreciation rate of
+OC. The initial stock of OC is OC i0 =S G & Ai0/(g +δ), in which SG&A i0 is the ﬁrst valid SG&A
+observation (zero or positive) for ﬁrm i, and g is the long-term growth rate of SG&A. Following
+Eisfeldt and Papanikolaou, we assume a depreciation rate of 15% for OC, and a long-term growth
+rate of 10% for SG&A. Missing SG&A values after the starting date are treated as zero. For portfolio
+formation at the end of June of yeart, we require SG&A to be nonmissing for the ﬁscal year ending
+in calendar year t −1 because this SG&A value receives the highest weight in OC. In addition, we
+exclude ﬁrms with zero OC. We form organization capital-to-assets (OC/A) by scaling OC with
+total assets (item A T) from the same ﬁscal year.
+We industry-standardize OC/A using the Fama-French (1997) 17-industry classiﬁcation. We
+demean a ﬁrm’s OC/A by its industry mean and then divide the demeaned OC/A by the standard
+deviation of OC/A within its industry. When computing industry mean and standard deviation, we
+winsorize OC/A at the 1 and 99 percentiles of all ﬁrms each year. At the end of June of each year
+t, we use NYSE breakpoints to sort stocks into deciles based on OC/A for the ﬁscal year ending
+in calendar year t −1. Monthly value-weighted decile returns are calculated from July of year t to
+June of t +1, and the deciles are rebalanced in June of t +1.
+A.1.5.2 BC/A. Following Belo, Lin, and Vitorino (2014), we construct brand capital (BC) by
+accumulating advertising expenses (Compustat annual item XAD):
+BC
+it =( 1−δ)BCit−1 +XADit , (A9)
+in which δ is the annual depreciation rate of BC. The initial stock of BC is BC i0 = XADi0/(g +δ),
+in which XADi0 is ﬁrst valid XAD (zero or positive) for ﬁrm i, and g is the long-term growth rate
+of XAD. We assume a depreciation rate of 50% for BC, and a long-term growth rate of 10% for
+XAD. Missing values of XAD after the starting date are treated as zero. For the portfolio formation
+at the end of June of year t, we exclude ﬁrms with zero BC and require XAD to be nonmissing
+for the ﬁscal year ending in calendar year t −1. We form brand capital-to-assets (BC/A) by scaling
+BC with total assets (item A T) from the same ﬁscal year.
+At the end of June of each year t, we use NYSE breakpoints to sort stocks into deciles based
+on BC/A for the ﬁscal year ending in calendar year t −1. Monthly value-weighted decile returns
+are calculated from July of year t to June of t +1, and the deciles are rebalanced in June of t +1.
+Because sufﬁcient XAD data start in 1972, the BC/A decile returns start in July 1973.
+A.1.5.3 Ad/M. At the end of June of each year t, we use NYSE breakpoints to sort stocks into
+deciles based on advertising expenses-to-market (Ad/M), which is advertising expenses (Compustat
+annual item XAD) for the ﬁscal year ending in calendar year t −1 divided by the market equity
+(from Compustat or CRSP) at the end of December of t −1. We keep only ﬁrms with positive
+advertising expenses. Monthly value-weighted decile returns are calculated from July of year t to
+June of t +1. Because sufﬁcient XAD data start in 1972, the BC/A decile returns start in July 1973.
+A.1.5.4 RD/S. At the end of June of each year t, we use NYSE breakpoints to sort stocks into
+deciles based on R&D-to-sales, which is R&D expenses (Compustat annual item XRD) divided
+by sales (item SALE) for the ﬁscal year ending in calendar year t −1. We keep only ﬁrms with
+positive R&D expenses. Monthly value-weighted decile returns are calculated from July of year t
+to June of t +1. Because the accounting treatment of R&D expenses was standardized in 1975 (by
+Financial Accounting Standards Board Statement No. 2), the sample starts in July 1976.
+697
+
+--- PAGE 49 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 698 650–705
+The Review of Financial Studies / v 28 n 3 2015
+A.1.5.5 RD/M. At the end of June of each year t, we use NYSE breakpoints to split stocks into
+deciles based on R&D-to-market (RD/M), which is R&D expenses (Compustat annual item XRD)
+for the ﬁscal year ending in calendar year t −1 divided by the market equity (from Compustat or
+CRSP) at the end of December of t −1. We keep only ﬁrms with positive R&D expenses. Monthly
+value-weighted decile returns are calculated from July of year t to June of t +1, and the deciles are
+rebalanced in June of t +1. Because the accounting treatment of R&D expenses was standardized
+in 1975, the RD/M decile returns start in July 1976.
+A.1.5.6 RC/A. Per Li (2011), we measure R&D capital (RC) as a weighted average of R&D
+expenses (Compustat annual item XRD) over the last 5 years with a depreciation rate of 20%:
+RC
+it = XRDit +0.8XRDit−1 +0.6XRDit−2 +0.4XRDit−3 +0.2XRDit−4. (A10)
+We scale RC with total assets (item A T) to form R&D capital-to-assets (RC/A). At the end of June
+of each year t, we use NYSE breakpoints to split stocks into deciles based on RC/A for the ﬁscal
+year ending in calendar year t −1. We keep only ﬁrms with positive RC. Monthly value-weighted
+decile returns are calculated from July of year t to June of t +1, and the deciles are rebalanced in
+June of t +1. For portfolio formation at the end of June of year t, we require R&D expenses to be
+nonmissing for the ﬁscal year ending in calendar year t −1, because this value of R&D expenses
+receives the highest weight in RC. Because RC requires past 5 years of R&D expenses and the
+accounting treatment of R&D expenses was standardized in 1975, the sample starts in July 1980.
+A.1.5.7 H/N. Following Belo, Lin, and Bazdresch (2014), at the end of June of year t,w e
+measure the ﬁrm-level hiring rate (H/N) as ( N
+t−1 −Nt−2)/(0.5Nt−1 +0.5Nt−2), in which Nt−1 is
+the number of employees (Compustat annual item EMP) from the ﬁscal year ending in calendar
+year t −1. At the end of June of year t, we use NYSE breakpoints to sort stocks into deciles based
+on H/N. Monthly value-weighted decile returns are calculated from July of year t to June of t +1.
+A.1.5.8 OL. Following Novy-Marx (2011), we measure operating leverage (OL) as operating
+costs scaled by total assets (Compustat annual item A T, the denominator is current, not lagged,
+total assets). Operating costs are the cost of goods sold (item COGS) plus selling, general, and
+administrative expenses (item XSGA). At the end of June of year t, we use NYSE breakpoints to
+sort stocks into deciles based on OL for the ﬁscal year ending in calendar year t −1, and calculate
+monthly value-weighted decile returns from July of year t to June of t +1.
+A.1.5.9 G. The data for Gompers, Ishii, and Metrick (2003) corporate governance index (G, from
+September 1990 to December 2006) are from Andrew Metrick’s Web site. To form theG portfolios,
+we use the following breakpoints: G≤ 5,6,7,8,9,10,11,12,13, and ≥ 14 (see Table VI, Gompers
+et al.). We rebalance the portfolios in the months immediately following each publication of the
+G-index, and calculate monthly value-weighted portfolio returns between 2 adjacent publication
+dates. The ﬁrst months following the publication dates are September 1990, July 1993, July 1995,
+February 1998, November 1999, January 2002, January 2004, and January 2006.
+A.1.5.10 AccQ. Following Francis et al. (2005), we estimate accrual quality (AccQ) with the
+following cross-sectional regression (all variables are scaled by lagged total assets):
+TCA
+it =φ0,i +φ1,iCFO it−1 +φ2,iCFO it +φ3,iCFO it +1 +φ4,i△REVit +φ5,iPPE it +vit ,
+(A11)
+in which TCA it is ﬁrm i’s total current accruals in year t, CFO it is cash ﬂow from operations
+in t, △REVit is change in revenues (Compustat annual item SALE) between t −1 and t, and
+PPE it is gross property, plant, and equipment (item PPEGT) in t. TCA it =△CAit −△ CLit −
+△CASHit +△STDEBT it , in which△CAit is ﬁrm i’s change in current assets (item ACT) between
+698
+
+--- PAGE 50 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 699 650–705
+Digesting Anomalies: An Investment Approach
+year t −1 and t, △CLit is change in current liabilities (item LCT), △CASHit is change in cash
+(item CHE), and △STDEBT it is change in debt in current liabilities (item DLC, zero if missing).
+CFO it =NIBE it −TA it , in whichNIBE it is income before extraordinary items (item IB).TA it =
+△CAit −△ CLit −△ CASHit +△STDEBT it −DEPN it , in which DEPN it is depreciation and
+amortization expense (item DP , zero if missing).
+We estimate annual cross-sectional regressions in Equation (A11) for each of Fama-French
+(1997) 48 industries (excluding 4 ﬁnancial industries), with at least 20 ﬁrms in year t.W e
+winsorize the regressors at the 1 and 99 percentiles of all ﬁrms each year. The annual cross-sectional
+regressions yield ﬁrm- and year-speciﬁc residuals,v
+it . We measure accrual quality, AccQit =σ (vi )t ,
+as the standard deviation of ﬁrm i’s residuals,vit , calculated over years t −4 through t.
+At the end of June of each year t, we use NYSE breakpoints to sort stocks into deciles based
+on AccQ for the ﬁscal year ending in calendar year t −2. To avoid look-ahead bias, we do not sort
+on AccQ for the ﬁscal year ending in t −1, because the regression in Equation (A11) requires the
+next year’s CFO. Monthly value-weighted decile returns are calculated from July of year t to June
+of t +1, and the deciles are rebalanced in June of t +1.
+A.1.5.11 Ind. At the end of June of each year t, we use the industry classiﬁcations from Kenneth
+French’s Web site to assign stocks into 10 industry portfolios based on SIC codes (Compustat
+annual item SICH) for the ﬁscal year ending in calendar year t −1. When Compustat SIC codes
+are unavailable, we use CRSP SIC codes (CRSP item SICCD) for June of year t. Monthly value-
+weighted portfolio returns are computed from July of year t to June of year t +1, and the portfolios
+are rebalanced in June oft +1. We exclude ﬁnancial ﬁrms from the last industry portfolio (“Other”).
+A.1.6 Trading Frictions. Table 2 lists 13 anomaly variables in this category, including ME, Ivol,
+Tvol, Svol, MDR, β,D -β, S-Rev, Disp, Turn, 1/P , Dvol, and Illiq.
+A.1.6.1 ME. ME is price times shares outstanding from CRSP . At the end of June of each year
+t, we use NYSE breakpoints to sort stocks into deciles based on the June-end ME, and calculate
+monthly value-weighted decile returns from July of year t to June of t +1.
+A.1.6.2 Ivol. Following Ang et al. (2006), we measure a stock’s idiosyncratic volatility (Ivol) as
+the standard deviation of the residuals from regressing the stock’s returns in excess of the one-month
+Treasury bill rate on the Fama-French (1993) 3 factors. At the beginning of each month t,w eu s e
+NYSE breakpoints to sort stocks into deciles based on the Ivol estimated with daily returns from
+month t −1. We require a minimum of 15 daily returns. Monthly value-weighted decile returns are
+calculated for the current month t, and the deciles are rebalanced at the beginning of month t +1.
+A.1.6.3 Tvol. Following Ang et al. (2006), we measure a stock’s total volatility (Tvol) as the
+standard deviation of its daily returns. At the beginning of each montht, we use NYSE breakpoints
+to sort stocks into deciles based on the Tvol estimated with the daily returns from month t −1. We
+require a minimum of 15 daily returns. Monthly value-weighted decile returns are calculated for
+the current month t, and the deciles are rebalanced at the beginning of month t +1.
+A.1.6.4 Svol. Following Ang et al. (2006), we measure systematic volatility (Svol) as β
+i
+△ VXO
+from the bivariate regression:
+ri
+d =βi
+0 +βi
+MKT MKTd +βi
+△ VXO△ VXOd +ϵi
+d, (A12)
+in which ri
+d is stock i’s return in excess of the one-month Treasury bill rate on day d, MKTd is the
+market factor return, and △ VXOd is the aggregate volatility shock measured as the daily change in
+the Chicago Board Options Exchange S&P 100 volatility index (VXO). At the beginning of each
+699
+
+--- PAGE 51 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 700 650–705
+The Review of Financial Studies / v 28 n 3 2015
+month t, we use NYSE breakpoints to sort stocks into deciles based on βi
+△ VXO estimated with the
+daily returns from montht −1. We require a minimum of 15 daily returns. Monthly value-weighted
+decile returns are calculated for the current montht, and the deciles are rebalanced at the beginning
+of montht +1. Because the VXO data start in January 1986, the Svol decile returns start in February
+1986.
+A.1.6.5 MDR. Following Bali, Cakici, and Whitelaw (2011), at the beginning of each month t,
+we use NYSE breakpoints to sort stocks into deciles based on the maximal daily return (MDR) in
+month t −1. We require a minimum of 15 daily returns. Monthly value-weighted decile returns are
+calculated for the current month t, and the deciles are rebalanced at the beginning of month t +1.
+A.1.6.6 β. Following Frazzini and Pedersen (2014), we estimate β for ﬁrm i as:
+ˆβ
+i = ˆρ ˆσi
+ˆσm
+, (A13)
+in which ˆσi and ˆσm are the estimated volatilities for stocki and the market, and ˆρ is their correlation.
+To estimate the volatilities, we compute the standard deviation of daily log returns over a 1-year
+rolling window (with at least 120 daily returns). To estimate correlations, we use overlapping 3-day
+log returns, r
+3d
+it = ∑ 2
+k=0 log(1+ ri
+t+k ), over a 5-year rolling window (with at least 750 daily returns).
+At the beginning of each month t, we use NYSE breakpoints to sort stocks into deciles based on
+ˆβi estimated at the end of month t −1. Monthly value-weighted decile returns are calculated for
+the current month t, and the deciles are rebalanced at the beginning of month t +1.
+A.1.6.7 D-β. Following Dimson (1979), we use the lead and the lag of the market return, along
+with the current market return, when estimating beta (D- β):
+rid −rfd =αi +βi1(rmd−1 −rfd −1)+ βi2(rmd −rfd )+ βi3(rmd+1 −rfd +1)+ ϵid , (A14)
+in which rid is the return on stock i on day d, rmd is the market return, and rfd is the risk-free rate.
+We estimate the regression for each stock using daily returns from the prior month. We require a
+minimum of 15 daily returns. The market beta of stock i is calculated as D-βi ≡ ˆβi1 + ˆβi2 + ˆβi3.A t
+the beginning of each month t, we use NYSE breakpoints to sort stocks into deciles based on D- βi
+estimated with the daily returns from month t −1, and calculate monthly value-weighted decile
+returns for month t. The deciles are rebalanced at the beginning of month t +1.
+A.1.6.8 S-Rev. To construct the Jegadeesh (1990) short-term reversal (S-Rev) deciles, at the
+beginning of each month t, we use NYSE breakpoints to sort stocks into deciles based on the
+return in month t −1. To be included in montht, a stock must have a valid price at the end of month
+t −2 and a valid return for month t −1. Monthly value-weighted decile returns are calculated for
+the current month t, and the deciles are rebalanced at the beginning of month t +1.
+A.1.6.9 Disp. Following Diether, Malloy, and Scherbina (2002), we measure analyst earnings
+forecasts dispersion (Disp) as the ratio of the standard deviation of earnings forecast (IBES
+unadjusted ﬁle, item STDEV) to the absolute value of the consensus mean forecast (unadjusted ﬁle,
+item MEANEST). We use the earnings forecast for the current ﬁscal year (ﬁscal period indicator
+= 1). Stocks with a mean forecast of zero are assigned to the highest dispersion group. We exclude
+stocks with a price less than $5. At the beginning of each month t, we use NYSE breakpoints
+to sort stocks into deciles based on Disp in month t −1. Monthly value-weighted decile returns
+are calculated for the current month t, and the deciles are rebalanced at the beginning of month
+t +1. Because the forecast data start in January 1976, the Disp decile returns start in February
+1976.
+700
+
+--- PAGE 52 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 701 650–705
+Digesting Anomalies: An Investment Approach
+A.1.6.10 Turn. Following Datar, Naik, and Radcliffe (1998), at the beginning of each month t,
+we calculate the share turnover (Turn) of a stock as its average daily share turnover over the prior
+6 months from t −6t o t −1. We require a minimum of 50 daily observations. Daily turnover is the
+number of shares traded on a given day divided by the number of shares outstanding on that day.
+15
+At the beginning of each month t, we use NYSE breakpoints to sort stocks into deciles based on
+Turn and calculate value-weighted decile returns for month t.
+A.1.6.11 1/P . At the beginning of each month t, we use NYSE breakpoints to sort stocks into
+deciles based on the reciprocal of the share price (1/P) at the end of month t −1. We calculate
+value-weighted decile returns for the current month t and rebalance the deciles monthly.
+A.1.6.12 Dvol. At the beginning of each month t, we use NYSE breakpoints to sort stocks into
+deciles based on their average daily dollar trading volume (Dvol) over the prior 6 months from
+t −6t o t −1. We require a minimum of 50 daily observations. Dollar trading volume is share price
+times the number of shares traded. We adjust the trading volume of NASDAQ stocks per Gao and
+Ritter (2010). Monthly value-weighted decile returns are calculated for the current month t, and
+the deciles are rebalanced at the beginning of month t +1.
+A.1.6.13 Illiq. We calculate the Amihud (2002) illiquidity measure (Illiq) as the ratio of absolute
+daily stock return to daily dollar trading volume, averaged over the prior 6 months. We require
+a minimum of 50 daily observations. Dollar trading volume is share price times the number of
+shares traded. We adjust the trading volume of NASDAQ stocks per Gao and Ritter (2010). At the
+beginning of each month t, we use NYSE breakpoints to sort stocks into deciles based on Illiq over
+the prior 6 months from t −6t o t −1. We calculate value-weighted decile returns for month t and
+rebalance the deciles at the beginning of month t +1.
+References
+Amihud, Y . 2002. Illiquidity and stock returns: Cross-section and time-series effects.Journal of Financial Markets
+5:31–56.
+Ang, A., R. Hodrick, Y . Xing, and X. Zhang. 2006. The cross-section of volatility and expected returns. Journal
+of Finance 61:259–99.
+Balakrishnan, K., E. Bartov, and L. Faurel. 2010. Post loss/proﬁt announcement drift. Journal of Accounting and
+Economics 50:20–41.
+Bali, T., N. Cakici, and R. Whitelaw. 2011. Maxing out: Stocks as lotteries and the cross-section of expected
+returns. Journal of Financial Economics 99:427–46.
+Ball, R., and P . Brown. 1968. An empirical evaluation of accounting income numbers. Journal of Accounting
+Research 6:159–78.
+15 Following Gao and Ritter (2010), we adjust the trading volume for NASDAQ stocks to account for the institutional
+features of the way that NASDAQ and NYSE-Amex volume are reported. Prior to February 1, 2001, we divide
+NASDAQ volume by 2.0. This adjustment accounts for the practice of counting as trades both trades with market
+makers and trades among market makers. On February 1, 2001, according to the director of research of NASDAQ
+and Frank Hathaway (the chief economist of NASDAQ), a “riskless principal” rule goes into effect and results
+in a reduction of approximately 10% in reported volume. As such, from February 1, 2001 to December 31,
+2001, we divide NASDAQ volume by 1.8. During 2002, securities ﬁrms began to charge institutional investors
+commissions on NASDAQ trades, rather than the prior practice of marking up or down the net price. This practice
+results in a further reduction in reported volume of approximately 10%. As such, for 2002 and 2003, we divide
+NASDAQ volume by 1.6. For 2004 and later years, in which the volume of NASDAQ (and NYSE) stocks has
+mostly been occurring on crossing networks and other venues, we use a divisor of 1.0. This practice reﬂects the
+fact that there are no longer important differences in the NASDAQ and NYSE volume.
+701
+
+--- PAGE 53 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 702 650–705
+The Review of Financial Studies / v 28 n 3 2015
+Banz, R. 1981. The relationship between return and market value of common stocks. Journal of Financial
+Economics 9:3–18.
+Basu, S. 1983. The relationship between earnings yield, market value, and return for NYSE common stocks:
+Further evidence. Journal of Financial Economics 12:129–56.
+Barth, M., J. Elliott, and M. Finn. 1999. Market rewards associated with patterns of increasing earnings. Journal
+of Accounting Research 37:387–413.
+Belo, F., and X. Lin. 2011. The inventory growth spread. Review of Financial Studies 25:278–313.
+Belo, F., X. Lin, and S. Bazdresch. 2014. Labor hiring, investment, and stock return predictability in the cross
+section. Journal of Political Economy 122:129–77.
+Belo, F., X. Lin, and M. Vitorino. 2014. Brand capital and ﬁrm value. Review of Economic Dynamics 17:
+150–69.
+Berk, J. 1995. A critique of size related anomalies. Review of Financial Studies 8:275–86.
+Berk, J., R. Green, and V . Naik. 1999. Optimal investment, growth options, and security returns. Journal of
+Finance 54:1153–607.
+Bernard, V ., and J. Thomas. 1990. Evidence that stock prices do not fully reﬂect the implications of current
+earnings for future earnings. Journal of Accounting and Economics 13:305–40.
+Bhandari, L. 1988. Debt/equity ratio and expected common stock returns: Empirical evidence.Journal of Finance
+43:507–28.
+Black, F., M. Jensen, and M. Scholes. 1972. The capital asset pricing model: Some empirical tests. In Studies in
+the Theory of Capital Markets , ed. M. Jensen. 79–121. New Y ork: Praeger.
+Boudoukh, J., R. Michaely, M. Richardson, and M. Roberts. 2007. On the importance of measuring payout yield:
+Implications for empirical asset pricing. Journal of Finance 62:877–915.
+Bradshaw, M., S. Richardson, and R. Sloan. 2006. The relation between corporate ﬁnancing activities, analysts’
+forecasts and stock returns. Journal of Accounting and Economics 42:53–85.
+Breeden, D., M. Gibbons, and R. Litzenberger. 1989. Empirical tests of the consumption-oriented CAPM.Journal
+of Finance 44:231–62.
+Brennan, M., T. Chordia, and A. Subrahmanyam. 1998. Alternative factor speciﬁcations, security characteristics,
+and the cross-section of expected stock returns. Journal of Financial Economics 49:345–73.
+Campbell, J., J. Hilscher, and J. Szilagyi. 2008. In search of distress risk. Journal of Finance 63:2899–939.
+Campbell, J., and T. Vuolteenaho. 2004. Bad beta, good beta. American Economic Review 94:1249–75.
+Carhart, M. 1997. On persistence in mutual fund performance. Journal of Finance 52:57–82.
+Carlson, M., A. Fisher, and R. Giammarino. 2004. Corporate investment and asset price dynamics: Implications
+for the cross section of returns. Journal of Finance 59:2577–603.
+Chan, L., N. Jegadeesh, and J. Lakonishok. 1996. Momentum strategies. Journal of Finance 51:1681–713.
+Chan, L., J. Lakonishok, and T. Sougiannis. 2001. The stock market valuation of research and development
+expenditures. Journal of Finance 56:2431–56.
+Cochrane, J. 1991. Production-based asset pricing and the link between stock returns and economic ﬂuctuations.
+Journal of Finance 46:209–37.
+———. 2011. Presidential address: Discount rates. Journal of Finance 66:1047–108.
+Cooper, M., H. Gulen, and M. Schill. 2008. Asset growth and the cross-section of stock returns. Journal of
+Finance 63:1609–52.
+Daniel, K. and S. Titman. 2006. Market reactions to tangible and intangible information. Journal of Finance
+61:1605–43.
+702
+
+--- PAGE 54 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 703 650–705
+Digesting Anomalies: An Investment Approach
+Datar, V ., N. Naik, and R. Radcliffe. 1998. Liquidity and stock returns: An alternative test. Journal of Financial
+Markets 1:203–19.
+Davis, J., E. Fama, and K. French. 2000. Characteristics, covariances, and average returns: 1929 to 1997.Journal
+of Finance 55:389–406.
+De Bondt, W., and R. Thaler. 1985. Does the stock market overreact? Journal of Finance 40:793–805.
+Dechow, P ., R. Sloan, and M. Soliman. 2004. Implied equity duration: A new measure of equity risk. Review of
+Accounting Studies 9:197–228.
+Dichev, I. 1998. Is the risk of bankruptcy a systematic risk? Journal of Finance 53:1131–47.
+Diether, K., C. Malloy, and A. Scherbina. 2002. Differences of opinion and the cross section of stock returns.
+Journal of Finance 57:2113–41.
+Dimson, E. 1979. Risk management when shares are subject to infrequent trading.Journal of Financial Economics
+7:197–226.
+Eisfeldt, A., and D. Papanikolaou. 2013. Organizational capital and the cross-section of expected returns.Journal
+of Finance 68:1365–1406.
+Elgers, P ., M. Lo, and R. Pfeiffer, Jr. 2001. Delayed security price adjustments to ﬁnancial analysts’ forecasts of
+annual earnings. The Accounting Review 76:613–32.
+Fairﬁeld, P ., S. Whisenant, and T. Y ohn. 2003. Accrued earnings and growth: Implications for future proﬁtability
+and market mispricing. The Accounting Review 78:353–71.
+Fama, E., and K. French. 1993. Common risk factors in the returns on stocks and bonds. Journal of Financial
+Economics 33:3–56.
+———. 1995. Size and book-to-market factors in earnings and returns. Journal of Finance 50:131–55.
+———. 1996. Multifactor explanation of asset pricing anomalies. Journal of Finance 51:55–84.
+———. 1997. Industry costs of equity. Journal of Financial Economics 43:153–93.
+———. 2006. Proﬁtability, investment, and average returns. Journal of Financial Economics 82:491–518.
+———. 2008. Dissecting anomalies. Journal of Finance 63:1653–78.
+———. 2013. A four-factor model for the size, value, and proﬁtability patterns in stock returns. Fama-Miller
+Working Paper, University of Chicago.
+———. 2014. A ﬁve-factor asset pricing model. Fama-Miller Working Paper, University of Chicago.
+Fama, E., and J. MacBeth. 1973. Risk, return, and equilibrium: Empirical tests. Journal of Political Economy
+81:607–36.
+Fama, E., and M. Miller. 1972. The theory of ﬁnance . New Y ork: Holt, Rinehart, and Winston.
+Fisher, I. 1930. The theory of interest: As determined by impatience to spend income and opportunity to invest
+it. 1st ed. New Y ork: The Macmillan Co.
+Foster, G ., C. Olsen, and T. Shevlin. 1984. Earnings releases, anomalies, and the behavior of security returns.
+The Accounting Review 59:574–603.
+Francis, J., R. LaFond, P . Olsson, and K. Schipper. 2005. The market price of accruals quality. Journal of
+Accounting and Economics 39:295–327.
+Frazzini, A., and L. Pedersen. 2014. Betting against beta. Journal of Financial Economics 111:1–25.
+Gao, X., and J. Ritter. 2010. The marketing of seasoned equity offerings. Journal of Financial Economics
+97:33–52.
+Gibbons, M., S. Ross, and J. Shanken. 1989. A test of the efﬁciency of a given portfolio. Econometrica
+57:1121–52.
+703
+
+--- PAGE 55 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 704 650–705
+The Review of Financial Studies / v 28 n 3 2015
+Gomes, J., L. Kogan, and L. Zhang. 2003. Equilibrium cross section of returns. Journal of Political Economy
+111:693–732.
+Gompers, P ., J. Ishii, and A. Metrick. 2003. Corporate governance and equity prices. Quarterly Journal of
+Economics 118:107–55.
+Green, J., J. Hand, and X. Zhang. 2013. The remarkable multidimensionality in the cross-section of expected
+U.S. stock returns. Working Paper, Y ale University.
+Hafzalla, N., R. Lundholm, and E. V an Winkle. 2011. Percent accruals. The Accounting Review 86:209–36.
+Harvey, C., Y . Liu, and H. Zhu. 2013.... and the cross-section of expected returns. Working Paper, Duke University.
+Haugen, R., and N. Baker. 1996. Commonality in the determinants of expected stock returns.Journal of Financial
+Economics 41:401–39.
+Hirshleifer, D., K. Hou, S. Teoh, and Y . Zhang. 2004. Do investors overvalue ﬁrms with bloated balance sheets?
+Journal of Accounting and Economics 38:297–331.
+Hribar, P ., and D. Collins. 2002. Errors in estimating accruals: Implications for empirical research. Journal of
+Accounting Research 40:105–34.
+Ikenberry, D., J. Lakonishok, and T. V ermaelen. 1995. Market underreaction to open market share repurchases.
+Journal of Financial Economics 39:181–208.
+Jegadeesh, N. 1990. Evidence of predictable behavior of security returns. Journal of Finance 45:881–98.
+Jegadeesh, N., and J. Livnat. 2006. Revenue surprises and stock returns. Journal of Accounting and Economics
+41:147–71.
+Jegadeesh, N., and S. Titman. 1993. Returns to buying winners and selling losers: Implications for stock market
+efﬁciency. Journal of Finance 48:65–91.
+Kogan, L., and D. Papanikolaou. 2013. Firm characteristics and stock returns: The role of investment-speciﬁc
+shocks. Review of Financial Studies 26:2718–59.
+Lakonishok, J., A. Shleifer, and R. Vishny. 1994. Contrarian investment, extrapolation, and risk. Journal of
+Finance 49:1541–78.
+La Porta, R. 1996. Expectations and the cross-section of stock returns. Journal of Finance 51:1715–42.
+Li, D. 2011. Financial constraints, R&D investment, and stock returns.Review of Financial Studies24:2974–3007.
+Lie, E. 2005. Operating performance following open market share repurchase announcements. Journal of
+Accounting and Economics 39:411–36.
+Lin, X., and L. Zhang. 2013. The investment manifesto. Journal of Monetary Economics 60:351–66.
+Litzenberger, R., and K. Ramaswamy. 1979. The effect of personal taxes and dividends on capital asset prices:
+Theory and empirical evidence. Journal of Financial Economics 7:163–95.
+Liu, L., T. Whited, and L. Zhang. 2009. Investment-based expected stock returns. Journal of Political Economy
+117:1105–39.
+Loughran, T., and J. Ritter. 1995. The new issues puzzle. Journal of Finance 50:23–51.
+Lyandres, E., L. Sun, and L. Zhang. 2008. The new issues puzzle: Testing the investment-based explanation.
+Review of Financial Studies 21:2825–55.
+MacKinlay, A. 1995. Multifactor models do not explain deviations from the CAPM. Journal of Financial
+Economics 38:3–28.
+McLean, R., and J. Pontiff. 2013. Does academic research destroy stock return predictability? Working paper,
+Boston College.
+Miller, M., and M. Scholes. 1982. Dividends and taxes: Some empirical evidence. Journal of Political Economy
+90:1118–41.
+704
+
+--- PAGE 56 ---
+
+[16:13 2/2/2015 RFS-hhu068.tex] Page: 705 650–705
+Digesting Anomalies: An Investment Approach
+Moskowitz, T., and M. Grinblatt. 1999. Do industries explain momentum? Journal of Finance 54:1249–90.
+Novy-Marx, R. 2011. Operating leverage. Review of Finance 15:103–34.
+———. 2013. The other side of value: The gross proﬁtability premium. Journal of Financial Economics
+108:1–28.
+Ohlson, J. 1980. Financial ratios and the probabilistic prediction of bankruptcy. Journal of Accounting Research
+18:109–31.
+Piotroski, J. 2000. V alue investing: The use of historical ﬁnancial statement information to separate winners from
+losers. Journal of Accounting Research 38:1–41.
+Polk, C., and P . Sapienza. 2009. The stock market and corporate investment: A test of catering theory. Review of
+Financial Studies 22:187–217.
+Pontiff, J., and A. Woodgate. 2008. Share issuance and cross-sectional returns. Journal of Finance 63:921–45.
+Richardson, S., R. Sloan, M. Soliman, and I. Tuna. 2005. Accrual reliability, earnings persistence and stock
+prices. Journal of Accounting and Economics 39:437–85.
+Ritter, J. 1991. The long-run performance of initial public offerings. Journal of Finance 46:3–27.
+Rosenberg, B., K. Reid, and R. Lanstein. 1985. Persuasive evidence of market inefﬁciency. Journal of Portfolio
+Management 11:9–16.
+Schwert, G . 2003. Anomalies and market efﬁciency. In Handbook of the Economics of Finance , ed. G .
+Constantinides, M. Harris, and R. Stulz. 937–72. Amsterdam: Elsevier.
+Sloan, R. 1996. Do stock prices fully reﬂect information in accruals and cash ﬂows about future earnings? The
+Accounting Review 71:289–315.
+Soliman, M. 2008. The use of DuPont analysis by market participants. The Accounting Review 83:823–53.
+Thomas, J., and H. Zhang. 2002. Inventory changes and future returns. Review of Accounting Studies 7:163–87.
+Thomas, J., and X. Zhang. 2011. Tax expense momentum. Journal of Accounting Research 49:791–821.
+Titman, S., K. Wei, and F. Xie. 2004. Capital investments and stock returns.Journal of Financial and Quantitative
+Analysis 39:677–700.
+Xing, Y . 2008. Interpreting the value effect through theQ-theory: An empirical investigation.Review of Financial
+Studies 21:1767–95.
+Zhang, L. 2005. The value premium. Journal of Finance 60:67–103.
+705

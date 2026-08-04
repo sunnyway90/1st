@@ -1,0 +1,3602 @@
+
+
+--- PAGE 1 ---
+
+THE JOURNAL OF FINANCE • VOL. LXVIII, NO. 3 • JUNE 2013
+Value and Momentum Everywhere
+CLIFFORD S. ASNESS, TOBIAS J. MOSKOWITZ, and LASSE HEJE PEDERSEN ∗
+ABSTRACT
+We ﬁnd consistent value and momentum return premia across eight diverse markets
+and asset classes, and a strong common factor structure among their returns. Value
+and momentum returns correlate more strongly across asset classes than passive
+exposures to the asset classes, but value and momentum are negatively correlated
+with each other, both within and across asset classes. Our results indicate the pres-
+ence of common global risks that we characterize with a three-factor model. Global
+funding liquidity risk is a partial source of these patterns, which are identiﬁable only
+when examining value and momentum jointly across markets. Our ﬁndings present
+a challenge to existing behavioral, institutional, and rational asset pricing theories
+that largely focus on U.S. equities.
+TWO OF THE MOST studied capital market phenomena are the relation between
+an asset’s return and the ratio of its “long-run” (or book) value relative to its
+current market value, termed the “value” effect, and the relation between an
+asset’s return and its recent relative performance history , termed the “mo-
+mentum” effect. The returns to value and momentum strategies have become
+central to the market efﬁciency debate and the focal points of asset pricing stud-
+ies, generating numerous competing theories for their existence. We offer new
+insights into these two market anomalies by examining their returns jointly
+across eight diverse markets and asset classes. We ﬁnd signiﬁcant return pre-
+mia to value and momentum in every asset class and strong comovement of
+their returns across asset classes, both of which challenge existing theories for
+their existence. We provide a simple three-factor model that captures the global
+returns across asset classes, the Fama–French U.S. stock portfolios, and a set
+of hedge fund indices.
+∗Asness is at AQR Capital Management; Moskowitz is at the University of Chicago Booth
+School of Business and NBER and is a consultant to AQR Capital; and Pedersen is at the New
+Y ork University Stern School of Business, Copenhagen Business School, AQR, CEPR, FRIC, and
+NBER. We thank Aaron Brown, John Cochrane, Kent Daniel, Gene Fama, Kenneth French, Cam
+Harvey (the Editor), Ronen Israel, Robert Krail, John Liew, Harry Mamaysky , Michael Mendelson,
+Stefan Nagel, Lars Nielsen, Otto Van Hemert, Jeff Wurgler, and an anonymous referee for helpful
+comments, as well as seminar participants at the University of Chicago, Princeton University ,
+Duke University , the Danish Society of Financial Analysts with Henrik Amilon and Asbjørn Trolle
+as discussants, and the NBER Summer Institute Asset Pricing Meetings with Kent Daniel as a
+discussant. We also thank Gunner Arnson, Radhika Gupta, Kelvin Hu, Sarah Jiang, Adam Klein,
+Ari Levine, Len Lorilla, Wes McKinney , and Karthik Sridharan for research assistance. AQR
+Capital invests in, among other things, value and momentum strategies. The views expressed here
+are those of the authors and not necessarily those of any afﬁliated institution.
+DOI: 10.1111/joﬁ.12021
+929
+
+--- PAGE 2 ---
+
+930 The Journal of Finance R⃝
+The literature on market anomalies predominantly focuses on U.S. individ-
+ual equities, and often examines value or momentum separately . In the rare
+case in which value and momentum are studied outside of U.S. equities, they
+are also typically studied in isolation—separate from each other and separate
+from other markets. We uncover unique evidence and features of value and mo-
+mentum by examining them jointly across eight different markets and asset
+classes (individual stocks in the United States, the United Kingdom, conti-
+nental Europe, and Japan; country equity index futures; government bonds;
+currencies; and commodity futures). 1 Although some of these markets have
+been analyzed in isolation, our joint approach provides unique evidence on
+several key questions about these pervasive market phenomena. Speciﬁcally ,
+how much variation exists in value and momentum premia across markets
+and asset classes? How correlated are value and momentum returns across
+these diverse markets and asset classes with different geographies, structures,
+investor types, and securities? What are the economic drivers of value and mo-
+mentum premia and their correlation structure? What is a natural benchmark
+model for portfolios of global securities across different asset classes?
+We ﬁnd consistent and ubiquitous evidence of value and momentum return
+premia across all the markets we study , including value and momentum in
+government bonds and value effects in currencies and commodities, which are
+all novel to the literature. Our broader set of portfolios generates much larger
+cross-sectional dispersion in average returns than those from U.S. stocks only ,
+providing a richer set of asset returns that any asset pricing model should
+seek to explain. Most strikingly , we discover signiﬁcant comovement in value
+and momentum strategies across diverse asset classes. Value strategies are
+positively correlated with other value strategies across otherwise unrelated
+markets, and momentum strategies are positively correlated with other mo-
+mentum strategies globally . However, value and momentum are negatively
+correlated with each other within and across asset classes.
+The striking comovement pattern across asset classes is one of our central
+ﬁndings and suggests the presence of common global factors related to value
+and momentum. This common risk structure implies a set of results that we
+investigate further. For example, using a simple three-factor model consisting
+of a global market index, a zero-cost value strategy applied across all asset
+classes, and a zero-cost momentum strategy across all assets, we capture the
+comovement and the cross section of average returns both globally across asset
+classes and locally within an asset class. We further show that the global
+1 Early evidence on U.S. equities ﬁnds that value stocks on average outperform growth stocks
+(Stattman (1980), Rosenberg, Reid, and Lanstein ( 1985), and Fama and French ( 1992)) and stocks
+with high positive momentum (high 6- to 12-month past returns) outperform stocks with low
+momentum (Jegadeesh and Titman ( 1993), Asness ( 1994)). Similar effects are found in other
+equity markets (Fama and French ( 1998), Rouwenhorst ( 1998), Liew and Vassalou ( 2000), Grifﬁn,
+Ji, and Martin ( 2003), Chui, Wei, and Titman ( 2010)), and in country equity indices (Asness, Liew,
+and Stevens ( 1997) and Bhojraj and Swaminathan ( 2006)). Momentum is also found in currencies
+(Shleifer and Summers ( 1990), Kho ( 1996), LeBaron ( 1999)) and commodities (Erb and Harvey
+(2006), Gorton, Hayashi, and Rouwenhorst ( 2008)).
+
+--- PAGE 3 ---
+
+Value and Momentum Everywhere 931
+three-factor model does a good job capturing the returns to the Fama and
+French U.S. stock portfolios as well as a set of hedge fund indices. Our use of
+a simple three-factor model in pricing a variety of assets globally is motivated
+by ﬁnance research and practice becoming increasingly global and the desire
+to have a single model that describes returns across asset classes rather than
+specialized models for each market. We show that separate factors for value
+and momentum best explain the data, rather than a single factor, since both
+strategies produce positive returns on average yet are negatively correlated. 2
+We then investigate the source of this common global factor structure. We ﬁnd
+only modest links to macroeconomic variables such as the business cycle, con-
+sumption, and default risk. However, we ﬁnd signiﬁcant evidence that liquidity
+risk is negatively related to value and positively related to momentum globally
+across asset classes. P ´astor and Stambaugh ( 2003) and Sadka ( 2006) ﬁnd that
+measures of liquidity risk are positively related to momentum in U.S. individ-
+ual stocks. We show that this link is also present in other markets and asset
+classes, and that value returns are signiﬁcantly negatively related to liquidity
+risk globally , implying that part of the negative correlation between value and
+momentum is driven by opposite signed exposure to liquidity risk. Separating
+market from funding liquidity (see Brunnermeier and Pedersen (2009)), we fur-
+ther ﬁnd that the primary link between value and momentum returns comes
+from funding risk, whose importance has increased over time, particularly af-
+ter the funding crisis of 1998. Importantly , these results cannot be detected by
+examining a single market in isolation. The statistical power gained by looking
+across many markets at once—a unique feature of our analysis—allows these
+factor exposures to be revealed.
+In terms of economic magnitudes, however, liquidity risk can only explain a
+small fraction of value and momentum return premia and comovement. While
+liquidity risk may partly explain the positive risk premium associated with mo-
+mentum, because value loads negatively on liquidity risk, the positive premium
+associated with value becomes an even deeper puzzle. Moreover, a simple equal-
+weighted combination of value and momentum is immune to liquidity risk and
+generates substantial abnormal returns. Hence, funding liquidity risk can only
+provide a partial and incomplete explanation for momentum, but cannot ex-
+plain the value premium or the value and momentum combination premium.
+The evidence we uncover sheds light on explanations for the existence of
+value and momentum premia. For example, a strong correlation structure
+among these strategies in otherwise unrelated asset classes may indicate the
+presence of common global risk factors for which value and momentum premia
+provide compensation. Conversely , such correlation structure is not a prediction
+of existing behavioral models (e.g., Daniel, Hirshleifer, and Subrahmanyam
+(1998), Barberis, Shleifer, and Vishny ( 1998), Hong and Stein ( 1999)).
+2 A single factor would require signiﬁcant time variation in betas and/or risk premia to ac-
+commodate these facts. We remain agnostic as to whether our factors capture such dynamics or
+represent separate unconditional factors.
+
+--- PAGE 4 ---
+
+932 The Journal of Finance R⃝
+In addition to assuaging data mining concerns, evidence of consistent value
+and momentum premia across diverse asset classes may be difﬁcult to reconcile
+under rational asset pricing theories that rely on ﬁrm investment risk or ﬁrm
+growth options as explanations for the value and momentum premia, 3 which
+are predominantly motivated by ﬁrm equity . These theories seem ill equipped
+to explain the same and correlated effects we ﬁnd in currencies, government
+bonds, and commodities.
+We also highlight that studying value and momentum jointly is more power-
+ful than examining each in isolation. The negative correlation between value
+and momentum strategies and their high positive expected returns implies
+that a simple combination of the two is much closer to the efﬁcient frontier
+than either strategy alone, and exhibits less variation across markets and over
+time. The return premium to a combination of value and momentum applied
+across all asset classes therefore presents an even bigger challenge for asset
+pricing theories to accommodate (e.g., Hansen and Jagannathan ( 1997)).
+Our work also relates to the recent literature on global asset pricing. Fama
+and French ( 2012) examine the returns to size, value, and momentum in in-
+dividual stocks across global equity markets and ﬁnd consistent risk premia
+across markets. Considering both global equities and other global asset classes,
+Frazzini and Pedersen ( 2010) ﬁnd consistent returns to “betting against beta,”
+Koijen et al. ( 2012) document global “carry” returns, and Moskowitz, Ooi, and
+Pedersen ( 2012) present global evidence of “time series momentum.” Time-
+series momentum is a timing strategy using each asset’s own past returns,
+which is separate from the cross-sectional momentum strategies we study
+here. Focusing on this different time-series phenomenon, Moskowitz, Ooi, and
+Pedersen (2012) examine returns to futures contracts on equity indices, bonds,
+currencies, and commodities—ignoring individual stocks, which comprise half
+our study here—and address a different set of questions. Our focus is on the
+interaction between cross-sectional momentum and value strategies and their
+common factor structure globally , where we ﬁnd striking comovement across
+assets and a link to liquidity risk.
+The link to funding liquidity risk may also be consistent with global arbitrage
+activity in the face of funding constraints inﬂuencing value and momentum
+returns (Brunnermeier and Pedersen ( 2009)). Why does momentum load posi-
+tively on liquidity risk and value load negatively? A simple and natural story
+might be that momentum represents the most popular trades, as investors
+chase returns and ﬂock to the assets whose prices appreciated most recently .
+Value, on the other hand, represents a contrarian view. When a liquidity shock
+occurs, investors engaged in liquidating sell-offs (due to cash needs and risk
+management) will put more price pressure on the most popular and crowded
+trades, such as high momentum securities, as everyone runs for the exit at the
+3 See Gomes, Kogan, and Zhang (2003), Zhang (2005), Li, Livdan, and Zhang (2009), Belo (2010),
+Li and Zhang ( 2010), Liu and Zhang ( 2008), Berk, Green, and Naik ( 1999), Johnson ( 2002), Sagi
+and Seasholes ( 2007), and Liu, Whited, and Zhang ( 2009).
+
+--- PAGE 5 ---
+
+Value and Momentum Everywhere 933
+same time (Pedersen ( 2009)), while the less crowded contrarian/value trades
+will be less affected.
+Vayanos and Wooley ( 2012) offer a model of value and momentum returns
+due to delegated management that may be consistent with these results. They
+argue that ﬂows between investment funds can give rise to momentum effects
+from inertia due to slow moving capital, and eventually push prices away
+from fundamentals causing reversals or value effects. Correlation of value and
+momentum across different asset classes could also be affected by funds ﬂowing
+simultaneously across asset classes, which could in turn be impacted by funding
+liquidity . However, matching the magnitude of our empirical ﬁndings remains
+an open question.
+The paper proceeds as follows. Section I outlines our data and portfolio con-
+struction. Section II examines the performance of value and momentum across
+asset classes and documents their global comovement. Section III investigates
+the source of common variation by examining macroeconomic and liquidity risk,
+and Section IV offers an empirically motivated three-factor model to describe
+the cross section of returns across asset classes. Section V brieﬂy discusses the
+robustness of our results to implementation issues. Section VI concludes by
+discussing the implications of our ﬁndings.
+I. Data and Portfolio Construction
+We describe our data and methodology for constructing value and momentum
+portfolios across markets and asset classes.
+A. Data
+A.1. Global Individual Stocks
+We examine value and momentum portfolios of individual stocks globally
+across four equity markets: the United States, the United Kingdom, continental
+Europe, and Japan. The U.S. stock universe consists of all common equity in
+CRSP (sharecodes 10 and 11) with a book value from Compustat in the previous
+6 months, and at least 12 months of past return history from January 1972
+to July 2011. We exclude ADRs, REITs, ﬁnancials, closed-end funds, foreign
+shares, and stocks with share prices less than $1 at the beginning of each
+month. We limit the remaining universe of stocks in each market to a very
+liquid set of securities that could be traded for reasonably low cost at reasonable
+trading volume size. Speciﬁcally , we rank stocks based on their beginning-of-
+month market capitalization in descending order and include in our universe
+the number of stocks that account cumulatively for 90% of the total market
+capitalization of the entire stock market. 4 This universe corresponds to an
+extremely liquid and tradeable set of securities. For instance, over our sample
+period this universe corresponds to the largest 17% of ﬁrms on average in the
+4 This procedure is similar to how MSCI deﬁnes its universe of stocks for its global stock indices.
+
+--- PAGE 6 ---
+
+934 The Journal of Finance R⃝
+United States. For the U.S. stock market, at the beginning of the sample period
+(January 1972) our universe consists of the 354 largest ﬁrms and by the end of
+our sample period (July 2011) the universe comprises the 676 largest names.
+Hence, our sample of U.S. equities is signiﬁcantly larger and more liquid than
+the Russell 1000.
+For stocks outside of the United States, we use Datastream data from the
+United Kingdom, continental Europe (across all European stock markets, ex-
+cluding the United Kingdom), and Japan. We restrict the universe in each
+market using the same criteria used for U.S. stocks. On average over the sam-
+ple period, our universe represents the largest 13%, 20%, and 26% of ﬁrms
+in the United Kingdom, Europe, and Japan, respectively . Data on prices and
+returns come from Datastream, and data on book values are from Worldscope.
+Most studies of individual stocks examine a much broader and less liquid set
+of securities. We restrict our sample to a much more liquid universe (roughly the
+largest 20% of stocks in each market) to provide reasonable and conservative
+estimates of an implementable set of trading strategies and to better compare
+those strategies with the set of strategies we employ in index futures, cur-
+rencies, government bonds, and commodity futures, which are typically more
+liquid instruments. Our results are conservative since value and momentum
+premia are larger among smaller, less liquid securities over the sample period
+we study .5
+All series are monthly and end in July 2011. The U.S. and U.K. stock samples
+begin in January 1972. The Europe and Japan stock samples begin in January
+1974. The average (minimum) number of stocks in each market over their
+respective sample periods is 724 (354) in the United States, 147 (76) in the
+United Kingdom, 290 (96) in Europe, and 471 (148) in Japan.
+A.2. Global Equity Indices
+The universe of country equity index futures consists of the following 18
+developed equity markets: Australia, Austria, Belgium, Canada, Denmark,
+France, Germany , Hong Kong, Italy , Japan, Netherlands, Norway , Portugal,
+Spain, Sweden, Switzerland, the United Kingdom, and the United States. 6
+Returns and price data as well as book values are obtained from MSCI and
+Bloomberg. The sample covers the period January 1978 to July 2011, with
+the minimum number of equity indices being 8 and all 18 indices represented
+5 Hong, Lim, and Stein ( 2000), Grinblatt and Moskowitz ( 2004), Fama and French ( 2012), and
+Israel and Moskowitz ( 2012) show that value and momentum returns are inversely related to the
+size of securities over the time period studied here, though Israel and Moskowitz ( 2012) show this
+relation is not robust for momentum in other sample periods. Value and momentum returns have
+also been shown to be stronger in less liquid emerging markets (Rouwenhorst ( 1998), Erb and
+Harvey (2006), Grifﬁn, Ji, and Martin ( 2003)). A previous version of this paper used a broader and
+less liquid set of stocks that exhibited signiﬁcantly stronger value and momentum returns.
+6 Austria, Belgium, Denmark, Norway , and Portugal are not index futures but are constructed
+from the returns of an equity index swap instrument using the respective local market index from
+MSCI.
+
+--- PAGE 7 ---
+
+Value and Momentum Everywhere 935
+after 1980. The returns on the country equity index futures do not include any
+returns on collateral from transacting in futures contracts, hence these are
+comparable to returns in excess of the risk-free rate.
+A.3. Currencies
+We obtain spot exchange rates from Datastream covering the following 10
+currencies: Australia, Canada, Germany (spliced with the Euro), Japan, New
+Zealand, Norway , Sweden, Switzerland, the United Kingdom, and the United
+States. The data cover the period January 1979 to July 2011, where the mini-
+mum number of currencies is 7 at any point in time and all 10 currencies are
+available after 1980. We compute returns from currency forward contracts or
+MSCI spot price data and Libor rates, where currency returns are all dollar
+denominated and implicitly include the local interest rate differential.
+A.4. Global Government Bonds
+Bond index returns come from Bloomberg and Morgan Markets, short rates
+and 10-year government bond yields are from Bloomberg, and inﬂation fore-
+casts are obtained from investment bank analysts’ estimates as compiled by
+Consensus Economics. We obtain government bond data for the following 10
+countries: Australia, Canada, Denmark, Germany , Japan, Norway , Sweden,
+Switzerland, the United Kingdom, and the United States over the period
+January 1982 to July 2011, where the minimum number of country bond re-
+turns is 5 at any point in time and all 10 country bonds are available after
+1990.
+A.5. Commodity Futures
+We cover 27 different commodity futures obtained from several sources. Data
+on Aluminum, Copper, Nickel, Zinc, Lead, and Tin are from the London Metal
+Exchange (LME). Brent Crude and Gas Oil are from the Intercontinental Ex-
+change (ICE). Live Cattle, Feeder Cattle, and Lean Hogs are from the Chicago
+Mercantile Exchange (CME). Corn, Soybeans, Soy Meal, Soy Oil, and Wheat are
+from the Chicago Board of Trade (CBOT). WTI Crude, RBOB Gasoline, Heating
+Oil, and Natural Gas are from the New Y ork Mercantile Exchange (NYMEX).
+Gold and Silver are from the New Y ork Commodities Exchange (COMEX). Cot-
+ton, Coffee, Cocoa, and Sugar are from New Y ork Board of Trade (NYBOT), and
+Platinum data are from the Tokyo Commodity Exchange (TOCOM). The sam-
+ple covers the period January 1972 to July 2011, with the minimum number
+of commodities being 10 at any point in time and all 27 commodities available
+after 1995.
+Returns for commodity futures are calculated as follows. Each day we com-
+pute the daily excess return of the most liquid futures contract, which is typ-
+ically the nearest- or next nearest-to-delivery contract, and then compound
+the daily returns to a total return index from which we compute returns at
+
+--- PAGE 8 ---
+
+936 The Journal of Finance R⃝
+a monthly horizon. Bessembinder ( 1992), de Roon, Nijman, and Veld ( 2000),
+Moskowitz, Ooi, and Pedersen ( 2012), and Koijen et al. ( 2012) compute fu-
+tures returns similarly . All returns are denominated in U.S. dollars and do not
+include the return on collateral associated with the futures contract.
+B. Value and Momentum Measures
+To measure value and momentum, we use the simplest and, to the extent
+a standard exists, most standard measures. We are not interested in coming
+up with the best predictors of returns in each asset class. Rather, our goal
+is to maintain a simple and fairly uniform approach that is consistent across
+asset classes and minimizes the pernicious effects of data snooping. As such,
+if data snooping can be avoided, our results may therefore understate the true
+gross returns to value and momentum available from more thoughtfully chosen
+measures.
+For individual stocks, we use the common value signal of the ratio of the book
+value of equity to market value of equity , or book-to-market ratio, BE/ME (see
+Fama and French (1992, 1993) and Lakonishok, Shleifer, and Vishny ( 1994)),
+of the stock. 7 Book values are lagged 6 months to ensure data availability to
+investors at the time, and the most recent market values are used to compute
+the ratios. For the purposes of this paper, using lagged or contemporary prices
+rather than market values matched contemporaneously in time as in Fama
+and French ( 1992) is not important. When using more recent prices in the
+value measure, the negative correlation between value and momentum is more
+negative and the value premium is slightly reduced, but our conclusions are not
+materially affected. A combination of value and momentum—one of the themes
+in this paper—obtains nearly identical pricing results regardless of whether
+we lag price in the value measure. Asness and Frazzini ( 2012) investigate
+this issue more thoroughly and argue that using contemporaneous market
+values can be important and ease interpretation when examining value in the
+presence of momentum, as we do in this paper. Gerakos and Linnainmaa (2012)
+decompose value into book and market components and ﬁnd that the market
+value of equity drives most of the relevant pricing information.
+For momentum, we use the common measure of the past 12-month cumula-
+tive raw return on the asset (see Jegadeesh and Titman ( 1993), Asness ( 1994),
+Fama and French ( 1996), and Grinblatt and Moskowitz ( 2004)), skipping the
+most recent month’s return,MOM2–12. We skip the most recent month, which
+is standard in the momentum literature, to avoid the 1-month reversal in stock
+returns, which may be related to liquidity or microstructure issues (Jegadeesh
+(1990), Lo and MacKinaly (1990), Boudoukh, Richardson, and Whitelaw (1994),
+Asness (1994), Grinblatt and Moskowitz ( 2004)).8
+7 While research has shown that other value measures are more powerful for predicting stock
+returns (e.g., Lakonishok, Shleifer, and Vishny (1994), Asness, Porter, and Stevens (2000), Piotroski
+(2000)), we maintain a basic and simple approach that is somewhat consistent across asset classes.
+8 Novy-Marx (2012) shows that the past 7- to 12-month return is a better momentum predictor
+in U.S. stocks than the past 2- to 6-month return, though the past 2- to 6-month return is still a
+
+--- PAGE 9 ---
+
+Value and Momentum Everywhere 937
+For all other asset classes, we attempt to deﬁne similar value and momentum
+measures. Momentum is straightforward since we can use the same measure
+for all asset classes, namely , the return over the past 12 months skipping the
+most recent month. While excluding the most recent month of returns is not
+necessary for some of the other asset classes we consider because they suffer
+less from liquidity issues (e.g., equity index futures and currencies), we do so
+to maintain uniformity across asset classes. Momentum returns for these asset
+classes are in fact stronger when we don’t skip the most recent month, hence
+our results are conservative.
+For measures of value, attaining uniformity is more difﬁcult because not all
+asset classes have a measure of book value. For these assets, we try to use sim-
+ple and consistent measures of value. For country indices, we use the previous
+month’sBE/ME ratio for the MSCI index of the country . For commodities, we
+deﬁne value as the log of the spot price 5 years ago (actually , the average spot
+price from 4.5 to 5.5 years ago), divided by the most recent spot price, which
+is essentially the negative of the spot return over the last 5 years. Similarly ,
+for currencies, our value measure is the negative of the 5-year return on the
+exchange rate, measured as the log of the average spot exchange rate from
+4.5 to 5.5 years ago divided by the spot exchange rate today minus the log
+difference in the change in CPI in the foreign country relative to the U.S. over
+the same period. The currency value measure is therefore the 5-year change in
+purchasing power parity . For bonds, we use the 5-year change in the yields of
+10-year bonds as our value measure, which is similar to the negative of the past
+5-year return. These long-term past return measures of value are motivated
+by DeBondt and Thaler ( 1985), who use similar measures for individual stocks
+to identify “cheap” and “expensive” ﬁrms. Fama and French ( 1996) show that
+the negative of the past 5-year return generates portfolios that are highly cor-
+related with portfolios formed on BE/ME, and Gerakos and Linnainmaa ( 2012)
+document a direct link between past returns and BE/ME ratios. Theory also
+suggests a link between long-term returns and book-to-market value measures
+(e.g., Daniel, Hirshleifer, and Subrahmanyam ( 1998), Barberis, Shleifer, and
+Vishny (1998), Hong and Stein ( 1999), and Vayanos and Wooley ( 2012)).
+In the Internet Appendix accompanying this paper, we show that individual
+stock portfolios formed from the negative of past 5-year returns are highly
+correlated with those formed on BE/ME ratios in our sample. 9 For example,
+positive predictor. We use the more standard momentum measure based on the past 2- to 12-month
+return for several reasons. First, as Novy-Marx ( 2012) shows, the beneﬁt of using returns from
+the past 7- to 12-months as opposed to the entire 2- to 12-month past return is negligible in U.S.
+stocks. Second, Goyal and Wahal ( 2012) examine the power of past 7- to 12-month versus past 2- to
+6-month returns across 36 countries and ﬁnd that there is no signiﬁcant difference between these
+past return predictors in 35 out of 36 countries—the exception being the United States. Third,
+MOM2–12 is the established momentum signal that has worked well out of sample over time and
+across geography . While we believe using MOM2–12 is the most prudent and reasonable measure
+to use for these reasons, using other momentum signals, such as MOM7–12, should not alter any
+of our conclusions.
+9 An Internet Appendix may be found in the online version of this article.
+
+--- PAGE 10 ---
+
+938 The Journal of Finance R⃝
+among U.S. stocks the correlation between returns to a value factor formed from
+the negative of the past 5-year return and the returns formed from BE/ME sorts
+is 0.83. In the United Kingdom, Europe, and Japan the correlation between
+portfolio returns formed on negative past 5-year returns and BE/ME ratios is
+similarly high. Globally , a value factor averaged across all four stock markets
+estimated from negative past 5-year return sorts has a correlation of 0.86 with
+a value factor formed from BE/ME sorts. Hence, using past 5-year returns to
+measure value seems reasonable.
+C. Value and Momentum Portfolios: 48 New Test Assets
+Using the measures above, we construct a set of value and momentum portfo-
+lios within each market and asset class by ranking securities within each asset
+class by value or momentum and sorting them into three equal groups. We
+then form three portfolios—high, middle, and low—from these groups, where
+for individual stocks we value weight the returns in the portfolios by their
+beginning-of-month market capitalization, and for the nonstock asset classes
+we equal weight securities. 10 Given that our sample of stocks focuses exclu-
+sively on very large and liquid securities in each market, typically the largest
+quintile of securities, further value weighting the securities within this uni-
+verse creates an extremely large and liquid set of portfolios that should yield
+very conservative results compared to typical portfolios used in the literature.
+Thus, we generate three portfolios—low, middle, and high—for each of the
+two characteristics—value and momentum—in each of the eight asset classes,
+producing 3 × 2 × 8 = 48 test portfolios.
+D. Value and Momentum Factors
+We also construct value and momentum factors for each asset class, which
+are zero-cost long-short portfolios that use the entire cross section of securi-
+ties within an asset class. For any security i = 1 ,..., N at time t with signal
+Sit (value or momentum), we weight securities in proportion to their cross-
+sectional rank based on the signal minus the cross-sectional average rank of
+that signal. Simply using ranks of the signals as portfolio weights helps miti-
+gate the inﬂuence of outliers, but portfolios constructed using the raw signals
+are similar and generate slightly better performance. Speciﬁcally , the weight
+on security i at time t is
+wS
+it = ct(rank(Sit) − /Sigma1i rank(Sit)/N), (1)
+where the weights across all stocks sum to zero, representing a dollar-neutral
+long-short portfolio. We include a scaling factor ct such that the overall portfolio
+is scaled to one dollar long and one dollar short. The return on the portfolio is
+10 Weighting the nonstock asset classes by their ex ante volatility gives similar results. In
+addition, rebalancing back to equal weights annually rather than monthly produces similar results.
+
+--- PAGE 11 ---
+
+Value and Momentum Everywhere 939
+then
+rS
+t = /Sigma1iwS
+itrit, where S ∈ (value, momentum). (2)
+We also construct a 50/50 equal combination ( COMBO) factor of value and
+momentum, whose returns are
+rCOMBO
+t = 0.5rVALUE
+t + 0.5rMOM
+t . (3)
+These zero-cost signal-weighted portfolios are another way to examine the
+efﬁcacy of value and momentum across markets and are used as factors in
+our pricing model. Although these factors are not value weighted, the set of
+securities used to generate them are extremely large and liquid. As we will
+show, the signal-weighted factor portfolios outperform simple portfolio sort
+spreads because security weights are a positive (linear) function of the signal,
+as opposed to the coarseness of only classifying securities into three groups.
+In addition, the factors are better diversiﬁed since more securities in the cross
+section are given nonzero weight and the weights are less extreme.
+II. Value and Momentum Returns and Comovement
+Table I shows the consistent performance of value and momentum, and their
+combination, within each of the major markets and asset classes we study .
+Other studies examine value and momentum in some of the same asset classes,
+but not in combination and not simultaneously across asset classes as we do
+here. In addition, we also discover new evidence for value and momentum
+premia in asset classes not previously studied—both value and momentum in
+government bonds and value effects in currencies and commodities. Our em-
+phasis, however, is on the power of applying value and momentum everywhere
+at once.
+A. Return Premia
+Table I reports the annualized mean return, t-statistic of the mean, standard
+deviation, and Sharpe ratio of the low (P1), middle (P2), and high (P3) portfolios
+for value and momentum in each market and asset class as well as the high
+minus low (P3-P1) spread portfolio and the signal-weighted factor portfolio from
+equation (2). Also reported are the intercepts or alphas, and their t-statistics
+(in parentheses) from a time-series regression of each return series on the
+return of the market index for each asset class. The market index for the
+stock strategies is the MSCI equity index for each country; for country index
+futures it is the MSCI World Index; and for currencies, ﬁxed income, and
+commodities, the benchmark is an equal-weighted basket of the securities in
+each asset class. The last two columns of Table I report the same statistics for
+the 50/50 combination of value and momentum for the P3-P1 spread and signal-
+weighted factors (following equations (2) and (3)), and the last row for each asset
+class reports the correlation of returns between value and momentum for both
+
+--- PAGE 12 ---
+
+940 The Journal of Finance R⃝
+Table I
+Performance of Value and Momentum Portfolios across Markets and Asset Classes
+Reported are the average raw excess (of the 1-month U.S. T-bill rate) return, t-statistic of the average return (in parentheses), standard deviation
+of returns, and Sharpe ratio of each value, momentum, and equal-weighted 50/50 value and momentum combination strategy in each market and
+asset class we study: U.S. stocks, U.K. stocks, Europe stocks, Japan stocks, country index futures, currencies, ﬁxed income government bonds, and
+commodities. Also reported are the intercepts or alphas, and their t-statistics (in parentheses) from a time-series regression of each return series
+on the return of the market index for each asset class. The market index for the stock strategies is the MSCI equity index for each country for all
+of the individual stock strategies. The MSCI world index is used as the benchmark for strategies of country index futures. For currencies, ﬁxed
+income, and commodities, the benchmark index is an equal-weighted basket of the securities in each asset class. In each market or asset class
+the universe of securities is ﬁrst sorted by either value or momentum and then broken into three equal groups based on those sorts to form three
+portfolios—low, middle, and high—corresponding to portfolios P1, P2, and P3, respectively . For individual stock strategies (Panel A), stocks with in
+the three portfolios are value weighted by their beginning-of-month capitalization, and for nonstock asset classes (Panel B), securities are equal
+weighted in the portfolios. Also reported is the high minus low spread in returns (P3-P1) as well as a rank-weighted factor portfolio (“Factor”), whic h
+is a zero-investment portfolio that weights each asset in proportion to its rank based on either value or momentum, following equation (1). The 50/50
+value/momentum combination strategies are an equal-weighted average of the value and momentum spread strategies (P3–P1 and Factor) for each
+market/asset class. Results are also reported for an average of all individual stock strategies across all stock markets (“Global stocks”), across a ll
+nonstock asset classes (“Global other asset classes”), and across all markets and asset classes (“Global all asset classes”), where average return s eries
+are computed using equal volatility weights across the markets and asset classes to account for the large differences in volatility across asset clas ses
+(e.g., ﬁxed income vs. commodities). Panel C also reports results for alternative measures of value for ﬁxed income securities. Finally , the last row for
+each asset class reports the correlation between value and momentum zero cost residual returns from the benchmark in each market or asset class.
+Statistics are computed from monthly return series but are reported as annualized numbers.
+Panel A: Individual Stock Portfolios
+50/50
+Value Portfolios Momentum Portfolios Combination
+P1 P2 P3 P3–P1 Factor P1 P2 P3 P3–P1 Factor P3–P1 Factor
+U.S. stocks Mean 9.5% 10.6% 13.2% 3.7% 3.9% 8.8% 9.7% 14.2% 5.4% 7.7% 4.6% 5.8%
+01/1972 to ( t-stat) (3.31) (4.33) (5.19) (1.83) (1.66) (2.96) (4.14) (4.82) (2.08) (2.84) (3.98) (5.40)
+07/2011 Stdev 17.9% 15.4% 15.9% 12.8% 14.8% 18.6% 14.8% 18.5% 16.4% 17.0% 7.2% 6.8%
+Sharpe 0.53 0.69 0.83 0.29 0.26 0.47 0.66 0.77 0.33 0.45 0.63 0.86
+Alpha − 1.7% 0.8% 3.6% 5.3% 5.8% − 2.3% 0.2% 3.7% 6.0% 8.7% 5.7% 7.2%
+(t-stat) ( − 1.59) (1.02) (3.17) (2.66) (2.49) ( − 1.68) (0.29) (2.34) (2.30) (3.22) (5.05) (7.06)
+Correlation (Val, Mom) =− 0.53 − 0.65
+(Continued)
+
+--- PAGE 13 ---
+
+Value and Momentum Everywhere 941
+Table I—Continued
+Panel A: Individual Stock Portfolios
+50/50
+Value Portfolios Momentum Portfolios Combination
+P1 P2 P3 P3–P1 Factor P1 P2 P3 P3–P1 Factor P3–P1 Factor
+U.K. stocks Mean 10.8% 12.5% 15.3% 4.5% 5.5% 9.2% 13.8% 15.2% 6.0% 7.2% 6.3% 7.2%
+01/1972 to ( t-stat) (3.17) (3.48) (4.12) (1.83) (2.10) (2.32) (3.81) (4.04) (2.37) (3.00) (4.23) (5.85)
+07/2011 Stdev 18.6% 19.7% 20.3% 13.4% 14.4% 24.9% 22.7% 23.7% 15.9% 15.0% 8.1% 6.7%
+Sharpe 0.58 0.64 0.75 0.33 0.38 0.37 0.61 0.64 0.38 0.48 0.77 1.07
+Alpha − 0.2% 0.5% 3.2% 3.5% 4.4% − 3.2% 2.1% 3.5% 6.7% 8.0% 6.0% 7.2%
+(t-stat) ( − 0.17) (0.42) (2.03) (1.47) (1.74) ( − 2.13) (2.06) (2.31) (2.66) (3.36) (4.05) (5.84)
+Correlation (Val, Mom) =− 0.43 − 0.62
+Europe stocks Mean 11.8% 14.6% 16.7% 4.8% 5.2% 9.2% 13.3% 17.3% 8.1% 9.8% 5.9% 6.9%
+01/1974 to ( t-stat) (3.53) (4.43) (4.61) (2.32) (2.95) (2.72) (4.65) (5.56) (3.37) (4.59) (4.77) (6.55)
+07/2011 Stdev 18.3% 18.0% 19.8% 11.5% 9.7% 20.6% 17.5% 19.0% 14.7% 13.1% 6.8% 5.8%
+Sharpe 0.64 0.81 0.84 0.42 0.54 0.44 0.76 0.91 0.55 0.75 0.87 1.20
+Alpha − 0.4% 2.2% 3.1% 3.5% 4.0% − 3.5% 2.2% 6.0% 9.1% 10.7% 6.1% 7.1%
+(t-stat) ( − 0.30) (2.06) (2.57) (1.71) (2.32) ( − 2.54) (2.39) (4.18) (3.88) (5.05) (4.88) (6.77)
+Correlation (Val, Mom) =− 0.52 − 0.55
+Japan stocks Mean 2.6% 8.2% 14.7% 12.0% 10.2% 8.4% 9.9% 10.1% 1.7% 2.2% 6.4% 5.9%
+01/1974 to ( t-stat) (0.61) (2.02) (3.69) (4.31) (4.22) (2.19) (2.94) (2.69) (0.57) (0.81) (4.28) (4.80)
+07/2011 Stdev 23.6% 22.1% 21.8% 15.3% 13.2% 23.5% 20.6% 23.1% 18.6% 16.5% 8.1% 6.7%
+Sharpe 0.11 0.37 0.67 0.79 0.77 0.36 0.48 0.44 0.09 0.13 0.78 0.88
+Alpha − 5.6% 0.1% 7.3% 13.0% 10.7% − 1.1% 0.8% 0.5% 1.7% 2.2% 6.8% 6.1%
+(t-stat) ( − 3.36) (0.12) (3.95) (4.71) (4.47) ( − 0.59) (0.73) (0.31) (0.54) (0.84) (4.63) (5.05)
+Correlation (Val, Mom) =− 0.60 − 0.64
+(Continued)
+
+--- PAGE 14 ---
+
+942 The Journal of Finance R⃝
+Table I—Continued
+Panel A: Individual Stock Portfolios
+50/50
+Value Portfolios Momentum Portfolios Combination
+P1 P2 P3 P3–P1 Factor P1 P2 P3 P3–P1 Factor P3–P1 Factor
+Global stocks Mean 8.1% 11.0% 14.6% 6.2% 5.8% 8.5% 11.1% 14.1% 5.6% 7.1% 6.3% 6.8%
+01/1972 to ( t-stat) (3.17) (4.54) (5.84) (3.60) (3.18) (3.10) (4.82) (5.46) (2.94) (3.73) (6.52) (8.04)
+07/2011 Stdev 16.6% 15.2% 15.7% 10.9% 11.4% 17.1% 14.5% 16.2% 12.0% 12.0% 6.1% 5.3%
+Sharpe 0.50 0.72 0.93 0.57 0.51 0.49 0.77 0.87 0.47 0.59 1.04 1.28
+Alpha − 2.3% 0.7% 4.2% 6.6% 6.1% − 3.3% 0.5% 3.1% 6.4% 8.1% 6.8% 7.5%
+(t-stat) ( − 1.70) (0.69) (3.49) (3.79) (3.37) ( − 3.00) (1.00) (2.78) (3.37) (4.31) (7.09) (8.98)
+Correlation (Val, Mom) =− 0.52 − 0.60
+Panel B: Other Asset Class Portfolios
+Country indices Mean 3.1% 6.6% 9.1% 6.0% 5.7% 2.3% 5.8% 11.0% 8.7% 7.4% 7.3% 10.6%
+01/1978 to ( t-stat) (1.10) (2.40) (3.20) (3.45) (3.40) (0.81) (2.13) (3.72) (4.14) (3.57) (6.62) (5.72)
+07/2011 Stdev 16.2% 15.7% 16.2% 9.8% 9.5% 16.2% 15.4% 16.8% 11.9% 11.8% 6.3% 10.6%
+Sharpe 0.19 0.42 0.56 0.61 0.60 0.14 0.37 0.65 0.73 0.63 1.16 1.00
+Alpha − 3.2% 0.5% 2.7% 5.9% 5.3% − 3.9% − 0.3% 4.4% 8.2% 7.1% 7.1% 10.0%
+(t-stat) ( − 3.24) (0.48) (2.76) (3.45) (3.24) ( − 3.41) ( − 0.40) (4.00) (4.00) (3.47) (6.49) (5.47)
+Correlation (Val, Mom) =− 0.34 − 0.37
+Currencies Mean − 0.5% 0.3% 2.8% 3.3% 3.9% − 0.7% 0.3% 2.8% 3.5% 3.0% 3.4% 5.6%
+01/1979 to ( t-stat) ( − 0.30) (0.23) (1.98) (1.89) (2.47) ( − 0.40) (0.20) (1.91) (1.90) (1.77) (3.51) (3.89)
+07/2011 Stdev 9.2% 8.3% 7.9% 9.7% 9.0% 9.4% 8.0% 8.2% 10.3% 9.6% 5.4% 8.0%
+Sharpe − 0.05 0.04 0.35 0.34 0.44 − 0.07 0.04 0.34 0.34 0.32 0.63 0.69
+Alpha − 1.4% − 0.6% 2.0% 3.4% 4.1% − 1.6% − 0.6% 2.0% 3.6% 3.1% 3.5% 5.7%
+(t-stat) ( − 1.53) ( − 0.94) (2.25) (2.04) (2.63) ( − 1.58) ( − 1.01) (2.18) (1.99) (1.84) (3.83) (4.11)
+Correlation (Val, Mom) =− 0.42 − 0.43
+(Continued)
+
+--- PAGE 15 ---
+
+Value and Momentum Everywhere 943
+Table I—Continued
+Panel B: Other Asset Class Portfolios
+50/50
+Value Portfolios Momentum Portfolios Combination
+P1 P2 P3 P3–P1 Factor P1 P2 P3 P3–P1 Factor P3–P1 Factor
+Fixed income Mean 3.0% 4.0% 4.2% 1.1% 0.5% 3.8% 3.8% 4.2% 0.4% 1.0% 0.8% 0.7%
+01/1982 to ( t-stat) (2.31) (3.58) (3.76) (0.97) (0.39) (3.42) (3.49) (3.28) (0.35) (0.88) (1.03) (1.08)
+07/2011 Stdev 7.0% 5.9% 5.9% 6.3% 6.4% 5.9% 5.9% 6.8% 6.0% 5.8% 4.0% 3.5%
+Sharpe 0.43 0.67 0.71 0.18 0.07 0.64 0.66 0.61 0.06 0.17 0.19 0.20
+Alpha − 1.3% 0.3% 0.7% 1.9% 1.4% 0.2% 0.3% − 0.1% − 0.3% 0.1% 0.8% 0.7%
+(t-stat) ( − 1.87) (0.51) (1.03) (1.68) (1.21) (0.34) (0.48) ( − 0.17) ( − 0.29) (0.08) (1.10) (1.15)
+Correlation (Val, Mom) =− 0.17 − 0.35
+Commodities Mean 4.2% 4.1% 10.5% 6.3% 7.3% 0.7% 5.8% 13.1% 12.4% 11.5% 9.4% 17.1%
+01/1972 to ( t-stat) (1.21) (1.34) (3.50) (1.61) (1.92) (0.22) (2.27) (3.73) (3.29) (3.14) (4.42) (4.78)
+07/2011 Stdev 21.5% 18.8% 18.5% 24.2% 23.7% 19.0% 15.9% 21.8% 23.4% 22.8% 13.1% 22.2%
+Sharpe 0.19 0.22 0.57 0.26 0.31 0.04 0.37 0.60 0.53 0.51 0.71 0.77
+Alpha − 2.9% − 2.4% 4.8% 7.7% 8.2% − 5.6% 0.4% 5.8% 11.4% 10.5% 9.5% 17.1%
+(t-stat) ( − 1.39) ( − 1.39) (2.34) (2.02) (2.19) ( − 2.95) (0.26) (2.71) (3.06) (2.89) (4.57) (4.82)
+Correlation (Val, Mom) =− 0.39 − 0.46
+Global other Mean 2.2% 3.1% 5.7% 3.4% 3.6% 1.6% 3.4% 6.3% 4.6% 4.4% 4.0% 6.8%
+asset classes ( t-stat) (1.88) (2.97) (5.63) (3.08) (3.42) (1.49) (3.61) (5.30) (3.88) (3.83) (6.39) (7.03)
+01/1972 to Stdev 7.3% 6.4% 6.2% 6.4% 6.6% 6.7% 5.9% 7.3% 7.4% 7.1% 3.9% 6.0%
+07/2011 Sharpe 0.30 0.48 0.91 0.50 0.55 0.24 0.58 0.85 0.63 0.62 1.03 1.14
+Alpha − 1.0% − 0.1% 3.0% 4.0% 3.9% − 1.4% − 0.7% 3.1% 4.5% 4.1% 4.2% 6.8%
+(t-stat) ( − 1.26) ( − 0.18) (4.10) (3.67) (3.71) ( − 1.85) ( − 1.07) (3.65) (3.80) (3.62) (6.83) (7.12)
+Correlation (Val, Mom) =− 0.40 − 0.49
+Global all Mean 4.5% 6.1% 9.1% 4.6% 4.6% 4.2% 6.4% 9.2% 5.0% 5.4% 5.0% 6.8%
+asset classes ( t-stat) (3.00) (4.42) (6.47) (4.55) (4.47) (2.74) (4.88) (6.09) (4.18) (4.59) (8.77) (9.83)
+01/1972 to Stdev 9.3% 8.5% 8.7% 6.3% 6.4% 9.5% 8.1% 9.4% 7.5% 7.4% 3.5% 4.3%
+07/2011 Sharpe 0.48 0.71 1.04 0.73 0.72 0.44 0.79 0.98 0.67 0.74 1.42 1.59
+Alpha − 2.0% − 0.2% 2.9% 4.8% 4.8% − 2.6% 0.3% 2.6% 5.2% 5.6% 5.0% 6.9%
+(t-stat) ( − 2.29) ( − 0.35) (3.71) (4.81) (4.69) ( − 3.07) (0.43) (3.04) (4.34) (4.76) (9.00) (10.03)
+Correlation (Val, Mom) =− 0.53 − 0.60
+(Continued)
+
+--- PAGE 16 ---
+
+944 The Journal of Finance R⃝
+Table I—Continued
+Panel C: Alternative Value Measures for Fixed Income
+Value Portfolios 50-50 Combination
+Fixed income 01/1983 to 07/2011 P1 P2 P3 P3–P1 Factor P3–P1 Factor
+Value = 5-year yield change Mean 3.0% 4.0% 4.2% 1.1% 0.5% 0.8% 0.7%
+(yield to yield 5 years ago) ( t-stat) (2.31) (3.58) (3.76) (0.97) (0.39) (1.03) (1.08)
+Stdev 7.0% 5.9% 5.9% 6.3% 6.4% 4.0% 3.5%
+Sharpe 0.43 0.67 0.71 0.18 0.07 0.19 0.20
+Alpha −1.3% 0.3% 0.7% 1.9% 1.4% 0.8% 0.7%
+(t-stat) ( −1.87) ( −0.51) (1.03) (1.68) (1.21) (1.10) (1.15)
+Correlation (Val, Mom) =− 0.17 −0.35
+Value = real bond yield (10-year Mean 0.9% 2.1% 2.9% 2.0% 1.9% 0.9% 1.4%
+yield to 5-year inﬂation forecast) ( t-stat) (1.84) (3.36) (4.17) (3.78) (3.58) (2.44) (2.63)
+Stdev 2.6% 3.2% 3.6% 2.7% 2.8% 1.9% 2.9%
+Sharpe 0.36 0.65 0.81 0.73 0.70 0.46 0.49
+Alpha −0.6% −0.1% 0.4% 1.0% 0.9% 0.4% 0.6%
+(t-stat) ( −2.02) ( −0.15) (1.09) (2.36) (2.09) (1.17) (1.25)
+Correlation (Val, Mom) =− 0.09 −0.03
+Value = term spread (10-year Mean 0.8% 1.5% 2.3% 1.5% 1.7% 0.6% 1.1%
+yield to short rate) ( t-stat) (1.25) (2.37) (3.60) (2.69) (3.22) (1.47) (1.96)
+Stdev 3.2% 3.2% 3.2% 2.8% 2.5% 2.2% 2.9%
+Sharpe 0.25 0.250.48 0.73 0.55 0.65 0.28 0.37
+Alpha −1.2% −0.7% 0.1% 1.3% 1.4% 0.5% 0.8%
+(t-stat) ( −3.03) ( −1.79) (0.28) (2.78) (3.31) (1.22) (1.55)
+Correlation (Val, Mom) = 0.22 0.28
+Value = composite average of Mean 0.3% 1.6% 3.0% 2.6% 2.9% 1.3% 2.2%
+all three measures ( t-stat) (0.58) (2.56) (4.63) (4.88) (5.89) (3.17) (4.30)
+Stdev 3.2% 3.4% 3.4% 2.9% 2.6% 2.1% 2.7%
+Sharpe 0.11 0.48 0.87 0.91 1.10 0.59 0.81
+Alpha −1.5% −0.3% 0.8% 2.3% 2.6% 1.0% 1.8%
+(t-stat) ( −4.01) ( −0.80) (2.25) (4.40) (5.48) (2.55) (3.66)
+Correlation (Val, Mom) = 0.03 0.04
+
+--- PAGE 17 ---
+
+Value and Momentum Everywhere 945
+the P3-P1 zero-cost spread portfolio and the zero-cost signal-weighted factor
+returns.
+Panel A of Table I reports results for each of the individual stock strategies.
+Consistent with results in the literature, there is a signiﬁcant return premium
+for value in every stock market, with the strongest performance in Japan. Mo-
+mentum premia are also positive in every market, especially in Europe, but are
+statistically insigniﬁcant in Japan. As the last row for each market indicates,
+the correlation between value and momentum returns is strongly negative,
+averaging about –0.60. Combining two positive return strategies with such
+strong negative correlation to each other increases Sharpe ratios signiﬁcantly .
+In every market, the value/momentum combination outperforms either value
+or momentum by itself. Hence, many theories attempting to explain the ob-
+served Sharpe ratio for value or momentum have a higher hurdle to meet if
+considering a simple linear combination of the two.
+In addition, the combination of value and momentum is much more stable
+across markets. For instance, previous research attempting to explain why
+momentum does not work very well in Japan (see Chui, Titman, and Wei ( 2010)
+for a behavioral explanation related to cultural biases) needs to confront the
+fact that value has performed exceptionally well in Japan during the same time
+period, as well as the fact that the correlation between value and momentum
+in Japan is –0.64 over this period. So, rather than explain why momentum
+did not work in Japan, it would be nearly equally appropriate to ask why
+value did so well (see Asness ( 2011)). Moreover, an equal combination of value
+and momentum in Japan realizes an even higher Sharpe ratio than value alone
+suggesting that a positive weight on momentum in Japan improves the efﬁcient
+frontier, which is also conﬁrmed from a static portfolio optimization.
+The last set of rows of Table I, Panel A show the power of combining value
+and momentum portfolios across markets. We report an average of value, mo-
+mentum, and their combination across all four regions (“Global stocks”) by
+weighting each market by the inverse of their ex post sample standard devia-
+tion.11 Value applied globally generates an annualized Sharpe ratio not much
+larger than the average of the Sharpe ratios across each market, indicating
+strong covariation among value strategies across markets. Likewise, momen-
+tum applied globally does not produce a Sharpe ratio much larger than the
+11 We compute the monthly standard deviation of returns for each passive benchmark in each
+market and weight each market by the inverse of this number, rescaled to sum to one, to form
+a global portfolio across all markets. Each market’s dollar contribution to the global portfolio is
+therefore proportional to the reciprocal of its measured volatility , but each market contributes
+an equal fraction to the total volatility of the portfolio, ignoring correlations. We weight every
+portfolio (low, middle, high, and value and momentum) and factor within each market by the same
+number based on of the volatility of the total market index for that market. For the nonstock asset
+classes we do the same, where the benchmark portfolio is simply an equal weighted average of
+all the securities in that asset class. Weighting by total market cap or equal weighting produces
+nearly identical results, but we use the equal volatility weighting scheme to be consistent with our
+procedure for the nonequity asset classes, where market cap has no meaning and where volatility
+differs greatly across different asset clasees.
+
+--- PAGE 18 ---
+
+946 The Journal of Finance R⃝
+average Sharpe ratio across markets, indicating strong correlation structure
+among momentum portfolios globally , too.
+Panel B of Table I reports the same statistics for the nonstock asset classes.
+There are consistent value and momentum return premia in these asset
+classes as well, including some not previously examined (e.g., bonds, value in
+currencies and commodities).12 While value and momentum returns vary some-
+what across the asset classes, the combination of value and momentum is quite
+robust due to a consistent negative correlation between value and momentum
+within each asset class that averages –0.49. We also examine a diversiﬁed port-
+folio of value, momentum, and their combination across all asset classes. Since
+the volatilities of the portfolios are vastly different across asset classes—for
+example, commodity strategies have about four times the volatility of bond
+strategies—we weight each asset class by the inverse of its ex post sample
+volatility , so that each asset class contributes roughly an equal amount to the
+ex post volatility of the diversiﬁed portfolio.13 The diversiﬁed portfolio across all
+asset classes yields small improvements in Sharpe ratios, which suggests the
+presence of correlation structure in value and momentum returns across these
+different asset classes. Models that give rise to value and momentum returns in
+equities, such as the production- or investment-based theories of Berk, Green,
+and Naik ( 1999), Johnson ( 2002), Gomes, Kogan, and Zhang ( 2003), Zhang
+(2005), Sagi and Seasholes ( 2007), Liu, Whited, and Zhang ( 2009), Li, Livdan,
+and Zhang (2009), Belo (2010), Li and Zhang ( 2010), and Liu and Zhang ( 2008),
+may not easily apply to other asset classes, yet we ﬁnd similar value and mo-
+mentum effects that are correlated to those found in equities, suggesting at
+least part of these premia are not captured by these models. Likewise, theories
+of investor behavior, which largely rely on individual investors in equities, will
+also have difﬁculty accommodating these facts.
+Combining the stock (Panel A) and nonstock (Panel B) value and momen-
+tum strategies across all asset classes produces even larger Sharpe ratios. We
+combine the global stock strategies with the global nonstock other asset class
+strategies by weighting each by the inverse of their in-sample volatility , where
+we weight the average stock strategy by its volatility and the average non-
+stock strategy by its volatility , rather than weighting each individual market
+or asset class by its own volatility . The 50/50 value and momentum combina-
+tion portfolio produces an annual Sharpe ratio of 1.45, which presents an even
+greater challenge for asset pricing models that already struggle to explain the
+magnitude of the U.S. equity premium, which is about one third as large. Con-
+sidering value and momentum together and applying them globally across all
+asset classes, the Sharpe ratio hurdle that these pricing models need to explain
+is several times larger than those found in U.S. equity data alone.
+12 The somewhat weaker returns for the nonstock asset classes would be partially attenuated
+if transactions costs were considered, since trading costs are typically higher for individual stocks
+than the futures contracts we examine outside of equities. Therefore, net-of-trading-cost returns
+would elevate the relative importance of the nonstock strategies. We discuss implementation issues
+brieﬂy in Section V.
+13 Using ex ante rolling measures of volatility and covariances yields similar results.
+
+--- PAGE 19 ---
+
+Value and Momentum Everywhere 947
+B. Alternative Measures
+We use a single measure for value and a single measure for momentum for
+all eight markets we study . We choose the most studied or simplest measure in
+each case and attempt to maintain uniformity across asset classes to minimize
+the potential for data mining. Using these simple, uniform measures results
+in positive risk premia for value and momentum in every asset class we study ,
+though some of the results are statistically insigniﬁcant. In particular, our
+weakest results pertain to bonds, which do not produce statistically reliable
+premia. However, data mining worries may be weighed against the potential
+improvements from having better measures of value and momentum. For ex-
+ample, value strategies among bonds can be markedly improved with more
+thoughtful measures. Using our current measure of value, the 5-year change
+in yields of 10-year maturity bonds, we are only able to produce a Sharpe ratio
+of 0.18 and an alpha of 1.9% that is not statistically signiﬁcant ( t-statistic of
+1.68). However, Panel C of Table I reports results for value strategies among
+bonds that use alternative measures, such as the real bond yield, which is the
+yield on 10-year bonds minus the 5-year forecast in inﬂation, and the term
+spread, which is the yield on 10-year bonds minus the short rate. As Panel C of
+Table I shows, these alternative value measures produce Sharpe ratios of 0.73
+and 0.55, respectively , and thet-statistics of their alphas are signiﬁcant at 2.36
+and 2.78.
+Moreover, we are able to produce even more reliable risk premia when using
+multiple measures of value simultaneously that diversify away measurement
+error and noise across the variables. 14 Creating a composite average index of
+value measures using all three measures above produces even stronger results,
+where value strategies generate Sharpe ratios of 0.91 and 1.10 with t-statistics
+on their alphas of 4.40 and 5.48. These alternative measures of value also blend
+nicely with our original measure for momentum, where, in each case, the 50/50
+value/momentum combination portfolios also improve with these alternative
+measures.
+Hence, our use of single, simple, and uniform value and momentum mea-
+sures may understate the true returns to these strategies in each asset class.
+Nevertheless, we stick with these simple measures to be conservative and to
+mitigate data mining concerns, even though, in the case of bonds, the results
+appear to be insigniﬁcant with such simple measures.
+C. Comovement across Asset Classes
+Table II reports the correlations of value and momentum returns across
+diverse asset classes to identify their common movements. The strength of
+comovement may support or challenge various theoretical explanations for
+value and momentum, and may ultimately point to underlying economic drivers
+14 Israel and Moskowitz ( 2012) show how other measures of value and momentum can improve
+the stability of returns to these styles among individual equities.
+
+--- PAGE 20 ---
+
+948 The Journal of Finance R⃝
+Table II
+Correlation of Value and Momentum Strategies across Markets and Asset Classes
+Reported are the average correlations among all value and momentum strategies across markets and asset classes. Panel A reports the correlations
+of the average return series, where we ﬁrst compute the average return series for a group (e.g., all individual stock value strategies across all marke ts
+and all nonstock value strategies across all nonstock asset classes) and then compute the correlation between the two average return series. The
+diagonal elements in Panel A are computed as the average correlation between each market’s return series and the average of all other return series
+in other markets, excluding the market itself. For example, we compute the correlation between U.S. stock value returns and the average returns
+to value strategies across stocks in the United Kingdom, Europe, and Japan. We then do the same for U.K. value returns with the average of value
+returns across the United States, Europe, and Japan, and repeat this for Europe value and Japan value strategies as well. We then take the average
+of these correlations and report them as the ﬁrst diagonal element of Panel A. Correlations are computed from quarterly returns to mitigate the
+inﬂuence of nonsynchronous trading across markets. Panel B breaks down the correlations of the individual stock value and momentum strategies
+series with each of the nonstock value and momentum strategies. An F-test for the joint signiﬁcance of the individual correlations within each group
+is performed, where * indicates the correlations are signiﬁcantly different from zero at the 5% signiﬁcance level.
+Panel A: Correlation of Average Return Series
+Stock Value Nonstock Value Stock Momentum Nonstock Momentum
+Stock value 0.68* 0.15* −0.53* −0.26*
+Nonstock value 0.07 −0.16* −0.13*
+Stock momentum 0.65* 0.37*
+Nonstock momentum 0.21*
+Panel B: Correlation of Average Stock Series with Each Nonstock Series
+Country Index Currency Fixed Income Commodity Country Index Currency Fixed Income Commodity
+Value Value Value Value Momentum Momentum Momentum Momentum
+Global Stock value 0.27* 0.13* −0.03 0.01 −0.28* −0.20* −0.01 −0.17*
+Global Stock momentum −0.19* −0.12* −0.05 −0.06 0.40* 0.28* 0.09 0.20*
+
+--- PAGE 21 ---
+
+Value and Momentum Everywhere 949
+for their returns. The correlations are computed from the returns of the signal-
+weighted zero-cost factor portfolios from equation (2), but results are similar
+using the top third minus bottom third P3-P1 portfolio returns.
+Panel A of Table II reports the correlations among value strategies and
+among momentum strategies globally across asset markets. We ﬁrst compute
+the average return series for value and momentum across all stock markets
+and across all nonstock asset classes separately . For example, we compute the
+volatility-weighted average of all the individual stock value strategies across
+the four equity markets—the United States, the United Kingdom, Europe, and
+Japan—and the weighted average of the value strategies across the nonequity
+asset classes—index futures, currencies, bonds, and commodities. We do the
+same for momentum. We then compute the correlation matrix between these
+average return series. The diagonal of the correlation matrix is computed as
+the average correlation between each individual market’s return series and
+the average of all other return series in other markets. For instance, the ﬁrst
+entry in the covariance matrix is the average of the correlations between each
+equity market’s value strategy and a portfolio of all other equity market value
+strategies: an average of the correlation of U.S. value with a diversiﬁed value
+strategy in all other individual equity markets (United Kingdom, Europe, and
+Japan); the correlation of U.K. value with a diversiﬁed value strategy in the
+United States, Europe, and Japan; the correlation of Europe value with a diver-
+siﬁed value strategy in the United States, the United Kingdom, and Japan; and
+the correlation of Japan value with a diversiﬁed value strategy in the United
+States, United Kingdom, and Europe. We then take an equal weighted average
+of these four correlations to get the ﬁrst element of the correlation matrix in
+Panel A of Table II. In general, we obtain more powerful statistical ﬁndings
+when looking at the correlations of the average return series rather than the
+average of individual correlations, since the former better diversiﬁes away ran-
+dom noise from each market, a theme we emphasize throughout the paper. 15
+Correlations are computed from quarterly returns to help mitigate any non-
+synchronous trading issues across markets, due to illiquid assets that do not
+trade continuously or time zone differences. An F-test on the joint signiﬁcance
+of the correlations is also performed.
+Panel A of Table II shows a consistent pattern, where value in one market
+or asset class is positively correlated with value elsewhere, momentum in one
+market or asset class is positively correlated with momentum elsewhere, and
+value and momentum are negatively correlated everywhere across markets and
+asset classes. The average individual stock value strategy has a correlation of
+15 In the Internet Appendix to the paper, we report the average of the individual correlations
+among the stock and nonstock value and momentum strategies, where we ﬁrst compute the pair-
+wise correlations of all individual strategies (e.g., U.S. value with Japan value) and then take the
+average for each group. We exclude the correlation of each strategy with itself (removing the 1s)
+when averaging and also exclude the correlation of each strategy with all other strategies within
+the same market (i.e., exclude U.S. momentum when examining U.S. value’s correlation with
+other momentum strategies). While these individual correlations are consistently weaker than
+those obtained from taking averages ﬁrst and then computing correlations, the average pairwise
+correlations also exhibit strong comovement among value and momentum across markets.
+
+--- PAGE 22 ---
+
+950 The Journal of Finance R⃝
+0.68 with the average value strategy in other stock markets, and of 0.15 with
+the average nonstock value strategy . The average individual stock momentum
+strategy has a correlation of 0.65 with the average momentum strategy in other
+stock markets and a correlation of 0.37 with the average nonstock momentum
+strategy . The strong correlation structure among value and momentum strate-
+gies across such different assets is interesting since these asset classes have
+different types of investors, institutional and market structures, and informa-
+tion environments.
+Value and momentum are also negatively correlated across asset classes.
+The correlation between a value strategy in one stock market and a portfolio
+of momentum strategies in other stock markets is –0.53. In addition, value in
+one asset class is negatively correlated with momentum in another asset class.
+For example, the correlation between the average stock value strategy and
+the average nonstock momentum strategy is –0.26, the correlation between
+nonstock value strategies and stock momentum strategies is –0.16, and the
+correlation between nonstock value and nonstock momentum in other asset
+classes is –0.13 on average. This correlation structure—value being positively
+correlated across assets, momentum being positively correlated across assets,
+and value and momentum being negatively correlated within and across asset
+classes—cannot be explained by the correlation of passive exposure to the
+asset classes themselves. The value and momentum strategies we examine are
+long–short and market neutral with respect to each asset class, and yet exhibit
+stronger correlation across asset classes than do passive exposures to these
+asset classes.
+Panel B of Table II breaks down the correlations of the average stock strate-
+gies with each of the nonstock strategies. Nearly all of the value strategies
+across asset classes are consistently positively correlated, all of the momentum
+strategies are consistently positively correlated, all of the correlations between
+value and momentum are consistently negatively correlated, and most of these
+correlations are statistically different from zero.
+For robustness, we also show that deﬁning value differently produces similar
+negative correlation numbers between value and momentum strategies. Our
+value measure for equities, BE/ME, uses the most recent market value in the
+denominator, which yields a –0.53 correlation between value and momentum
+in Table II, Panel A. However, lagging prices by 1 year in the BE/ME measure
+(i.e., using ME from 1 year prior) so that the value measure uses price data
+that do not overlap with the momentum measure, still produces a negative
+correlation between value and momentum of –0.28, which is highlighted in the
+Internet Appendix. While these correlations are smaller in magnitude, they
+are still signiﬁcantly negative.
+In addition, using the negative of the past 5-year return of a stock as a value
+measure for equities, which is what we use for the nonequity asset classes,
+also generates negative correlations between value and momentum of similar
+magnitude (–0.48 as highlighted in the Internet Appendix). This provides more
+evidence that past 5-year returns capture similar effects as BE/ME (Gerakos
+and Linnainmaa (2012) reach a similar conclusion). Hence, simply using recent
+prices or using past 5-year returns as a value measure does not appear to be
+
+--- PAGE 23 ---
+
+Value and Momentum Everywhere 951
+driving the negative correlation between value and momentum returns, which
+appears to be robust across different value measures.
+Figure 1 examines the ﬁrst principal component of the covariance matrix of
+the value and momentum returns. The top panel of the ﬁgure plots the eigenvec-
+tor weights associated with the largest eigenvalue from the covariance matrix
+of the individual stock value and momentum strategies in each stock market.
+The bottom panel of the ﬁgure plots the eigenvector weights for all asset classes,
+which include a global individual stock value and momentum factor across all
+countries. Both panels show that the ﬁrst principal component loads in one
+direction on all value strategies and loads in exactly the opposite direction
+on all momentum strategies, highlighting the strong and ubiquitous negative
+correlation between value and momentum across asset classes as well as the
+positive correlation among value strategies and among momentum strategies
+across asset classes. The ﬁrst principal component, which is essentially long
+momentum and short value (or vice versa) in every asset class, accounts for
+54% of the individual stock strategies’ covariance matrix and 23% of the all-
+asset-class covariance matrix. The commonality among value and momentum
+strategies across vastly different assets and markets with widely varying in-
+formation, structures, and investors points to common global factor structure
+among these phenomena.
+The Internet Appendix also shows that correlations across markets and asset
+classes for the value/momentum combination strategies are lower than they are
+for value or momentum alone, indicating that the negative correlation between
+value and momentum offsets some of the common variation when combined
+together in a portfolio. In other words, it appears that value and momentum
+load oppositely on some common sources of risk.
+Figure 2 illustrates succinctly the return and correlation evidence on value
+and momentum globally by plotting the cumulative returns to value, momen-
+tum, and their combination in each asset market and across all asset markets.
+The consistent positive returns and strong correlation structure across assets,
+as well as the negative correlation between value and momentum in every
+market, is highlighted in the graphs.
+III. Relation to Macroeconomic and Liquidity Risk
+In this section we investigate possible sources driving the common variation
+of value and momentum strategies across markets and asset classes.
+A. Macroeconomic Risk Exposure
+Table III reports results from time-series regressions of value and momentum
+returns for U.S. stocks, global stocks, nonstock asset classes, and all asset
+classes combined on various measures of macroeconomic risks. 16
+16 Chordia and Shivakumar ( 2002) claim that a conditional forecasting model of macroeconomic
+risks can explain momentum proﬁts in U.S. stocks, but Grifﬁn, Ji, and Martin ( 2003) show that
+neither an unconditional or conditional model of macroeconomic risks can explain momentum
+
+--- PAGE 24 ---
+
+952 The Journal of Finance R⃝
+1 2 3 4
+-0.5
+-0.4
+-0.3
+-0.2
+-0.1
+0
+0.1
+0.2
+0.3
+0.4
+First PC of Global Equity Value and Momentum Portfolios
+US UK JPN EURO
+Percentage of covariance matrix explained = 53.6%           
+Value
+Momentum
+1 2 3 4 5
+-0.6
+-0.4
+-0.2
+0
+0.2
+0.4
+First PC of All Asset Classes Value and Momentum Portfolios
+Stocks Countries Currencies Bonds Commodities
+Percentage of covariance matrix explained = 22.7%             
+Value
+Momentum
+Figure 1. First principal component for value and momentum strategies. Plotted are the
+eigenvector values associated with the largest eigenvalue of the covariance matrix of returns to
+value and momentum strategies. The top graph plots the ﬁrst principal component of value and
+momentum strategies in individual stocks in four international markets—the United States, the
+United Kingdom, Europe (excluding the United Kingdom), and Japan—and the bottom graph plots
+the ﬁrst principal component for value and momentum strategies in ﬁve asset classes—individual
+stocks globally , country equity index futures, currencies, sovereign bonds, and commodities. Also
+reported is the percentage of the covariance matrix explained by the ﬁrst principal component.
+
+--- PAGE 25 ---
+
+Value and Momentum Everywhere 953
+-0.50
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+Dec-71
+Jun-73
+Nov-74
+May-76
+Nov-77
+May-79
+Nov-80
+May-82
+Nov-83
+May-85
+Nov-86
+May-88
+Nov-89
+May-91
+Nov-92
+May-94
+Nov-95
+May-97
+Nov-98
+May-00
+Nov-01
+May-03
+Nov-04
+May-06
+Nov-07
+May-09
+U.S. Stocks
+Value Momentum Combo
+-0.50
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+Dec-71
+Jun-73
+Nov-74
+May-76
+Nov-77
+May-79
+Nov-80
+May-82
+Nov-83
+May-85
+Nov-86
+May-88
+Nov-89
+May-91
+Nov-92
+May-94
+Nov-95
+May-97
+Nov-98
+May-00
+Nov-01
+May-03
+Nov-04
+May-06
+Nov-07
+May-09
+U.K. Stocks
+Value Momentum Combo
+-0.50
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+Dec-71
+Jun-73
+Nov-74
+May-76
+Nov-77
+May-79
+Nov-80
+May-82
+Nov-83
+May-85
+Nov-86
+May-88
+Nov-89
+May-91
+Nov-92
+May-94
+Nov-95
+May-97
+Nov-98
+May-00
+Nov-01
+May-03
+Nov-04
+May-06
+Nov-07
+May-09
+Europe Stocks
+Value Momentum Combo
+-0.20
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+1.40
+1.60
+1.80
+Dec-71
+Jun-73
+Nov-74
+May-76
+Nov-77
+May-79
+Nov-80
+May-82
+Nov-83
+May-85
+Nov-86
+May-88
+Nov-89
+May-91
+Nov-92
+May-94
+Nov-95
+May-97
+Nov-98
+May-00
+Nov-01
+May-03
+Nov-04
+May-06
+Nov-07
+May-09
+Japan Stocks
+Value Momentum Combo
+Sharpe = 0.26 0.45 0.86
+-0.65Correla/g415on (value, momentum) = 
+Sharpe = 0.38 0.48 1.07
+-0.62Correla/g415on (value, momentum) = 
+Sharpe = 0.54 0.75 1.20
+-0.55Correla/g415on (value, momentum) = 
+Sharpe = 0.77 0.13 0.88
+-0.64Correla/g415on (value, momentum) = 
+Figure 2. Cumulative returns to value and momentum strategies across markets and asset classes. Plotted are the cumulative (sum of
+log) returns to value, momentum, and their 50/50 combination strategies in each of the eight asset markets considered: equities in the United States,
+the United Kingdom, Europe, and Japan; equity index futures; currencies; bonds; and commodities. Returns are plotted for the rank weighted factor
+portfolios, which are zero-investment portfolios that weight each asset in proportion to its rank based on either value or momentum, following equat ion
+(2). Results are also reported for an average of all individual stock strategies across all stock markets (“Global stocks”), across all nonstock asse t
+classes (“Global other asset classes”), and across all markets and asset classes (“Global all asset classes”), where average return series are compu ted
+using equal volatility weights across the markets and asset classes to account for differences in volatility across asset classes. All return series are
+scaled to 10% annual volatility for ease of comparison. Reported on each graph are the annualized Sharpe ratios for each strategy as well as the
+correlation between value and momentum in each market.
+
+--- PAGE 26 ---
+
+954 The Journal of Finance R⃝
+-0.50
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+Dec-71
+Jun-73
+Nov-74
+May-76
+Nov-77
+May-79
+Nov-80
+May-82
+Nov-83
+May-85
+Nov-86
+May-88
+Nov-89
+May-91
+Nov-92
+May-94
+Nov-95
+May-97
+Nov-98
+May-00
+Nov-01
+May-03
+Nov-04
+May-06
+Nov-07
+May-09
+Country Indices
+Value Momentum Combo
+-0.50
+0.00
+0.50
+1.00
+1.50
+2.00
+Dec-71
+Jun-73
+Nov-74
+May-76
+Nov-77
+May-79
+Nov-80
+May-82
+Nov-83
+May-85
+Nov-86
+May-88
+Nov-89
+May-91
+Nov-92
+May-94
+Nov-95
+May-97
+Nov-98
+May-00
+Nov-01
+May-03
+Nov-04
+May-06
+Nov-07
+May-09
+Currencies
+Value Momentum Combo
+-0.50
+-0.40
+-0.30
+-0.20
+-0.10
+0.00
+0.10
+0.20
+0.30
+0.40
+Dec-71
+Jun-73
+Nov-74
+May-76
+Nov-77
+May-79
+Nov-80
+May-82
+Nov-83
+May-85
+Nov-86
+May-88
+Nov-89
+May-91
+Nov-92
+May-94
+Nov-95
+May-97
+Nov-98
+May-00
+Nov-01
+May-03
+Nov-04
+May-06
+Nov-07
+May-09
+Fixed Income
+Value Momentum Combo
+-0.50
+0.00
+0.50
+1.00
+1.50
+2.00
+Dec-71
+Jun-73
+Nov-74
+May-76
+Nov-77
+May-79
+Nov-80
+May-82
+Nov-83
+May-85
+Nov-86
+May-88
+Nov-89
+May-91
+Nov-92
+May-94
+Nov-95
+May-97
+Nov-98
+May-00
+Nov-01
+May-03
+Nov-04
+May-06
+Nov-07
+May-09
+Commodi/g415es
+Value Momentum Combo
+Sharpe = 0.60 0.63 1.00
+-0.37Correla/g415on (value, momentum) = 
+Sharpe = 0.44 0.32 0.69
+-0.43Correla/g415on (value, momentum) = 
+Sharpe = 0.07 0.17 0.20
+-0.35Correla/g415on (value, momentum) = 
+Sharpe = 0.31 0.51 0.77
+-0.46Correla/g415on (value, momentum) = 
+Figure 2. Continued.
+
+--- PAGE 27 ---
+
+Value and Momentum Everywhere 955
+-0.50
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+3.00
+3.50
+Dec-71
+Jun-73
+Nov-74
+May-76
+Nov-77
+May-79
+Nov-80
+May-82
+Nov-83
+May-85
+Nov-86
+May-88
+Nov-89
+May-91
+Nov-92
+May-94
+Nov-95
+May-97
+Nov-98
+May-00
+Nov-01
+May-03
+Nov-04
+May-06
+Nov-07
+May-09
+Global Stocks
+Value Momentum Combo
+-0.50
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+3.00
+3.50
+Dec-71
+Jun-73
+Nov-74
+May-76
+Nov-77
+May-79
+Nov-80
+May-82
+Nov-83
+May-85
+Nov-86
+May-88
+Nov-89
+May-91
+Nov-92
+May-94
+Nov-95
+May-97
+Nov-98
+May-00
+Nov-01
+May-03
+Nov-04
+May-06
+Nov-07
+May-09
+Global Other Assets
+Value Momentum Combo
+-0.50
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+3.00
+3.50
+4.00
+Dec-71
+May-73
+Oct-74
+Mar-76
+Aug-77
+Jan-79
+Jun-80
+Nov-81
+Apr-83
+Sep-84
+Feb-86
+Jul-87
+Nov-88
+Apr-90
+Sep-91
+Feb-93
+Jul-94
+Nov-95
+Apr-97
+Sep-98
+Feb-00
+Jul-01
+Nov-02
+Apr-04
+Sep-05
+Feb-07
+Jul-08
+Nov-09
+Global All Assets
+Value Momentum Combo
+Sharpe = 0.51 0.59 1.28
+-0.60Correla/g415on (value, momentum) = 
+Sharpe = 0.55 0.62 1.14
+-0.49Correla/g415on (value, momentum) = 
+Sharpe = 0.72 0.74 1.59
+-0.60Correla/g415on (value, momentum) = 
+Figure 2. Continued.
+
+--- PAGE 28 ---
+
+956 The Journal of Finance R⃝
+The ﬁrst two columns of Table III report the time series regression coefﬁcients
+of U.S. value and momentum returns on U.S. macroeconomic variables: long-
+run consumption growth, a recession indicator, GDP growth, as well as the
+U.S. stock market return in excess of the T-bill rate and the Fama and French
+(1993) bond market factor returns TERM and DEF . Consumption growth is
+the real per capita growth in nondurable and service consumption obtained
+quarterly and long-run consumption growth is the future 3-year growth rate
+in consumption, measured as the sum of log quarterly consumption growth
+12 quarters ahead as in Parker and Julliard ( 2005) and Malloy , Moskowitz,
+and Vissing-Jorgensen ( 2009). GDP growth is real per capita growth in GDP .
+These macroeconomic data are obtained from the National Income and Product
+Accounts (NIPA). The recession indicator is deﬁned using ex post peak (=0) and
+trough dates (=1) from the NBER.
+As Table III shows, U.S. stock value strategies are positively related to long-
+run consumption growth in U.S. data, consistent with the ﬁndings of Parker
+and Julliard ( 2005), Bansal and Y aron (2004), Malloy , Moskowitz, and Vissing-
+Jorgensen ( 2009), and Hansen, Heaton, and Li ( 2008). U.S. stock momentum
+strategy returns are not related to long-run consumption growth. Value and
+momentum are slightly negatively related to recessions and GDP growth, but
+none of these relationships are statistically signiﬁcant. TERM and DEF are
+positively related to value and the default spread is negatively related to mo-
+mentum.
+The next six columns of Table III report regression results for value and
+momentum in global stocks, all nonstock asset classes, and all asset classes
+on global macroeconomic variables. Here, we use global long-run consumption
+growth, which is a GDP-weighted average of 12-quarter-ahead nondurable
+and service per capita consumption growth in the United States, the United
+Kingdom, Europe, and Japan. Global macroeconomic data are obtained from
+Economic Cycle Research Institute (ECRI), which covers production and con-
+sumption data as well as business cycle dates using the same methodology
+as the NBER for approximately 50 countries over time. Similarly , our global
+recession variable is the GDP-weighted average of recession indicators in each
+country and global GDP growth is the average across countries weighted by
+beginning-of-year GDP . For the market return, we use the MSCI World Index
+in excess of the U.S. T-bill rate. Finally , since we do not have data to construct
+TERM and DEF internationally , we use the U.S. versions.
+As Table III shows, the global macroeconomic variables are generally not
+signiﬁcantly related to value and momentum returns, with a couple of excep-
+tions. Momentum is signiﬁcantly negatively related to recessions, especially
+among nonstock asset classes. The default spread is positively related to global
+stock value, but is insigniﬁcantly negatively related to value returns in other
+in equities globally across 40 countries, including the United States. We examine the relation
+between macroeconomic risks and value and momentum strategies globally across asset classes to
+potentially shed new light on this question.
+
+--- PAGE 29 ---
+
+Value and Momentum Everywhere 957
+Table III
+Macroeconomic Risk Exposures
+Reported are coefﬁcient estimates, t-statistics (in parentheses), and R2s from time-series regressions of the value and momentum strategy returns in
+U.S. individual stocks, global individual stocks (across the United States, the United Kingdom, Europe, and Japan), nonstock asset classes, and all
+asset classes (stock and nonstock) on various measures of macroeconomic risks. The macroeconomic variables are a measure of long-run consumption
+growth, which is the 3-year future growth rate in per capita nondurable real consumption (quarterly), a recession dummy (0 = peak, 1 = trough)
+obtained from NBER dates for the United States and ECRI dates outside of the United States, contemporaneous GDP growth rates (from NIPA for the
+United States and from ECRI outside of the United States), the MSCI world equity index return in excess of the U.S. T-bill rate, and the bond factor
+returns of Fama and French ( 1993) TERM and DEF , which represent the term spread on U.S. government bonds and the default spread between
+U.S. corporate bonds and U.S. Treasuries, respectively . For U.S. stock return regressions, only U.S. macroeconomic variables are used as independe nt
+variables. For the global, nonstock, and all-asset-class return regressions, the macroeconomic variables are averaged across all countries, weig hting
+each country in proportion to its GDP . The intercepts from the regressions are not reported for brevity .
+U.S. Stocks Global Stocks Nonstock Assets All Asset Classes
+Value Momentum Value Momentum Value Momentum Value Momentum
+U.S. values Long-run 0.0004 0.0001 Global values 0.0001 0.0001 0.0001 0.0001 0.0001 0.0001
+for consumption growth (2.06) (0.33) for (0.93) (0.92) (0.68) (0.03) (1.01) (0.43)
+independent Recession − 0.0068 − 0.0056 independent 0.0037 − 0.0044 0.0045 − 0.0081 0.0043 − 0.0072
+variables dummy ( − 1.06) ( − 0.73) variables (0.66) ( − 0.75) (1.48) ( − 2.44) (1.55) ( − 2.26)
+GDP growth − 0.0050 0.0019 (GDP- − 0.0011 0.0023 − 0.0005 − 0.0034 − 0.0006 − 0.0020
+(− 1.75) (0.57) weighted) ( − 0.39) (0.80) ( − 0.32) ( − 2.08) ( − 0.45) ( − 1.29)
+Market − 0.3435 0.0219 − 0.0615 − 0.0709 0.0101 − 0.0083 − 0.0068 − 0.0231
+(− 7.46) (0.40) ( − 1.41) ( − 1.55) (0.44) ( − 0.32) ( − 0.32) ( − 0.93)
+TERM 0.2038 − 0.0234 0.0523 0.0141 − 0.0885 0.0370 − 0.0551 0.0316
+(2.64) ( − 0.25) (1.04) (0.27) ( − 3.30) (1.25) ( − 2.23) (1.11)
+DEF 0.7439 − 0.7733 0.2650 − 0.3752 − 0.0510 − 0.0787 0.0240 − 0.1490
+(5.25) ( − 4.57) (2.86) ( − 3.87) ( − 1.03) ( − 1.44) (0.53) ( − 2.84)
+R-square 13.1% 5.9% 2.3% 6.4% 3.4% 2.9% 2.9% 4.7%
+
+--- PAGE 30 ---
+
+958 The Journal of Finance R⃝
+asset classes. DEF is consistently negatively related to momentum returns in
+all asset classes.
+B. Liquidity Risk Exposure
+Table IV reports results from regressions that add various liquidity risk
+proxies to the macroeconomic variables above.
+B.1. Measuring Funding and Market Liquidity Risk
+To measure liquidity risk exposure, we regress value and momentum returns
+on shocks to liquidity . We follow Moskowitz and Pedersen ( 2012) to deﬁne our
+liquidity shocks. We consider both funding liquidity shocks (e.g., Brunnermeier
+and Pedersen ( 2009)) and market liquidity shocks. The funding liquidity vari-
+ables are the Treasury-Eurodollar (TED) spread (the average over the month of
+the daily local 3-month interbank LIBOR interest rate minus the local 3-month
+government rate), the LIBOR minus term repo spread (the spread between the
+local 3-month LIBOR rate and the local term repurchase rate), and the spread
+between interest rate swaps and local short-term government rates (Swap-T-
+bill) in each of the four markets. We sign every variable so that it represents
+liquidity . Hence, we take the negative of the TED spread and the other spreads
+so that they capture liquidity , since a wider spread represents worse liquidity .
+The funding series are available for the common period January 1987 to July
+2011. We deﬁne shocks to these variables as the residuals from an AR(2) model,
+following Korajczyk and Sadka ( 2008) and Moskowitz and Pedersen ( 2012).17
+The market liquidity variables are the on-the-run minus off-the-run 10-year
+government Treasury note spread (see Krishnamurthy ( 2002)) in each of the
+four markets (the United States, the United Kingdom, Japan, and Europe, us-
+ing Germany as a proxy); the P ´astor and Stambaugh ( 2003) liquidity measure
+(their factor, not their factor mimicking portfolio; speciﬁcally , their innovations
+obtained from CRSP); and the illiquidity measure of Acharya and Pedersen
+(2005), motivated by Amihud’s ( 2002) measure. We construct the P ´astor and
+Stambaugh (2003) and Acharya and Pedersen ( 2005) measures in other coun-
+tries by following their methodologies applied to stocks in those markets. Once
+again, these variables are signed so that they represent liquidity, and hence
+we take the negative of the Acharya and Pedersen ( 2005) measure, which is
+based on Amihud’s (2002) illiquidity measure.
+In addition, we take the ﬁrst principal component of the correlation matrix
+of all funding liquidity shocks, all market liquidity shocks, and all liquidity
+shocks and construct an index of shocks for funding, market, and all liquidity .18
+The principal component of the correlation, rather than covariance, matrix is
+17 There is no special or theoretical reason to use an AR(2). An AR(3), AR(1), and ﬁrst differences
+model yield similar results.
+18 A previous version of this paper also included the liquidity measures of Sadka ( 2006)a n d
+Adrian and Shin ( 2010) and found similar results. However, because the Sadka ( 2006) and Adrian
+and Shin (2009) measures require data not available in other equity markets, such as tick and trade
+
+--- PAGE 31 ---
+
+Value and Momentum Everywhere 959
+Table IV
+Liquidity Risk Exposures
+Reported are coefﬁcient estimates and t-statistics (in parentheses) from time-series regressions of
+the value and momentum strategy returns across all asset classes on a host of liquidity shocks to
+measure liquidity risk exposure. The liquidity shocks are estimated as residuals from an AR(2) of
+a set of funding liquidity variables and market liquidity variables. The funding liquidity variables
+are the Treasury-Eurodollar (TED) spread, the LIBOR minus term repo spread, and the interest
+rate swap minus T-bill spread. We also compute a principal component weighted average index of
+the funding liquidity shocks (“Funding liquidity PC”) from the correlation matrix of the liquidity
+shocks and use this as another regressor. The market liquidity variables are the on-the-run minus
+off-the-run 10-year government Treasury note spread, the P ´astor and Stambaugh ( 2003)l i q u i d i t y
+measure, and the illiquidity measure of Acharya and Pedersen ( 2005). All variables are signed so
+that they represent liquidity , and hence we take the negative of the Acharya and Pedersen ( 2005)
+measure. A principal component-weighted average index of the market liquidity shocks from the
+correlation matrix of the liquidity shocks is also used. Finally , we use a principal component-
+weighted average index of all liquidity shocks (funding and market) from the correlation matrix of
+those liquidity shocks as a regressor, where every variable is signed to represent liquidity . Panel A
+reports results using only U.S. liquidity risk variables and Panel B reports results using global
+liquidity risk measures, where the global liquidity risks are estimated by taking the average of
+all the liquidity measures across countries—the United States, the United Kingdom, Europe, and
+Japan—weighted by the principal component of each country’s contribution to the correlation ma-
+trix of each liquidity measure across the four markets. TED spreads, LIBOR—term repo rates,
+swap—T-bill rates, and on-the-run minus off-the-run spreads for each country are quoted using
+each country’s government bond rates. The P ´astor and Stambaugh ( 2003) and Acharya and Ped-
+ersen (2005) measures are computed outside of the United States following the same methodology
+outlined in those papers to individual stocks in each of the other markets—the United Kingdom,
+Europe, and Japan. All regressions include the set of macroeconomic variables from Table III as
+controls (coefﬁcient estimates not reported). The intercepts from the regressions are not reported
+for brevity .
+Panel A: U.S. Liquidity Risk Measures
+50/50
+Value Momentum Combination Val – Mom
+Funding liquidity risk TED spread − 0.0052 0.0129 0.0061 − 0.0180
+(− 1.44) (3.07) (2.13) ( − 2.62)
+LIBOR-term repo − 0.0137 0.0087 − 0.0058 − 0.0223
+(− 2.15) (1.11) ( − 1.26) ( − 1.71)
+Swap-T-bill − 0.0002 0.0141 0.0104 − 0.0143
+(− 0.05) (3.34) (3.67) ( − 2.04)
+Funding liquidity PC − 0.0111 0.0153 0.0042 − 0.0264
+(− 2.89) (3.31) (1.49) ( − 3.41)
+Market liquidity risk On-the-run – off-the-run 0.0063 − 0.0053 − 0.0043 0.0115
+(0.53) ( − 0.38) ( − 0.50) (0.49)
+P ´astor-Stambaugh 0.0034 0.0107 0.0159 − 0.0074
+(0.32) (0.89) (1.93) ( − 0.37)
+Acharya-Pedersen 0.0010 0.0005 0.0013 0.0004
+(2.02) (1.44) (3.05) (0.70)
+Market liquidity PC − 0.0080 0.0222 0.0200 − 0.0302
+(− 0.44) (0.94) (1.06) ( − 0.97)
+All liquidity risk All PC − 0.0154 0.0195 0.0043 − 0.0349
+(− 2.84) (2.96) (1.09) ( − 3.17)
+(Continued)
+
+--- PAGE 32 ---
+
+960 The Journal of Finance R⃝
+Table IV—Continued
+Panel B: Global Liquidity Risk Measures
+50/50
+Value Momentum Combination Val − Mom
+Funding liquidity risk TED spread − 0.0067 0.0094 0.0023 − 0.0161
+(− 1.69) (2.00) (0.74) ( − 2.05)
+LIBOR-term repo − 0.0177 0.0139 − 0.0005 − 0.0316
+(− 2.87) (1.66) ( − 0.08) ( − 2.36)
+Swap-T-bill − 0.0076 0.0055 − 0.0012 − 0.0131
+(− 2.15) (1.31) ( − 0.46) ( − 1.86)
+Funding liquidity PC − 0.0094 0.0112 0.0013 − 0.0206
+(− 4.74) (3.58) (0.58) ( − 4.67)
+Market liquidity risk On-the-run – off-the-run 0.0108 − 0.0001 0.0037 0.0109
+(0.68) ( − 0.01) (0.32) (0.34)
+P ´astor-Stambaugh 0.0010 − 0.0002 0.0003 0.0011
+(1.06) ( − 0.15) (0.43) (0.61)
+Acharya-Pedersen 0.0009 0.0008 0.0020 0.0001
+(0.39) (0.28) (1.30) (0.02)
+Market liquidity PC − 0.0009 0.0016 0.0012 − 0.0025
+(− 0.74) (1.21) (1.00) ( − 1.45)
+All liquidity risk All PC − 0.0079 0.0093 0.0016 − 0.0172
+(− 3.25) (4.43) (0.82) ( − 4.63)
+used because the liquidity variables have signiﬁcantly different volatilities and
+units.
+Figure 3 plots the time series of the index of all global liquidity shocks
+monthly from January 1987 to July 2011. The plot shows that our constructed
+global liquidity shocks capture a dozen of the largest known liquidity events in
+global markets over the last 25 years, including the 1987 stock market crash,
+decimalization, September 11, 2001, the quant meltdown of August 2007, Bear
+Stearns, and the Lehman Brothers bankruptcy .
+B.2. Value and Momentum Returns and Liquidity Risk
+Table IV reports regression results of value and momentum returns on the
+liquidity shocks, controlling for the macro variables in Table III. We only re-
+port the coefﬁcient estimates on the liquidity shocks for brevity and because
+the coefﬁcient estimates on the macro variables do not change much with the
+addition of the liquidity variables. We examine each liquidity shock in iso-
+lation in separate regressions. Panel A of Table IV reports results using the
+U.S. liquidity shock measures. The dependent variables are the global value
+and momentum “everywhere” factor returns, the 50/50 combination between
+them, and the difference between value and momentum returns to test for
+data and balance sheet information from prime brokers, we cannot compute them internationally
+and hence omit them. See Amihud, Mendelson, and Pedersen ( 1994) for a survey of liquidity and
+liquidity risk measures.
+
+--- PAGE 33 ---
+
+Value and Momentum Everywhere 961
+07/02/87 01/01/90 07/02/92 01/01/95 07/02/97 01/01/00 07/02/02 01/01/05 07/02/07 01/01/10
+-0.3
+-0.25
+-0.2
+-0.15
+-0.1
+-0.05
+0
+0.05
+0.1
+0.15
+Date
+Global Liquidity Shocks (residual from AR(2))
+Time-Series of Global Liquidity Shocks
+1987 crash
+Gulf War
+1/8 to 1/16 ticks
+LTCM
+Euro
+Decimalization
+Sept. 11
+Quant meltdown
+FAS 157
+Bear Stearns
+Lehman Bros.
+Market recovery
+Figure 3. Time series of global liquidity shocks. The time series of global liquidity shocks is
+plotted from January 1987 to June 2010, where global liquidity shocks are as deﬁned in Section
+III. Global liquidity shocks are the residuals from an AR(2) of the global liquidity index, which
+is a principal component weighted average of all market and funding liquidity variables across
+all markets (the United States, the United Kingdom, Europe, and Japan) as described in Section
+III. Also highlighted on the graph are episodes known to have generated movements in aggregate
+liquidity .
+differences in liquidity exposure between value and momentum. The ﬁrst four
+rows of Panel A of Table IV show that funding liquidity risk is consistently
+negatively related to value returns and signiﬁcantly positively related to mo-
+mentum returns. Value performs poorly when funding liquidity rises, which
+occurs during times when borrowing is easier, while momentum performs well
+during these times. The opposite exposure to funding liquidity shocks for value
+and momentum contributes partly to their negative correlation. 19
+The next four rows examine market liquidity shocks in the U.S. market. Here,
+we ﬁnd little relation between market liquidity shocks and value and momen-
+tum returns. The Acharya and Pedersen (2005) liquidity measure is marginally
+19 Another interpretation of these funding shocks is that they proxy for changes in risk aversion
+or risk premia. So, in addition to funding liquidity being tight when spreads are wide, it may also
+be the case that risk aversion or risk premia in the economy are particularly high. Under this
+alternative view, however, it would seem that both value and momentum returns would decline
+with rising spreads, whereas we ﬁnd that value and momentum returns move in opposite directions
+with respect to these shocks. In addition, the market portfolio and macroeconomic variables are
+included in the regression, which may partly capture changing risk or risk premia.
+
+--- PAGE 34 ---
+
+962 The Journal of Finance R⃝
+negatively related to value and positively related to momentum, but overall the
+relation between market liquidity shocks and value and momentum returns is
+weak. P ´astor and Stambaugh ( 2003) (and Sadka ( 2006)) ﬁnd a positive and
+signiﬁcant relation between U.S. equity momentum returns and their market
+liquidity shocks. We ﬁnd the same sign as P ´astor and Stambaugh (2003) for our
+global momentum returns across asset classes over our sample period, but do
+not detect a signiﬁcant relation. In addition to our momentum returns covering
+a wider set of asset classes and a different time period from P ´astor and Stam-
+baugh (2003), we also use their factor and not their factor mimicking portfolio.
+They show that the latter exhibits a much stronger relation to momentum,
+while the former exhibits a weak relation to momentum, consistent with our
+global results.
+Panel B of Table IV reports the regression results using the global fund-
+ing and market liquidity shocks. Global funding liquidity shocks negatively
+impact value returns and positively affect momentum returns, but global mar-
+ket liquidity shocks do not seem to have much impact, consistent with the U.S.
+liquidity measures. Furthermore, the global measures, especially the fund-
+ing liquidity index, seem to provide more statistical signiﬁcance. The opposite
+signed loadings on liquidity risk for value and momentum may partially explain
+why the two strategies are negatively correlated.
+However, the opposite signed loadings on a single factor, such as liquidity
+risk, cannot explain why both value and momentum earn positive risk pre-
+mia. On the one hand, part of the returns to momentum can be explained as
+compensation for liquidity risk exposure since momentum loads positively on
+liquidity shocks and liquidity risk carries a positive risk premium. On the other
+hand, value loads negatively on liquidity risk, which makes its positive return
+an even deeper puzzle.
+Why does momentum load positively and value load negatively on liquidity
+risk? One simple and intuitive story might be that momentum captures the
+most popular trades, being long the assets whose prices have recently appre-
+ciated as ﬁckle investors ﬂocked to these assets. Value, on the other hand,
+expresses a contrarian view, where assets have experienced price declines over
+several years. When a liquidity shock occurs, investor liquidations (from cash
+needs, redemptions, risk management, “running for the exit” at the same time;
+see Pedersen ( 2009)) puts more price pressure on the more “crowded” trades.
+These liquidations may affect crowded high momentum securities more than
+the less popular contrarian/value securities. Further investigation into the
+opposite signed exposure of value and momentum to liquidity risk is an inter-
+esting research question, but beyond the scope of this paper.
+Finally , as TableIV shows, because of the opposite signed exposure of value
+and momentum to funding liquidity shocks, the 50/50 equal combination of
+value and momentum is essentially immune to funding shocks, and yet, as we
+have shown, generates huge positive returns. Thus, while exploring liquidity
+risk’s relation to value and momentum more deeply may be interesting, liquid-
+ity risk by itself cannot explain why a combination of value and momentum is
+
+--- PAGE 35 ---
+
+Value and Momentum Everywhere 963
+-0.95
+-3.25
+1.81
+4.43
+-4
+-3
+-2
+-1
+0
+1
+2
+3
+4
+5t-sta/g415s/g415cs on liquidity risk beta
+Value Momentum
+t-stat of the 
+average 
+return series
+average of 
+individual 
+t-stats
+Figure 4. Liquidity risk beta t-statistics. Plotted are the t-statistics of the liquidity risk beta
+estimates of value and momentum strategies in each asset class using shocks to the global liquidity
+index as described in Section III. Also reported is the cross-sectional average t-statistic of value and
+momentum strategies across the asset classes (“average”) as well as the t-statistic of the average
+return series across all asset classes for value and momentum (“all asset classes”).
+so proﬁtable, and hence can only partially explain part of the cross-sectional
+variation in returns.
+B.3. The Power of Averaging Across Markets
+A key feature of the analysis in Tables III and IV is that we examine the
+average returns to value and momentum across a wide set of markets and asset
+classes simultaneously . The power of looking at the universal average return
+to value and momentum greatly improves our ability to identify common factor
+exposure. For example, if we examine each individual value and momentum
+strategy’s exposure to liquidity risk separately , we do not ﬁnd nearly as strong
+a pattern and, in fact, might conclude there exists little evidence of any reliable
+relation to liquidity risk.
+Figure 4 depicts the t-statistics of the liquidity betas of each of our individual
+market and asset class value and momentum strategies. The average t-statistic
+of the liquidity betas for value is –0.95 and for momentum is 1.81—hardly con-
+vincing. In contrast, when we regress the average value and momentum return
+series across all markets and asset classes on global liquidity shocks, we get a
+t-statistic for the liquidity beta of –3.25 for value and 4.43 for momentum. The
+
+--- PAGE 36 ---
+
+964 The Journal of Finance R⃝
+average liquidity beta among the individual strategies is not nearly as strong
+as the liquidity beta of the average. Averaging across all markets and asset
+classes mitigates much of the noise not related to value or momentum, such as
+idiosyncratic regional or asset-speciﬁc noise, allowing for better identiﬁcation
+of a common factor such as liquidity risk to emerge. When we restrict attention
+to one asset class at a time, or to one strategy within an asset class, the patterns
+above are difﬁcult to detect. The scope and uniformity of studying value and
+momentum everywhere at once is what allows these patterns to be identiﬁed.
+IV . Comovement and Asset Pricing Tests
+The strong common factor structure evidenced in Section II a n dt h el i n kt o
+liquidity risk in Section III suggest that we formally examine asset pricing
+tests to assess the economic signiﬁcance of these patterns and how much of
+the return premia to value and momentum can be captured by this common
+variation.
+A. Explaining Value/Momentum in One Market with Value/Momentum in
+Other Markets
+We ﬁrst examine how well value and momentum in one market or asset class
+are explained by value and momentum returns in other asset classes. This test
+is not a formal asset pricing test, but a test of comovement across markets and
+asset classes. In the next subsection, we examine formal asset pricing tests.
+Speciﬁcally , we run the regression
+Rp
+i,t − rf,t = αp
+i + β p
+i MKTt + vp
+i
+∑
+j̸=i
+wjVALj,t + mp
+i
+∑
+j̸=i
+wjMOM j,t + εp
+i,t, (4)
+where Rp
+i,t is the time t return to portfolio p among the six high, middle, and
+low value and momentum portfolios in one of the eight asset markets i,f o ra
+total of 48 test assets. The time series of excess returns (in excess of the U.S.
+T-bill rate) of each portfolio is regressed on the excess returns of the market
+portfolio MKT (proxied by the MSCI World Index) and the returns to value
+and momentum factors in all other markets and asset classes. The latter two
+variables are constructed as the equal volatility-weighted average of the zero-
+cost signal-weighted value and momentum factors in all other markets (where
+wj represents the equal volatility weight for each asset class), excluding the
+market whose test assets are being used as the dependent variable.
+We estimate equation (4) for each market and asset class separately . Figure
+5 plots the actual average return of each of the test assets against the predicted
+expected return from the regression. The plot shows how much of the average
+returns to value and momentum portfolios in one market or asset class can
+be explained by value and momentum returns from other markets and asset
+classes. A 45 ◦ line passing through the origin is also plotted to highlight both
+the cross-sectional ﬁt and the magnitude of the pricing errors across test assets.
+
+--- PAGE 37 ---
+
+Value and Momentum Everywhere 965
+-2 0 2 4 6 8 10 12 14 16
+x 10
+-3
+-2
+0
+2
+4
+6
+8
+10
+12
+14
+16 x 10
+-3
+Valhi
+US
+Valmd
+US
+Vallo
+US
+Valhi
+UK
+Valmd
+UK
+Vallo
+UK
+Valhi
+EU
+Valmd
+EU
+Vallo
+EU
+Valhi
+JP
+Valmd
+JP
+Vallo
+JP
+Momhi
+US
+Mommd
+US
+Momlo
+US
+Momhi
+UK
+Mommd
+UK
+Momlo
+UK
+Momhi
+EU
+Mommd
+EU
+Momlo
+EU
+Momhi
+JP
+Mommd
+JP
+Momlo
+JP
+Valhi
+EI
+Valmd
+EIVallo
+EI
+Valhi
+FX
+Valmd
+FX
+Vallo
+FX
+Valhi
+FI
+Valmd
+FI
+Vallo
+FI
+Valhi
+CM
+Valmd
+CM
+Vallo
+CM
+Momhi
+EI
+Mommd
+EI
+Momlo
+EI
+Momhi
+FX Mommd
+FX
+Momlo
+FX
+Momhi
+FIMommd
+FI
+Momlo
+FI
+Momhi
+CM
+Mommd
+CM
+Momlo
+CM
+AMP 3-Factor Model (only using factors from other markets)
+Predicted expected returns using only OTHER markets
+Actual average returns
+Average | | = 0.00226
+R2 = 0.55
+α
+Figure 5. Explaining value and momentum in one market with value and momentum
+in other markets. Plotted are the actual average returns (in excess of the U.S. 1-month T-
+bill rate) of the 48 value and momentum low, middle, and high portfolios in each market and
+asset class against their predicted expected returns using their betas with respect to value and
+momentum strategies in all other markets globally . Speciﬁcally , for each of the eight markets we
+consider (U.S. stocks, U.K. stocks, Europe stocks, Japan stocks, country index futures, currencies,
+government bonds, commodities) we estimate the betas of value and momentum low, middle, and
+high portfolios in each market with respect to a value and momentum factor across all other
+markets by running a time-series regression of each value and momentum portfolio in one market
+on the (equal volatility-weighted) average of the value and momentum factors across all other
+markets, excluding the market being analyzed. The predicted value from this regression is the
+predicted expected return of the strategy that we plot against the average actual average return
+over the sample period. The average absolute value of the alphas from these regressions and the
+cross-sectional R2 of the actual average returns against the predicted expected returns are also
+reported. To highlight both the alphas and cross-sectional ﬁt, a 45 ◦ line is plotted through the
+origin.
+As Figure 5 shows, the average returns line up well with the predicted expected
+returns. The cross-sectional R2 is 0.55 and the average absolute value of the
+pricing errors (alpha) is 22.6 basis points per month. A formal statistical test of
+the joint signiﬁcance of the pricing errors is not possible since the independent
+variables change across test assets for each market and asset class (which is
+why this is not a formal asset pricing test).
+The results indicate that value and momentum returns in one market are
+strongly related to value and momentum returns in other markets and asset
+classes. Unlike many asset pricing tests conducted in a single market, here
+there is no overlap of securities between the test assets used as the dependent
+variable and the factors used as regressors. The dependent variable contains
+securities from a completely separate market or asset class from those used
+
+--- PAGE 38 ---
+
+966 The Journal of Finance R⃝
+to construct the factors on the right-hand side of the regression. Hence, the
+evidence in Figure 5 makes a compelling case for common global factor struc-
+ture in value and momentum returns and suggests that this common variation
+is economically meaningful since it captures a signiﬁcant fraction of the cross
+section of average returns.
+B. A Global Three-Factor Model
+To conduct a more formal asset pricing test, and to compare across various
+asset pricing models, we construct a three-factor model similar to equation (4),
+but where the regressors are the same for every asset. This three-factor model
+is similar in spirit to those of Fama and French ( 1993) and Carhart ( 1997),
+but applied globally to all markets and asset classes we study . Speciﬁcally , we
+estimate the following time-series regression for each of the 48 high, middle,
+and low value and momentum portfolios across asset classes:
+Rp
+i,t − rf,t = αp
+i + β p
+i MKTt + vp
+i VALeverywhere
+t + mp
+i MOMeverywhere
+t + εp
+i,t, (5)
+where VALeverywhere
+t and MOMeverywhere
+t are the equal-volatility-weighted across-
+asset-class value and momentum factors.
+The ﬁrst graph in Panel A of Figure 6 plots the actual sample average returns
+of the 48 test assets versus their predicted expected returns from equation (5)
+along with a 45 ◦ line through the origin to highlight the magnitude of the
+pricing errors. The cross-sectional R2 is 0.71 and the average absolute value
+of the alpha is 18 basis points, indicating slightly better ﬁt than equation (4),
+which is not surprising, since, unlike equation (4), equation (5) contains some of
+the same securities on the left- and right-hand side of the regression. However,
+the ﬁt is similar to equation (4), and equation (5) also allows for a formal joint
+test of the signiﬁcance of the alphas, since the explanatory variables are the
+same for each test asset. Hence, we report the Gibbons, Ross, and Shanken
+(GRS, 1989) F-statistic and p-value for a joint test of the pricing errors.
+The remaining graphs in Panel A of Figure 6 plot the pricing errors of the
+48 test assets under alternative asset pricing models: the global CAPM, using
+the MSCI World Index as the market proxy; a four-factor model inspired by
+Carhart ( 1997), which is the Fama–French three-factor model consisting of
+the U.S. stock market RMRF, the U.S. size factor SMB, and the U.S. value
+factor HML augmented with the U.S. stock momentum factor UMD obtained
+from Ken French’s website, that we refer to as the “Fama–French four-factor
+model”; and a six-factor model that adds the Fama and French ( 1993) bond
+return factors DEF and TERM, which capture the default and term spread for
+U.S. bonds, that we refer to as the “Fama–French six-factor model.” As Figure
+6 shows, the global CAPM does not do a very good job ﬁtting the cross section of
+value and momentum returns across markets and asset classes, producing the
+largest absolute pricing errors and smallest R2. The Fama–French four- and
+six-factor speciﬁcations explain the returns a little better than the CAPM, but
+not nearly as well as the global three-factor model. The Fama–French factors
+
+--- PAGE 39 ---
+
+Value and Momentum Everywhere 967
+-4 -2 0 2 4 6 8 10 12 14 16
+x 10
+-3
+-2
+0
+2
+4
+6
+8
+10
+12
+14
+16
+x 10
+-3
+Val hi
+US
+Val md
+USVal lo
+US
+Val hi
+UK
+Val md
+UK
+Val lo
+UK
+Val hi
+EU
+Val md
+EU
+Val lo
+EU
+Val hi
+JP
+Val md
+JP
+Val lo
+JP
+Mom hi
+US
+Mom md
+US
+Mom lo
+US
+Mom hi
+UK
+Mom md
+UK
+Mom lo
+UK
+Mom hi
+EU
+Mom md
+EU
+Mom lo
+EU
+Mom hi
+JP
+Mom md
+JP
+Mom lo
+JP
+Val hi
+EI
+Val lo
+EI
+Val hi
+FXVal lo
+FX
+Val hi
+FIVal lo
+FI
+Val hi
+CMVal lo
+CM
+Mom hi
+EI
+Mom lo
+EI
+Mom hi
+FXMom lo
+FX
+Mom hi
+FI
+Mom lo
+FI
+Mom hi
+CM
+Mom lo
+CM
+AMP 3-Factor Model
+Predicted expected returns
+Actual average returns
+Average | | = 0.00182
+GRS F-stat = 2.657
+p-value = 0
+R2 = 0.707
+-4 -2 0 2 4 6 8 10 12 14 16
+x 10
+-3
+-2
+0
+2
+4
+6
+8
+10
+12
+14
+16
+x 10
+-3
+Val hi
+US
+Val md
+USVal lo
+US
+Val hi
+UK
+Val md
+UK
+Val lo
+UK
+Val hi
+EU
+Val md
+EU
+Val lo
+EU
+Val hi
+JP
+Val md
+JP
+Val lo
+JP
+Mom hi
+US
+Mom md
+US
+Mom lo
+US
+Mom hi
+UK
+Mom md
+UK
+Mom lo
+UK
+Mom hi
+EU
+Mom md
+EU
+Mom lo
+EU
+Mom hi
+JP
+Mom md
+JP
+Mom lo
+JP
+Val hi
+EI
+Val lo
+EI
+Val hi
+FXVal lo
+FX
+Val hi
+FIVal lo
+FI
+Val hi
+CMVal lo
+CM
+Mom hi
+EI
+Mom lo
+EI
+Mom hi
+FXMom lo
+FX
+Mom hi
+FI
+Mom lo
+FI
+Mom hi
+CM
+Mom lo
+CM
+CAPM
+Predicted expected returns
+Actual average returns
+Average | | = 0.00389
+GRS F-stat = 6.586
+p-value = 0
+R2 = 0.449
+-4 -2 0 2 4 6 8 10 12 14 16
+x 10
+-3
+-2
+0
+2
+4
+6
+8
+10
+12
+14
+16
+x 10
+-3
+Val hi
+US
+Val md
+USVal lo
+US
+Val hi
+UK
+Val md
+UK
+Val lo
+UK
+Val hi
+EU
+Val md
+EU
+Val lo
+EU
+Val hi
+JP
+Val md
+JP
+Val lo
+JP
+Mom hi
+US
+Mom md
+US
+Momlo
+US
+Mom hi
+UK
+Mom md
+UK
+Mom lo
+UK
+Mom hi
+EU
+Mom md
+EU
+Mom lo
+EU
+Mom hi
+JP
+Mom md
+JP
+Mom lo
+JP
+Val hi
+EI
+Val lo
+EI
+Val hi
+FXVal lo
+FX
+Val hi
+FIVal lo
+FI
+Val hi
+CMVal lo
+CM
+Mom hi
+EI
+Mom lo
+EI
+Mom hi
+FX Mom lo
+FX
+Mom hi
+FI
+Mom lo
+FI
+Mom hi
+CM
+Mom lo
+CM
+Fama-French 4-Factor Model
+Predicted expected returns
+Actual average returns
+Average | | = 0.00352
+GRS F-stat = 6.702
+p-value = 0
+R2 = 0.554
+-4 -2 0 2 4 6 8 10 12 14 16
+x 10
+-3
+-2
+0
+2
+4
+6
+8
+10
+12
+14
+16
+x 10
+-3
+Val hi
+US
+Val md
+USVal lo
+US
+Val hi
+UK
+Val md
+UK
+Val lo
+UK
+Val hi
+EU
+Val md
+EU
+Val lo
+EU
+Val hi
+JP
+Val md
+JP
+Val lo
+JP
+Mom hi
+US
+Mom md
+US
+Mom lo
+US
+Mom hi
+UK
+Mom md
+UK
+Mom lo
+UK
+Mom hi
+EU
+Mom md
+EU
+Mom lo
+EU
+Mom hi
+JP
+Mom md
+JP
+Mom lo
+JP
+Val hi
+EI
+Val lo
+EI
+Val hi
+FXVal lo
+FX
+Val hi
+FIVal lo
+FI
+Val hi
+CMVal lo
+CM
+Mom hi
+EI
+Mom lo
+EI
+Mom hi
+FX Mom lo
+FX
+Mom hi
+FI
+Mom lo
+FI
+Mom hi
+CM
+Mom lo
+CM
+Fama-French 6-Factor Model
+Predicted expected returns
+Actual average returns
+Average | | = 0.00349
+GRS F-stat = 7.113
+p-value = 0
+R2 = 0.601
+Panel A:  48 Value and Momentum Portfolios across Markets and Asset Classes
+α α
+α α
+Figure 6. Asset pricing tests of the cross section of expected returns. Plotted are the actual average returns versus model-implied expected
+returns of the 48 value and momentum low, middle, and high portfolios in each market and asset class under the global CAPM (MSCI World Index),
+Fama and French four-factor model consisting of
+
+--- PAGE 40 ---
+
+968 The Journal of Finance R⃝
+-4 -2 0 2 4 6 8 10 12 14
+x 10-3
+-2
+0
+2
+4
+6
+8
+10
+12
+14
+x 10-3
+S1,V1
+S1,V2
+S1,V3
+S1,V4
+S1,V5
+S2,V1
+S2,V2
+S2,V3S2,V4
+S2,V5
+S3,V1
+S3,V2
+S3,V3S3,V4
+S3,V5
+S4,V1 S4,V2
+S4,V3
+S4,V4
+S4,V5
+S5,V1
+S5,V2
+S5,V3S5,V4
+S5,V5
+S1,M1
+S1,M2
+S1,M3
+S1,M4
+S1,M5
+S2,M1
+S2,M2
+S2,M3
+S2,M4
+S2,M5
+S3,M1
+S3,M2
+S3,M3
+S3,M4
+S3,M5
+S4,M1
+S4,M2
+S4,M3
+S4,M4
+S4,M5
+S5,M1
+S5,M2
+S5,M3
+S5,M4
+S5,M5
+AMP 3-Factor Model
+Predicted expected returns
+Actual average returns
+Average | | = 0.00181
+GRS F-stat = 3.296
+p-value = 0
+R2 = 0.642
+α
+-4 -2 0 2 4 6 8 10 12 14
+x 10-3
+-2
+0
+2
+4
+6
+8
+10
+12
+14
+x 10-3
+S1,V1
+S1,V2
+S1,V3
+S1,V4
+S1,V5
+S2,V1
+S2,V2
+S2,V3S2,V4
+S2,V5
+S3,V1
+S3,V2
+S3,V3S3,V4
+S3,V5
+S4,V1S4,V2
+S4,V3
+S4,V4
+S4,V5
+S5,V1
+S5,V2
+S5,V3S5,V4
+S5,V5
+S1,M1
+S1,M2
+S1,M3
+S1,M4
+S1,M5
+S2,M1
+S2,M2
+S2,M3
+S2,M4
+S2,M5
+S3,M1
+S3,M2
+S3,M3
+S3,M4
+S3,M5
+S4,M1
+S4,M2
+S4,M3
+S4,M4
+S4,M5
+S5,M1
+S5,M2
+S5,M3
+S5,M4
+S5,M5
+CAPM
+Predicted expected returns
+Actual average returns
+Average | | = 0.00319
+GRS F-stat = 4.245
+p-value = 0
+R2 = -0.316
+-4 -2 0 2 4 6 8 10 12 14
+x 10-3
+-2
+0
+2
+4
+6
+8
+10
+12
+14
+x 10-3
+S1,V1
+S1,V2
+S1,V3
+S1,V4
+S1,V5
+S2,V1
+S2,V2
+S2,V3S2,V4
+S2,V5
+S3,V1
+S3,V2
+S3,V3S3,V4
+S3,V5
+S4,V1 S4,V2
+S4,V3
+S4,V4
+S4,V5
+S5,V1
+S5,V2
+S5,V3S5,V4
+S5,V5
+S1,M1
+S1,M2
+S1,M3
+S1,M4
+S1,M5
+S2,M1
+S2,M2
+S2,M3
+S2,M4
+S2,M5
+S3,M1
+S3,M2
+S3,M3
+S3,M4
+S3,M5
+S4,M1
+S4,M2
+S4,M3
+S4,M4
+S4,M5
+S5,M1
+S5,M2
+S5,M3
+S5,M4
+S5,M5
+Fama-French 4-Factor Model
+Predicted expected returns
+Actual average returns
+Average | | = 0.00113
+GRS F-stat = 3.28
+p-value = 0
+R2 = 0.772
+-4 -2 0 2 4 6 8 10 12 14
+x 10-3
+-2
+0
+2
+4
+6
+8
+10
+12
+14
+x 10-3
+S1,V1
+S1,V2
+S1,V3
+S1,V4
+S1,V5
+S2,V1
+S2,V2
+S2,V3S2,V4
+S2,V5
+S3,V1
+S3,V2
+S3,V3S3,V4
+S3,V5
+S4,V1
+S4,V2
+S4,V3
+S4,V4
+S4,V5
+S5,V1
+S5,V2
+S5,V3
+S5,V4
+S5,V5
+S1,M1
+S1,M2
+S1,M3
+S1,M4
+S1,M5
+S2,M1
+S2,M2
+S2,M3
+S2,M4
+S2,M5
+S3,M1
+S3,M2
+S3,M3
+S3,M4
+S3,M5
+S4,M1
+S4,M2 S4,M3
+S4,M4
+S4,M5
+S5,M1
+S5,M2
+S5,M3
+S5,M4
+S5,M5
+Fama-French 6-Factor Model
+Predicted expected returns
+Actual average returns
+Average | | = 0.00113
+GRS F-stat = 3.345
+p-value = 0
+R2 = 0.766
+Panel B:  Fama-French 25 Size-Value and 25 Size-Momentum Portfolios (U.S. Stocks)
+α
+α α
+Figure 6. Continued.
+U.S. market, size, value, and momentum factors (RMRF , SMB, HML, and UMD), Fama and French six-factor model that adds TERM and DEF to the
+four-factor model to capture term and default risk premia, and the AMP three-factor model consisting of a global market factor (MSCI World Index), a
+value everywhere factor, and a momentum everywhere factor, which are value and momentum long-short portfolios diversiﬁed across the eight asset
+classes we consider, where each asset class is weighted by the inverse of its in-sample volatility . A 45 ◦ line that passes through the origin is added
+to highlight the pricing errors (vertical distances to the 45 ◦ line), where each model is forced to also price the equity premium. Also reported on each
+graph are the average absolute value of the alphas, the F-statistic and p-value from the GRS test, and the cross-sectional R2 under each asset pricing
+model.
+
+--- PAGE 41 ---
+
+Value and Momentum Everywhere 969
+generate twice the absolute magnitude of pricing errors as the three-factor
+global model and have much lower R2s.
+Panel B of Figure 6 repeats the same plots for test assets derived only
+from U.S. stocks. Here, we use the Fama–French 25 size-value and 25 size-
+momentum portfolios from Ken French’s website (http://mba.tuck.dartmouth.
+edu/pages/faculty/ken.french/data library .html) as test assets. These are, re-
+spectively , 5×5 double-sorted portfolios of U.S. stocks based on size and BE/ME
+and 5×5 portfolios sorted on size and past 2- to 12-month returns. Our three-
+factor model derived from other markets and asset classes does a reasonable
+job explaining the returns to these 50 U.S. equity portfolios. The cross-sectional
+R2 is 0.64 and the average absolute pricing error is only 18 basis points. While
+the Fama–French factors, which are derived from the same U.S. stocks as the
+test assets, obviously do slightly better, our three-factor model, which is derived
+from other asset classes, captures a signiﬁcant fraction of the cross-sectional
+variation in U.S. equity returns. In addition, our three-factor model does not
+contain a size factor, which is important for pricing the Fama-French U.S. stock
+portfolios. If we exclude the two smallest quintiles of stocks from the Fama-
+French portfolios, then our three-factor model does as well as the Fama-French
+model in pricing the remaining Fama-French U.S. portfolios.
+Taken together, Panel A of Figure 6 shows that our global three-factor model
+can explain the returns to value and momentum across markets and asset
+classes much better than local U.S. factors can and Panel B shows that our
+global factors can explain the local returns to value and momentum in U.S.
+stocks almost as well as the U.S. factors can. These results suggest that global
+value and momentum portfolios across markets and asset classes are closer to
+the efﬁcient frontier than U.S. stock-only value and momentum portfolios, and
+therefore provide a more robust set of asset pricing factors that can be used
+more broadly .
+C. Further Pricing Tests and Economic Magnitudes
+To further investigate the economic importance of the commonality among
+value and momentum strategies across asset markets, we examine their re-
+lation to macroeconomic and liquidity risks through cross-sectional and time-
+series asset pricing tests.
+C.1. Cross-Sectional Pricing Tests
+Table V reports Fama–MacBeth cross-sectional regressions of returns of the
+48 value and momentum test portfolios on their betas with respect to funding
+liquidity risk, GDP growth, long-run consumption growth, TERM, and DEF .
+Regressions are run in the style of Fama and MacBeth ( 1973), where the cross
+section of monthly returns are regressed on the betas (estimated univariately
+using rolling windows of the past 60 months of returns) each month, and the
+time-series mean and t-statistic of the cross-sectional regression coefﬁcients
+are reported in Table V. As the ﬁrst row of Table V shows, liquidity risk betas
+
+--- PAGE 42 ---
+
+970 The Journal of Finance R⃝
+Table V
+Cross-Sectional Asset Pricing Tests of Global Value and Momentum
+Strategies
+Reported are Fama and MacBeth ( 1973) regression coefﬁcient estimates and t-statistics of the
+cross section of average returns to the 48 value and momentum portfolios across the eight markets
+and asset classes we consider. The dependent variable is the cross section of returns on the low,
+middle, and high value and momentum portfolios of individual stocks in the United States, the
+United Kingdom, Europe, Japan, country index futures, currencies, government bonds, and com-
+modities. The regressors are beta estimates of these portfolios with respect to the “All” liquidity
+risk measure from Table IV (the principal component-weighted average index of all liquidity shock
+measures across all markets globally); GDP growth; long-run consumption growth; the MSCI world
+index (“market”); the value everywhere factor, consisting of an equal volatility-weighted average of
+value strategies across all markets and asset classes; and a momentum everywhere factor deﬁned
+similarly . The last four rows report results using only funding and market liquidity variables to
+measure liquidity risk, where the principal component-weighted average index of funding and
+market liquidity shocks are used separately to measure funding liquidity risk and market liquid-
+ity risk. Betas are estimated in a univariate regression with respect to each of the factors using a
+rolling window of the past 60 months of returns. For the market, a Dimson correction is used to
+account for possible nonsynchronous trading effects, where each portfolio’s returns are estimated
+on the contemporaneous value of the market plus 2 month lags of market realizations and the beta
+is the sum of the three coefﬁcients on the contemporaneous and 1- and 2-month lags of the market.
+The cross-sectional regressions are estimated in the style of Fama and MacBeth ( 1973), where
+the cross section of returns on the 48 portfolios are regressed each month on the cross-section of
+beta estimates and the time-series mean and t-statistics of the monthly regression coefﬁcients are
+reported.
+Fama–MacBeth Cross-Sectional Regressions
+βLiquidity risk βGDP growth βLRCG βTERM βDEF βMkt βValue βMomentum
+Dependent variable: Cross-section of 48 value and momentum portfolios
+0.0024
+(3.05)
+0.0003 0.0005 0.0021 0.0023
+(0.43) (0.42) (2.19) (2.18)
+0.0023 − 0.0001 0.0012 0.0014 0.0001
+(2.29) ( − 0.13) (1.01) (1.59) (0.11)
+0.0005 0.0015 0.0020 0.0029
+(0.56) (1.75) (2.22) (2.58)
+0.0016 0.0018 − 0.0001 0.0033 0.0014 − 0.0006 0.0031 0.003
+(1.38) (2.87) ( − 0.03) (2.87) (1.12) ( − 0.38) (3.96) (3.53)
+Funding liquidity variables only
+0.0022 − 0.0002 0.0019 0.0011 0.0015
+(2.06) ( − 0.30) (1.45) (1.05) (1.30)
+0.0012 0.0019 0.0003 0.0027 0.0011 0.0008 0.0034 0.0031
+(1.80) (3.28) (0.17) (2.19) (0.84) (0.58) (4.40) (3.50)
+Market liquidity variables only
+0.0001 0.0003 0.0005 0.0021 0.0022
+(0.07) (0.48) (0.44) (2.67) (2.63)
+− 0.0013 0.0019 − 0.0010 0.0045 0.0030 0.0004 0.0038 0.0040
+(− 0.88) (3.19) ( − 0.77) (5.05) (2.73) (0.31) (5.94) (5.82)
+
+--- PAGE 43 ---
+
+Value and Momentum Everywhere 971
+capture part of the cross-sectional variation in average returns across the 48
+portfolios, as indicated by the positive and signiﬁcant coefﬁcient on the liquid-
+ity beta. That coefﬁcient also represents the risk premium for liquidity risk
+among the 48 test assets, which is 24 basis points per month or about 3% per
+year. The Fama–MacBeth regressions not only test the cross-sectional relation
+between average returns and betas with respect to a factor, but the time series
+of the coefﬁcient estimates represents the return series to a minimum variance
+portfolio with a unit exposure to that factor (see Fama and MacBeth ( 1973)
+and Fama ( 1976)). Hence, the time series of monthly coefﬁcient estimates rep-
+resents a factor mimicking portfolio for liquidity risk, which we call FPliq risk.
+Likewise, the coefﬁcients on the other variable represent the returns to factor-
+mimicking portfolios for those factors, each orthogonalized to the other facotrs,
+which we will use in time-series asset-pricing tests to follow.
+The second row of Table V shows that neither GDP growth nor long-
+run consumption growth captures much cross-sectional variation in returns,
+but TERM and DEF do, exhibiting a risk premium of 21 and 23 basis
+points, respectively . However, the third row of Table V adds liquidity betas
+to the regression, where we ﬁnd that the signiﬁcance of TERM and DEF are
+subsumed by liquidity risk. Finally , we add betas with respect to the global
+three-factor model—the MSCI World Index, and the value and momentum ev-
+erywhere factors. It is perhaps not too surprising that betas with respect to
+value and momentum factors capture average returns to value and momentum
+portfolios and that they subsume a signiﬁcant portion of the explanatory power
+of other factors such as liquidity risk.
+The next two rows of regression results in Table V repeat the regressions
+using only funding liquidity variables to capture liquidity risk and the last two
+rows use only market liquidity variables to measure liquidity risk. As Table V
+shows, only funding liquidity risk appears to be priced in the cross section of
+our global assets, and exposure to value and momentum common factors seems
+to capture part of funding liquidity risk exposure.
+C.2. Time-Series Pricing Tests
+To gain more insight into the economic magnitudes that liquidity risk and the
+other factors explain, we use the factor mimicking portfolios created from the
+Fama–MacBeth regressions to conduct time-series asset pricing tests. Speciﬁ-
+cally , we regress each of the 48 portfolios’ time series of monthly returns on the
+factor mimicking portfolio returns for liquidity risk, GDP growth, and long-run
+consumption growth, as well as TERM, DEF , and the value and momentum
+everywhere factors. Because we use factor mimicking portfolios as regressors,
+both the dependent and independent variables are measured in returns, and
+hence we can conduct formal pricing tests.
+Panel A of Table VI reports the results for the 48 value and momentum
+portfolios across markets and asset classes. We also include the market portfolio
+in every regression. For each factor model, we report the GRS F-statistic and p-
+value for testing the joint signiﬁcance of the alphas under each model. We also
+
+--- PAGE 44 ---
+
+972 The Journal of Finance R⃝
+Table VI
+Time-Series Asset Pricing Tests of Global Value and Momentum Strategies
+Panel A reports results from time-series asset pricing tests of the 48 value and momentum portfolios across markets and asset classes on a set of
+global and U.S.-only asset pricing models. The global models include a global CAPM (MSCI World index); a two-factor model of the global market
+portfolio plus a factor-mimicking portfolio for a global liquidity risk factor (estimated from the cross-sectional regression coefﬁcients in Tabl e IV); a
+six-factor model that includes the global market and factor-mimicking portfolios for global liquidity risk, GDP growth, long-run consumption grow th
+(each estimated from the cross-sectional regression coefﬁcients in Table IV), and TERM and DEF; the three-factor AMP model of the global market
+plus all-asset-class value and momentum factors, as well as two-factor versions that include the market and just one of either all-asset-class value or
+momentum. The U.S.-only factor models include the U.S. CAPM (U.S. CRSP value-weighted index), Fama and French three-factor model that adds
+size and value factors to the market, Fama–French four-factor model that adds a momentum factor, and Fama–French six-factor model that adds
+TERM and DEF as additional factors. Panel B reports results for time-series tests using the same asset pricing models on the 25 Fama–French size
+and BE/ME portfolios and 25 size and momentum portfolios that pertain only to U.S. individual stocks. Panel C reports results for 13 hedge fund
+indices obtained from DJCS and HFRI. All panels report the GRS ( 1989) F-statistic on the joint signiﬁcance of the alphas under each model from
+the time-series regressions, the p-value of the F-statistic, the average absolute alpha, the average time-series R2, the cross-sectional R2 of average
+returns on the predicted expected return from each model, and the percentage of the covariance matrix captured by each model using the Eig% metric
+of Moskowitz ( 2003) and described in Section IV. Regressions are estimated from monthly returns.
+Average
+GRS F- p- Average Time- Cross- % of
+Asset Pricing Models Stat Value |α| Series R2 Sectional R2 Covariances
+Panel A: 48 Value and Momentum Portfolios Globally across Asset Classes
+Global Asset Pricing Factors Mkt (Global CAPM) 6.02 0.000 0.0035 0.40 0.52 57%
+Mkt, FPliq risk 5.02 0.000 0.0031 0.48 0.54 64%
+Mkt, FPliq risk, FPGDPg, FPLRCG, TERM, DEF 4.09 0.000 0.0027 0.59 0.56 80%
+Mkt, V ALeverywhere, MOMeverywhere 2.66 0.000 0.0018 0.68 0.72 74%
+Mkt, V ALeverywhere 3.72 0.000 0.0028 0.42 0.43 68%
+Mkt, MOMeverywhere 3.80 0.000 0.0022 0.42 0.57 70%
+U.S. Asset Pricing Factors Mkt (U.S. CAPM) 6.59 0.000 0.0039 0.30 0.44 47%
+FF 3-Factor 7.18 0.000 0.0036 0.31 0.50 53%
+FF 4-Factor 6.70 0.000 0.0035 0.33 0.55 63%
+FF 6-factor 7.11 0.000 0.0035 0.39 0.62 64%
+(Continued)
+
+--- PAGE 45 ---
+
+Value and Momentum Everywhere 973
+Table VI—Continued
+Average
+GRS F- p- Average Time- Cross- % of
+Asset Pricing Models Stat Value |α| Series R2 Sectional R2 Covariances
+Panel B: Fama–French 25 Size-Value and 25 Size-Momentum Portfolios
+Global Asset Pricing Factors Mkt (Global CAPM) 4.09 0.000 0.0030 0.41 0.20 48%
+Mkt, FPliq risk 4.12 0.000 0.0030 0.42 0.20 49%
+Mkt, FPliq risk, FPGDPg, FPLRCG, TERM, DEF 4.76 0.000 0.0035 0.57 0.38 61%
+Mkt, V ALeverywhere, MOMeverywhere 3.22 0.000 0.0019 0.70 0.68 66%
+U.S. Asset Pricing Factors Mkt (U.S. CAPM) 4.25 0.000 0.0032 0.73 0.17 82%
+FF 3-Factor 3.81 0.000 0.0023 0.87 0.30 93%
+FF 4-Factor 3.28 0.000 0.0011 0.91 0.77 97%
+FF 6-factor 3.35 0.000 0.0011 0.91 0.77 97%
+Panel C: 13 Hedge Fund Indexes
+Global Asset Pricing Factors Mkt (Global CAPM) 12.14 0.000 0.0032 0.30 0.20 43%
+Mkt, FPliq risk 12.36 0.000 0.0025 0.34 0.30 47%
+Mkt, FPliq risk, FPGDPg, FPLRCG, TERM, DEF 11.86 0.000 0.0022 0.46 0.17 53%
+Mkt, V ALeverywhere, MOMeverywhere 7.26 0.000 0.0018 0.41 0.47 54%
+U.S. Asset Pricing Factors Mkt (U.S. CAPM) 12.14 0.000 0.0028 0.30 0.18 43%
+FF 3-Factor 12.64 0.000 0.0026 0.35 0.19 47%
+FF 4-Factor 13.03 0.000 0.0022 0.37 0.36 49%
+FF 6-factor 12.25 0.000 0.0021 0.44 0.36 51%
+
+--- PAGE 46 ---
+
+974 The Journal of Finance R⃝
+report the average absolute value of the alphas to gauge the magnitude of the
+pricing errors under each model, the cross-sectional R2 of the average returns
+on the test assets against the predicted expected returns from each model,
+and the Eig% metric from Moskowitz ( 2003), which is the sum of eigenvalues
+from the covariance matrix of the test assets implied by the model divided by
+the sum of eigenvalues of the sample covariance matrix. The Eig% measure
+captures how much of the covariance matrix of returns among the test assets
+each model can explain.
+As the ﬁrst row of Panel A of Table VI shows, the market portfolio alone
+(global CAPM) generates substantial pricing errors—an average absolute al-
+pha of 35 basis points per month that is easily rejected by the GRS test—and
+leaves a lot of time-series and cross-sectional variation unexplained. The mar-
+ket portfolio captures about 57% of the covariation among the returns. The
+second row adds the liquidity risk factor mimicking portfolio as a regressor,
+and although the GRS test is still rejected, the average absolute alpha declines
+to 31 basis points, the cross-sectional R2 increases, and the amount of covaria-
+tion captured increases. Hence, liquidity risk adds some additional explanatory
+power for both pricing and common variation of value and momentum portfolios
+globally across asset classes.
+While there is a link between value and momentum and liquidity risk, only
+a small fraction of the return premia and covariation is captured by our prox-
+ies for these risks. We view these ﬁndings as an important starting point for
+possible theories related to value and momentum phenomena, but emphasize
+that we are far from a full explanation of these effects. We also recognize that
+measurement error in liquidity risk may limit what we can explain. In addi-
+tion, a single liquidity risk factor alone cannot explain value and momentum
+since they are negatively correlated with each other but both produce positive
+returns, unless there is substantial time variation in liquidity risk betas and
+in the liquidity risk premium. Thus, it is not surprising that the pricing errors
+from this model speciﬁcation remain large.
+The third row of Table VI, Panel A adds factor mimicking portfolio returns
+for GDP growth, long-run consumption growth, and TERM and DEF . Pricing er-
+rors decline further whileR2s and the amount of covariation explained increase.
+The fourth row uses our three-factor model, which provides the best ﬁt. Here,
+the average absolute alpha is only 18 basis points, the cross-sectional R2 is 72%,
+and 84% of the covariation among the test assets is captured by these factors.
+The next two rows further show that having both value and momentum in the
+model is important, since having only value or momentum by itself increases
+pricing errors and decreases the ﬁt considerably . This further underscores the
+difﬁculty of using a single factor to explain both value and momentum.
+The last four rows of Table VI, Panel A examine models of U.S. stock factors:
+the U.S. market portfolio in excess of the U.S. T-bill rate, the Fama–French
+three-factor model, the Fama–French four-factor model that adds the momen-
+tum factor, and the Fama–French six-factor model that also adds TERM and
+DEF . As Table VI shows, the U.S. factors do not do a great job of describing
+the global value and momentum portfolio returns, leaving larger pricing errors
+and lower R2s, and capturing a smaller fraction of their covariance matrix.
+
+--- PAGE 47 ---
+
+Value and Momentum Everywhere 975
+Panel B of Table VI repeats the same exercise as Panel A, but uses the 25-
+size-BE/ME and 25 size-momentum U.S. equity portfolios from Ken French’s
+website as test assets. Not surprisingly , the Fama–French U.S. factors do a good
+job of capturing these returns, though the GRS test is still rejected. However,
+the global value and momentum everywhere factors, which consist primarily
+of non-U.S. equities and other asset classes, also do a good job explaining the
+50 U.S. equity-based test assets—the average absolute alpha is only 19 basis
+points, the cross-sectional R2 is 68%, and the percentage of covariation captured
+is 66%. This is better than the Fama–French three factor model does and only
+slightly worse than the Fama–French four- or six-factor models, which are
+speciﬁcally designed to capture these portfolios and are constructed from the
+same set of securities as the test assets themselves.
+Finally , Panel C of Table VI considers how well these factor models can ex-
+plain hedge fund returns. Using the returns of 13 hedge fund indices from Dow
+Jones Credit Suisse (DJCS) and Hedge Fund Research Institute (HFRI) that
+include from DJCS the Market Neutral, Long-Short, Multi Strategy , Macro,
+Managed Futures, Currency , Emerging Markets, and Overall hedge fund in-
+dices and from HFRI the Equity Hedge, Fund of Funds, Macro, Emerging Mar-
+kets, and Overall hedge fund indices, Panel C of Table VI shows that the global
+three-factor model has smaller pricing errors than the Fama–French model
+and its extensions with the momentum, TERM, and DEF factors. These results
+are consistent with Boyson, Stahel, and Stulz ( 2010), Sadka ( 2012), and Bali,
+Brown, and Caglayan ( 2011, 2012), who ﬁnd that the Fama and French U.S.
+stock factors do not explain the cross section of hedge fund returns very well.
+However, our simple value and momentum factors applied globally across asset
+classes do appear to capture a sizeable fraction of the returns to hedge funds.
+The evidence in Table VI suggests that the global across-asset three-factor
+model does a good job of capturing not only the returns to value and momentum
+globally across asset classes, but also the returns to size and value and size and
+momentum in U.S. equities, as well as the cross section of hedge fund returns,
+providing additional testing grounds that are created from a completely differ-
+ent set of securities. Conversely , while local U.S. factors capture U.S. equity
+returns well, they do not explain a lot of value and momentum returns globally
+or across asset classes, nor do they capture the returns to various hedge fund
+strategies well. While our three-factor global model performs better in explain-
+ing all of these different test assets, the GRS test still rejects our model in all
+cases, suggesting that more work needs to be done to fully describe the cross
+section of returns.
+V . Robustness and Implementation
+Finally , we examine the robustness of our ﬁndings to implementation is-
+sues. A reader convinced of the efﬁcacy of value and momentum strategies,
+particularly in combination, may be concerned with real world implementa-
+tion issues. Though well beyond the scope of this paper, in this section we
+brieﬂy discuss some practical concerns, including implementation costs and
+
+--- PAGE 48 ---
+
+976 The Journal of Finance R⃝
+portfolio construction, as well as opportunities to improve upon our admittedly
+but intentionally simple approach.
+A. Transaction Costs
+Like most academic studies, we focus on gross returns, which are most suit-
+able to illuminating the relation between risk and returns. However, gross
+returns overstate the proﬁts earned by pursuing the strategies we examine
+in practice. A few papers try to examine the transaction costs and capacity of
+these strategies, especially momentum, perhaps due to its higher turnover. For
+example, Korajczyk and Sadka ( 2004) and Lesmond, Schill, and Zhou ( 2003)
+argue that the real world returns and capacity of equity momentum strategies
+are considerably lower than the theoretical results would imply . Their conclu-
+sions are based on aggregate trade data and theoretical models of transactions
+costs. Using live trading data, Frazzini, Israel, and Moskowitz ( 2012) challenge
+these results and show that the real world trading costs of value, momentum,
+and a combination of the two in equities are orders of magnitude lower for
+a large institution than those implied by the calibrated models of Korajczyk
+and Sadka ( 2004) and Lesmond, Schill, and Zhou ( 2003). As a result, Frazz-
+ini, Israel, and Moskowitz ( 2012) conclude that these strategies can be scaled
+considerably and still generate strong net returns. In addition, we focus on
+an extremely large and liquid set of equities in each market (approximately
+the largest 17% of ﬁrms), where trading costs, price impact, and capacity con-
+straints are minimized.
+Studies on trading costs also focus exclusively on individual stocks, but half
+of the markets that we examine are implemented with futures contracts, which
+typically have much lower trading costs than stocks. Hence, although our equity
+strategies outperform our nonequity strategies in gross returns, net of trading
+cost returns are likely to be much closer.
+Furthermore, Garleanu and Pedersen ( 2012) model how portfolios can be
+optimally rebalanced to mitigate transaction costs and demonstrate how this
+improves the net performance of commodity momentum strategies, for exam-
+ple. In a similar spirit, Frazzini, Israel, and Moskowitz ( 2012) demonstrate
+how equity portfolios can beneﬁt from several practical steps taken to reduce
+transactions costs that, while having a cost in terms of gross returns (from
+style drift), can improve net returns. For instance, the strategies we study here
+are all naively rebalanced exactly monthly no matter what the expected gain
+per amount traded. Varying the rebalance frequency , optimizing the portfolios
+for expected trading costs, and extending or occasionally contracting the trade
+horizon can all improve the basic implementation of these strategies.
+B. Shorting
+Our paper is, of course, as much about shorting assets as it is about going
+long. While going long versus short is symmetric for futures, shorting involves
+special costs in stock markets. If our results are completely dependent on
+
+--- PAGE 49 ---
+
+Value and Momentum Everywhere 977
+shorting and if shorting is too costly or not implementable, this would certainly
+raise questions about the real world efﬁcacy of these strategies. However, Israel
+and Moskowitz ( 2012) provide evidence that the return contributions of both
+value and momentum strategies across the same asset classes we study here
+are roughly equal from the long and short sides of the portfolio and that long-
+only portfolios of value and momentum still produce abnormal returns. Thus,
+these strategies are still effective even if shorting is restricted. In addition,
+Frazzini, Israel, and Moskowitz ( 2012) provide some evidence that the trading
+costs of shorting stocks are not materially different from the costs of buying
+or selling stocks, and that real-world shorting costs for a large institutional
+investor are not prohibitive to running sizeable funds in these strategies.
+C. Portfolio Formation
+In this paper we intentionally keep everything as simple as possible, both
+for clarity and as a precaution against the pernicious effects of data mining.
+In fact, one of the paper’s objectives is to provide a robust out-of-sample test
+of ideas that have been largely tested in individual, particularly U.S., stocks
+and extend them to other asset classes. However, when faced with real world
+implementation, there are many choices to consider. For example, we look
+at two simple portfolio implementations in the paper: top 1/3 minus bottom
+1/3, and a linear weighting scheme based on ranking securities. These are far
+from the only possibilities, and the choice of weighting scheme can impact not
+only gross returns, but also transactions costs. While we do not claim that
+either of these choices is optimal in either a gross or net return sense, we also
+explore more extreme sorts of securities into deciles and ﬁnd that doing so does
+not materially affect the results. In the Internet Appendix we replicate our
+main results for individual equity markets in the United States, the United
+Kingdom, Europe, and Japan for decile portfolios and ﬁnd very similar results.
+In the Internet Appendix we also plot the pricing errors of our three-factor
+model for these 80 decile portfolios of value and momentum in each of the four
+equity markets (the United States, the United Kingdom, Europe, and Japan).
+As the accompanying ﬁgure shows and the asset pricing statistics verify , our
+three-factor model does a good job of capturing these more extreme portfolio
+returns, too.
+We also value weight stocks within our portfolios and equal weight the se-
+curities in other asset classes. However, other weighting schemes yield similar
+results and, because we focus on the largest, most liquid securities, trading
+costs are unlikely to be affected much by such changes. Hence, our main ﬁnd-
+ings are robust to a variety of perturbations and portfolio formations.
+D. Volatility Scaling
+When we aggregate our strategies across asset classes, we ensure that the
+different asset classes are scaled to have similar volatility . To do so, we scale
+each asset class by the inverse of its realized volatility over the full sample.
+
+--- PAGE 50 ---
+
+978 The Journal of Finance R⃝
+However, since the full sample is not known in advance, a real world portfolio
+would need to scale by a measure of volatility that is estimated ex ante. For
+robustness, in the Internet Appendix we report results for all of our value and
+momentum strategies scaled to the same ex ante volatility of 2% per annum
+using a rolling 3-year estimate of each portfolio’s volatility from daily returns.
+The results are reported together with the original unadjusted returns. The
+Sharpe ratios and correlations of the strategies are very similar and yield
+identical conclusions.
+E. Dollar Neutral vs. Beta Neutral
+As is standard in academic studies, our strategies are constructed to be $1
+long and $1 short, but they need not have a zero market beta exposure (at the
+local or global level). However, real world portfolios can, and often do, attempt
+to create long-short portfolios that are ex ante beta neutral (in addition to,
+or instead of, being dollar neutral). We ﬁnd that our inferences based on the
+strategies’ alpha from factor regressions are not affected by market hedging.
+F. Value and Momentum Measures
+We use one measure for value and one for momentum for all eight markets
+we study . We choose the most studied or simplest measure in each case and
+attempt to maintain uniformity across asset classes to minimize the potential
+for data mining. In real world implementations, data mining worries may be
+weighed against the potential improvements from having multiple (and per-
+haps better) measures of value and momentum, if for no other reason than
+to diversify away measurement error or noise across variables. Israel and
+Moskowitz ( 2012) show, for instance, how other measures of value and mo-
+mentum can improve the stability of returns to these styles in equities. Most
+practical implementations use a variety of measures for a given style. In fact,
+we set out to examine value and momentum in eight different markets and as-
+set classes using a single uniform measure for each. Although we ﬁnd positive
+returns to value and momentum in each asset class, these returns are not al-
+ways signiﬁcant. In particular, our weakest results using the current measures
+of value and momentum pertain to bonds, which do not produce statistically
+signiﬁcant premia. However, as shown in Table I, Panel C, the returns can be
+vastly improved using other measures of value and momentum, and taking a
+composite average index of measures for value and momentum produces even
+more stable and reliable results. Hence, our use of simple, uniform value and
+momentum measures may understate the true returns to these strategies.
+The literature on realistic implementation of these strategies is still young,
+and the list of choices to make when moving from an academic study like
+ours to implementing these strategies in practice is long. But current evidence,
+research, and practical experience point to the effects we study being highly
+applicable to real world portfolios. Consistent with this conjecture, as shown
+in Table VI, our simple value and momentum global factors capture a sizeable
+
+--- PAGE 51 ---
+
+Value and Momentum Everywhere 979
+fraction of the returns to hedge fund indices, which suggests that hedge funds
+are engaged in similar or highly correlated strategies globally .
+G. Evolution over Time
+As the hedge fund industry has grown and more capital has been devoted to
+these strategies, it is interesting to consider what effect, if any , such activity has
+on the efﬁcacy of value and momentum strategies. While a complete analysis
+of this question is beyond the scope of this paper, we offer a couple of results
+perhaps worthy of future investigation.
+Table VII reports the Sharpe ratios and correlations among the value and
+momentum strategies over the ﬁrst and second halves of the sample period—
+1972 to 1991 and 1992 to 2011. As the ﬁrst row of Table VII, Panel A
+shows, the Sharpe ratios to both value and momentum have declined slightly
+over time. In addition, their correlations across markets have increased over
+time—the average correlation among value strategies has risen from 0.31 to
+0.71 and among momentum strategies has risen from 0.46 to 0.77. However,
+the correlation between value and momentum has declined from –0.44 to –0.63,
+and, as a result, the Sharpe ratio of the combination of value and momentum
+has not changed much over time, since the increased correlation across markets
+is being offset by the more negative correlation between value and momentum.
+These results may be consistent with increased participation of arbitrageurs
+driving up correlations among value and momentum strategies globally .
+The next row of Table VII, Panel A repeats the same analysis, splitting the
+sample prior to and after August 1998, which is roughly when the funding cri-
+sis peaked following the collapse of Long Term Capital Management (LTCM).
+The correlation among value strategies is much higher after August 1998 (0.16
+pre-1998 vs. 0.64 post-1998), and the correlation among momentum strategies
+is also higher after 1998 (0.43 vs. 0.71). The next three rows of Table VII, Panel
+A report the same statistics for periods of worsening and improving funding
+liquidity , deﬁned as negative and positive funding liquidity shocks, and are
+split separately into pre- and post-1998. Consistent with our previous regres-
+sion results in Table IV, value strategies do worse when liquidity improves
+and momentum strategies do worse when liquidity declines, but these patterns
+appear only after 1998. Prior to the ﬁnancial crisis of 1998, funding liquidity
+shocks seem to have little impact on value or momentum strategies. After 1998,
+however, value generates a Sharpe ratio of 0.85 during periods of worsening
+liquidity , but only 0.28 when liquidity improves. Conversely , momentum pro-
+duces a Sharpe ratio of 0.19 when liquidity worsens, but a Sharpe ratio of 0.99
+when liquidity improves. The 50/50 value/momentum combination is immune
+to liquidity risk, even after 1998.
+Panel B of Table VII examines more formally how value and momentum
+correlations change over time and with liquidity shocks by running time-series
+regressions in which the dependent variable is the cross product of monthly
+returns on the various strategies to proxy for time-varying correlations. We
+estimate the time t correlation among value strategies globally , ρ(Val,Val)t,a s
+
+--- PAGE 52 ---
+
+980 The Journal of Finance R⃝
+Table VII
+Dynamics of Value and Momentum Returns
+Panel A reports Sharpe ratios and correlations among the value, momentum, and 50/50
+value/momentum combination strategies across different economic environments. The ﬁrst three
+columns report the Sharpe ratios of the all-asset-class value, momentum, and 50/50 combina-
+tion strategies and the last three columns report the average correlations among value strategies
+globally; among momentum strategies globally , and among 50/50 value/momentum combinations
+globally . These statistics are reported for the two halves of the sample period, prior to and after
+August 1998 for the top and bottom half of observations based on our global index of liquidity
+shocks from Table III (“improving” and “worsening” liquidity , respectively), and the same split of
+improving versus worsening liquidity pre- and post-August 1998. Panel B reports time-series re-
+gressions of conditional correlations among value strategies globally; among momentum strategies
+globally; and between value and momentum strategies globally on a time trend, a global recession
+indicator (as deﬁned in Table III), global liquidity shocks (as deﬁned in Table III), a post-August
+1998 dummy , and an interaction between the post-August 1998 dummy and liquidity shocks. The
+conditional correlations used as the dependent variables are estimated as the average pairwise
+correlations among the strategies each month using the cross product of monthly returns to each
+strategy as described in Section V .G.
+Panel A: Dynamics of Sharpe Ratios and Correlations
+Sharpe Ratios Correlations
+50/50
+Value Momentum Combination ρ(Val,Val) ρ(Mom, Mom) ρ(Val, Mom)
+1st half—1972 to 1991 0.78 0.90 1.40 0.31 0.46 − 0.44
+2nd half—1992 to 2010 0.68 0.71 1.43 0.71 0.77 − 0.63
+Pre-08/1998 0.68 1.02 1.49 0.16 0.43 − 0.51
+Post-08/1998 0.75 0.72 1.39 0.64 0.71 − 0.55
+Worsening liquidity 0.95 0.57 1.36 0.54 0.72 − 0.53
+Improving liquidity 0.59 0.87 1.45 0.77 0.79 − 0.56
+Worsening liquidity
+(pre-1998)
+1.10 1.00 1.76 0.40 0.59 − 0.30
+Improving liquidity
+(pre-1998)
+1.09 1.27 2.04 0.36 0.49 − 0.29
+Worsening liquidity
+(post-1998)
+0.85 0.19 0.88 0.65 0.81 − 0.71
+Improving liquidity
+(post-1998)
+0.28 0.77 1.07 0.87 0.87 − 0.65
+Panel B: Dynamics of Value and Momentum Correlations
+ρ(Val, ρ(Mom, ρ(Val, ρ(Val, ρ(Mom, ρ(Val,
+Dependent variable Val)t Mom)t Mom)t Val)t Mom)t Mom)t
+Time trend 0.0067 0.0181 − 0.0320 − 0.0011 0.0045 − 0.0197
+(2.21) (3.26) ( − 4.22) (0.20) (0.52) ( − 1.37)
+Recession 0.0828 0.0971 0.0195 0.0823 0.0938 0.0206
+(1.88) (2.31) (0.31) (2.05) (2.30) (0.34)
+Liquidity shocks 0.0131 0.0519 − 0.0303 0.0458 − 0.0048 − 0.0717
+(0.98) (2.58) ( − 1.62) (1.80) ( − 0.11) ( − 1.64)
+Post-08/1998 0.1212 0.2136 − 0.1928
+(1.70) (1.82) ( − 0.99)
+Liquidity shocks ×− 0.0379 0.0929 0.0161
+post-08/1998 (− 1.20) (2.11) (0.34)
+
+--- PAGE 53 ---
+
+Value and Momentum Everywhere 981
+the average across asset-classes at time t of rVa l
+i,t × rVa l
+k,t , where rVa l
+i,t is the return
+to the value strategy in market or asset class i at time t. We deﬁne ρ(Mom,
+Mom)t,a n d ρ(Val, Mom)t similarly . The time series of these correlations is
+regressed on a linear time trend, a global recession indicator, and the time
+series of liquidity shocks. The ﬁrst three columns of Table VII, Panel B show
+that the average correlation among value and momentum strategies across
+markets and asset classes has been signiﬁcantly increasing over time and the
+correlation between value and momentum is signiﬁcantly more negative over
+time. Recessions increase the correlation among both value and momentum
+strategies globally , controlling for the time trend. Liquidity shocks also appear
+to signiﬁcantly increase correlations among momentum strategies, controlling
+for the time trend and recessions. However, the last three columns repeat the
+regressions adding a post-1998 dummy variable and an interaction between the
+post-1998 dummy and liquidity shocks. Rather than a time trend, the post-1998
+dummy seems to be driving any correlation changes, and the impact of liquidity
+shocks on correlations also appears to be exclusively a post-1998 phenomenon.
+These results are consistent with an increase in the importance of liquidity
+risk on the efﬁcacy of these strategies following the events of August 1998 that
+appear to be more important than any time trend on the increasing popularity
+of value and momentum strategies among leveraged arbitrageurs. 20 Hence,
+funding liquidity risk and limits to arbitrage activity may be a progressively
+more crucial feature of these strategies and future work may consider these
+issues in understanding the returns to value and momentum.
+VI. Conclusion
+We provide comprehensive evidence on the return premia to value and mo-
+mentum strategies globally across asset classes, and uncover strong common
+factor structure among their returns. The strong correlation structure among
+value and momentum strategies across such diverse asset classes is difﬁcult to
+reconcile under existing behavioral theories, while the high return premium
+and Sharpe ratio of a global across-asset-class diversiﬁed value and momentum
+portfolio presents an even more daunting hurdle for rational risk-based mod-
+els to accommodate than the more traditional approach of considering value
+or momentum separately in a single asset market. Although both behavioral
+and rational theories for value and momentum focus predominantly on equi-
+ties, the existence of correlated value and momentum effects in other asset
+classes—with their different investors, institutional structures, and informa-
+tion environments—argues for a more general framework.
+We further ﬁnd that exposure to funding liquidity risk provides a partial
+explanation for this correlation structure, especially following the funding crisis
+of 1998, but leaves much to be explained. While the relation to funding liquidity
+20 Israel and Moskowitz ( 2012) examine the relation between size, value, and momentum prof-
+itability and aggregate trading costs and institutional investment over time. They ﬁnd little evi-
+dence that the returns to these strategies vary with either of these variables.
+
+--- PAGE 54 ---
+
+982 The Journal of Finance R⃝
+risk could imply that limited arbitrage activity may contribute to the prevalence
+and dynamics of these phenomena, we leave the ubiquitous evidence on the
+efﬁcacy of value and momentum across the diverse asset classes we study , its
+strong correlation structure, and intriguing dynamics related to funding risk
+as a challenge for future theory and empirical work to address.
+Finally , we provide a simple global three-factor model that describes a new
+set of 48 global across-asset-class test assets, the Fama–French portfolios, and a
+variety of hedge fund indices. In further investigating the underlying economic
+sources driving value and momentum returns, we hope this simple three-factor
+framework can be useful for future research that is becoming increasingly
+concerned with pricing global assets across markets.
+Initial submission: June 26, 2009; Final version received: December 20, 2012
+Editor: Campbell Harvey
+REFERENCES
+Acharya, Viral, and Lasse Heje Pedersen, 2005, Asset pricing with liquidity risk, Journal of Fi-
+nancial Economics 77, 375–410.
+Adrian, Tobias, and Hyun Song Shin, 2010, Liquidity and leverage, Journal of Financial Interme-
+diation, 19, 418–437.
+Amihud, Y akov, 2002, Illiquidity and stock returns: Cross-section and time series effects, Journal
+of Financial Markets 5, 31–56.
+Amihud, Y akov, Haim Mendelson, and Lasse Heje Pedersen, 2005, Liquidity and asset prices,
+Foundations and Trends in Finance 1, 269–364.
+Asness, Clifford S., 1994, Variables that explain stock returns , Ph.D. Dissertation, University of
+Chicago.
+Asness, Clifford S., 2011, Momentum in Japan: The exception that proves the rule, Journal of
+Portfolio Management 37, 67–75.
+Asness, Clifford S., and Andrea Frazzini, 2012, The devil in HML’s details, Working paper, AQR
+Capital Management.
+Asness, Clifford S., John M. Liew, and Ross L. Stevens, 1997, Parallels between the cross-
+sectional predictability of stock and country returns, Journal of Portfolio Management 23,
+79–87.
+Asness, Clifford S., R. Burt Porter, and Ross Stevens, 2000, Predicting stock returns using industry-
+relative ﬁrm characteristics, Working paper, AQR Capital Management.
+Bali, Tarun G., Stephen J. Brown, and Mustafa O. Caglayan, 2011, Do hedge funds’ exposures to
+risk factors predict their future returns? Journal of Financial Economics 101, 36–68.
+Bali, Tarun G., Stephen J. Brown, and Mustafa O. Caglayan, 2012, Systematic risk and the cross-
+section of hedge fund returns, Journal of Financial Economics 106, 114–131.
+Bansal, Ravi, and Amir Y aron, 2004, Risks for the long run: A potential resolution of asset pricing
+puzzles, Journal of Finance 35, 54–56.
+Barberis, Nicholas, Andrei Shleifer, and Robert Vishny, 1998, A model of investor sentiment,
+Journal of Financial Economics 49, 307–343.
+Belo, Federico, 2010, Production-based measures of risk for asset pricing, Journal of Monetary
+Economics 57, 146–163.
+Berk, Jonathan, Richard Green, and Vasant Naik, 1999, Optimal investment, growth options, and
+security returns, Journal of Finance 54, 1153–1607.
+Bessembinder, Henrik, 1992, Systematic risk, hedging pressure, and risk premiums in futures
+markets, Review of Financial Studies 5, 637–667.
+
+--- PAGE 55 ---
+
+Value and Momentum Everywhere 983
+Bhojraj, Sanjeev, and Bhaskaran Swaminathan, 2006, Macromomentum: Returns predictability
+in international equity indices, The Journal of Business 79, 429–451.
+Boudoukh, Jacob, Matthew Richardson, and Robert F . Whitelaw, 1994, Industry returns and the
+Fisher effect, Journal of Finance 49, 1595–1615.
+Boyson, Nicole, Christof W . Stahel, and Ren ´e M. Stulz, 2010, Hedge fund contagion and liquidity
+shocks, Journal of Finance 65, 1789–1816.
+Brunnermeier, Markus, and Lasse Heje Pedersen, 2009, Market liquidity and funding liquidity,
+Review of Financial Studies 22, 2201–2238.
+Carhart, M., 1997, On persistence in mutual fund performance, Journal of Finance 52, 57–82.
+Chordia, Tarun, and Lakshmanan Shivakumar, 2002, Momentum, business cycle and time-varying
+expected returns, Journal of Finance 57, 985–1019.
+Chui, Andy, Sheridan Titman, and K.C. John Wei, 2010, Individualism and momentum around
+the world, Journal of Finance 65, 361–392.
+Daniel, Kent, David Hirshleifer, and Avanidhar Subrahmanyam, 1998, A theory of overconﬁdence,
+self-attribution, and security market under and over-reactions, Journal of Finance 53, 1839–
+1885.
+DeBondt, Werner F .M., and Richard Thaler, 1985, Does the stock market overreact? Journal of
+Finance 40, 793–805.
+Erb, Claude, and Campbell Harvey, 2006, The strategic and tactical value of commodity futures,
+Financial Analysts Journal 62, 69–97.
+Fama, Eugene F ., 1976, Foundations of Finance (Basic Books, New Y ork, NY).
+Fama, Eugene F ., and Kenneth R. French, 1992, The cross-section of expected stock returns,
+Journal of Finance 47, 427–465.
+Fama, Eugene F ., and Kenneth R. French, 1993, Common risk factors in the returns on stocks and
+bonds, Journal of Financial Economics 33, 3–56.
+Fama, Eugene F ., and Kenneth R. French, 1996, Multifactor explanations of asset pricing anoma-
+lies, Journal of Finance 51, 55–84.
+Fama, Eugene F ., and Kenneth R. French, 1998, Value versus growth: The international evidence,
+Journal of Finance 53, 1975–1999.
+Fama, Eugene F ., and Kenneth R. French, 2012, Size, value, and momentum in international stock
+returns, Journal of Financial Economics 105, 457–472.
+Fama, Eugene F ., and James MacBeth, 1973, Risk, return, and equilibrium: Empirical tests,
+Journal of Political Economy 81, 607–636.
+Frazzini, Andrea, Ronen Israel, and Tobias J. Moskowitz, 2012, Trading costs of asset pricing
+anomalies Working paper, University of Chicago.
+Frazzini, Andrea, and Lasse H. Pedersen, 2010, Betting against beta, Working paper, AQR Capital
+Management and New Y ork University.
+Garleanu, Nicolae, and Lasse H. Pedersen, 2012, Dynamic trading with predictable returns and
+transaction costs, Journal of Finance,f o r t h c o m i n g .
+Gerakos, Joseph, and Juhani Linnainmaa, 2012, Decomposing value, Working paper, University
+of Chicago.
+Gibbons, Michael R., Stephen A. Ross, and Jay Shanken, 1989, A test of the efﬁciency of a given
+portfolio, Econometrica 57, 1121–1152.
+Gomes, Joao F ., Leonid Kogan, and Lu Zhang, 2003, Equilibrium cross section of returns, Journal
+of Political Economy 111, 693–732.
+Gorton, Gary B., Fumio Hayashi, and K. Geert Rouwenhorst, 2008,The fundamentals of commodity
+futures returns, Working paper, University of Pennsylvania.
+Goyal, Amit, and Sunil Wahal, 2012, Is momentum an echo? Working paper, Arizona State Univer-
+sity .
+Grifﬁn, John, Susan Ji, and Spencer Martin, 2003, Momentum investing and business cycle risk:
+Evidence from pole to pole, Journal of Finance 58, 1515–1547.
+Grinblatt, Mark, and Tobias J. Moskowitz, 2004, Predicting stock price movements from past
+returns: The role of consistency and tax-loss selling, Journal of Financial Economics 71, 541–
+579.
+
+--- PAGE 56 ---
+
+984 The Journal of Finance R⃝
+Hansen, Lars P ., John Heaton, and Nan Li, 2008, Consumption strikes back?: Measuring long run
+risk, Journal of Political Economy 116, 260–302.
+Hansen, Lars P ., and Ravi Jagannathan, 1997, Assessing speciﬁcation errors in stochastic discount
+factor models, Journal of Finance 52, 557–590.
+Hong, Harrison, Terrence Lim, and Jeremy Stein, 2000, Bad news travels slowly: Size, analyst
+coverage, and the proﬁtability of momentum strategies, Journal of Finance 55, 265–295.
+Hong, Harrison, and Jeremy Stein, 1999, A uniﬁed theory of underreaction, momentum trading,
+and overreaction in asset markets, Journal of Finance 54, 2143–2184.
+Israel, Ronen, and Tobias J. Moskowitz, 2012, The role of shorting, ﬁrm size, and time on market
+anomalies, Journal of Financial Economics (forthcoming).
+Jegadeesh, Narasimhan, 1990, Evidence of predictable behavior of security returns, Journal of
+Finance 45, 881–898.
+Jegadeesh, Narasimhan, and Sheridan Titman, 1993, Returns to buying winners and selling losers:
+Implications for stock market efﬁciency, Journal of Finance 48, 65–91.
+Johnson, Timothy, 2002, Rational momentum effects, Journal of Finance 57, 585–608.
+Kho, Bong C., 1996, Time-varying risk premia, volatility , and technical trading rule proﬁts: Evi-
+dence from foreign currency futures markets, Journal of Financial Economics 41, 249–290.
+Koijen, Ralph, Tobias Moskowitz, Lasse H. Pedersen, and Evert Vrugt, 2012, Carry, Working paper,
+University of Chicago.
+Korajczyk, Robert A., and Ronnie Sadka, 2004, Are momentum proﬁts robust to trading costs?
+Journal of Finance 59, 1039–1082.
+Korajczyk, Robert A., and Ronnie Sadka, 2008, Pricing the commonality across alternative mea-
+sures of liquidity ,Journal of Financial Economics 87, 45–72.
+Krishnamurthy, A., 2002, The bond/old-bond spread, Journal of Financial Economics 66, 463–506.
+Lakonishok, Josef, Andrei Shleifer, and Robert W . Vishny, 1994, Contrarian investment, extrapo-
+lation, and risk, Journal of Finance 49, 1541–1578.
+Lebaron, B., 1999, Technical trading rule proﬁtability and foreign exchange intervention, Journal
+of International Economics, 49, 125–143.
+Lesmond, David A., Michael J. Schill, and Chunsheng Zhou, 2003, The illusory nature of momen-
+tum proﬁts, Journal of Financial Economics 71, 349–380.
+Li, Dongmei, and Lu Zhang, 2010, Does q-theory with investment frictions explain anomalies in
+the cross-section of returns? Journal of Financial Economics 98, 297–314.
+Li, Erica X. N., Dmitry Livdan, and Lu Zhang, 2009, Anomalies, Review of Financial Studies 22,
+4301–4334.
+Liew, Jimmy, and Maria Vassalou, 2000, Can book-to-market, size and momentum be risk factors
+that predict economic growth? Journal of Financial Economics 57, 221–245.
+Liu, Laura Xiaolei, Toni M. Whited, and Lu Zhang, 2009, Investment-based expected stock returns,
+Journal of Political Economy 117, 1105–1139.
+Liu, Laura Xiaolei, and Lu Zhang, 2008, Momentum proﬁts, factor pricing, and macroeconomic
+risk, Review of Financial Studies 21, 2417–2448.
+Lo, Andrew W ., and A. Craig MacKinaly, 1990, When are contrarian proﬁts due to stock market
+overreaction? Review of Financial Studies 3, 175–205.
+Malloy, Christopher, Tobias J. Moskowitz, and Annette Vissing-Jorgensen, 2009, Long-run stock-
+holder consumption risk and asset returns, Journal of Finance 64, 2427–2479.
+Moskowitz, Tobias J., 2003, An analysis of covariance risk and pricing anomalies, Review of Finan-
+cial Studies 16, 417–457.
+Moskowitz, Tobias J., Y ao Hua Ooi, and Lasse Heje Pedersen, 2012, Time series momentum,
+Journal of Financial Economics 104, 228–250.
+Moskowitz, Tobias J., and Lasse Heje Pedersen, 2012, Global market and funding liquidity , Work-
+ing paper, University of Chicago.
+Novy-Marx, Robert, 2012, Is momentum really momentum? Journal of Financial Economics 103,
+429–453.
+Parker, Jonathan A., and Christian Julliard, 2005, Consumption risk and the cross section of
+expected returns, Journal of Political Economy 113, 185–222.
+
+--- PAGE 57 ---
+
+Value and Momentum Everywhere 985
+P ´astor, ˇLuboˇs , and Robert F . Stambaugh, 2003, Liquidity risk and expected stock returns, Journal
+of Political Economy 111, 642–685.
+Pedersen, Lasse, 2009, When everyone runs for the exit, International Journal of Central Banking
+5, 177–199.
+Piotroski, Joseph, 2000, Value investing: The use of historical ﬁnancial statement information to
+separate winners from losers, Journal of Accounting Research, 38, 1–41.
+Roon, Frank A., Theo de Nijman, and Christian H. Veld, 2000, Hedging pressure effects in futures
+markets, Journal of Finance, 55, 1437–1456.
+Rosenberg, Barr, Kenneth Reid, and Ronald Lanstein, 1985, Persuasive evidence of market inefﬁ-
+ciency ,Journal of Portfolio Management 11, 9–16.
+Rouwenhorst, K. Geert, 1998, International momentum strategies,Journal of Finance53, 267–284.
+Sadka, Ronnie, 2006, Momentum and post-earnings-announcement drift anomalies: The role of
+liquidity risk, Journal of Financial Economics 80, 309–349.
+Sadka, Ronnie, 2012, Hedge-fund performance and liquidity risk, Journal of Investment Manage-
+ment 10, 60–72.
+Sagi, Jacob, and Mark Seasholes, 2007, Firm-speciﬁc attributes and the cross-section of momen-
+tum, Journal of Financial Economics 84, 389–434.
+Shleifer, Andrei, and Lawrence H. Summers, 1990, The noise trader approach to ﬁnance, Journal
+of Economic Perspectives 4, 19–33.
+Stattman, Dennis, 1980, Book values and stock returns, Chicago MBA: A Journal of Selected
+Papers 5, 25–45.
+Vayanos, Dimitri, and Paul Woolley, 2012, An institutional theory of momentum and reversal,
+Working paper, London School of Economics.
+Zhang, Lu, 2005, The value premium, Journal of Finance 60, 67–103.

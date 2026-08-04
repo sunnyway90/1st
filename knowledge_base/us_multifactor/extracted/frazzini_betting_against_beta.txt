@@ -1,0 +1,4114 @@
+
+
+--- PAGE 1 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 1 
+ 
+ 
+Betting Against Beta 
+ 
+Andrea Frazzini and Lasse Heje Pedersen* 
+ 
+This draft: May 10, 2013 
+ 
+Abstract. 
+We present a model with leverage and margin constraints that vary across investors and 
+time. We find evidence consistent with each of the model’s five central predictions: (1) Since 
+constrained investors bid up high-beta assets, high beta is associated with low alpha, as we 
+find empirically for U.S. equities, 20 international equity markets, Treasury bonds, corporate 
+bonds, and futures ; (2) A betting-against-beta (BAB) facto r, which is long  leveraged low-
+beta assets and short high-beta assets, produces significant positive risk-adjusted returns; (3) 
+When funding constraints tighten, the return of the BAB factor is low; (4) Increased funding 
+liquidity risk compresses betas toward one ; (5) M ore constrained investors hold riskier 
+assets.  
+ 
+                                                 
+* Andrea Frazzini is at AQR Capital Management, Two Greenwich Plaza, Greenwich, CT 06830 , e-
+mail: andrea.frazzini@aqr.com; web: http://www.econ.yale.edu/~af227/ . Lasse H. Pedersen is at New 
+York University, Copenhagen Business School (FRIC Center for Financia l Frictions), AQR Capital 
+Management, CEPR, and NBER, 44 West Fourth Street, NY 10012 -1126; e -mail: 
+lpederse@stern.nyu.edu; web: http://www.stern.nyu.edu/~lpederse/. We thank Cliff Asness, Aaron 
+Brown, John Campbell, Josh Coval (discussant), Kent Daniel, Gene Fama,  Nicolae Garleanu, John 
+Heaton (discussant), Michael Katz , Owen Lamont, Juhani Linnainmaa (discussant), Michael 
+Mendelson, Mark Mitchell , Lubos  Pastor (discussant), Matt Richardson,  William Schwert  (editor), 
+Tuomo Vuolteenaho , Robert Whitelaw  and two anonymous referees for helpful comments and 
+discussions as well as seminar participants at AFA, NBER, Columbia University, New York 
+University, Yale University, Emory University, University of Chicago Booth, Kellogg School of 
+Management, Harvard University,  Boston University, Vienna University of Economics and Business , 
+University of Mannheim , Goethe University Frankfurt, Utah Winter Finance Conferenc e, Annual 
+Management Conference at University of Chicago Booth School of Business , Bank of America/Merrill 
+Lynch Quant Conference and Nomura Global Quantitative Investment Strategies Conference . 
+Pedersen gratefully acknowledges support from the European Re search Council (ERC  grant no. 
+312417). 
+
+--- PAGE 2 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 2 
+ 
+A basic premise of the capital asset pricing model (CAPM) is that all agent s invest 
+in the portfolio with the highest expected excess return per unit of risk (Sharpe 
+ratio), and lever age or de -leverage this portfolio to suit their risk preferences. 
+However, many investors —such as individuals, pension funds, and mutual funds —
+are constrained in the leverage that they can take, and they therefore overweight 
+risky securities instead of using leverage. For instance, many mutual fund families 
+offer balanced funds where the “normal” fund may invest 40% in long -term bonds 
+and 60% in stocks, whereas the “aggressive” fund invests 10% in bonds and 90% in 
+stocks. If the “normal” fund is efficient, then an investor could leverag e it and 
+achieve a better trade -off between risk and expected return than the aggressive 
+portfolio with a large tilt towards  stocks. The demand for exchange -traded funds 
+(ETFs) with embedded leverage provides further evidence that many investors 
+cannot use leverage directly.  
+This behavior of tilting toward high-beta assets suggests that risky high -beta 
+assets require lower risk -adjusted returns than low -beta assets, which require 
+leverage. Indeed, the security market line for U.S. stocks is too flat relative to the 
+CAPM (Black, Jensen, and Scholes (1972)) a nd is better explained by the CAPM 
+with restricted borrowing  than the standard CAPM  (Black (1972, 1993) , Brennan 
+(1971), see Mehrling (2005) for an excellent historical perspective).  
+Several questions arise : How can an unconstrained arbitrageur exploit th is 
+effect, i.e., how do you bet against beta ? What is the magnitude of this anomaly 
+relative to the size, value, and momentum effects? Is betting against beta rewarded 
+in other countries and asset classes? How does the return premium vary over time 
+and in the cross section? Who bets against beta?  
+We address these questions by considering a dynamic model of leverage 
+constraints and by presenting consistent empirical evidence from 20 international 
+stock markets, Treasury bond markets, credit markets, and futures markets.  
+Our model features several types of agents. Some agents cannot use leverage 
+and therefore overweight high-beta assets, causing those assets to offer lower returns. 
+Other agents  can use leverage but face margin constraints. They underweight (or 
+short-sell) high-beta assets and buy low -beta assets that they lever up. The model 
+
+--- PAGE 3 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 3 
+ 
+implies a flat ter security market line (as in Black (1972)), where the slope depends 
+on the tightness (i. e., Lagrange multiplier) of the funding constraints on average 
+across agents (Proposition 1).  
+One way to illustrate the asset -pricing effect of the funding friction is to 
+consider the returns on market-neutral betting against beta (BAB) factor s. A BAB 
+factor is a portfolio that holds low-beta assets, leveraged to a beta of 1 , and that 
+shorts high-beta assets, de-leveraged to a beta of 1. For instance, the BAB factor for 
+U.S. stocks achieves a zero beta by holding $1.4 of low-beta stocks and short-selling 
+$0.7 of high -beta stocks, with offsetting po sitions in the risk -free asset to make it 
+self-financing.1 Our model predicts th at BAB factors have a positive average return 
+and that the return is increasing in the ex-ante tightness of constraints and in the 
+spread in betas between high- and low-beta securities (Proposition 2). 
+When the leveraged agents hit their margin constraint, they must de-leverage. 
+Therefore, the model predicts that , during times of tightening funding liquidity 
+constraints, the BAB factor realizes negative returns as its expected future return 
+rises (Proposition 3). Furthermore, the model predicts that the betas of securities in 
+the cross section are compressed toward 1 when funding liquidity risk is high  
+(Proposition 4). Finally, the model implies that more -constrained investors 
+overweight high -beta assets in their portfolios while less -constrained investors 
+overweight low-beta assets and possibly apply leverage (Proposition 5). 
+Our model thus extends Black ’s (1972) central i nsight by considering a 
+broader set of constraints and deriving the dynamic time -series and cross -sectional 
+properties arising from the equilibrium interaction between agents with different 
+constraints.  
+We find consistent evidence for each of the model’s central predictions. To 
+test Proposition 1, we first consider portfolios sorted by beta within each asset class. 
+We find that alphas and Sharpe ratios are almost monotonically declining in beta  in 
+each asset class. This finding provides broad evidence that the relative flatness of the 
+                                                 
+1 While we consider a variety of BAB factors within a number of markets, one notable example is the 
+zero-covariance portfolio introduced by Black (1972) and studied for U.S. stocks by Black, Jensen, 
+and Scholes (1972) , Kandel (1984), Shanken (1985), Polk, Thompson, and Vuolteenaho (2006), and 
+others.  
+
+--- PAGE 4 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 4 
+ 
+security market line is not isolated to the U.S. stock market but that it is a 
+pervasive global phenomenon. Hence, this pattern of required returns is likely driven 
+by a common economic cause, and o ur funding constraint model provides one such 
+unified explanation.  
+To test Proposition 2, w e construct BAB factor s within the U.S. stock 
+market, and within each of the 19 other developed MSCI stock markets. The U.S. 
+BAB factor realizes a Sharpe ratio of 0 .78 between 1926 and March 2012. To put 
+this BAB factor return in perspective, note that its Sharpe ratio is about twice that 
+of the value effect and 40% higher than that of momentum  over the same time 
+period. The BAB factor has highly significant risk-adjusted returns, accounting for 
+its realized exposure to market, value, size, momentum, and liquidity factors (i.e., 
+significant 1-, 3-, 4-, and 5-factor alphas), and realizes a significant positive return in 
+each of the four 20-year subperiods between 1926 and 2012.  
+We f ind similar results in our sample of international equities; indeed, 
+combining stocks in each of the non -U.S. countries produces a BAB factor with 
+returns about as strong as the U.S. BAB factor. 
+We show that BAB returns are consisten t across countries, t ime, with in 
+deciles sorted by size, within deciles sorted by idiosyncratic risk, and robust to a 
+number of specifications.  These consistent results suggest that coincidence or data -
+mining are unlikely explanations. However, if leverage constraints are the underlying 
+drivers as in our model, then the effect should also exist in other markets.  
+Hence, w e examine BAB factors in other major asset classes. For U.S. 
+Treasuries, the BAB factor  is a portfolio that holds leveraged low-beta (i.e., short-
+maturity) bonds and short -sells de-leveraged high-beta (i.e., long-term) bonds. This 
+portfolio produces highly significant risk -adjusted returns with a Sharpe ratio of 
+0.81. This profitability of short -selling long-term bonds may seem to contradict the 
+well-known “term premium” in fixed income markets. There is no paradox, however. 
+The term premium means that investors are compensated on average for holding 
+long-term bonds rather than T-bills because of the need for maturity transformation. 
+The term premium exists at all horizons, however: Just as investors are compensated 
+for holding 10-year bonds over T-bills, they are also compensated for holding 1 -year 
+
+--- PAGE 5 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 5 
+ 
+bonds. Our finding is that the compensation per unit of risk  is in fact larger for  the 
+1-year bond than for the 10 -year bond. Hence, a portfolio that has a leveraged long 
+position in 1-year (and other short -term) bonds and a short position in long-term 
+bonds produces positive returns. This result is consistent with our model in which 
+some investors are leverage-constrained in their bond exposure and, therefore, 
+require lower risk-adjusted returns for long-term bonds that give more “bang for the 
+buck.” Indeed, short-term bonds require tremendous levera ge to achieve similar risk 
+or return as long -term bonds. These results complement those of Fama (1986) and 
+Duffee (2010), who also consider Sharpe ratios across maturities implied by standard 
+term structure models. 
+We find similar evidence in credit market s: A leveraged portfolio of high ly 
+rated corporate bonds outperforms a de -leveraged portfolio of low -rated bonds. 
+Similarly, using a BAB factor based on corporate bond indices by maturity produces 
+high risk-adjusted returns.  
+We test the time-series predictions of Proposition 3 using the TED spread as 
+a measure of funding conditions. Consistent with the model, a higher TED spread is 
+associated with low contemporaneous BAB returns. The lagged TED spread predicts 
+returns negatively, which is inconsistent with the model if a high TED spread means 
+a high tightness of investors’ funding constraints. This result could be explained if 
+higher TED spreads meant that investors’ funding constraints would be tightening 
+as their banks reduce credit availability over time, though this is speculation.  
+To test the prediction of Proposition 4, we use  the volatility of the TED 
+spread as an empirical proxy for funding liquidity risk . Consistent with the model’s 
+beta-compression prediction, we find th at the dispersion of betas is significantly 
+lower when funding liquidity risk is high.  
+Lastly, we find evidence consistent with the model’s portfolio prediction that 
+more-constrained investors hold higher-beta securities than less-constrained investors 
+(Proposition 5). On the one hand, we study the equity portfolios of mutual funds 
+and individual investors , which are likely to be constrained . Consistent with the 
+model, we find that these investors hold portfolios with  average betas above 1. On 
+the other side of the market, we find that leveraged buyout (LBO) funds acquire 
+
+--- PAGE 6 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 6 
+ 
+firms with average betas below 1  and apply leverage . Similarly,  looking at the 
+holdings of Berkshire Hathaway, we see that  Warren Buffett bets against beta by 
+buying low-beta stocks and applying leverage.  
+Our results shed new light on the relation ship between risk and expected 
+returns. This central issue in financial economics has naturally received much 
+attention. The standard CAPM beta cannot explain the cross -section of 
+unconditional stock returns (Fama and French (1992)) or conditional stock returns 
+(Lewellen and Nagel (2006)). Stocks with high beta have been found to deliver low 
+risk-adjusted returns (Black, Jensen, and Scholes (1972), Baker, Bradley, and 
+Wurgler (2010)); thus, the constrained-borrowing CAPM has a better fit (Gibbons 
+(1982), Kandel (1984 ), Shanken (1985)). Stocks with high idiosyncratic volatility 
+have realized low returns ( Falkenstein (1994 ), Ang, Hodrick, Xing, Zhang (2006, 
+2009)),2 but we find that the beta effect holds even when controlling for idiosyncratic 
+risk. Theoretically, asset pricing models with benchmarked managers (Brennan 
+(1993)) or constraints imply more general CAPM-like relations (Hindy (1995), Cuoco 
+(1997)), in particular the margin-CAPM implies that high-margin assets have higher 
+required returns, especially during times of funding illiquidity (Garleanu and 
+Pedersen (2009), Ashcraft, Garleanu, and Pedersen (2010)). Garleanu and Pedersen 
+(2009) show empirically that deviations of the Law of One Price arises when high -
+margin assets become cheaper than low -margin assets, and Ashcraft, Garleanu, and 
+Pedersen (2010) find that prices increase when central bank lending facilities reduce 
+margins. Furthermore, funding liquidity risk is linked to market liquidity risk 
+(Gromb and Vayanos (2002), Brunnermeier and Pedersen (2010)), which also affects 
+required returns (Acharya and Pedersen (2005)). We complement the literature by 
+deriving new cross -sectional and ti me-series predictions in a simple dynamic model 
+that captures leverage and margin constraints and by testing its implications across 
+a broad cross section of securities across all  the major asset classes . Finally, Asness, 
+Frazzini, and Pedersen (2011) report evidence of a low-beta effect across asset classes 
+consistent with our theory. 
+                                                 
+2 This effect disappears when controlling for the maximum daily return over the past month (Bali, 
+Cakici, and Whitelaw (2010)) and when using other measures of idiosyncratic volatility (Fu (2009)). 
+
+--- PAGE 7 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 7 
+ 
+ The rest of the paper is organized as follows : Section I lays out the theory, 
+Section II describes our data and empirical methodology, Section s III-VI test 
+Propositions 1 -5, and Section VII concludes. Appendix A contains all proofs , 
+Appendix B provides a number of additional empirical results and robustness tests , 
+and Appendix C provides a calibration of the model . The calibration shows that, to 
+match the strong BAB performance in the data, a large fraction of agents must face 
+severe constraints. An interesting topic for future research is to empirically estimate 
+agents’ leverage constraints and risk preferences and study whether the magnitude of 
+the BAB returns is consistent with the model or should be viewed as a puzzle.  
+ 
+I. Theory 
+We consider an overlapping -generations (OLG) economy in which agents 
+i=1,...,I are born each time period t with wealth 
+i
+tW  and live for two periods. Agents 
+trade securities s=1,...,S, where security s pays dividends 
+s
+t  and h as 
+*sx  shares 
+outstanding.3 Each time period t, young agents choose a portfolio of shares 
+x=(x1,...,xS)’, investing the rest of their wealth at the risk -free return rf, to maximize 
+their utility: 
+ 
+ 11max '( (1 ) ) ' 2
+i
+f
+t t t t tx E P r P x x     
+ (1) 
+ 
+where Pt is the vector of prices at time t, Ωt is the variance -covariance matrix of 
+11ttP 
+, and γi is agent i’s risk aversion. Agent i is subject to the following portfolio 
+constraint: 
+ 
+i s s i
+t t t
+s
+m x P W 
+ (2) 
+ 
+                                                 
+3 The dividends and shares outstanding are taken as exogenous. We note that our modified CAPM 
+has implications for a corporation’s optimal capital structure, which suggests an interesting avenue of 
+future research beyond the scope this paper. 
+
+--- PAGE 8 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 8 
+ 
+This constraint requires that some multiple 
+i
+tm  of the total dollars invested —the 
+sum of the number of shares xs times their prices Ps—must be less than the agent’s 
+wealth.  
+The investment constraint depends on the agent i. For instance, some agents 
+simply cannot use leverage, which is captured by mi=1 (as Black (1972) assumes) . 
+Other agents not only may be preclude d from using leverage but also must have 
+some of their wealth in cash, which is captured by mi greater than 1. For instance, 
+mi = 1/(1-0.20)=1.25 represents an agent who must hold 20% of her wealth in cash. 
+For instance, a mutual fund may need some ready c ash to be able to meet daily 
+redemptions, an insurance company needs to pay claims, and individual investors 
+may need cash for unforeseen expenses. 
+Other agents yet may be able to use leverage but may face margin 
+constraints. For instance, if an agent faces a margin requirement of 50%, then his mi 
+is 0.50. With this margin requirement, the agent can invest in assets worth twice his 
+wealth at most. A smaller margin requirement mi naturally means that the agent 
+can take greater positions. We note that our for mulation assumes for simplicity that 
+all securities have the same margin requirement, which may be true when comparing 
+securities within the same asset class (e.g. , stocks), as we do empirically. Garleanu 
+and Pedersen (2009) and Ashcraft, Garleanu, and Ped ersen (2010) consider assets 
+with different margin requirements and show theoretically and empirically that 
+higher margin requirements are associated with higher required returns (Margin 
+CAPM).  
+We are interested in the properties of the competitive equili brium in which 
+the total demand equals the supply: 
+ 
+*i
+i
+xx
+ (3) 
+ 
+To derive equilibrium, consider the first order condition for agent i: 
+ 
+ 110 (1 ) f i i i
+t t t t t tE P r P x P        
+ (4) 
+
+--- PAGE 9 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 9 
+ 
+ 
+where ψi is the Lagrange multiplier of the portfolio constraint. Solving for xi gives 
+the optimal position: 
+ 
+    
+1
+11
+1 1i f i
+t t t t tix E P r P 
+
+     
+ (5) 
+ 
+The equilibrium condition now follows from summing over these positions: 
+ 
+    
+1
+11
+1*1 f
+t t t t tx E P r P 
+
+     
+ (6) 
+ 
+where the aggregate risk aversion γ is defined by 1/ γ = Σi 1/ γi , and 
+i
+tt i
+i
+   is 
+the weighted average Lagrange multiplier. (The coefficients 
+i
+
+  sum to 1 by 
+definition of the aggregate risk aversion  
+ .) The equilibrium price  can then be 
+computed: 
+ 
+ 11 *
+1
+t t t
+t f
+t
+E P xP r
+
+
+   
+ (7) 
+ 
+Translating this into the return of any security  
+ 1 1 1 /1i i i i
+t t t tr P P      , the return on 
+the market 
+1
+M
+tr , and using the usual expression for beta, 
+   1 1 1cov , / vars s M M
+t t t t t t r r r    , 
+we obtain the following results. (All proofs are in Appendix A , which also illustrates 
+the portfolio choice with leverage constraints in a mean-standard deviation diagram.) 
+ 
+Proposition 1 (high beta is low alpha).  
+(i) The equilibrium required return for any security s is:  
+ 
+ 1
+s f s
+t t t t tE r r      
+ (8) 
+
+--- PAGE 10 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 10 
+ 
+ 
+where the risk premium is 
+ 1
+Mf
+t t t t E r r     and 
+t  is the average Lagrange 
+multiplier, measuring the tightness of funding constraints.  
+(ii) A security’s alpha with respect to the market is 
+(1 )ss
+t t t   . The a lpha 
+decreases in the beta, 
+s
+t .  
+(iii) For an efficient portfolio, the Sharpe ratio is highest for an efficient portfolio 
+with a beta less than 1 and decreases in 
+s
+t for higher betas and increases for lower 
+betas.  
+ 
+As in Black’s CAPM with restricted borrowing (in which 
+1im   for all agents), the 
+required return is a constant plus beta times a risk premium. Our expression shows 
+explicitly how risk premia are affected by the tightness of agents’ portfolio 
+constraints, as measured by the average Lagrange multiplier 
+t . Indeed, tighter 
+portfolio constraints (i.e., a larger 
+t ) flatten the security market line by increasing 
+the intercept and decreasing the slope 
+t .  
+Whereas the standard CAPM implies that the intercept of the security 
+market line is rf, the int ercept here is increased by binding funding constraints 
+(through the weighted average of the agents’ Lagrange multipliers ). One may 
+wonder w hy zero -beta assets require returns in excess of the risk -free rate . The 
+answer has two parts: First, constrained agents prefer to invest their limited capital 
+in riskier assets with higher expected return. Second, unconstrained agents do invest 
+considerable amounts in zero-beta assets so, from their perspective, the risk of these 
+assets is not idiosyncratic, as additional exposure to such assets would increase t he 
+risk of their portfolio. Hence, in equilibrium, zero-beta risky assets must offer higher 
+returns than the risk-free rate.  
+Assets that have zero covariance to Tobin’s (1958) “tangency portfolio” held 
+by an unconstrained agent do earn the risk-free rate, but the tangency portfolio is 
+not the market portfolio in our equilibrium. Indeed, the market portfolio is the 
+weighted average of all investors’ portfolios, i.e., an average of the tangency portfolio 
+
+--- PAGE 11 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 11 
+ 
+held by unconstrained investors and riskier portfolios held by constrained investors. 
+Hence, the market portfolio has higher risk and expected return than the tangency 
+portfolio, but a lower Sharpe ratio. 
+The portfolio constraints further imply a lower slope 
+t  of the security market 
+line, i.e., a lower compensation for a marginal increase in systematic risk. Th e slope 
+is lower because constrained agents need high unlever aged returns and are therefore 
+willing to accept less compensation for higher risk.4  
+We next consider the properties of a factor that goes long low-beta assets and 
+short-sells high-beta assets. To construct such a factor, let 
+Lw  be the relative 
+portfolio weights for a portfolio of low -beta assets with return 
+11 'L
+t L tr w r  and 
+consider similarly a portfolio of high -beta assets with return 
+1
+H
+tr . The betas of these 
+portfolios are denoted
+L
+t  and 
+H
+t , where 
+LH
+tt . We then construct a betting -
+against-beta (BAB) factor as: 
+ 
+   1 1 1
+11BAB L f H f
+t t t LH
+tt
+r r r r r
+     
+ (9) 
+ 
+This portfolio is market neutral, that is, it has a beta of zero: the long side has been 
+leveraged to a beta of 1, and the short side has been de -leveraged to a beta of 1. 
+Furthermore, the BAB factor provides the excess return on a self-financing portfolio, 
+such as HML and SMB, since it is a difference between excess returns. The difference 
+is that BAB is not dollar -neutral in terms of only the risky securities since this 
+would not pro duce a beta of zero. 5 The model has several predictions regarding the 
+                                                 
+4 While the risk premium implied by our theory is lower than the one implied by the CAPM, it is still 
+positive. It is difficult to empirically estimate a low risk premium and its positivity is not a focus of 
+our empirical tests as it does not distinguish our theory from the standard CAPM.  We note, however, 
+that the data is not inconsistent with our prediction as the estimated risk premium is positive and 
+insignificant for U.S. stocks, negative and insignificant for International stocks, posit ive and 
+insignificant for Treasuries, positive and significant for credits across maturities, and positive and 
+significant across asset classes.  
+5 A natural BAB factor is the zero -covariance portfolio of  Black (1972) and  Black, Jensen, and 
+Scholes (1972). We consider a broader class of BAB portfolios since we empirically consider a variety 
+of BAB portfolios within various asset classes that are subsets of all securities (e.g., stocks in a 
+particular size group). Therefore , our construction achieves market neutrality by leveraging (and de -
+leveraging) the long and short sides rather than adding the market itself as Black, Jensen, and 
+
+--- PAGE 12 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 12 
+ 
+BAB factor: 
+ 
+Proposition 2 (positive expected return of BAB). 
+The expected excess return of the self-financing BAB factor is positive 
+ 
+ 1 0
+HL
+BAB tt
+t t t LH
+tt
+Er  
+
+
+ (10) 
+ 
+and increasing in the ex-ante beta spread 
+HL
+tt
+LH
+tt
+
+
+ and funding tightness 
+t . 
+ 
+This proposition shows that a market -neutral BAB portfolio that is long 
+leveraged low -beta securities and short higher -beta securities earn s a positive 
+expected return on average. The size of the expected return depends on the spread in 
+the betas and how binding the portfolio constraints are in the market, as captured 
+by the average of the Lagrange multipliers 
+t .  
+The next proposition considers the effect of a shock to the portfolio 
+constraints (or margin requirements), mk, which can be interpreted as a worsening of 
+funding liquidity, a credit crisis in the extreme. Such a funding liquidity shock 
+results in losses for t he BAB factor as its required return increases. This happens 
+because agents may need to de -leverage their bets against beta or stretch even 
+further to buy the high -beta assets. Th us, the BAB factor is exposed to funding 
+liquidity risk, as it loses when portfolio constraints become more binding. 
+ 
+Proposition 3 (funding shocks and BAB returns).  
+A tighter portfolio constraint, that is, an increase in 
+k
+tm  for some of k, leads to a 
+contemporaneous loss for the BAB factor  
+ 
+0
+BAB
+t
+k
+t
+r
+m
+ 
+ (11) 
+                                                                                                                                                       
+Scholes (1972) do. 
+
+--- PAGE 13 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 13 
+ 
+ 
+and an increase in its future required return: 
+ 
+ 1
+0
+BAB
+tt
+k
+t
+Er
+m
+
+
+ (12) 
+ 
+Funding shocks have further implications for the cross section of asset returns 
+and the BAB portfolio. Specifically, a funding shock makes all security prices drop 
+together (that is,  
+   
+     
+  
+  is the same for all securities s). Therefore, an increased 
+funding risk compresses betas towards one. 6 If the BAB portfolio construction is 
+based on an information set that does not account for this increased funding risk, 
+then the BAB portfolio’s conditional market beta is affected. 
+ 
+Proposition 4 (beta compression). Suppose that all random variables are i .i.d. over 
+time and    is independent of the other random variables.  Further, at time t-1 after 
+the BAB portfolio is formed a nd prices are set , the conditional variance of the 
+discount factor 
+1/ (1 ) f
+tr   rises (falls) due to new information about    and   . 
+Then: 
+(i) The conditional return betas 
+1
+i
+t   of all securities are compressed toward 1 (more 
+dispersed).  
+(ii) The conditional beta of the BAB portfolio becomes positive (negati ve), even 
+though it is market neutral relative to the information set used for portfolio 
+formation. 
+ 
+In addition to the asset -pricing predictions that we have derived, funding 
+constraints naturally affect agents’ portfolio choices. In particular, more -constrained 
+                                                 
+6 Garleanu and Pedersen (2009) find a complementary result, studying secu rities with identical 
+fundamental risk but different margin requirements. They find theoretically and empirically that such 
+assets have similar betas when liquidity is good, but when funding liquidity risk rises the high -margin 
+securities have larger betas , as their high margins make them more funding sensitive. Here, we study 
+securities with different fundamental risk, but the same margin requirements . In this case, higher 
+funding liquidity risk means that betas are compressed toward one. 
+
+--- PAGE 14 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 14 
+ 
+investors tilt toward riskier securities in equilibrium whereas less -constrained agents 
+tilt toward safer securities with higher reward per unit of risk. To state this result , 
+we write next period’s security payoffs as  
+ 
+    1 1 1 1 1 1 1 1
+M M M M
+t t t t t t t t t tP E P b P E P e                 
+ (13) 
+ 
+where b is a vector of market exposures , and e is a vector of noise that is 
+uncorrelated with the market . We have the following natural result for the agents’ 
+positions: 
+ 
+Proposition 5 (constrained investors hold high betas).  
+Unconstrained agents hold a portfolio of risky securities that has a beta less than 1; 
+constrained agents hold portfolios of securities with higher betas. If securities s and k 
+are identical ex cept that s has a larger market exposure than k, 
+skbb , then an y 
+constrained agent j with greater -than-average Lagrange multiplier, 
+j
+tt , holds 
+more shares of s than k; the reverse is true for any agent with 
+j
+tt . 
+ 
+We next provide empirical evidence for Propositions 1 -5. Beyond matching the 
+data qualitatively, Appendix C illustrates how well a calibrated model can 
+quantitatively match the magnitude of the estimated BAB returns. 
+ 
+II. Data and Methodology 
+The data in this study are collected from several sources . The sample of U .S. 
+and international equities includes 55,600 stocks covering 20 countries, and the 
+summary statistics for stocks are reported in Table I. Stock return data are from the 
+union of the CRSP tape and the Xpressfeed Global database. Our U.S. equity data 
+include all available common stocks on CRSP between January 1926 and March 
+2012, and betas are computed with respect to the CRSP value -weighted market 
+index. Excess returns are above the U.S. Treasury bill rate. We consider alphas with 
+respect to the market factor and factor returns based on size (SMB), book-to-market 
+
+--- PAGE 15 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 15 
+ 
+(HML), momentum (UMD), and (when available) liquidity risk.7 
+The international equity data include all available common stocks on the 
+Xpressfeed Global daily security file for 19 markets belonging to the MSCI developed 
+universe between January 1989 and March 2012. We assign each stock  to its 
+corresponding market based on the location of the primary exchange. Betas are 
+computed with respect to the corresponding MSCI local market index.8  
+All returns are in USD , and excess returns are above the U .S. Treasury bill 
+rate. We compute alphas with respect to the international market and factor returns 
+based on size (SMB), book -to-market (HML) and momentum (UMD) from Asness 
+and Frazzini (2011)9 and (when available) liquidity risk.  
+We also consider a variety of other assets : Table II contains the list of 
+instruments and the corresponding r anges of available  data. We obtain U.S. 
+Treasury bond data from the CRSP U .S. Treasury Database, using monthly returns 
+(in excess of the 1 -month Treasury bill) on the Fama Bond portfolios for maturities 
+ranging from 1 to 10 years between January 1952 and March 2012. Each portfolio 
+return is an equal-weighted average of the unadjusted holding period return for each 
+bond in the portfolio. Only non -callable, non-flower notes and bonds are included in 
+the portfolios. Betas are computed with respect to an equall y weighted portfolio of 
+all bonds in the database. 
+We collect aggregate corporate bond index returns from Barclays Capital’s 
+Bond.Hub database.10 Our analysis focuses on the monthly returns (in excess of the 
+1-month Treasury bill) o f four aggregate U.S. credit indices with maturity ranging 
+from 1 to 10 years and nine investment -grade and high -yield corporate bond 
+portfolios with credit risk ranging from AAA to Ca -D and “Distressed.”11 The data 
+cover the period between January 1973 and March 2012, although the data 
+                                                 
+7 SMB, HML, and UMD are from Ken French’s data library, and the liquidity risk factor is from 
+WRDS. 
+8 Our results are robust to the choice of benchmark (local vs. global). We report these tests in the 
+Appendix.  
+9 These factors mimic their U .S counterparts and follow Fama  and French (1 992, 1993, 1996). See 
+Asness and Frazzini (2011) for a detailed de scription of their construction . The data can be 
+downloaded at http://www.econ.yale.edu/~af227/data_library.htm.  
+10 The data can be downloaded at https://live.barcap.com. 
+11 The distress index was provided to us by Credit Suisse. 
+
+--- PAGE 16 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 16 
+ 
+availability varies depending on the individual bond series. Betas are computed with 
+respect to an equally weighted portfolio of all bonds in the database. 
+We also study futures and forwards on country equity indexes, country bond 
+indexes, foreign exchange, and commodities. Return data are drawn from the 
+internal pricing data maintained by AQR Capital Management LLC. The data are 
+collected from a variety of s ources and contains daily return on futures, forwards , or 
+swap contracts in excess of the relevant financing rate. The type of contract for each 
+asset depends on availability or the relative liquidity of different instruments. Prior 
+to expiration, positions are rolled over into the next most-liquid contract. The rolling 
+date’s convention differs across contracts and depends on the relative liquidity of 
+different maturities. The data cover the period between January 1963 and March 
+2012, with varying data availability depending on the asset class. For more details 
+on the computation of returns and data sources , see Moskowitz, Ooi, and Pedersen 
+(2012), Appendix A. For equity indexes, country bonds , and currencies, the betas 
+are computed with respect to  a GDP-weighted portfolio, and for commodities, the 
+betas are computed with respect to a diversified portfolio that gives equal risk 
+weight across commodities. 
+Finally, we use the TED spread as a proxy for time periods where credit 
+constraint are more like ly to be binding (as in Garleanu and Pedersen ( 2011) and 
+others). The TED spread is defined as the difference between the three -month 
+EuroDollar LIBOR rate and the three-month U.S. Treasuries rate.  Our TED data 
+run from December 1984 to March 2012. 
+ 
+Estimating Ex-ante Betas 
+We estimate pre -ranking betas from rolling regressions of excess returns on 
+market excess returns. Whenever possible, we use daily data rather than monthly  as 
+the accuracy of covariance estimation improves with the sample frequency  (Merton 
+(1980)).12 Our estimated beta for security   is given by  
+ 
+                                                 
+12 Daily returns are not available for our sample of U .S. Treasury bonds, U .S. corporate bonds, and 
+U.S. credit indices. 
+
+--- PAGE 17 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 17 
+ 
+      
+    ̂ 
+    ̂
+ ̂ 
+ ̂ 
+                   (14) 
+ 
+where  ̂  and  ̂  are the estimated volatilities for the stock and the market and  ̂ is 
+their correlation. We estimate volatilities and correlations separately for two reasons. 
+First, we use a 1-year rolling standard deviation for volatilities and a 5 -year horizon 
+for the correlation to account for the fact that that correlations appear to move more 
+slowly than volatilities. 13 Second, we use 1 -day log returns to estimate volatilities 
+and overlapping 3-day log returns, 
+2
+3
+,
+0
+ln(1 )di
+i t t k
+k
+rr 
+
+ , for correlation to control for 
+non-synchronous trading (which obviously only affects correlations). We  require at 
+least 6 months (120 trading days) of non-missing data to estimate volatilities and at 
+least 3 years (750 trading days) of non -missing return data  for correlations. If we 
+only have access to monthly data, we use rolling 1 and 5 -year windows and require 
+at least 12 and 36 observations.  
+ Finally, to reduce the influence of outliers, we follow Vasicek (1973) and 
+Elton, Gruber, Brown, and Goetzmann ( 2003) and shrink the time-series estimate of 
+beta (
+TS
+i ) toward the cross-sectional mean (
+XS ): 
+ 
+       
+ˆ ˆ ˆ (1 )TS XS
+i i i i ww                (15) 
+ 
+For simplicity, rather than having asset -specific and time -varying shrinkage factors 
+as in Vasicek (1973), we set w = 0.6 and 
+XS =1 for all periods and across all assets, 
+but our results are very similar either way.14  
+We note that our choice of the shrinkage factor does not affect how securities 
+are sorted into portfolios since the common shrinkage does not change the ranks of 
+the security betas. However, the amount of shrinka ge affects the construction of the 
+                                                 
+13 See, for example, De Santis and Gerard (1997).  
+14 The Vasicek (1973) Bayesian shrinkage factor is given by  
+2 2 2
+,,1 / ( )i i TS i TS XSw       where 
+2
+,i TS  is the 
+variance of the estimated beta for security i, and 
+2
+XS  is the cross -sectional variance of betas. This 
+estimator places more weight on the historical times series estimate when the estimate has a lower 
+variance or when there is large dispersion of betas in the cross section. Pooling ac ross all stocks in our 
+U.S. equity data, the shrinkage factor w has a mean of 0.61. 
+
+--- PAGE 18 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 18 
+ 
+BAB portfolios since the estimated betas are used to scale the long and short sides of 
+portfolio as seen in Equation (9).  
+To account for the fact that noise in the ex-ante betas affects the construction 
+of the BAB factors, our inference is focused on realized abnormal returns so that any 
+mismatch between ex-ante and (ex-post) realized betas is picked up by the realized 
+loadings in the factor regression. Of course, w hen we regress our portfolios on 
+standard risk factors, the realized factor loadings are not shrunk as above  since only 
+the ex-ante betas are subject to selection bias . Our results are robust to alternative 
+beta estimation procedures as we report in the Appendix.  
+We compute betas with respect to a market portfolio, which is either specific 
+to an asset class or the overall world market portfolio of all assets. While our results 
+hold both ways, we focus on betas with respect to asset-class-specific market 
+portfolios since these betas are less noisy for sever al reasons . First, t his approach 
+allows us to use daily data over a long time period for most asset classes , as opposed 
+to using the most diversified market portfolio  for which we only have monthly data 
+over a limited time period . Second, this approach is applicable even if markets are 
+segmented.  
+As a robustness test, Table B8 in the Appendix reports  results when  we 
+compute betas with respect to a proxy for a world market portfolio  comprised of 
+many asset classes . We use the  world market portfolio from Asn ess, Frazzini, and 
+Pedersen (2011).15 The results are consistent with our main tests as the BAB factors 
+earn large and significant abnormal returns in each of asset classes in our sample. 
+ 
+Constructing Betting-Against-Beta Factors 
+We construct simple portfolios that are long low -beta securities and that 
+short-sell high-beta securities, hereafter “BAB” factors. To construct each BAB 
+factor, all securities in an asset class  are ranked in ascending order on the basis of 
+their estimated beta. The ranked securities are assigned to one of two portfolios: low-
+beta and high-beta. The low (high) beta portfolio is comprised of all stocks with a 
+                                                 
+15 See Asness, Frazzini, and Pedersen (2011) for a detail ed description of this market portfolio. The 
+market series is monthly and ranges from 1973 to 2009.  
+
+--- PAGE 19 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 19 
+ 
+beta below (above) its asset-class median (or country median for international 
+equities). In each portfolio , securities are weighted by the ranked betas ( i.e., lower-
+beta securit ies have larger weight s in the low -beta portfolio and higher -beta 
+securities have larger weights in the high -beta portfolio). The portfolios are 
+rebalanced every calendar month. 
+More formally, let 
+z  be the 
+1n  vector of beta ranks 
+()i itz rank   at 
+portfolio formation, and let 
+'1/nz z n  be the average rank , where 
+n  is the number 
+of securities and 
+1n  is an 
+1n  vector of ones. The portfolio weights of the low -beta 
+and high-beta portfolios are given by 
+ 
+    (   ̅) 
+    (   ̅)                 (16) 
+ 
+where 
+k  is a normalizing constant        
+     ̅  and 
+x  and 
+x  indicate the 
+positive and negative element s of a vector 
+x . Note that by construction we have 
+'11nHw 
+ and 
+'11nLw  . To construct the BAB factor, both portfolios are rescaled to 
+have a beta of one at portfolio formation. The BAB is the self -financing zero-beta 
+portfolio ( 8) that is long the low -beta portfolio and that short-sells the high -beta 
+portfolio. 
+ 
+   1 1 1
+11BAB L f H f
+t t t LH
+tt
+r r r r r
+     
+                   (17) 
+ 
+where 
+'
+11
+L
+t t Lr r w , 
+'
+11
+H
+t t Hr r w , 
+'L
+t t L w , and 
+'H
+t t H w  .  
+For example, on average , the U.S. stock BAB factor is long $ 1.4 of low-beta 
+stocks (financed by short -selling $1.4 of risk-free securities) and short -sells $0.7 of 
+high-beta stocks (with $0.7 earning the risk-free rate). 
+ 
+Data Used to Test the Theory’s Portfolio Predictions 
+We collect mutual fund holdings from the union of the CRSP Mutual Fund 
+
+--- PAGE 20 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 20 
+ 
+Database and Thompson Financial CDA/Spectrum holdings database, which 
+includes all registered domestic mutual funds filing with the SEC. The holdings data 
+run from March 1980 to March 2012. We focus our analysis on open -end, actively 
+managed, domestic equity mutual funds. Our sample selection procedure follows that 
+of Kacperzczyk, Sialm, and Zheng (2008), and we refer to their Appendix for details 
+about the screens that were used and summary statistics of the data. 
+ Our individual investors’ holdings data was collected from a nationwide 
+discount brokerage house and contains trade s made by about 78,000 households in 
+the period from January of 1991 to November of 1996. This dataset has b een used 
+extensively in the existing literature on individual investors. For a detailed 
+description of the brokerage data set, see Barber and Odean (2000). 
+ Our sample of buyouts is drawn from the M&A and corporate events 
+database maintained by AQR/CNH Partners.16 The data contain various data items, 
+including initial, subsequent announcement dates , and (if applicable) completion or 
+termination date for all takeover deals where the target is a U.S. publicly traded 
+firm and where the acquirer is a private com pany. For some (but not all) deals , the 
+acquirer descriptor also contains information on whether the deal is a Leveraged or 
+Management Buyout (LBO, MBO). The data run from January 1963 to March 2012. 
+Finally, we download holdings data for Berkshire Hathawa y from Thomson 
+Financial Institutional (13f) Holding Database. The data run from March 1980 to 
+March 2012. 
+ 
+III. Betting Against Beta in Each Asset Class 
+We now test how the required return varies in the cross -section of beta -sorted 
+securities (Proposition 1) and the hypothesis that long/short BAB factors have 
+positive average returns (Proposition 2). As an overview of these results, the alphas 
+of all the beta -sorted portfolios considered in this paper are plotted in Figure 1 . We 
+see that declining alphas acros s beta-sorted portfolios are general phenomena across 
+asset classes . ( Figure B1 in the Appendix  plots the Sharpe ratios of beta -sorted 
+portfolios, which also shows a consistently declining pattern.)  
+                                                 
+16 We would like to thank Mark Mitchell for providing us with this data. 
+
+--- PAGE 21 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 21 
+ 
+Figure 2 plots the annualized Sharpe ratios of the BAB portfolios in the various 
+asset classes.  We see all the BAB portfolios deliver positive returns, except for a 
+small insignificantly negative return in Austrian stocks. The BAB portfolios based 
+on large numbers of securities (U.S. stocks, International stock s, Treasuries, credits) 
+deliver high risk-adjusted returns relative to the standard risk factors considered in 
+the literature. We discuss these results in detail below. 
+ 
+Stocks 
+Table III reports our tests for U.S. stocks. We consider 10 beta -sorted 
+portfolios and report their average returns, alphas, market betas, volatilities, and 
+Sharpe ratios. The average returns of the different beta portfolios are similar, which 
+is the well -known relatively flat security market line. Hence, consistent with 
+Proposition 1 and with Black (1972), the alphas decline almost monotonically from 
+the low-beta to high -beta portfolios. Indeed, the alphas decline when estimated 
+relative to a 1 -, 3 -, 4 -, a nd 5 -factor model. Moreover, Sharpe ratios decline 
+monotonically from low-beta to high-beta portfolios.  
+The rightmost column of Table III reports returns of the betting -against-beta 
+(BAB) factor, i.e., a portfolio that is long lever aged low-beta stocks and that short-
+sells de-leveraged high -beta stocks , thus maintaining a  beta-neutral portfolio. 
+Consistent with Proposition 2 , the BAB factor delivers a high average return and a 
+high alpha. Specifically, the BAB factor has Fama and French (1993) abnormal 
+returns of 0. 73% per month (t -statistic = 7.39). Further adjusting returns for 
+Carhart’s (1997) momentum -factor, the BAB portfolio earns abnormal returns of 
+0.55% per month (t-statistic = 5.59). Last, we adjust returns using a 5 -factor model 
+by adding the traded liquidity factor by Pastor and Stambaugh (2003), yielding an  
+abnormal BAB return of 0.55% per month (t-statistic = 4.09, which is lower in part 
+because the liquidity factor is only avai lable during half of our sample ). We note 
+that while the alpha of the long -short portfolio is consistent across regressions, the 
+choice of risk adjustment influences the relative alpha contribution of the long and 
+short sides of the portfolio.  
+
+--- PAGE 22 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 22 
+ 
+Our results for U.S. equities show how the security market line has continued 
+to be too flat for another four decades after Black, Jensen, and Scholes (1972) . 
+Further, our results extend internationally. We consider beta -sorted portfolios for 
+international equities and later turn to altogether different asset classes . We use all 
+19 MSCI developed countries except the U.S. (to keep the results separate from the 
+U.S. results above), and we do this in two ways: We consider international portfolios 
+where all international stocks are pooled together (Table IV), and we consider 
+results separately for each country (Table V).  The international portfolio is country 
+neutral, i.e., the low (high) beta portfolio is comprised of all stocks with a beta 
+below (above) its country median.17  
+The results for our pooled sample of international equities in Table IV mimic 
+the U.S. results: the a lpha and Sharpe ratios of the beta -sorted portfolios decline 
+(although not perfectly monotonically) with the betas, and the BAB factor earns 
+risk-adjusted returns between 0. 28% and 0. 64% per month depending on the choice 
+of risk adjustment, with t-statistics ranging from 2.09 to 4.81. 
+Table V shows the performance of the BAB factor within each individual 
+country. The BAB delivers positive Sharpe ratios in 18 of the 19 MSCI developed 
+countries and positive 4 -factor alphas in 13 out of 19, displaying a strikingly 
+consistent pattern across  equity markets. The BAB returns are statistically 
+significantly positive in 6 countries, while none of the negative alphas is significant. 
+Of course, the small number of stocks in our sample in many of the countries makes 
+it difficult to reject the null hypothesis of zero return in each individual country.  
+Table B1 in the Appendix reports factor loadings. On average, the U.S. BAB 
+factor goes long $1.40 ($1.40 for International BAB) and short-sells $0.70 ($0.89 for 
+International BAB). The larger long investment is meant to make the BAB factor 
+market-neutral because the stocks that are held long  have lower betas. The BAB 
+factor’s realized market loading is not exactly zero , reflecting the fact that our ex-
+ante betas are measured with noise. The other fa ctor loadings indicate that, relative 
+to high -beta stocks, low -beta stocks are likely to be larger, have higher book -to-
+                                                 
+17 We keep the international portfolio country neutral because we report the result of betting against 
+beta across equity indices BAB separately in Table VIII. 
+
+--- PAGE 23 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 23 
+ 
+market ratios, and have higher return over the prior 12 months, although none of 
+the loadings can explain the large and significant abno rmal returns.  The BAB 
+portfolio’s positive HML loading is natural since our theory predicts that low -beta 
+stocks are cheap and high-beta stocks are expensive.  
+The Appendix reports further tests and additional robustness checks. In Table 
+B2, we report results using different window lengths  to estimate betas and different 
+benchmarks (local, global). We split the sample by size (Table B3) and time periods 
+(Table B4), we control for idiosyncratic volatility ( Table B5) and report results for 
+alternative definition of the risk-free rate (B6). Finally, in Table B7 and Figure B2 
+we report an out -of-sample test. We collect pricing data from DataStream  and for 
+each country in Table I we compute a BAB portfolio over sample period not covered 
+by the Xpressfeed Global  database.18 All of the results are consistent: equity  
+portfolios that bet against betas earn significant risk-adjusted returns. 
+ 
+Treasury Bonds 
+Table VI reports results for U .S. Treasury bonds. As before, we report 
+average excess returns of bond portfolios formed by sorting on beta in the previous 
+month. In the cross section of Treasury bonds, ranking on betas with respect to an 
+aggregate Treasury bond index is empirically equiva lent to ranking on duration or 
+maturity. Therefore, in Table VI , one can think of the term “beta ,” “duration,” or 
+“maturity” in an interchangeable fashion. The rightmost column reports returns of 
+the BAB factor. Abnormal returns are computed with respect t o a one-factor model 
+where alpha is the intercept in a regression of monthly excess return on an equally 
+weighted Treasury bond excess market return. 
+The results show that the phenomenon of a flat ter security market line  than 
+predicted by the standard CAPM is not limited to the cross section of stock returns. 
+Indeed, consistent with Proposition 1, the alphas decline monotonically with beta. 
+Likewise, Sharpe ratios decline monotonically from 0.73 for low -beta (short 
+maturity) bonds to 0.31 for high-beta (long maturity) bonds. Furthermore, the bond 
+                                                 
+18 DataStream international pricing data start in 1969 while Xpressfeed Global coverage starts in 
+1984. 
+
+--- PAGE 24 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 24 
+ 
+BAB portfolio delivers abnormal returns of 0.1 7% per month (t -statistic = 6. 26) 
+with a large annual Sharpe ratio of 0.81. 
+Since the idea that funding constraints have a significant effect on the term 
+structure of in terest may be surprising, let us illustrate the economic mechanism 
+that may be at work. Suppose an agent, e.g., a pension fund, has $1 to allocate to 
+Treasuries with a target excess return of 2.9% per year. One way to achieve this 
+return target is to invest $1 in a portfolio of Treasuries with maturity above 10 years 
+as seen in Table VI , P7. If the agent invests in 1 -year Treasuries (P1) instead, then 
+he would need to invest $ 11 if all maturities had the same Sharpe ratio. This higher 
+leverage is needed because  the long-term Treasures are 11 times more volatile than 
+the short-term Treasuries. Hence, the agent would need to borrow an additional $ 10 
+to lever his investment in 1 -year bonds. If the age nt has leverage limits (or prefers 
+lower leverage), then he would strictly prefer the 10-year Treasuries in this case.  
+According to our theory, the 1 -year Treasuries therefore must offer higher 
+returns and higher Sharpe ratios, flattening the security mar ket line for bonds. 
+Empirically, short-term Treasuries do in fact offer higher risk-adjusted returns so the 
+return target can be achieved by investing about $5 in 1 -year bonds. While a 
+constrained investor may still prefer an un -leveraged investment in 10 -year bonds, 
+unconstrained investors now prefer the leveraged low -beta bonds, and the market 
+can clear.  
+While the severity of leverage constraints varies across market participants, it 
+appears plausible that a 5-to-1 leverage (on this part of the portfolio ) makes a 
+difference for some large investors such as pension funds. 
+ 
+Credit 
+We next test our model using several credit portfolios  and report results in 
+Table VII. In Panel A, columns (1) to (5), the test assets are monthly excess returns 
+of corporate bond indexes by maturity. We see that the credit B AB portfolio 
+delivers abnormal returns of 0.1 1% per month (t -statistic = 5.14) with a large 
+annual Sharpe ratio of 0. 82. Furthermore, alphas and Sharpe  ratios decline 
+monotonically. 
+
+--- PAGE 25 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 25 
+ 
+In columns (6) to (10),  we attempt to isolate the credit component by 
+hedging away the interest rate risk. Given the results on Treasuries in Table VI , we 
+are interested in testing a pure credit version of the BAB portfolio. Each calendar 
+month, we run 1-year rolling regressions of excess bond returns on the excess return 
+on Barclay’s U.S. government bond index. We construct test assets by going long 
+the corporate bond index and hedging this position by short -selling the appropriate 
+amount of the government bond index: 
+1
+ˆ( ) ( )CDS f f USGOV f
+t t t t t t tr r r r r r       , where 
+1
+ˆ
+t 
+ is the slope coefficient estimated in an expanding regression using data from the 
+beginning of the sample and up to month t-1. One interpretation of this returns 
+series is that it approximate s the returns on a Credit Default Swap (CDS). We 
+compute market returns by t aking the equally weighted average of these hedged 
+returns, and we compute betas and BAB portfolios as before. A bnormal returns are 
+computed with respect to a two -factor model  where alpha is the intercept in a 
+regression of monthly excess return on the equally weighted average pseudo -CDS 
+excess return and the monthly return on the Treasury BAB factor. The addition of 
+the Treasury BAB factor on the right -hand side is an extra check to test a pure 
+credit version of the BAB portfolio.  
+The results in Panel A of Table VII columns (6) to (10) tell the same story as 
+columns (1) to (5): the BAB portfolio delivers significant abnormal returns of 0.17% 
+per month (t -statistics = 4.44) and Sharpe ratios decline monotonically from low -
+beta to high-beta assets. 
+Last, i n Panel B of Table VII , we report results where the test assets are 
+credit indexes sorted by rating, ranging from AAA to Ca -D and Distressed. 
+Consistent with all our previous results, we find large abnormal returns of the BAB 
+portfolios (0. 57% per month wi th a t -statistics = 3.72) and declining alphas and 
+Sharpe ratios across beta-sorted portfolios. 
+ 
+Equity Indexes, Country Bond Indexes, Currencies, and Commodities 
+Table VII reports results for equity indexes, country bond indexes, foreign 
+exchange and commodities. The BAB portfolio delivers positive return s in each of 
+the four asset classes, with an annualized Sharpe ratio ranging from 0.11 to 0.51. We 
+
+--- PAGE 26 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 26 
+ 
+are only able to reject the null hypothesis of zero average return for  equity indexes, 
+but we can reject the null hypothesis of zero returns for combination portfolios tha t 
+include all or some combination of the four asset classes, taking advantage of 
+diversification. We construct a simple equally weighted BAB portfolio. To account 
+for different volatility across the four asset classes, in month t we rescale each return 
+series to 10% annualized volatility using rolling 3 -year estimates up to mo nth t-1 
+and then we equally weight the return series and their respective market benchmark. 
+This portfolio construction generates a simple implementable portfolio that targets 
+10% BAB volatility in each of the asset classes. We report results for an All Futures 
+combo including all four asset classes and a Country Selection combo including only 
+Equity indices, C ountry Bonds and Foreign Exchange. The BAB All Futures and 
+Country Selection  deliver abnormal return of 0. 25% and 0. 26% per month (t -
+statistics = 2.53 and 2.42).  
+ 
+Betting Against All of the Betas 
+To summarize, the results in Table III –VIII strongly support the predictions 
+that alphas decline with beta and BAB factors earn positive excess returns in each 
+asset class. Figure 1 illustrates the remarkably consistent pattern of declining alphas 
+in each asset class , and Figure 2 shows the consistent return to the BAB factors . 
+Clearly, the  relatively flat security market line, documented by Black, Jensen, 
+Scholes (1972) for U.S. stocks, is a pervasive phenomenon that we find across 
+markets and asset classes. Averaging all of the BAB factors produces a diversified 
+BAB factor with a large and significant abnormal return of 0. 54% per month (t -
+statistics of 6.98) as seen in Table VIII Panel B. 
+ 
+IV. Time Series Tests 
+ In this section, we test Proposition 3’s predictions for the time -series of BAB 
+returns: When funding con straints become more binding (e.g., because margin 
+requirements rise), the required future BAB premium increases , and the 
+contemporaneous realized BAB returns become negative.  
+
+--- PAGE 27 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 27 
+ 
+ We take this prediction to the data using the TED spread as a proxy of 
+funding conditions. The sample runs from December 1984 (the first available date 
+for the TED spread) to March 2012. 
+ Table IX reports regression-based tests of our hypotheses for the BAB factors 
+across asset classes. The first column simply regre sses the U.S. BAB factor on the  
+lagged level of the TED sprea d and the contemporaneous change in the TED 
+spread.19 We see that both the lagged level and the contemporaneous change in the 
+TED spread are negatively related to the BAB returns. If the TED spread measures 
+the tightness of funding constraints (given by 
+  in the model), then the model 
+predicts a negative coefficient for the contemporaneous change in TED (eqn. (11)) 
+and a positive coefficient for the lagged level  (eqn. (12)). Hence, the coefficient for 
+change is consistent with the model, but the coefficient for the  lagged level is not , 
+under this interpretation of the TED spread. If, instead, a high TED spread 
+indicates that agents’ funding constraints are worsening, then the results would be 
+easier to understand. Under this interpretation, a high TED spread could indicate 
+that banks are credit -constrained and that banks tighten other investors’ credit 
+constraints over time, leading to a deterioration of BAB returns over time ( if 
+investors don’t foresee this).  
+We note, however, that the model’s prediction as a partial derivative assumes 
+that the current funding conditions change while everything else remain unchanged, 
+but empirically other things do change. Hence, our test reli es on an assumption that 
+such variation of other variables does not lead to a n omitted variables  bias. To 
+partially address this issue, column (2) provides a similar result when controlling for 
+a number of other variables. The control variables are the market return (to account 
+for possible noise in the ex ante betas used for making the BAB portfolio market 
+neutral), the 1 -month lagged BAB return  (to account for possible momentum in 
+BAB), the ex-ante Beta Spread , the Short Volatility Returns , and the Lagged 
+Inflation. The Beta Spread is equal to 
+( ) /S L S L     and measures the ex-ante beta 
+                                                 
+19 We note that we are viewing the TED spread simply as a measure of credit conditions, not as a 
+return. Hence, the TED spread at the end of the return period is a measure of the credit conditions at 
+that time (even if the TED spread  is a difference in interest rates that would be earned over the 
+following time period). 
+
+--- PAGE 28 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 28 
+ 
+difference between the long and short side of the BAB portfolios , which should 
+positively predict the BAB return as seen in Proposition 2 . Consistent with the 
+model, Table IX shows that the estimated coefficient for the Beta Spread is positive 
+in all specifications, but not  statistically significant. The Short Volatility Returns is 
+the return on a portfolio that short -sells closest-to-the-money, next -to-expire 
+straddles on the S&P500 index , capturing potential sensitivity to volatility risk . 
+Lagged I nflation is equal to the  1-year U .S. CPI inflation rate, lagged 1 month , 
+which is included to account for potential effects of money illusion  as s tudied by 
+Cohen, Polk, and Vuolteenaho (2005) , although we do not find evidence of this 
+effect.  
+Columns (3)-(4) of Table IX report panel regressions for international stock 
+BAB factors and columns ( 5)-(6) for all the BAB factors. These regressions include  
+fixed effect s and standard errors are clustered by date. We consistently find a 
+negative relationship between BAB returns and the TED spread. 
+ 
+V. Beta Compression 
+ We next test Proposition 4 that betas are compressed toward 1 when funding 
+liquidity risk is high. Table X presents tests of this prediction. We use the volatility 
+of the TED spread  to proxy for the  volatility of margin requirements. Volatility in 
+month t is defined as the standard deviation of daily TED spread innovations , 
+  
+    √∑ (          ̅̅̅̅̅̅̅ )          . Since we are computing conditional moments, 
+we use the monthly volatility as of the prior calendar month , which ensures that the 
+conditioning variable is known as the beginning of the measurement period.  The 
+sample runs from December 1984 to March 2012. 
+ Panel A of Table X shows the cross -sectional dispersion in betas in different 
+time periods sorted by the TED volatility for U.S. stocks , Panel B shows the same 
+for international stocks , and Panel C shows this for all asset classes in our sample. 
+Each calendar month, we compute cross-sectional standard deviation, mean absolute 
+deviation, and inter -quintile range of the  betas for all assets in the universe. We 
+assign the TED spread volatility into three groups (low, medium, and high) based on 
+full sample breakpoints (top and bottom 1/3) and regress the times series of the 
+
+--- PAGE 29 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 29 
+ 
+cross-sectional dispersion measure on the full set  of dummies (without intercept). In 
+Panel C, we compute the monthly dispersion measure in each asset class and average 
+across assets. All standard errors are adjusted for heteroskedasticity and 
+autocorrelation up to 60 months.  
+Table X shows that, consiste nt with Proposition 4, the cross -sectional 
+dispersion in betas is lower when credit constraints are more volatile. The average 
+cross-sectional standard deviation of U.S. equity betas in periods of low spread 
+volatility is 0.34, while the dispersion shrinks  to 0.29 in volatile credit environment , 
+and the difference is statistically significant (t-statistics = -2.71). The tests based on 
+the other dispersion measures, the international equities, and the other assets all 
+confirm that  the cross -sectional dispers ion in beta shrinks at times where credit 
+constraints are more volatile.  
+The Appendix contains an additional robustness check. Since we are looking 
+at the cross-sectional dispersion of estimated betas, one could worry that our results 
+was driven by higher beta estimation errors, rather than a higher variance of the 
+true betas . To investigate this possibility , we run simulations under the null 
+hypothesis of a constant standard deviation of true betas and tests whether the 
+measurement error in betas can acco unt for the compression observed in the data.  
+Figure B 3 shows that the compression observed in the data is much larger than 
+what could be generated by estimation error variance alone . Naturally, while this 
+bootstrap analysis does not indicate that the beta compression observed in Table X 
+is likely due to measurement error, we cannot rule out all types of measurement 
+error. 
+ Panels D, E, and F report conditional market betas of the BAB portfolio  
+returns based on the volatility of the credit environment for  U.S. equities, 
+international equities, and the average BAB factor across all assets, respectively. The 
+dependent variable is the monthly return of the BAB portfolio. The explanatory 
+variables are the monthly returns of the market portfolio, Fama  and French (1993) 
+mimicking portfolios , and Carhart (1997) momentum factor. Market betas are 
+allowed to vary across TED volatility regimes (low, neutral and high) using the full 
+set of TED dummies.  
+
+--- PAGE 30 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 30 
+ 
+We are interested in testing Proposition 4(ii), studying how the BAB factor’s 
+conditional beta depends on the TED -volatility environment . To understand this 
+test, recall first that the BAB factor is market neutral conditional on the information 
+set used in the estimation of ex ante betas (which determine the ex ante relative 
+position sizes of the long and short sides of the portfolio) . Hence, if the TED spread 
+volatility was used in the ex -ante beta estimation, then the BAB factor would be 
+market neutral conditional on this information . However , the BAB factor w as 
+constructed using historical betas that do not take into account the effect of the 
+TED spread and, therefore, a high TED spread volatility means that the realized 
+betas will be compressed relative to the ex -ante estimated betas used in portfolio 
+construction. Therefore, a high TED spread volatility should increase the conditional 
+market sensitivity of the BAB factor (because the long -side of the portfolio is 
+leveraged too much and the short side is deleveraged too much). Indeed, Table X 
+shows that when c redit constraints are more volatile, the market beta of the BAB 
+factor rises. The rightmost column shows that the difference between low- and high-
+credit-volatility environment s is statistically significant  (t-statistics 3.01). 
+Controlling for three or four factors yields similar results. The results for our sample 
+of international equities (Panel E) and for the average BAB across all assets (Panel 
+F) are similar, but are  weaker both in terms of magnitude and statistical 
+significance. 
+Importantly, the a lpha of the BAB factor  remains large and statistically 
+significant even when we control for the time -varying market exposure. This means 
+that, if we hedge the BAB factor to be market neutral conditional on the TED 
+spread volatility environment, then this conditionally market-neutral BAB factor 
+continues to earn positive excess returns. 
+  
+VI. Testing the Model’s Portfolio Predictions 
+The theory’s last prediction (P roposition 5) is that more -constrained investors 
+hold higher-beta securities than less -constrained investors. Consistent with this 
+prediction, Table XI presents evidence that mutual funds and individual investors 
+hold high-beta stocks while LBO firms and Berkshire Hathaway buy low-beta stocks. 
+
+--- PAGE 31 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 31 
+ 
+Before we delve into the details, let us highlig ht a challenge in testing 
+Proposition 5. Whether an investor ’s constraint  is binding depends both on the 
+investor’s ability to apply leverage (
+im  in the model) and its  unobservable risk 
+aversion. For example, while a hedge fund  may be able to apply some leverage, its 
+leverage constraint could nevertheless be binding if its desired volatility is high 
+(especially if its portfolio is very diversified and hedged).  
+Given th at binding constraints are difficult to observe directly, we  seek to 
+identify groups of investors that are plausibly constrained and unconstrained, 
+respectively. One example of an investor who may be constrained is a mutual fund. 
+The 1940 Investment Company Act places some restriction on mutual funds’ use of 
+leverage, and many mutual funds are prohibited by charter from using leverage. A 
+mutual funds’ need to hold cash to meet redemptions (
+1im   in the model) creates a 
+further incentive to overweight high -beta securities. Indeed, overweighting high-beta 
+stocks helps avoid lagging their benchmark  in a bull market  because of  the cash 
+holdings (some funds use futures contracts to “equitize” the cash, but other funds 
+are not allowed to use derivative contracts).  
+A second class of investor s that may face borrowing constraints is individual 
+retail investors. Although we do not have direct evidence of their inability to employ 
+leverage (and some individuals certainly do), we think that (at least in aggregate) it 
+is plausible that they are likely to face borrowing restrictions. 
+The flipside of this portfolio test is identifying relatively unconstrained 
+investors. Thus, one needs investors that may be allowed to use leverage and are 
+operating below their leverage cap so that their leverage constr aints are not binding. 
+We look at the holdings of two of groups of investors that may satisfy these criteria  
+as they have access to leverage and focus on long equity investments (requiring less 
+leverage than long/short strategies). 
+First, we look at the firms that are the target of bids by Leveraged Buyout 
+(LBO) funds and other forms of “Private Equity .” These investors, as the name 
+suggest, employ leverage to acquire a public company. Admittedly, we do not have 
+direct evidence of the maximum leverage available to these LBO firms relative to the 
+leverage they apply, but anecdotal evidence suggests that they achieve a substantial 
+
+--- PAGE 32 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 32 
+ 
+amount of leverage. 
+Second, we examine the holdings of Berkshire Hathaway, a publicly traded 
+corporation run by Warren Buffett  that holds a diversified portfolio of equities and 
+employs leverage (by issuing debt , via insurance float, and other means ). The 
+advantage of using the holdings of a public corporation that holds equities like 
+Berkshire is that we can directly observe its  leverage. Over the period from March 
+1980 to March 2012, its average book leverage, defined as (book equity + total debt) 
+/ book equity , was about 1.2, that is,  20% borrowing , and the market leverage 
+including other liabilities such insurance float was ab out 1.6 (Frazzini, Kabiller, and 
+Pedersen (2012)). It is t herefore plausible to assume that Berkshire at the margin 
+could issue more debt but choose not to, making it a likely candidate for an investor 
+whose combination of  risk aversion and borrowing constraints  made it relatively 
+unconstrained during our sample period. 
+Table XI reports the results of our portfolio test. We estimate both the ex-ante 
+beta of the  various investors’ holdings and the realized beta of the time s eries of 
+their returns. We first aggregate all holdings for each investor group,  compute their 
+ex-ante betas (equal and value -weighted, respectively), and take the time series 
+average. To compute the realized betas , we compute monthly returns of an 
+aggregate portfolio mimicking the holdings, under the assumption of constant weight 
+between reporting dates. The realized betas are the regression coefficients in a time 
+series regression of these excess returns on the excess returns of the CRSP value -
+weighted index.  
+Panel A shows evidence consistent with the hypothesis that constrained 
+investors stretch for return by increasing their betas. Panel A.1  shows that mutual 
+funds hold securities with betas above 1, and we are able to reject the null 
+hypothesis of beta s being equal to 1 . These findings are consistent with those of 
+Karceski (2002) , but our sample is  much larger, including all funds  over 30 -year 
+period. Panel A.2 presents similar evidence for individual retail investors: individual 
+investors tend to hold securities with betas that are significantly above 1.20 
+                                                 
+20 As f urther consistent evidence, note that younger people, and people with less financia l wealth, 
+(who might be more constrained) tend to own portfolios with higher betas ( Calvet, Campbell, and 
+Sodini (2007 ), Table 5 ). Further, consistent with the idea that leverage requires certain skills and 
+
+--- PAGE 33 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 33 
+ 
+Panel B.1 reports results for our sample of “Private Equity”. For each target  
+stock in our database, we focus on its ex -ante beta as of the month end prior to the 
+initial announcements date. This focus is  to avoid confounding effects that result 
+from changes in betas related to the actual delisting event. The first two line s report 
+results of all delisting event s. Since we only have partial information about whether 
+each deal is a LBO/MBO , this sample include s LBOs and MBOs , but it also 
+includes other types of deals where a company is taken private. The last two lines in 
+Panel B.1 focus on the subset of deals that we are able to positively identify as a 
+LBO/MBO. The results are consistent with Proposition 5 in that investors executing 
+leverage buyouts tend to acquire (or attempt to acquire in case of a non -successful 
+bid) firms with low be tas, and we are able to reject the null hypothesis of a unit 
+beta.  
+The results for Berkshire Hathaway (Panel B.2) show a similar pattern: Warren 
+Buffett bets against beta by buying stocks with betas significantly below 1 and 
+applying leverage. 
+ 
+VII. Conclusion 
+All real -world investors face funding constraints such as leverage constraints 
+and margin requirements, and these constraints influence investors’ required returns 
+across securities and over time. We find empirically that portfolios of high -beta 
+assets have lower alphas and Sharpe ratios than portfolios of low-beta assets. The 
+security market line is not only flat ter than predicted by the standard CAPM  for 
+U.S. equities (as reported by Black, Jensen, and Scholes (1972)), but we also find 
+this relative flatness in 18 of 19 international equity markets, in Treasury markets, 
+for corporate bonds sorted by maturity and by rating, and in futures markets. We 
+show how this deviation from the standard CAPM can be captured using betting -
+against-beta factors, which may also be useful as control variables in future research  
+(Proposition 2). The return of the BAB factor rivals th ose of all the standard asset 
+pricing factors (e.g., value, momentum, and size ) in terms of economic magnitude, 
+                                                                                                                                                       
+sophistication, Grinblatt, Keloharju, and Linnain maa (2011) report that individuals with low IQ 
+scores hold higher-beta portfolios than individuals with high IQ scores. 
+
+--- PAGE 34 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 34 
+ 
+statistical significance, and robustness across time periods, sub -samples of stocks, 
+and global asset classes.  
+  Extending the Black (1972) model, we consider the implications of funding 
+constraints for cross-sectional and time-series asset returns. We show that worsening 
+funding liquidity should lead to losses for the BAB factor in the time series 
+(Proposition 3) and that increased funding liquidity risk compresses betas in the 
+cross section of securities toward 1 (Proposition 4), and we find consistent evidence 
+empirically.  
+ Our model also has implications for agents’ portfolio selection (Proposition 5). 
+To test this, we identify  investors that are likely to be relatively constrained and 
+unconstrained. We discuss why mutu al funds and individual investors may be 
+leverage constrained, and, consistent with the model’s prediction that constrained 
+investors go for riskier assets, we find that these investor groups hold portfolios with 
+betas above 1 on average.  
+Conversely, we show that leveraged buyout funds and Berkshire Hathaway, 
+all of which have access to leverage , buy stocks with betas below 1 on average, 
+another prediction of the model. Hence, these investors may be taking advantage of 
+the BAB effect by appl ying leverage to safe assets and being compensate d by 
+investors facing borrowing constrain ts who take the other side.  Buffett bets against 
+beta as Fisher Black believed one should. 
+
+--- PAGE 35 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 35 
+ 
+References 
+ 
+Acharya, V. V., and L. H. Pedersen (2005), “Asset Pricing with Liquidity Ris k," 
+Journal of Financial Economics, 77, 375-410. 
+ 
+Ang, A., R. Hodrick, Y. Xing, X. Zhang (2006), “The Cross-Section of Volatility and 
+Expected Returns,” Journal of Finance, 61, pp. 259-299. 
+  
+– (2009), “High Idiosyncratic Volatility and Low Returns: Intern ational and Further 
+U.S. Evidence,” Journal of Financial Economics, 91, pp. 1-23.  
+ 
+Ashcraft, A., N.  Garleanu, and L.H. Pedersen (2010), “Two Monetary Tools: 
+Interest Rates and Haircuts,” NBER Macroeconomics Annual 25, 143-180. 
+ 
+Asness, C., A. Frazzini (2011), “The Devil in HML’s Details", AQR Working Paper. 
+ 
+Asness, C. , A. Frazzini and L.H. Pedersen ( 2012), “ Leverage Aversion and Risk 
+Parity", Financial Analysts Journal 68(1), 47-59. 
+ 
+Baker, M., B. Bradley, and J. Wurgler (201 1), “Benchmarks as Limits to Arbitrage: 
+Understanding the Low Volatility Anomaly,” Financial Analysts Journal  67(1), 40–
+54.  
+ 
+Barber, B, and T. Odean, 2000, “Trading is haza rdous to your wealth: The common 
+stock investment performance of individual investors,” Journal of Finance 55, 773 –
+806. 
+ 
+Black, F. (1972), “Capital market equilibrium with restricted borrowing,” Journal of 
+business, 45, 3, pp. 444-455. 
+ 
+– (1992), “Beta and Return,” The Journal of Portfolio Management, 20, pp. 8-18.  
+ 
+Black, F., M.C. Jensen, and M. Scholes (1972), “The Capital Asset Pricing Model: 
+Some Empirical Tests.” In Michael C. Jensen (ed.), Studies in the Theory of Capital 
+Markets, New York, pp. 79-121. 
+ 
+Brennan, M.J., (1971), “Capital market equilibrium with divergent borrowing and 
+lending rates.” Journal of Financial and Quantitative Analysis 6, 1197-1205. 
+ 
+Brennan, M.J. (1993), “Agency and Asset Pricing.” University of California, Los 
+Angeles, working paper. 
+ 
+Brunnermeier, M. and L.H. Pedersen (2009), “Market Liquidity and Funding 
+Liquidity,” The Review of Financial Studies, 22, 2201-2238. 
+ 
+Calvet, L.E., J.Y. Campbell , and P. Sodini (2007), “ Down or Out: Assessing the 
+
+--- PAGE 36 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 36 
+ 
+Welfare Costs of  Household Investment Mistakes ,” Journal of Political  Economy, 
+115:5, 707-747. 
+ 
+Carhart, M . ( 1997), "On persistence in mutual fund performance ", Journal of 
+Finance 52, 57–82. 
+ 
+Cohen, R.B., C. Polk, and T. Vuolteenaho (2005), “Money Illusion in the Stock 
+Market: The M odigliani-Cohn Hypothesis,” The Quarterly Journal of Economics, 
+120:2, 639-668. 
+ 
+Cuoco, D. (1997), “Optimal consumption and equilibrium prices with portfolio 
+constraints and stochastic income," Journal of Economic Theory, 72(1), 33-73. 
+ 
+De Santis ,  G. and B. Gerard (1997), “ International Asset Pricing and Portfolio 
+Diversification with Time-Varying Risk”, Journal of Finance, 52, 1881-1912. 
+ 
+Dimson, E. (1979), “Risk Measurement when Shares are Subject to Infrequent 
+Trading,” Journal of Financial Economics, 7, 197–226. 
+ 
+Duffee, G. (2010), “Sharpe Ratios in Term Structure Models,” Johns Hopkins 
+University, working paper.  
+ 
+Elton, E.G., M.J. Gruber, S. J. Brown and W. Goetzmann n: "Modern Portfolio 
+Theory and Investment", Wiley: New jersey.  
+ 
+Falkenstein, E.G. (1994), “Mutual funds, idiosyncratic variance, and asset returns”, 
+Dissertation, Northwestern University. 
+ 
+Fama, E.F. (1984), “The Information in the Term Structure,” Journal of Financial 
+Economics, 13, 509-528. 
+ 
+Fama, E.F. (1986), “Term Premiums and  Default Premiums in Money Markets,” 
+Journal of Financial Economics, 17, 175-196. 
+ 
+Fama, E.F. and French, K.R. (1992), “The cross -section of expected stock returns,” 
+Journal of Finance, 47, 2, pp. 427-465. 
+ 
+Fama, E.F. and French, K.R. (1993), "Common risk factors in the returns on stocks 
+and bonds", Journal of Financial Economics 33, 3–56. 
+ 
+Fama, E.F. and French, K.R. ( 1996), "Multifactor Explanations of Asset Pricing 
+Anomalies", Journal of Finance 51, 55-84. 
+ 
+Frazzini, A., D. Kabiller, and L.H. Pedersen (2 012), “Buffett’s Alpha,” working 
+paper, AQR Capital Management and New York University.  
+ 
+Fu, F. (2009), “Idiosyncratic risk and the cross -section of expected stock returns,” 
+
+--- PAGE 37 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 37 
+ 
+Journal of Financial Economics, vol. 91:1, 24-37. 
+ 
+Garleanu, N., and L. H. Peders en ( 2011), “Margin -Based Asset Pricing and 
+Deviations from the Law of One Price," The Review of Fina ncial Studies, 24(6), 
+1980-2022. 
+ 
+Gibbons, M. (1982), “Multivariate tests of financial models: A new approach,” 
+Journal of Financial Economics, 10, 3-27. 
+ 
+Grinblatt, M ., M . Keloharju, and J . Linnainmaa (2011), “IQ and Stock Market 
+Participation,” Journal of Finance 66(6), 2121-2164. 
+ 
+Gromb, D. and D. Vayanos  (2002), “Equilibrium and Welfare in Markets with 
+Financially Constrained Arbitrageurs,” Journal of Financial Economics, 66, 361–407. 
+ 
+Hindy, A. (1995), “Viable Prices in Financial Markets with Solvency Constraints," 
+Journal of Mathematical Economics, 24(2), 105-135. 
+ 
+Kacperczyk, M., C. Sialm and L. Zheng, 2008, “Unobserved Actions of Mutual 
+Funds”, Review of Financial Studies, 21, 2379-2416. 
+ 
+Kandel, S. (1984), “The likelihood ratio test statistic of mean -variance efficiency 
+without a riskless asset,” Journal of Financial Economics, 13, pp. 575-592. 
+ 
+Karceski, J. (2002), “Returns -Chasing Behavior, Mutual Funds, and Beta’s Death,” 
+Journal of Financial and Quantitative Analysis, 37:4, 559-594. 
+ 
+Lewellen, J. and Nagel, S. (2006), “The conditional CAPM does not  explain asset-
+pricing anomalies,” Journal of Financial Economics, 82(2), pp. 289—314. 
+ 
+Markowitz, H.M. (1952), “Portfolio Selection,” The Journal of Finance, 7, 77-91. 
+ 
+Mehrling, P. (2005), “Fischer Black and the Revolutionary Idea of Finance,” Wiley: 
+New Jersey. 
+ 
+Merton R. C. (1980), "On estimating the expected return on the market: An 
+exploratory investigation" , Journal of Financial Economics 8, 323{361. 
+ 
+Moskowitz, T., Y.H. Ooi, and L.H. Pedersen ( 2012), “Time Series Momentum,” 
+Journal of Financial Economics, 104(2), 228-250. 
+ 
+Pastor, L , and R. Stambaugh. (2003), "Liquidity risk and expected stock returns", 
+Journal of Political Economy 111, 642–685. 
+ 
+Polk, C., S. Thompson, and T. Vuolteenaho (2006), “Cross -sectional forecasts of the 
+equity premium,” Journal of Financial Economics, 81, 101-141. 
+ 
+
+--- PAGE 38 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Page 38 
+ 
+Scholes, M., and J. Williams (1977), “Estimating  Betas from Nonsynchronous Data" 
+Journal of Financial Economics ,5 ,309-327. 
+ 
+Shanken, J. (1985), “Multivariate tests of the zero -beta CAPM,” Journal of 
+Financial Economics, 14,. 327-348. 
+ 
+Tobin, J. (1958), “Liquidity preference as behavior toward risk,” The Review of 
+Economic Studies, 25, 65-86. 
+ 
+Vasicek, O. A. (1973), “A Note on using Cross-sectional Information in Bayesian 
+Estimation on Security Beta’s,” The Journal of Finance, 28(5), 1233–1239. 
+
+--- PAGE 39 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Tables - Page T1 
+ 
+ 
+Table I 
+Summary Statistics: Equities 
+This table shows summary statistics as of June of each year. The sample include s all commons stocks on the 
+CRSP daily stock files (" shrcd" equal to 10 or 11) and Xpressfeed Global security files (" tcpi" equal to 0).  
+"Mean ME" is the average market value of equity, in billion  USD. Means are pooled averages as of June of 
+each year. 
+ 
+  
+ Country  Local market index  Number of 
+stocks - total 
+ Number of 
+stocks - mean 
+ Mean ME 
+(firm , Billion 
+USD) 
+ Mean ME  
+(market , 
+Billion USD) 
+ Start     
+Year 
+ End    
+Year 
+Australia MSCI - Australia 3,047             894                0.57               501                1989 2012
+Austria MSCI - Austria 211                81                  0.75               59                  1989 2012
+Belgium MSCI - Belgium 425                138                1.79               240                1989 2012
+Canada MSCI - Canada 5,703             1,180             0.89               520                1984 2012
+Denmark MSCI - Denmark 413                146                0.83               119                1989 2012
+Finland MSCI - Finland 293                109                1.39               143                1989 2012
+France MSCI - France 1,815             589                2.12               1,222             1989 2012
+Germany MSCI - Germany 2,165             724                2.48               1,785             1989 2012
+Hong Kong MSCI - Hong Kong 1,793             674                1.22               799                1989 2012
+Italy MSCI - Italy 610                224                2.12               470                1989 2012
+Japan MSCI - Japan 5,009             2,907             1.19               3,488             1989 2012
+Netherlands MSCI - Netherlands 413                168                3.33               557                1989 2012
+New Zealand MSCI - New Zealand 318                97                  0.87               81                  1989 2012
+Norway MSCI - Norway 661                164                0.76               121                1989 2012
+Singapore MSCI - Singapore 1,058             375                0.63               240                1989 2012
+Spain MSCI - Spain 376                138                3.00               398                1989 2012
+Sweden MSCI - Sweden 1,060             264                1.30               334                1989 2012
+Switzerland MSCI - Switzerland 566                210                3.06               633                1989 2012
+United Kingdom MSCI - UK 6,126             1,766             1.22               2,243             1989 2012
+United States CRSP - VW index 23,538           3,182             0.99               3,215             1926 2012
+
+--- PAGE 40 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Tables - Page T2 
+ 
+Table II 
+Summary Statistics: Other Asset Classes 
+This table reports the list of securities included in our datasets and the corresponding date range. Freq indicates 
+the frequency (D = Daily, M = monthly). 
+ 
+ 
+Asset class instrument Freq  Start     
+Year 
+ End    
+Year 
+Asset class Freq instrument  Start     
+Year 
+ End    
+Year 
+Equity  Indices Australia D 1977 2012 Credit indices M 1-3 years 1976 2012
+Germany D 1975 2012 M 3-5 year 1976 2012
+Canada D 1975 2012 M 5-10 years 1991 2012
+Spain D 1980 2012 M 7-10 years 1988 2012
+France D 1975 2012
+Hong Kong D 1980 2012 Corporate bonds M Aaa 1973 2012
+Italy D 1978 2012 M Aa 1973 2012
+Japan D 1976 2012 M A 1973 2012
+Netherlands D 1975 2012 M Baa 1973 2012
+Sweden D 1980 2012 M Ba 1983 2012
+Switzerland D 1975 2012 M B 1983 2012
+United Kingdom D 1975 2012 M Caa 1983 2012
+United States D 1965 2012 M Ca-D 1993 2012
+M CSFB 1986 2012
+Country Bonds Australia D 1986 2012 Commodities D Aluminum 1989 2012
+Germany D 1980 2012 D Brent oil 1989 2012
+Canada D 1985 2012 D Cattle 1989 2012
+Japan D 1982 2012 D Cocoa 1984 2012
+Norway D 1989 2012 D Coffee 1989 2012
+Sweden D 1987 2012 D Copper 1989 2012
+Switzerland D 1981 2012 D Corn 1989 2012
+United Kingdom D 1980 2012 D Cotton 1989 2012
+United States D 1965 2012 D Crude 1989 2012
+D Feeder cattle 1989 2012
+Foreign Exchange Australia D 1977 2012 D Gasoil 1989 2012
+Germany D 1975 2012 D Gold 1989 2012
+Canada D 1975 2012 D Heat oil 1989 2012
+Japan D 1976 2012 D Hogs 1989 2012
+Norway D 1989 2012 D Lead 1989 2012
+New Zealand D 1986 2012 D Nat gas 1989 2012
+Sweden D 1987 2012 D Nickel 1984 2012
+Switzerland D 1975 2012 D Platinum 1989 2012
+United Kingdom D 1975 2012 D Silver 1989 2012
+D Soybeans 1989 2012
+US - Treasury bonds 0-1 years M 1952 2012 D Soymeal 1989 2012
+1-2 years M 1952 2012 D Soy oil 1989 2012
+2-3 years M 1952 2012 D Sugar 1989 2012
+3-4 years M 1952 2012 D Tin 1989 2012
+4-5 years M 1952 2012 D Unleaded 1989 2012
+4-10 years M 1952 2012 D Wheat 1989 2012
+> 10 years M 1952 2012 D Zinc 1989 2012
+
+--- PAGE 41 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Tables - Page T3 
+ 
+Table III 
+U.S. Equities. Returns, 1926 - 2012 
+This table shows calendar -time portfolio returns. Column 1 to 10 report returns of beta -sorted portfolios: at the beginnin g of each calendar month 
+stocks are ranked in ascending order on the basis of their estimated beta at the end of the previous month. The ranked stocks are assigned to one of 
+ten deciles portfolios based on NYSE breakpoints. All stocks are equally weighted within a given portfolio, and the portfolio s are rebalanced every 
+month to maintain equal weights. The rightmost column reports returns of the zero -beta BAB factor. To construct BAB factor, all stocks are assigned 
+to one of two portfolios: low beta and high beta. Stocks are weighted  by the ranked betas (lower b eta security have larger weight in the low -beta 
+portfolio and higher beta securities have larger weights in the high -beta portfolio) a nd the portfolios are rebalanced every calendar month. Both 
+portfolios are rescaled to have a beta of 1 at portfolio forma tion. The BAB factor is a self-financing portfolio that is long the low -beta portfolio and 
+shorts the high-beta portfolio. This table includes all available common stocks on the CRSP database between January 1926 and March 2012. Alpha 
+is the intercept in a regression of monthly excess return. The explanatory variables are the monthly returns from Fama and French (1993) mimicking 
+portfolios, Carhart (1997) momentum factor and Pastor and Stambaugh (2003) liquidity factor. Returns and alphas are in monthl y percent, t-statistics 
+are shown below the coefficient estimates, and 5% statistical significance is indicated in bold. Beta (ex ante)  is the average estimated beta at 
+portfolio formation. Beta (realized) is the realized loading on the market portfolio. Volatilities and Sharpe ratios are annualized.  
+ 
+  
+* Pastor and Stambaugh (2003) liquidity factor only available between 1968 and 2011. 
+  
+P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 BAB
+(Low beta) (high beta)
+Excess return 0.91 0.98 1.00 1.03 1.05 1.10 1.05 1.08 1.06 0.97 0.70
+(6.37) (5.73) (5.1 6) (4.88) (4.49) (4.37) (3.84) (3.74) (3.27) (2.55) (7.1 2)
+CAPM alpha 0.52 0.48 0.42 0.39 0.34 0.34 0.22 0.21 0.10 -0.10 0.73
+(6.30) (5.99) (4.91 ) (4.43) (3.51 ) (3.20) (1 .94) (1 .72) (0.67) -(0.48) (7.44)
+3-factor alpha 0.40 0.35 0.26 0.21 0.13 0.11 -0.03 -0.06 -0.22 -0.49 0.73
+(6.25) (5.95) (4.76) (4.1 3) (2.49) (1 .94) -(0.59) -(1 .02) -(2.81 ) -(3.68) (7.39)
+4-factor alpha 0.40 0.37 0.30 0.25 0.18 0.20 0.09 0.11 0.01 -0.13 0.55
+(6.05) (6.1 3) (5.36) (4.92) (3.27) (3.63) (1 .63) (1 .94) (0.1 2) -(1 .01 ) (5.59)
+5-factor alpha* 0.37 0.37 0.33 0.30 0.17 0.20 0.11 0.14 0.02 0.00 0.55
+(4.54) (4.66) (4.50) (4.40) (2.44) (2.71 ) (1 .40) (1 .65) (0.21 ) -(0.01 ) (4.09)
+Beta (ex ante) 0.64 0.79 0.88 0.97 1.05 1.12 1.21 1.31 1.44 1.70 0.00
+Beta (realized) 0.67 0.87 1.00 1.10 1.22 1.32 1.42 1.51 1.66 1.85 -0.06
+Volatilty 15.7 18.7 21.1 23.1 25.6 27.6 29.8 31.6 35.5 41.7 10.7
+Sharpe ratio 0.70 0.63 0.57 0.54 0.49 0.48 0.42 0.41 0.36 0.28 0.78
+
+--- PAGE 42 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Tables - Page T4 
+ 
+Table IV 
+International Equities. Returns, 1984 - 2012 
+This table shows calendar -time portfolio returns. Column 1 to 10 report returns of beta -sorted portfolios: at the beginning of each calendar month 
+stocks are ranked in ascending order on the basis of their estimated beta at the end of the previous month. The ranked stocks are as signed to decile 
+portfolios. All stocks ar e equally weighted within a given portfolio, and the portfolios are rebalanced every month to maintain equal weights. The 
+rightmost column reports returns of the zero -beta BAB factor. To construct the BAB  factor, all stocks are assigned to one of two portf olios: low 
+beta and high beta.  The low (high) beta portfolio is comprised of all stocks with a beta below (above) its country median. Stocks are weighted by 
+the ranked betas  (lower beta security have larger weight in the low -beta portfolio and higher beta securities have larger weights in the high -beta 
+portfolio) and the portfolios are rebalanced every calendar month. Both portfolios are rescaled to have a beta of 1 at portfolio formati on. The BAB 
+factor is a self-financing portfolio that is long the low -beta portfolio and short the high -beta portfolio. This table includes all  available common 
+stocks on the Xpressfeed Global database for the 19 markets listed table I. The sample period runs from January 1984 to March 2012. Alpha is the 
+intercept in a regress ion of monthly excess return. The explanatory variables are the monthly returns from Asness and Frazzini (2011) mimicking 
+portfolios and Pastor and Stambaugh (2003) liquidity factor . Returns are in USD and do no t include any currency hedging. Returns and alphas are 
+in monthly percent, t -statistics are shown below the coefficient estimates, and 5% statistical significance is indicated in bold. Beta (ex-ante) is the 
+average estimated beta at portfolio formation. Beta (realized)  is the realized loading on the market portfolio. Volatilities an d Sharpe ratios are 
+annualized. 
+ 
+ 
+* Pastor and Stambaugh (2003) liquidity factor only available between 1968 and 2011. 
+P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 BAB
+(Low beta) (high beta)
+Excess return 0.63 0.67 0.69 0.58 0.67 0.63 0.54 0.59 0.44 0.30 0.64
+(2.48) (2.44) (2.39) (1 .96) (2.1 9) (1 .93) (1 .57) (1 .58) (1 .1 0) (0.66) (4.66)
+CAPM alpha 0.45 0.47 0.48 0.36 0.44 0.39 0.28 0.32 0.15 0.00 0.64
+(2.91 ) (3.03) (2.96) (2.38) (2.86) (2.26) (1 .60) (1 .55) (0.67) -(0.01 ) (4.68)
+3-factor alpha 0.28 0.30 0.29 0.16 0.22 0.11 0.01 -0.03 -0.23 -0.50 0.65
+(2.1 9) (2.22) (2.1 5) (1 .29) (1 .71 ) (0.78) (0.06) -(0.1 7) -(1 .20) -(1 .94) (4.81 )
+4-factor alpha 0.20 0.24 0.20 0.10 0.19 0.08 0.04 0.06 -0.16 -0.16 0.30
+(1 .42) (1 .64) (1 .39) (0.74) (1 .36) (0.53) (0.27) (0.35) -(0.79) -(0.59) (2.20)
+5-factor alpha* 0.19 0.23 0.19 0.09 0.20 0.07 0.05 0.05 -0.19 -0.18 0.28
+(1 .38) (1 .59) (1 .30) (0.65) (1 .40) (0.42) (0.33) (0.30) -(0.92) -(0.65) (2.09)
+Beta (ex ante) 0.61 0.70 0.77 0.83 0.88 0.93 0.99 1.06 1.15 1.35 0.00
+Beta (realized) 0.66 0.75 0.78 0.85 0.87 0.92 0.98 1.03 1.09 1.16 -0.02
+Volatilty 15.0 16.3 17.0 17.6 18.1 19.4 20.4 22.0 23.9 27.1 8.1
+Sharpe ratio 0.50 0.50 0.48 0.40 0.44 0.39 0.32 0.32 0.22 0.13 0.95
+
+--- PAGE 43 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Tables - Page T5 
+ 
+Table V 
+International Equities. Returns by Country, 1984 - 2012 
+This table shows calendar -time portfolio returns. At the beginning of each calendar month all stocks are 
+assigned to one of two portfolios: low beta and high beta. The low (high) beta portfolio is comprised of all 
+stocks with a beta below ( above) its country median. Stocks are weighted by the ranked betas and the portfolios 
+are rebalanced every calendar month. Both portfolios are rescaled to have a beta of 1 at portfolio formation. The 
+zero-beta BAB factor is a self-financing portfolio that is long the low -beta portfolio and short the high -beta 
+portfolio. This table includes all available common stocks on the Xpressfeed Global database for the 19 markets 
+in listed table I. The sample period runs from January 1984 to March 2012. Alpha is the intercept in a regression 
+of monthly excess return.  The explanatory variables are the monthly returns from Asness and Frazz ini (2011) 
+mimicking portfolios. Returns are in USD and do n ot include any currency hedging. Returns and alphas are in 
+monthly percent, and 5% statistical significance is indicated in bold.  $ Long (Short) is the average dollar value 
+of the long (short) position. Volatilities and Sharpe ratios are annualized. 
+ 
+ 
+   
+Excess 
+return
+T-stat 
+Excess 
+return
+4-factor 
+Alpha
+T-stat 
+Alpha
+$Short $Long Volatility Sharpe 
+Ratio
+Australia 0.11 0.36 0.03 0.10 0.80 1.26 16.7 0.08
+Austria -0.03 -0.09 -0.28 -0.72 0.90 1.44 19.9 -0.02
+Belgium 0.71 2.39 0.72 2.28 0.94 1.46 16.9 0.51
+Canada 1.23 5.17 0.67 2.71 0.85 1.45 14.1 1.05
+Switzerland 0.75 2.91 0.54 2.07 0.93 1.47 14.6 0.61
+Germany 0.40 1.30 -0.07 -0.22 0.94 1.58 17.3 0.27
+Denmark 0.41 1.47 -0.02 -0.07 0.91 1.40 15.7 0.31
+Spain 0.59 2.12 0.23 0.80 0.92 1.44 15.6 0.45
+Finland 0.65 1.51 -0.10 -0.22 1.08 1.64 24.0 0.33
+France 0.26 0.63 -0.37 -0.82 0.92 1.57 23.7 0.13
+United Kingdom 0.49 1.99 -0.01 -0.05 0.91 1.53 13.9 0.42
+Hong Kong 0.85 2.50 1.01 2.79 0.83 1.38 19.1 0.54
+Italy 0.29 1.41 0.04 0.17 0.91 1.35 11.8 0.30
+Japan 0.21 0.90 0.01 0.06 0.87 1.39 13.3 0.19
+Nethenrlands 0.98 3.62 0.79 2.75 0.91 1.45 15.4 0.77
+Norway 0.44 1.15 0.34 0.81 0.85 1.33 21.3 0.25
+New Zealand 0.74 2.28 0.62 1.72 0.94 1.36 18.1 0.49
+Singapore 0.66 3.37 0.52 2.36 0.79 1.24 11.0 0.72
+Sweden 0.77 2.29 0.22 0.64 0.89 1.34 19.0 0.48
+
+--- PAGE 44 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Tables - Page T6 
+ 
+Table VI 
+U.S. Treasury Bonds. Returns, 1952 - 2012 
+This table shows calendar -time portfolio returns. The test assets are CRSP Monthly Treasury - Fama Bond 
+Portfolios. Only non-callable, non-flower notes and bonds are included in the portfolios. The portfolio returns are an 
+equal weighted average of the una djusted holding period return for each bond in the portfolios in excess of the risk 
+free rate. To construct the zero -beta BAB factor, all bonds are assigned to one of two portfolios: low beta and high 
+beta. Bonds are weighted by the ranked betas (lower beta bonds have larger weight in the low -beta portfolio and 
+higher beta bonds have larger weights in the high -beta portfolio) and the portfolios are rebalanced every calendar 
+month. Both portfolios are rescaled to have a beta of 1 at portfolio formation. The BAB factor is a self-financing 
+portfolio that is long the low -beta portfolio and shorts the high -beta portfolio. Alpha is the intercept in a regression 
+of monthly excess return. The explanatory variable is the monthly return of an equally weighted bond mar ket 
+portfolio. The sample period runs from January 1952 to March 2012. Returns and alphas are in monthly percent, t -
+statistics are shown below the coefficient estimates and 5% statistical significance is indicated in bold. Volatilities 
+and Sharpe ratios are annualized.  
+ 
+* Return missing from 196208 to 197112 
+  
+P1 P2 P3 P4 P5 P6 P7* BAB
+(low beta) (high beta) Factor
+Maturity (months) 1 to 12 13 to 24 25 to 36 37 to 48 49 to 60 61 to 120 > 120
+Excess return 0.05 0.09 0.11 0.13 0.13 0.16 0.24 0.17
+(5.66) (3.91 ) (3.37) (3.09) (2.62) (2.52) (2.20) (6.26)
+Alpha 0.03 0.03 0.02 0.01 -0.01 -0.02 -0.07 0.16
+(5.50) (3.00) (1 .87) (0.99) -(1 .35) -(2.28) -(1 .85) (6.1 8)
+Beta (ex ante) 0.14 0.45 0.74 0.98 1.21 1.44 2.24 0.00
+Beta (realized) 0.16 0.48 0.76 0.98 1.17 1.44 2.10 0.01
+Volatilty 0.81 2.07 3.18 3.99 4.72 5.80 9.26 2.43
+Sharpe ratio 0.73 0.50 0.43 0.40 0.34 0.32 0.31 0.81
+
+--- PAGE 45 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Tables - Page T7 
+ 
+Table VII 
+U.S. Credit. Returns, 1973 - 2012 
+This table shows calendar -time portfolio returns. Panel A shows results for U.S. credit indices  by maturity. The test 
+assets are monthly returns on corpor ate bond indices with maturity ranging from 1 to 10 years , in excess of th e risk 
+free rate. The sample period runs from January 1976 to March 2012. “Unhedged” indicates excess returns and 
+“Hedged” indicates excess returns after hedging the index’s interest rate exposure. To construct hedged excess 
+returns, each calendar month we run 1 -year rolling regressions of excess bond returns on the excess return on 
+Barclay’s U .S. government bond index. We co nstruct test assets by going long the corporate bond index and 
+hedging this position by shorting the appropriate amount of the government bond index. We compute market excess 
+returns by taking an equal weighted average of the hedged excess returns. Panel B  shows results for U.S. corporate 
+bond index returns by rating. The sample period runs from January 1973 to March 2012. To construct the zero -beta 
+BAB factor, all bonds are assigned to one of two portfolios: low beta and high beta. Bonds are weighted by th e 
+ranked betas (lower beta security have larger weight in the low -beta portfolio and higher beta securities have larger 
+weights in the high -beta portfolio) and the portfolios are rebalanced every calendar month. Both portfolios are 
+rescaled to have a beta of 1 at portfolio formation. The zero -beta BAB factor is a self-financing portfolio that is long 
+the low-beta portfolio and shorts the high -beta portfolio. Alpha is the intercept in a regression of monthly excess 
+return. The explanatory variable is the mon thly excess return of the corresponding market portfolio  and, for the 
+hedged portfolios in A, the Treasury BAB factor . Returns and alphas are in monthly percent, t -statistics are shown 
+below the coefficient estimates and 5% statistical significance is indi cated in bold. Volatilities and Sharpe ratios are 
+annualized 
+ 
+ 
+ 
+ 
+  
+1-3 years 3-5 year 5-10 years 7-10 years 1-3 years 3-5 year 5-10 years 7-10 years
+Excess return 0.18 0.22 0.36 0.36 0.10 0.11 0.10 0.11 0.10 0.16
+(4.97) (4.35) (3.35) (3.51 ) (4.85) (3.39) (2.56) (1 .55) (1 .34) (4.35)
+Alpha 0.03 0.01 -0.04 -0.07 0.11 0.05 0.03 -0.03 -0.05 0.17
+(2.49) (0.69) -(3.80) -(4.28) (5.1 4) (3.89) (2.43) -(3.22) -(3.20) (4.44)
+Beta (ex ante) 0.71 1.02 1.59 1.75 0.00 0.54 0.76 1.48 1.57 0.00
+Beta (realized) 0.61 0.85 1.38 1.49 -0.03 0.53 0.70 1.35 1.42 -0.02
+Volatilty 2.67 3.59 5.82 6.06 1.45 1.68 2.11 3.90 4.15 1.87
+Sharpe ratio 0.83 0.72 0.74 0.72 0.82 0.77 0.58 0.35 0.30 1.02
+Unhedged HedgedPanel A: Credit Indices 
+1976 - 2012 BAB 
+Factor
+BAB 
+Factor
+Panel B: Corporate Bonds Aaa Aa A Baa Ba B Caa Ca-D CSFB BAB
+1973 - 2012  Distressed Factor
+Excess return 0.28 0.31 0.32 0.37 0.47 0.38 0.35 0.77 -0.41 0.44
+(3.85) (3.87) (3.47) (3.93) (4.20) (2.56) (1 .47) (1 .42) -(1 .06) (2.64)
+Alpha 0.23 0.23 0.20 0.23 0.27 0.10 -0.06 -0.04 -1.11 0.57
+(3.31 ) (3.20) (2.70) (3.37) (4.39) (1 .39) -(0.40) -(0.1 5) -(5.47) (3.72)
+Beta (ex ante) 0.67 0.72 0.79 0.88 0.99 1.11 1.57 2.22 2.24 0.00
+Beta (realized) 0.17 0.29 0.41 0.48 0.67 0.91 1.34 2.69 2.32 -0.47
+Volatilty 4.50 4.99 5.63 5.78 6.84 9.04 14.48 28.58 23.50 9.98
+Sharpe ratio 0.75 0.75 0.68 0.77 0.82 0.50 0.29 0.32 -0.21 0.53
+
+--- PAGE 46 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Tables - Page T8 
+ 
+Table VIII 
+Equity indices, Country Bonds, Foreign Exchange and Commodities. Returns, 1965-2012 
+This table shows calendar -time portfolio returns. The test assets are futures, forwards or swap returns in excess of the relevant financing rate. To 
+construct the BAB factor, all securities are assigned to one of two portfolios: low beta and high beta. Securities are weighted by the ranked betas (lower 
+beta security have larger weight in the low-beta portfolio and higher beta securities have larger weights in the high -beta portfolio) and the portfolios are 
+rebalanced every calendar month. Both portfolios ar e rescaled to have a beta of 1 at portfolio formation. The BAB factor is a self-financing portfolio 
+that is long the low -beta portfolio and short the high -beta portfolio. Alpha is the intercept in a regression of monthly excess return. The explanatory 
+variable is the monthly return of the relevant market portfolio. Panel A report s results for equity indices, country bonds, foreign exchange and 
+commodities. All Futures and Country Selection are combo portfolios with equal risk in each individual BAB and 10% ex ante volatility. To construct 
+combo portfolios, at the beginning of each calendar month, we rescale each return series to 10% annualized volatility using r olling 3-year estimate up 
+to moth t-1 and then equally weight the return series and their respecti ve market benchmark. Panel B reports results for all the assets listed in table I 
+and II. All Bonds and Credit includes U.S. treasury bonds, U.S. corporate bonds, U.S. credit indices (hedged and unhedged) and country bonds indices. 
+All Equities included U.S. equities, all individual BAB country portfolios, the international stock BAB and the equity index BAB . All Assets includes 
+all the assets listed in table s I and II. All portfolios in panel B have equal risk in each individual BAB and 10% ex ante volatil ity. Returns and alphas 
+are in monthly percent, t-statistics are shown below the coefficient estimates and 5% statistical significance is indicated in bold. Volatilities and S harpe 
+ratios are annualized.  
+ 
+ 
+ 
+ 
+* Equal risk, 10% ex-ante volatility
+Excess 
+Return
+T-stat   
+Excess 
+Return
+Alpha T-stat 
+Alpha
+$Short $Long Volatility Sharpe 
+Ratio
+Equity  Indices EI 0.55 2.93 0.48 2.58 0.86 1.29 13.08 0.51
+Country Bonds CB 0.03 0.67 0.05 0.95 0.88 1.48 2.93 0.14
+Foreign Exchange FX 0.17 1.23 0.19 1.42 0.89 1.59 9.59 0.22
+Commodities COM 0.18 0.72 0.21 0.83 0.71 1.48 19.67 0.11
+All Futures* EI + CB + FX + COM 0.26 2.62 0.25 2.52 7.73 0.40
+Country Selection* EI + CB + FX 0.26 2.38 0.26 2.42 7.47 0.41
+Panel B: All Assets Excess 
+Return
+T-stat   
+Excess 
+Return
+Alpha T-stat 
+Alpha
+Volatility Sharpe 
+Ratio
+All Bonds and Credit* 0.74 6.94 0.71 6.74 9.78 0.90
+All Equities* 0.63 6.68 0.64 6.73 10.36 0.73
+All Assets* 0.53 6.89 0.54 6.98 8.39 0.76
+Panel A: Equity indices, country Bonds, Foreign 
+Exchange and Commodities
+
+--- PAGE 47 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Tables - Page T9 
+ 
+Table IX 
+Regression Results 
+This table  shows results from (pooled) time-series regressions. The left -hand side is the month -t return of  the BAB 
+factors. To construct the BAB portfolios, all securities are assigned to one of two portfolios: low b eta and high beta. 
+Securities are weighted by the ranked betas (lower beta security have larger weight in the low -beta portfolio and higher 
+beta securities have larger weights in the high -beta portfolio) and the portfolios are rebalanced every calendar mon th. 
+Both portfolios are rescaled to have a beta of 1 at portfolio formation. The BAB factor is a self -financing portfolio that 
+is long the low-beta portfolio and short the high -beta portfolio. The explanatory variables include the TED spread and a 
+series of controls. “Lagged TED Spread” is the TED spread at the end of month t -1. "Change in TED Spread" is equal 
+to Ted spread at the end of month t minus Ted spread at the end of month t -1. “Short Volatility Return" is the month t 
+return on a portfolio that shorts at-the-money straddles on the S&P500 index. To construct the short volatility portfolio, 
+on index options expiration dates we write the next -to-expire closest -to-maturity straddle on the S&P500 index and 
+hold it to maturity. “Beta Spread” is defined as (HBeta- LBeta) / (HBeta* LBeta) where HBeta (LBeta) are the betas of 
+the short (long) leg of the BAB portfolio at portfolio formation.  " Market Return" is the monthly return of the relevant 
+market portfolio. “Lagged Inflation” is equal to the 1 -year U.S. CPI inflation rate, lagged 1 month. The data run from 
+December 1984 (first available date for the TED spread) to March 2012. Col umns (1) and (2 ) report results for U .S. 
+equities. Columns (3) and (4) report results for I nternational equities. In these re gressions we use each individual 
+country BAB factors as well as an internation al equity BAB factor.  Columns (5) and (6) report  results for all assets in 
+our data. Asset fixed effects are include d where indicated, t-statistics are shown below the coefficie nt estimates and all 
+standard errors are adjusted for heteroskedasticity (White (1980)). When multiple assets are included in the regression 
+standard errors are clustered by date. 5% statistical significance is indicated in bold . 
+ 
+LHS: BAB return
+(1) (2) (3) (4) (5) (6)
+Lagged TED Spread -0.025 -0.038 -0.009 -0.015 -0.013 -0.018
+-(5.24) -(4.78) -(3.87) -(4.07) -(4.87) -(4.65)
+Change in TED Spread -0.019 -0.035 -0.006 -0.010 -0.007 -0.011
+-(2.58) -(4.28) -(2.24) -(2.73) -(2.42) -(2.64)
+Beta Spread 0.011 0.001 0.001
+(0.76) (0.40) (0.69)
+Lagged BAB return 0.011 0.035 0.044
+(0.13) (1.10) (1.40)
+Lagged Inflation -0.177 0.003 -0.062
+-(0.87) (0.03) -(0.58)
+Short Volatility Return -0.238 0.021 0.027
+-(2.27) (0.44) (0.48)
+Market return -0.372 -0.104 -0.097
+-(4.40) -(2.27) -(2.18)
+Asset Fixed Effects No No Yes Yes Yes Yes 
+Num of observations 328                 328                 5,725              5,725              8,120              8,120              
+Adjusted R2 0.070 0.214 0.007 0.027 0.014 0.036
+U.S. Equities International Equities - pooled All Assets - pooled
+
+--- PAGE 48 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Tables - Page T10 
+ 
+Table X 
+Beta compression 
+This table report s results of cross -sectional and time -series tests of beta compression. Panel A, B and C report cross-
+sectional dispersion of betas in U .S. equities, International equities and all asset classes in our sample. The data run  
+from December 1984 ( first available date for the TED spread) to March 2012. Each calendar month we compute cross 
+sectional standard deviation, mean absolute deviation and inter -quintile range of betas . In panel C we compute each 
+dispersions measure for ea ch asset class and average across asset classes. The row denoted All reports times series 
+means of the dispersion measures. P1 to P3 report coefficients on a regression of the dispersion measure on a series of 
+TED spread volatility dummies. TED spread volatility is defined as the standard deviation of daily changes in the TED 
+spread in the prior calendar month.  We assign the TED spread volatility into three groups (low, neutral and high) based 
+on full sample breakpoints (top and bottom 1/3) and regress the times series of the cross sectional dispersion measure 
+on the full set of dummies (without intercept). T-statistics are shown below the coefficient estimates, and 5% statistical 
+significance is indicated in bold.  Panel D, E and F report  conditional market betas of the BAB portfolio based on TED 
+spread volatility as of the prior month. The dependent variable is the monthly return of the BAB portfolios. The 
+explanatory variables are the monthly returns of the market po rtfolio, Fama and French (1993), Asness a nd Frazzini 
+(2011) and Carhart (1997) mimicking portfolios , but only the alpha and the market betas are reported . Market betas are 
+allowed to vary across TED spread volatility regimes (low, neutral and high) using the full set of  dummies. Panel D, E 
+and F report  loading on the market factor corresponding to different TED spread volatility regimes. All Assets report 
+results for the aggregate BAB portfolio of Table IX, panel B. All standard errors are adjusted for heteroskedasticity  and 
+autocorrelation using a Bartlett kernel (Newey and West (1987)) with a lag length of 60 months. 
+ 
+ 
+ 
+  
+Cross sectional Dispersion
+ Standard 
+deviation
+ Mean 
+Absolute 
+Deviation
+ 
+Interquintile 
+Range
+ Standard 
+deviation
+ Mean 
+Absolute 
+Deviation
+ 
+Interquintile 
+Range
+ Standard 
+deviation
+ Mean 
+Absolute 
+Deviation
+ 
+Interquintile 
+Range
+All 0.32 0.25 0.43 0.22 0.17 0.29 0.45 0.35 0.61
+P1 (Low Ted Volatility) 0.34 0.27 0.45 0.23 0.18 0.30 0.47 0.37 0.63
+P2 0.33 0.26 0.44 0.22 0.17 0.29 0.45 0.36 0.62
+P3 (High Ted Volatility) 0.29 0.23 0.40 0.20 0.16 0.27 0.43 0.33 0.58
+P3 minus P1 -0.05 -0.04 -0.05 -0.04 -0.03 -0.03 -0.04 -0.03 -0.06
+t-statistics -(2.71 ) -(2.43) -(1 .66) -(2.50) -(2.1 0) -(1 .46) -(3.1 8) -(3.77) -(2.66)
+Panel A:  U.S. Equities Panel B:  International Equities Panel C: All Assets
+Alpha Alpha Alpha
+Ted Volatility P1 P2 P3 P3 - P1 P1 P2 P3 P3 - P1 P1 P2 P3 P3 - P1
+(Low) (High) (Low) (High) (Low) (High)
+CAPM 1.06 -0.46 -0.19 -0.01 0.45 0.68 -0.11 0.04 0.00 0.11 0.54 -0.13 -0.07 0.01 0.14
+(3.61 ) -(2.65) -(1 .29) -(0.1 1 ) (3.01 ) (2.45) -(1 .20) (0.89) (0.08) (1 .1 8) (4.96) -(2.64) -(1 .82) (0.21 ) (2.34)
+Control 0.86 -0.40 -0.02 0.08 0.49 0.68 -0.11 0.03 0.00 0.11
+for 3 Factors (4.1 3) -(3.95) -(0.1 9) (0.69) (3.06) (2.92) -(1 .1 4) (0.90) (0.03) (1 .1 3)
+Control 0.66 -0.28 0.00 0.13 0.40 0.30 -0.02 0.08 0.06 0.08
+for 4 Factors (3.1 4) -(5.95) (0.02) (1 .46) (4.56) (2.1 5) -(0.75) (2.26) (0.98) (1 .26)
+Panel F: All Assets
+Conditional Market Beta
+Panel D: U.S. Equities Panel E:  International Equities
+Conditional Market Beta Conditional Market Beta
+
+--- PAGE 49 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Tables - Page T11 
+ 
+Table XI 
+Testing the Model’s Portfolio Predictions, 1963 - 2012 
+This table shows average ex-ante and realized portfolio betas for different groups of investors. Panel A.1 reports results 
+for our sample of open -end actively -managed domestic equity mutual funds. Panel  A.2 reports results a sample of  
+individual retail investors. Panel B.1 reports results for a sample of leveraged buyouts (labeled “Private Equity”). Panel 
+B.2 reports results for Berkshire Hathaway. We compute both the ex -ante beta of their holdings and the realized beta of 
+the time ser ies of their returns. To compute the ex -ante beta, we aggregate all quarterly (monthly) holdings in the 
+mutual fund (individual investor) sample and compute their ex -ante betas (equally weighted and value weighted based 
+on the value of their holdings). We report the time series averages of the portfolio betas.  To compute the realized betas 
+we compute monthly returns of an aggregate portfolio mimicking the holdings, under the assumption of constant weight 
+between reporting dates (quarterly for mutual funds,  monthly for individual investors). We compute equally weighted 
+and value weighted returns based on the value of their holdings. The realized betas are the regression coefficients in a 
+time series regression of these excess returns on the excess returns of  the CRSP value-weighted index. In panel B.1 we 
+compute ex-ante betas as of the month -end prior to the initial takeover announcements date. T -statistics are shows to 
+right of the betas estimates and test the null hypothesis of beta = 1 . All s tandard errors  are adjusted for 
+heteroskedasticity and autocorrelation using a Bartlett kernel (Newey and West (1987))  with a lag length of 60  months. 
+5% statistical significance is indicated in bold. 
+ 
+Panel Investor Method
+Beta
+t-statistics 
+(H0: beta=1) Beta
+t-statistics 
+(H0: beta=1)
+A)  Investors Likely to be Constrained
+A.1) Mutual Funds Value weighted 1980 - 2012 1.08 2.16 1.08 6.44
+Mutual Funds Equal weighted 1980 - 2012 1.06 1.84 1.12 3.29
+A.2) Individual Investors Value weighted 1991 - 1996 1.25 8.16 1.09 3.70
+Individual Investors Equal weighted 1991 - 1996 1.25 7.22 1.08 2.13
+B)  Investors who use Leverage
+B.1) Private Equity (All) Value weighted 1963 - 2012 0.96 -1.50
+Private Equity (All) Equal weighted 1963 - 2012 0.94 -2.30
+Private Equity (LBO, MBO) Value weighted 1963 - 2012 0.83 -3.15
+Private Equity (LBO, MBO) Equal weighted 1963 - 2012 0.82 -3.47
+B.2) Berkshire Hathaway Value weighted 1980 - 2012 0.91 -2.42 . 0.77 -3.65
+Berkshire Hathaway Equal weighted 1980 - 2012 0.90 -3.81 . 0.83 -2.44
+Sample 
+Period
+Ex Ante Beta 
+of Positions
+Realized Beta
+of Positions
+
+--- PAGE 50 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Figures - Page F1 
+ 
+Figure 1 
+Alphas of Beta-Sorted Portfolios 
+ 
+This figure shows monthly alphas . The test assets are beta -sorted portfolios. At the beginning of each calendar 
+month, securities are ranked in ascending order on the basis of their estimated beta at the end of the previous month. 
+The ranked securities are assigned to beta-sorted portfolios. This figure plots alphas from low beta (left) to high beta 
+(right). Alpha is the intercept i n a regression of monthly excess return. For equity portfolios , the explanatory 
+variables are the monthly retu rns from Fama and French (1993), Asness and Frazzini (2011) and Carhart (1997) 
+portfolios. For all other portfolios, the explanatory variables are the monthly returns of the market factor. Alphas are 
+in monthly percent. 
+ 
+ 
+ 
+stocks
+global
+bonds
+ci
+cds
+Aaa
+0.23
+EQ
+COM
+FI
+-0.20
+-0.10
+0.00
+0.10
+0.20
+0.30
+0.40
+0.50
+P1 (low
+beta)
+P2 P3 P4 P5 P6 P7 P8 P9 P10
+(high
+beta)
+Alpha
+U.S. Equities
+-0.20
+-0.15
+-0.10
+-0.05
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+0.30
+P1 (low
+beta)
+P2 P3 P4 P5 P6 P7 P8 P9 P10
+(high
+beta)
+Alpha
+International Equities
+-0.08
+-0.06
+-0.04
+-0.02
+0.00
+0.02
+0.04
+1 to 12
+months
+13 to 24 25 to 36 37 to 48 49 to 60 61 to 120 > 120
+Alpha
+Treasury 
+-0.08
+-0.06
+-0.04
+-0.02
+0.00
+0.02
+0.04
+1-3 years 3-5 year 5-10 years 7-10 years
+Alpha
+Credit Indices 
+-0.06
+-0.04
+-0.02
+0.00
+0.02
+0.04
+0.06
+1-3 years 3-5 year 5-10 years 7-10 years
+Alpha
+Credit - CDS 
+-1.20
+-1.00
+-0.80
+-0.60
+-0.40
+-0.20
+0.00
+0.20
+0.40
+Alpha
+Credit  - Corporate 
+-0.20
+-0.15
+-0.10
+-0.05
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+0.30
+Low beta High beta
+Alpha
+Equity Indices 
+0.00
+0.02
+0.04
+0.06
+0.08
+0.10
+0.12
+0.14
+Low beta High beta
+Alpha
+Commodities 
+-0.08
+-0.06
+-0.04
+-0.02
+0.00
+0.02
+0.04
+0.06
+0.08
+0.10
+0.12
+Low beta High beta
+Alpha
+Foreign Exchange
+-0.04
+-0.03
+-0.03
+-0.02
+-0.02
+-0.01
+-0.01
+0.00
+0.01
+0.01
+0.02
+0.02
+Low beta High beta
+Alpha
+Country Bonds 
+
+--- PAGE 51 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Figures - Page F2 
+ 
+Figure 2 
+BAB Sharpe Ratios by Asset Class 
+ 
+This figures shows annualized Sharpe ratios of BAB factors across asset classes. To construct the BAB factor, all 
+securities are assigned to one of two portfolios: low beta and high beta. Securities are weighted by the ranked betas 
+and the portfolios are rebalanced every calendar month. Both portfolios are rescaled to have a beta of 1 at portfolio 
+formation. The BAB factor is a self-financing portfolio that is long the low -beta portfolio and shorts  the high-beta 
+portfolio. Sharpe ratios are annualized.  
+ 
+ 
+ 
+-0.20
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+U.S. Stocks
+Australia
+Austria
+Belgium
+Canada
+Switzerland
+Germany
+Denmark
+Spain
+Finland
+France
+United Kingdom
+Hong Kong
+Italy
+Japan
+Nethenrlands
+Norway
+New Zealand
+Singapore
+Sweden
+International Stocks
+Credit Indices
+Corporate Bonds
+CDS (hedged)
+Treasuries
+Equity Indices
+Country bonds
+Foreign Exchange
+Commodities
+Sharpe Ratio
+
+--- PAGE 52 ---
+
+ 
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix A - Page A1 
+ 
+Appendix A: Analysis and Proofs 
+  
+Before we prove our propositions, we provide a basic analysis of portfolio 
+selection with constraints. This analysis is based on Figure A.1 below. The top panel 
+shows the mean-standard deviation frontier for an agent with m<1, that is, an agent 
+who can use leverage. We see that the agent can leverage the tangency portfolio T 
+to arrive at the portfolio  ̅. To achieve a higher expec ted return, the agent needs to 
+leverage riskier assets, which gives rise to the hyperbola segment to the right of  ̅. 
+The agent in the graph is assumed to have risk preferences giving rise to the  optimal 
+portfolio  ̅. Hence, the agent is leverage constra ined so he chooses to apply leverage 
+to portfolio C rather than the tangency portfolio. 
+ The bottom Panel of Figure A.2 similarly shows the mean -standard deviation 
+frontier for an agent with m>1, that is, an agent who must hold some cash. If the 
+agent keep s the minimum amount of money in cash and invests the rest in the 
+tangency portfolio, then he arrives at portfolio T’. To achieve higher expected 
+return, the agent must invest in riskier assets and, in the depicted case, he invests in 
+cash and portfolio D, arriving at portfolio D’. 
+ Unconstrained investors invest in the tangency portfolio and cash. Hence, the 
+market portfolio is a weighted average of T, and riskier portfolios such as C and D. 
+Therefore, the market portfolio is riskier than the tangency portfolio.   
+
+--- PAGE 53 ---
+
+ 
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix A - Page A2 
+ 
+Figure A1. Portfolio Selection with Constraints.  The top panel shows the mean -
+standard deviation frontier for an agent with m<1 who can use leverage, while the 
+bottom panel show that of an agent with m>1 who needs to hold cash.  
+ 
+ 
+ 
+ 
+
+
+--- PAGE 54 ---
+
+ 
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix A - Page A3 
+ 
+Proof of Proposition 1. Rearranging the equilibrium-price Equation (7) yields  
+ 
+ 
+ 
+ 
+1
+1 1 1 1
+11
+1 '*
+1 cov ,[ ]' *
+cov , ' *
+sf
+t t t s s
+t
+f s s
+t t t t t t s
+t
+f s M
+t t t t t
+E r r e x P
+r P P x P
+r r r P x
+
+   
+
+
+   
+
+   
+    
+  
+ (A1) 
+ 
+where es is a vector with a 1 in row s and zeros elsewhere. Multiplying this equation 
+by the market portfolio weights
+* / *s s s j j
+tt jw x P x P   and summing over s gives 
+ 
+   11 var ' *M f M
+t t t t t tE r r r P x    
+ (A2) 
+ 
+that is,  
+ 
+ 1
+'*
+var
+t
+t M
+tt
+Px
+r
+
+
+
+ (A3) 
+ 
+Inserting this into (A1) gives the first result in the proposition. The second result 
+follows from writing the expected return as: 
+ 
+      11 1s f s s M f
+t t t t t t tE r r E r r        
+ (A4) 
+ 
+and noting that the first term is (Jensen’s) alpha. Turning to the third result 
+regarding efficient portfolios, the Sharpe ratio increases in beta until the tangency 
+portfolio is reached and decreases thereaft er. Hence, the last result follows from the 
+fact that the tangency portfolio has a beta less than 1. This is true bec ause the 
+market portfolio is an average of the tangency portfolio (held by unconstrained 
+agents) and riskier portfolios (held by constraine d agents) so the market portfolio is 
+riskier than the tangency portfolio. Hence, the tangency portfolio must have a lower 
+
+--- PAGE 55 ---
+
+ 
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix A - Page A4 
+ 
+expected return and beta (strictly lower iff some agents are constrained).⁬ 
+ 
+Proof of Propositions 2-3. The expected return of the BAB factor is: 
+ 
+       
+   
+1 1 1
+11
+11
+BAB L f H f
+t t t t t t LH
+tt
+LH
+t t t t t tLH
+tt
+HL
+tt
+tLH
+tt
+E r E r r E r r
+     
+ 
+     
+   
+
+ (A5) 
+ 
+Consider next a change in 
+k
+tm . Note first that such a change in a time -t 
+margin requirement does not change the time-t betas for two reasons: First, it does 
+not affect the distribution  of prices in the following period t+1. Second, prices at 
+time t are scaled (up or down) by the same proportion  due to the change in 
+Lagrange mu ltipliers as seen in Equation (7). Hence, all returns from t to t+1 
+change by the same multiplier, leading to time-t betas staying the same.  
+Given Equation (A5), Equation (12) in the proposition now follows if we can 
+show that 
+t increases in mk since this lead to: 
+ 
+ 1
+0
+BAB HL
+tt t t t
+k L H k
+t t t t
+Er
+mm
+  
+
+ 
+ (A6) 
+ 
+Further, since prices move opposite required returns, Equation (11) then follows. To 
+see that an increase in 
+k
+tm  increases 
+t , we first note that the constrained agents’ 
+asset expenditure decreases with a higher 
+k
+tm . Indeed, summing the portfolio 
+constraint across constrained agents (where Equation (2) holds with equality) gives 
+ 
+,
+ constrained  constrained
+1i s s i
+tt i
+i s i
+x P W m  
+ (A7) 
+ 
+
+--- PAGE 56 ---
+
+ 
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix A - Page A5 
+ 
+Since increasing mk decreases the right -hand side, the left -hand side must also 
+decrease. That is, the total market value of shares owned by constrained agents 
+decreases. 
+Next, we show that the constrained agents’ expenditure is decreasing in 
+ . 
+Hence, since an  increase in 
+k
+tm  decreases the constrained agents’ expenditure , it 
+must increase 
+t  as we wanted to show.  
+ 
+ constrained  constrained
+' ' ' 0
+i
+ii t
+tt
+ii
+P xP x x P  
+        
+
+ (A8) 
+ 
+To see the last inequality, note first that clearly 
+'0 itP x
+   since all the prices 
+decrease by the same proportion (seen in Equation (7)) and the initial expenditure is 
+positive. The second term is also negative since 
+ 
+     
+   
+    
+111
+11
+ constrained  constrained
+111
+ constrained
+111
+*1' ' 1 1
+*1'1 1
+*1'1 1
+t t ti f i
+t t t t t t if
+ii
+t t tfi
+tt if
+i
+t t tf
+t f
+E P xP x P E P r r
+E P xPr r
+E P xP q r r
+E
+   
+  
+  
+
+
+
+
+              
+       
+       
+
+
+
+      
+       
+1 1 1 1 1
+1
+1 1 1 1
+** 1'111
+111 * ' *11
+0
+t t t t t t f
+ff
+f
+t t t t t tff
+P x E P x qrrr
+qr
+E P x E P xrr
+       
+
+      
+    
+
+   
+               
+           
+
+ 
+where we have defined 
+ constrained
+1i
+i
+q 
+   and used that 
+ constrained
+ii
+ii
+ii
+     
+since 
+0i   for unconstrained agents. This completes the proof.⁬ 
+ 
+
+--- PAGE 57 ---
+
+ 
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix A - Page A6 
+ 
+Proof of Proposition 4. Using the Equation (7), the sensitivity of prices with respect 
+to funding shocks can be calculated as  
+ 
+1/ 1
+s
+t
+tsf
+tt
+P
+Pr  
+   
+ (A9) 
+ 
+which is the same for all securities s. Intuitively, shocks that affect all securities the 
+same way compress betas toward 1. To see this more rigorously, we write prices as: 
+ 
+ 
+ 
+      
+11
+1
+1 1 2
+'*
+1
+...
+ii
+t t t ii
+t f
+t
+ii
+t t t t
+i
+t t t t t t
+i
+t
+E P e x
+P r
+a z z E P
+a z z E z z E z E z
+a
+
+
+
+
+
+  
+  
+ 
+
+   
+
+ (A10) 
+where we use the following definitions and that random variables are i.i.d over time:  
+ 
+       
+1
+1 1 2
+1
+'*
+1
+1
+... 1
+ii
+ti
+t f
+t
+t
+t t t t t t t
+t
+a E e x
+z r
+zz z E z z E z E z Ez
+
+
+
+
+  
+
+  
+ 
+     
+ (A11) 
+ 
+With these definitions, we can write returns as 
+11
+i i i i
+i t t t t
+t ii
+tt
+Par Pa
+  
+
+  and calculate 
+conditional beta as follows (using that new information about    and    only affect 
+the conditional distribution of    in the below): 
+ 
+
+--- PAGE 58 ---
+
+ 
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix A - Page A7 
+ 
+ 
+1
+1
+1
+1
+11
+1
+1
+11
+11 2
+cov ( , )
+var ( )
+cov ( , )
+var ( )
+1var cov ( , )
+1var ( ) var ( )()
+iM
+i t t t
+t M
+tt
+i i M M
+t t t t
+t iM
+tt
+MM
+tt
+t M
+t
+iM
+t t t t t iM
+M
+t t t t M
+rr
+r
+aa
+aa
+a
+a
+aa
+a
+
+   
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ (A12) 
+ 
+Here, we use that 
+s
+t  and    are independent since the dividend is paid to the old 
+generation of investors while    depends on the margin requirements and  wealth of 
+the young generation of investors. 
+We see that the beta depends on the security-specific cash flow covariance,
+1cov ( , )iM
+t t t 
+, and the market-wide discount rate variance, 
+ 1vartt  . For securities 
+with beta below (above) 1, the beta is increasing (decreasing) in  
+ 1vartt  . Hence, a 
+higher 
+ 1vartt   compresses betas while the reverse is true for a lower 
+ 1vartt  .  
+Further, if betas are compressed toward 1 after the formation of the BAB 
+portfolio, then BAB will realize a positive beta as its long -side is more lever aged 
+than its short side. Specifically, suppose that the BAB portfolio is constructed based 
+on estimated betas (  ̂ 
+   ̂ 
+ ) using data from a period with less variance of 
+t  so 
+that  ̂ 
+    
+    
+   ̂ 
+ . Then the BAB portfolio will have a beta of 
+ 
+  
+    
+ 
+    (    
+ )    (
+ 
+ ̂ 
+ (    
+    ) 
+ 
+ ̂ 
+ (    
+    )     
+ )  
+  
+ 
+ ̂ 
+  
+  
+ 
+ ̂ 
+    (A13) 
+ 
+Proof of Proposition 5. To see the first part of the proposition, we first note that an 
+unconstrained investor holds the tangency portfolio, which has a beta less than 1 in 
+the equilibrium with funding constraints, and the constrained investors hold riskier 
+portfolios of risky assets, as discussed in the proof of Proposition 1. 
+To see the second part of the proposition, note that g iven the equilibrium 
+
+--- PAGE 59 ---
+
+ 
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix A - Page A8 
+ 
+prices, the optimal portfolio is: 
+ 
+     
+ 
+111
+11
+1
+11
+*1 1 1
+1 1*11
+t t ti f i
+t t t tif
+t
+f i i
+t t t
+t t ti f f i
+tt
+E P xx E P r r
+r x E Prr
+
+      
+
+
+
+
+         
+        
+ (A14) 
+ 
+The first term shows that each agent holds some (positive) weight in the market 
+portfolio x* and the second term shows how he tilts his portfolio away from the 
+market. The direction of the tilt depends on whether the agent’s Lagrange multiplier 
+i
+t
+ is smaller or larger than the weighted average of all the agents’ Lagrange 
+multipliers 
+t . A less-constrained agent tilts towards the portfolio 
+ 
+1
+11t t tEP 
+  
+(measured in shares), while a more -constrained agent tilts away from this portfolio. 
+Given the expression (13), we can write the variance-covariance matrix as 
+ 
+2 'Mbb 
+ (A15) 
+ 
+where Σ=var(e) and 
+ 
+2
+1var M
+Mt P  . Using the Matrix Inversion Lemma (the 
+Sherman–Morrison–Woodbury formula), the tilt portfolio can be written as: 
+ 
+   
+   
+ 
+1 1 1 1
+1 1 1 1 21
+1 1 1
+1 1 1 1 21
+11
+11
+1' '
+1' '
+t t t t t t
+M
+t t t t t t
+M
+t t t
+E P bb E P bb
+E P bb E P bb
+E P y b
+ 
+ 
+
+   
+    
+  
+    
+
+
+       
+     
+   
+ (A16) 
+ 
+where 
+   
+1 2 1
+11' / ' t t t My b E P b b 
+      is a scalar. It holds that  
+   
+11
+sk
+bb    
+since 
+skbb  and since s and k have the same variances and covariances in  
+ , 
+implying that  
+   
+11
+,,s j k j
+    for 
+,j s k  and 
+       
+1 1 1 1
+, , , ,s s k k s k k s
+          . 
+
+--- PAGE 60 ---
+
+ 
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix A - Page A9 
+ 
+Similarly, it holds that 
+   
+11
+1 1 1 1t t t t t t sk
+E P E P 
+               since a higher market 
+exposure leads to a lower price (see below). So everything else equal, a higher b leads 
+to a lower weight in the tilt portfolio.  
+Finally, we note that security s also has a higher return beta than k since  
+ 
+1 1 1 1
+11
+cov( , )
+var
+M i i M M M
+ii t t t t t t
+t ii M M
+tt t t
+P P P P bPPP
+
+
+   
+
+
+
+ (A17) 
+and a higher bi means a lower price: 
+       
+2
+1 1 1 1 * * ' *
+11
+i i i i i
+t t t t t t M iii
+t ff
+tt
+E P x E P x b b x
+P rr
+    
+
+         
+    
+ (A18) 
+⁬ 
+
+--- PAGE 61 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B1 
+ 
+Appendix B: Additional Empirical Results and Robustness Tests 
+ 
+This Appendix contains additional empirical results and robustness tests. 
+ 
+Sharpe Ratios of Beta-Sorted Portfolios 
+Figure B1 plot the Sharpe ratio (annualized) of beta -sorted portfolios for all the asset 
+classes in our sample.  
+ 
+Factor Loadings 
+Table B 1 reports returns and factor loadings of U .S. and International equity BAB 
+portfolios. 
+ 
+Robustness: Alternative Betas Estimation 
+Table B2 reports retu rns of BAB portfolio s in U .S. and International e quities using 
+different estimation window lengths and different benchmark (local and global). 
+ 
+Robustness: Size 
+Table B3 reports returns of U.S. and International equity BAB portfolios controlling for 
+size. Size is defined as the market value of equity (in USD). We use conditional sorts: at 
+the beginning of each calendar month stocks are ranked in ascending order on the basis 
+of their market value of equity and assigned to one  of 10 groups from small to large 
+based on NSYE breakpoints. Within each size deciles, we assign stocks to low and high 
+beta portfolios and compute BAB returns. 
+ 
+Robustness: Sample Period 
+Table B4 reports returns of U.S. and International equity BAB portfolios in different 
+sample periods. 
+ 
+Robustness: Idiosyncratic Volatility. 
+Table B5 reports returns of U.S. and International equity BAB portfolios controlling for 
+idiosyncratic volatility. Idiosyncratic volatility is defined as the 1-year rolling standard 
+deviation of beta-adjusted residual returns. We use conditional sorts: at the beginning of 
+
+--- PAGE 62 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B2 
+ 
+each calendar month stocks are ranked in ascending order on the basis of their 
+idiosyncratic volatility and assigned to one of 10 groups from  low to high volatility. 
+Within each volatility deciles, we assign stocks to low and high beta portfolios and 
+compute BAB returns. We report two sets of results: controlling for the level of 
+idiosyncratic volatility and the 1-month change in the same measure. 
+  
+Robustness: Alternative Risk-Free Rates 
+Table B6  reports returns of Equity and Treasury BAB portfolios using alternative 
+assumptions for risk free rates.  Table B6  also reports results fo r BAB factors 
+constructed using 1-year and 30 -year Treasury bond futures over the same sample 
+period. Using futures -based portfolio avoids the need of an assumption about the risk 
+free rate since futures’ excess returns are constructed as changes in the futures contract 
+price. We use 2 -year and 30 -year futures since in our data they are the contract s with 
+the longest available sample period.  
+ 
+Robustness: Out-of-Sample Data from Datastream 
+We compute the  returns of international equity BAB portfolios  from an earlier time 
+period than what we consider in the body of the paper . Table B7 reports returns and 
+alphas and Figure B1 plot the Sharpe ratios. We see strong out-of-sample evidence. 
+To compute these portfolio returns, w e collect pricing data from Da taStream for 
+all common stocks  in each of the available countries listed in Table I (16 of the 19 
+countries). The DataStream international data starts in 1969, while Xpressfeed Global 
+coverage only starts in 1984 , thus allowing us to construct BAB portfoli os over a non -
+overlapping (earlier) sample. For each country, we compute a BAB portfolio and restrict 
+the sample to the period starting from the first available date in Datastream to the start 
+of the Xpressfeed Global coverage. We note that there can be a small overlap in the 
+date ranges between Table I and Table B7, but there is no overlap in the corresponding 
+BAB factors. This is because the date ranges refer to the  underlying stock return data, 
+but, since we need some initial data to compute betas, the t ime series of the BAB 
+factors are shorter. Alphas are computed with respect to country -specific market 
+portfolio. 
+
+--- PAGE 63 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B3 
+ 
+ 
+Robustness: Betas with Respect to a Global Market Portfolio 
+Table B8 reports results of global BAB portfolios using beta with respect to a multi 
+asset class global market index. We use the global market portfolio from Asness, 
+Frazzini and Pedersen (2011). Betas are estimated using monthly data.  
+ 
+Robustness: Value-weighted BAB portfolios. 
+Table B9  reports results for value-weighted BAB factor s for U.S. and International 
+equities. The portfolio construction follows Fama and French (1992, 1993 and 199 6) and 
+Asness and Frazzini (2011). We form one set of portfolios in each country and compute 
+an international portfolio by weighting each country’s  portfolio by the country’s total 
+(lagged) market capitalization. The BAB factor is constructed using six value -weighted 
+portfolios formed on size and beta. At the end of each calendar month, stocks are 
+assigned to two size -sorted portfolios based on their  market capitalization and to three 
+beta-sorted portfolios (low, medium and high) based on the 30th and 70th percentile. 
+For U.S. securities, the size breakpoint is the median NYSE market equity. For 
+International securities the size breakpoint is the 80th  percentile by country.  For the 
+international sample we use conditional sorts (first sorting on size , then on beta) in 
+order to ensure we have enough securities in each portfolio (U.S. sorts are independent). 
+Portfolios are value -weighted, refreshed ever y calendar month, and rebalanced every 
+calendar month to maintain value weights.  We average the small and large portfolio to 
+form a low beta and high beta portfolio:  
+ 
+    
+  (    
+            
+       )   
+    
+  (    
+            
+       )   
+ 
+We form two BAB factor: a dollar neutral BAB and beta neutral BAB. The dollar 
+neutral BAB is a self -financing portfolio long the low beta portfolio and short the high 
+beta portfolio: 
+ 
+    
+                        
+      
+  
+
+--- PAGE 64 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B4 
+ 
+ 
+The beta-neutral BAB is a self -financing portfolio long the low beta portfolio levered to 
+a beta of one and short the high beta portfolio delevered to a beta of 1  
+ 
+    
+     
+  
+ (    
+    )   
+  
+ (    
+    ) 
+ 
+Beta Compression: Bootstrap Analysis. 
+Figure B3 investigates the possibility that estimation errors in betas could be a driver of 
+the beta compressi on reported in Table X. Table X’s evidence is consistent with 
+Proposition 4:  betas are compressed towards 1 at times when funding liquidity risk  is 
+high. However, this lower cross-sectional standard deviation could be driven by lower 
+beta estimation error varia tion at such times , rather than a lower variation across the 
+true betas. To investigate th is possibility, we run a bootstrap analysis  under the null 
+hypothesis of a constant standard deviation of true betas and tests whether the 
+measurement error in betas can account for the compression observed in the data. We 
+run the analysis on our sample of U.S. equities and use monthly data for computati onal 
+convenience. We compute a bootstrap sample under the null hypothesis of no variation 
+in the cross sectional dispersion of betas by fixing each stock’s beta t o his full sample 
+realized beta, and by sampling with replacement from the time series distrib ution of 
+idiosyncratic returns. In the simulated sample, the time series of excess returns for stock 
+  is collected in a vector denoted by  ̃   given by 
+  
+ ̃           
+ 
+where    is the vector of market excess return,    is the stock’s full sample beta and    
+is a vector of the time series of idiosyncratic returns for a random stock  , sampled (with 
+replacement) from the distribution of idiosyncratic returns. This yields a sample of 
+returns under the null hypothesis of  no time series variation in beta s, while at the same 
+time preserving the time series properties of returns , in particular, the cross -sectional 
+distribution of idiosyncratic shocks and their relation to the TED spread volatility 
+
+--- PAGE 65 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B5 
+ 
+(since we bootstrap entire time series of idiosyncratic shocks). We estimate rolling betas 
+on the simulated sample (as described in Section II) and compute the beta compression 
+statistics of Table X, Panel A. We focus on the cross sectional standard deviations  but 
+the results are the same for the mean absolute deviation or interquartile range. We 
+repeat this procedure 10,000 times , yielding a simulated distribution of the statistics in 
+Table X where the time variation of the cross sectional dispersion in betas is due to 
+estimation error.  
+Figure B3  reports the distribution of the difference in cross sectional standard 
+deviation of betas between high  (P3) and low (P1) funding liquidity risk period s, and 
+compares it with the observed value in the data (als o using rolling monthly betas ). The 
+figure shows that the compression observed in the data is much larger than what could 
+be generated by estimation  error variance alone ( bootstrapped p-values close to zero), 
+hence the beta compression observed in Table X is  unlikely to be  due to higher beta 
+estimation error variance. 
+
+--- PAGE 66 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B6 
+ 
+Table B1 
+Factor Loadings. U.S. and International Equities. 
+This table shows calendar -time portfolio returns and factor loadings  of BAB factors . To construc t the BAB factor, all stocks are assigned to one of two  portfolios: low beta and 
+high beta. The low (high) beta portfolio is comprised of all stocks with a beta below (above) its country medi an. Stocks are weighted by the ranked betas (lower beta security have 
+larger weight in the low -beta portfolio and higher beta securities have larger weights in the high -beta portfolio)  and the portfolios are rebalanced every calendar month.  Both 
+portfolios are rescaled to have a beta of 1 at portfolio formation. The BAB factor is a self -financing portfolio that is long the low -beta portfolio and shorts the high -beta portfolio. 
+This table includes all available common stocks on the CRSP database, and all ava ilable common stocks on the Xpressfeed Global database for the 19 markets in listed table I. 
+Alpha is the intercept in a regression of monthly excess return.  The explanatory variables are the monthly retu rns from Fama and French (1993), Carhart (1997) and Asness and 
+Frazzini (2011) mimicking portfolios. Returns and alphas are in monthly percent, t -statistics are shown below the coefficient estimates, and 5% statistical significance is indicated 
+in bold. $ Long (Short) is the average dollar value of the long (short) position. 
+ 
+Panel A: U.S. Equities Excess 
+Return
+Alpha MKT SMB HML UMD $ Short $ Long Excess 
+Return
+Alpha MKT SMB HML UMD $ Short $ Long
+High Beta 1.00 -0.01 1.28 1.10 0.41 -0.27 1.00 0.74 -0.15 1.40 0.38 0.19 -0.14 1.00
+Low beta 0.95 0.36 0.67 0.52 0.23 -0.03 1.00 0.66 0.19 0.68 0.04 0.15 0.02 1.00
+L/S 0.70 0.55 -0.01 -0.02 0.10 0.19 0.70 1.40 0.35 0.34 -0.14 -0.21 0.14 0.13 0.72 1.28
+t-statistics 3.09 -0.11 88.74 49.03 19.00 -16.33 2.66 -2.42 117.39 20.35 10.46 -10.08
+5.87 6.70 63.50 31.55 14.65 -2.07 4.92 3.53 66.07 2.30 9.83 1.41
+7.12 5.59 -0.47 -0.80 3.50 8.33 3.25 3.36 -6.90 -6.72 4.60 5.96
+Panel B: International Equities
+High Beta 0.69 0.11 1.01 0.35 0.46 -0.03 1.00 0.36 -0.06 1.02 0.35 0.28 -0.12 1.00
+Low beta 0.85 0.26 0.68 0.39 0.39 0.19 1.00 0.65 0.17 0.70 0.26 0.28 0.15 1.00
+L/S 0.64 0.30 0.05 0.24 0.17 0.32 0.89 1.40 0.61 0.30 0.05 0.04 0.17 0.31 0.84 1.32
+t-statistics 1.85 0.60 29.47 4.97 5.92 -0.55 0.99 -0.36 33.48 5.61 4.00 -2.30
+3.48 2.04 28.28 7.89 7.16 4.61 2.72 1.44 31.28 5.58 5.50 3.82
+4.66 2.20 1.87 4.70 2.93 7.32 3.52 1.65 1.58 0.63 2.20 5.28
+All stocks Above NYSE median ME
+All stocks Above 90% ME by country
+
+--- PAGE 67 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B7 
+ 
+Table B2 
+U.S. and International Equities. Robustness: Alternative Betas Estimation 
+This table shows calendar -time portfolio returns of BAB portfolios for d ifferent beta estimation methods . To construct the BAB factor, all stocks are assigned to one of two  
+portfolios: low beta and high beta. The low (high) beta portfolio is comprised of all stocks with a beta below (above) its country median . Stocks are weighted by the ranked betas 
+(lower beta security have larger weight in the low -beta portfolio and higher beta securities have larger weights in the high -beta portfolio) and the portfolios are rebalanced every 
+calendar month. Both portfolios are rescaled to have a beta of 1 at portfolio formation. The BAB factor is a self-financing portfolio that is long the low-beta portfolio and shorts the 
+high-beta portfolio. This table includes all available common stocks on the CRSP database, and all available  common stocks on the Xpressfeed Global database for the 19 markets 
+in listed table I.  Alpha is the intercept in a regression of monthly excess return . The explanatory variables are the monthly retu rns from Fama and French (1993), Carhart (1997) 
+and Asness and Frazzini (2011) mimicking portfolios. Returns and alphas are in monthly percent, t -statistics are shown below the coefficient estimates, and 5% statistical 
+significance is indicated in bold. $ Long (Short) is the average dollar value of the long (short) position. Volatilities and Sharpe ratios are annualized. 
+ 
+ 
+*    Date range from 2004 to 2012 
+**  Date range from 2003 to 2012  
+  
+Beta with respect to Universe Method Risk 
+Factors
+Freq of 
+Estimation
+Estimation 
+window 
+(volatility)
+Estimation 
+window 
+(Correlation)
+Excess 
+Return
+T-stat 
+Excess 
+Return
+4-factor 
+alpha
+T-stat 
+Alpha
+$Short $Long Volatility Sharpe 
+Ratio
+CRSP - VW index US OLS US Daily 1 5 0.70 7.12 0.55 5.59 0.70 1.40 10.7 0.78
+CRSP - VW index US OLS US Daily 1 3 0.76 7.60 0.58 5.84 0.73 1.49 11.0 0.83
+CRSP - VW index US OLS US Daily 1 1 0.76 7.60 0.58 5.84 0.73 1.49 11.0 0.83
+MSCI World * US OLS US Daily 1 5 0.26 1.05 0.29 1.27 0.74 1.33 8.0 0.38
+MSCI World ** US OLS US Daily 1 3 0.65 2.77 0.66 2.80 0.70 1.41 8.3 0.93
+MSCI World ** US OLS US Daily 1 3 0.65 2.77 0.66 2.80 0.70 1.41 8.3 0.93
+Local market index Global OLS Global Daily 1 5 0.67 4.91 0.32 2.37 0.89 1.40 8.0 1.00
+Local market index Global OLS Global Daily 1 3 0.49 2.99 0.16 0.92 0.88 1.46 10.0 0.59
+Local market index Global OLS Global Daily 1 1 0.49 2.99 0.16 0.92 0.88 1.46 10.0 0.59
+MSCI World * Global OLS Global Daily 1 5 0.39 1.11 0.40 1.10 0.92 1.69 11.6 0.41
+MSCI World ** Global OLS Global Daily 1 3 0.83 2.34 0.47 1.31 0.83 1.74 12.7 0.79
+MSCI World ** Global OLS Global Daily 1 3 0.83 2.34 0.47 1.31 0.83 1.74 12.7 0.79
+
+--- PAGE 68 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B8 
+ 
+Table B3 
+U.S. and International Equities. Robustness: Size 
+This table shows calendar -time portfolio returns of BAB portfolios by size. At the beginning of each calendar month stocks are 
+ranked in ascending order on the basis of their market value of equity (in USD) at the end of the previous month. Stocks are 
+assigned to one of 10 groups based on NYSE breakpoints.  To construct the BAB factor, stocks in each size decile are assigned to 
+one of two portfolios: low beta and high beta. The low (high) beta portfolio is comprised of all stocks with a beta below (above) 
+its country median. Stocks are weighted by the ranked betas (lower beta security have larger weight in the low -beta portfolio and 
+higher beta securities have larger weights in the high-beta portfolio) and the portfolios are rebalanced every calendar month. Both 
+portfolios are rescaled to have a beta of 1 at portfolio formation. The BAB factor is a self -financing portfolio that is long the low-
+beta portfolio and shorts the high -beta portfolio. This table includes all available common stocks on the CRSP database, and all 
+available common stocks on the Xpressfeed Global database for the 19 markets in listed table I. Alpha is the intercept in a 
+regression of monthly excess return. The explanatory variables are the monthly retu rns from Fama and French (1993), Carhart 
+(1997) and Asness and Frazzini (2011) mimicking portfolios. Returns and alphas are in monthly percent, t -statistics are shown 
+below the coefficient estimates, and 5% statistical significance is indicated in bold. $ Long (Short) is the average dollar value of 
+the long (short) position. Volatilities and Sharpe ratios are annualized. 
+ 
+   
+Panel A: U.S. Equities Excess 
+return
+T-stat 
+Excess 
+return
+4-factor 
+Alpha
+T-stat 
+Alpha
+$Short $Long Volatility Sharpe 
+Ratio
+Small - ME 1.11 5.89 0.60 3.37 0.70 1.45 20.5 0.65
+ME -2 0.72 5.15 0.38 2.78 0.69 1.34 15.3 0.56
+ME -3 0.74 5.16 0.45 3.11 0.69 1.31 15.7 0.57
+ME -4 0.62 5.26 0.52 4.37 0.69 1.31 12.9 0.58
+ME -5 0.69 5.68 0.51 4.23 0.69 1.30 13.4 0.62
+ME -6 0.38 3.13 0.29 2.38 0.70 1.29 13.3 0.34
+ME -7 0.36 2.89 0.32 2.68 0.71 1.28 13.5 0.32
+ME -8 0.42 3.48 0.44 3.85 0.72 1.28 13.3 0.38
+ME -9 0.35 2.84 0.36 3.12 0.73 1.26 13.4 0.31
+Large-ME 0.25 2.24 0.26 2.46 0.76 1.25 12.2 0.25
+Panel B: International 
+Equities
+Excess 
+return
+T-stat 
+Excess 
+return
+4-factor 
+Alpha
+T-stat 
+Alpha
+$Short $Long Volatility Sharpe 
+Ratio
+Small - ME 0.54 1.04 0.47 0.86 0.77 1.48 30.6 0.21
+ME -2 0.53 1.53 0.37 1.03 0.81 1.50 20.5 0.31
+ME -3 0.44 1.34 0.33 0.95 0.85 1.53 19.3 0.27
+ME -4 0.49 1.72 0.35 1.14 0.87 1.52 17.0 0.35
+ME -5 0.36 1.29 0.12 0.38 0.88 1.51 16.7 0.26
+ME -6 0.71 2.67 0.52 1.80 0.88 1.48 15.7 0.54
+ME -7 0.59 2.19 0.45 1.57 0.88 1.47 15.9 0.44
+ME -8 0.62 2.82 0.36 1.55 0.87 1.42 13.0 0.57
+ME -9 0.65 3.25 0.33 1.58 0.86 1.37 11.9 0.66
+Large-ME 0.72 3.77 0.33 1.67 0.83 1.28 11.3 0.76
+
+--- PAGE 69 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B9 
+ 
+Table B4 
+U.S. and International Equities. Robustness: Sample Period 
+This table shows calendar -time portfolio returns of BAB factors . To construct the BAB fa ctor, all stocks are assigned to one of 
+two portfolios: low beta and high beta. The low (high) beta portfolio is comprised of all stocks with  a beta below (above) its 
+country median. Stocks are weigh ted by the ranked betas  (lower beta security have larger weight in the low -beta portfolio and 
+higher beta securities have larger weights in the high-beta portfolio) and the portfolios are rebalanced every calendar month. Both 
+portfolios are rescaled to have a beta of 1 at portfolio formation. The BAB factor is a self -financing portfolio that is long the low-
+beta portfolio and shorts the high -beta portfolio. This table includes all available common st ocks on the CRSP database, and all 
+available common stocks on the Xpressfeed Global database for the 19 markets in listed table I.  Alpha is the intercept in a 
+regression of monthly excess return . The explanatory variables are the monthly retu rns from Fama and French (1993), Carhart 
+(1997) and Asness and Frazzini (2011) mimicking portfolios. Returns and alphas are in monthly percent, t -statistics are shown 
+below the coefficient estimates, and 5% statistical significance is indicated in bold. $ Long (Short) is the average dollar value of 
+the long (short) position. Volatilities and Sharpe ratios are annualized. 
+ 
+Excess 
+return
+T-stat 
+Excess 
+return
+4-factor 
+alpha
+T-stat 
+Alpha
+$Short $Long Volatility Sharpe 
+Ratio
+Panel A: U.S. Equities
+1926 - 1945 0.26 1.00 0.21 0.97 0.59 1.18 12.9 0.24
+1946 - 1965 0.53 4.73 0.63 5.37 0.71 1.27 6.0 1.06
+1966 - 1985 1.09 6.96 0.87 5.55 0.69 1.41 8.4 1.56
+1986 - 2009 0.82 3.50 0.42 2.18 0.78 1.67 13.7 0.71
+2010 - 2012 0.79 1.95 1.05 2.71 0.73 1.38 7.3 1.30
+Panel B : International Equities
+1984 - 1994 0.60 2.47 0.47 1.75 0.85 1.22 7.8 0.93
+1995 - 2000 0.13 0.66 0.13 0.68 0.88 1.35 5.9 0.27
+2001 - 2009 0.99 3.68 0.46 1.91 0.92 1.56 9.7 1.23
+2010 - 2012 0.65 2.02 0.45 1.42 0.90 1.49 5.8 1.34
+
+--- PAGE 70 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B10 
+ 
+Table B5 
+U.S. and International Equities. Robustness: Idiosyncratic Volatility. 
+This table shows calendar-time portfolio returns of BAB portfolios by idiosyncratic volatility. At the beginning of each calendar month stocks are ranked in ascending order on the 
+basis of their idiosyncratic volatility and assign to one of 10 groups. Idiosyncratic volatility is defined as the 1 -year rolling standard deviation of beta-adjusted residual returns. To 
+construct the BAB factor, stocks in each volatility decile are assigned to one of two portfolios: low beta and high beta. The low (high) beta portfolio is comprised of all stocks with 
+a beta below (above) its country median. Stocks are weighted by the ranked betas (lower beta security have larger weight in the low -beta portfolio and higher beta securities have 
+larger weights in the high -beta portfolio) and the portfolios are rebalanced every calendar month.  Both portfolios are rescaled to have a beta of 1 at portfolio formation. The BAB 
+factor is a self-financing portfolio that is long the low-beta portfolio and shorts the high-beta portfolio. This table includes all available common stocks on the CRSP database, and 
+all available common stocks on the Xpressfeed Global database for the 19 markets in listed table I.  Alpha is the intercept in a regression of monthly excess return . The explanatory 
+variables are the monthly returns from Fama and French (1993), Carhart (1997) and Asness and Frazzini (2011) mimicking portfolios. Returns and alphas are in monthly percent, 
+t-statistics are shown below the coefficient estimates, and 5% statistical significance is i ndicated in bold. $ Long (Short)  is the average dollar value of the long (short) position.  
+Volatilities and Sharpe ratios are annualized.  
+ 
+Panel A: U.S. Equities
+Execess 
+Return 
+t(xret) 4-factor 
+alpha
+T-stat 
+Alpha
+$Short $Long Volatility Sharpe 
+Ratio
+Execess 
+Return 
+t(xret) 4-factor 
+alpha
+T-stat 
+Alpha
+$Short $Long Volatility Sharpe 
+Ratio
+Low - volatility 0.36 3.23 0.41 3.73 1.04 1.70 12.3 0.35 0.84 5.55 0.51 3.36 0.70 1.40 16.6 0.61
+P -2 0.48 4.30 0.44 4.12 0.91 1.52 12.3 0.47 0.59 4.56 0.40 3.08 0.71 1.38 14.1 0.50
+P -3 0.65 6.06 0.59 5.92 0.86 1.45 11.7 0.67 0.64 5.26 0.50 4.12 0.72 1.39 13.3 0.58
+P -4 0.70 6.14 0.59 5.82 0.82 1.40 12.4 0.67 0.59 5.23 0.48 4.29 0.73 1.40 12.3 0.57
+P -5 0.56 5.10 0.39 3.82 0.79 1.36 12.1 0.56 0.57 4.68 0.47 3.96 0.74 1.41 13.2 0.51
+P -6 0.59 4.95 0.43 3.93 0.76 1.33 13.1 0.54 0.53 4.99 0.55 5.18 0.73 1.41 11.6 0.55
+P -7 0.77 6.83 0.53 4.97 0.73 1.30 12.3 0.75 0.68 6.23 0.63 5.72 0.73 1.40 12.0 0.68
+P -8 0.90 6.54 0.59 4.67 0.70 1.27 15.0 0.72 0.65 5.78 0.60 5.21 0.72 1.38 12.3 0.64
+P -9 0.87 5.35 0.48 3.37 0.66 1.24 17.9 0.59 0.68 5.81 0.55 4.63 0.70 1.36 12.7 0.64
+High volatility 0.98 5.80 0.58 3.77 0.62 1.20 18.5 0.64 0.80 5.45 0.54 3.70 0.67 1.35 16.1 0.60
+Panel B: International 
+Equities
+Execess 
+Return 
+t(xret) 4-factor 
+alpha
+T-stat 
+Alpha
+$Short $Long Volatility Sharpe 
+Ratio
+Execess 
+Return 
+t(xret) 4-factor 
+alpha
+T-stat 
+Alpha
+$Short $Long Volatility Sharpe 
+Ratio
+Low - volatility 0.35 2.09 0.15 0.92 1.01 1.59 9.9 0.42 0.50 1.60 0.29 0.87 0.83 1.45 18.5 0.33
+P -2 0.39 2.35 0.25 1.43 0.96 1.50 9.9 0.48 0.67 3.09 0.39 1.70 0.86 1.45 12.8 0.63
+P -3 0.53 2.80 0.36 1.76 0.93 1.47 11.3 0.57 0.46 2.15 0.31 1.36 0.87 1.45 12.5 0.44
+P -4 0.58 2.97 0.20 1.00 0.91 1.45 11.5 0.60 0.59 2.74 0.37 1.59 0.88 1.46 12.6 0.56
+P -5 0.52 2.44 0.22 0.98 0.88 1.43 12.5 0.50 0.78 3.74 0.58 2.56 0.88 1.46 12.3 0.76
+P -6 0.39 1.47 0.16 0.57 0.86 1.41 15.5 0.30 0.69 3.27 0.53 2.31 0.88 1.46 12.5 0.67
+P -7 0.67 2.55 0.41 1.50 0.83 1.38 15.5 0.52 0.44 2.09 0.16 0.75 0.87 1.45 12.3 0.42
+P -8 0.90 2.95 0.61 1.96 0.80 1.36 18.0 0.60 0.75 3.00 0.61 2.32 0.85 1.44 14.7 0.61
+P -9 0.60 1.57 0.50 1.31 0.75 1.31 22.4 0.32 0.67 2.68 0.51 1.97 0.83 1.43 14.8 0.54
+High volatility 1.52 2.31 1.01 1.49 0.70 1.28 38.9 0.47 0.76 2.04 0.53 1.35 0.78 1.39 22.1 0.42
+Control for Idiosyncratic volatility Control for Idiosyncratic volatility changes
+Control for Idiosyncratic volatility Control for Idiosyncratic volatility changes
+
+--- PAGE 71 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B11 
+ 
+Table B6 
+Alternative Risk-Free Rates 
+This table shows calendar -time portfolio returns of BAB factors. To construct the BAB factor, all stocks are assigned to one of 
+two portfolios: low beta and high beta. The low (high) beta portfolio is comprised of all stocks with a beta below (above) its 
+country median. Stocks are weigh ted by the ranked betas  (lower beta security have larger weight in the low -beta portfolio and 
+higher beta securities have larger weights in the high-beta portfolio) and the portfolios are rebalanced every calendar month. Both 
+portfolios are rescaled to have a beta of 1 at portfolio formation. The BAB factor is a self-financing portfolio that is long the low-
+beta portfolio and shorts the high -beta portfolio. This table includes all available common stocks on the CRSP database, and all 
+available common stocks on the Xpressfeed Global database for the 19 markets in listed table I.  We report returns using different 
+risk free rates sorted by their average spread over the Treasury bill. “T-bills” is the 1-month Treasury bills. “Repo” is the 
+overnight repo rate.  “OIS” is the overnight indexed swap rate. “Fed Funds” is the effective federal fun ds rate. “Libor” is the 1 -
+month LIBOR rate.  If the interest rate is not available over a date range, we use the 1 -month Treasury bills plus the average 
+spread over the entire sample period. Alpha is t he intercept in a regression of monthly excess return . The explanatory variables 
+are the monthly retu rns from Fama and French (1993), Carhart (1997)  and Asness and Frazzini (2011) mimicking portfolios. 
+Returns and alphas are in monthly percent, t-statistics are shown below the coefficient estimates, and 5% statistical significance is 
+indicated in bold. $ Long (Short)  is the average dollar value of the long (short) position.  Volatilities and Sharpe ratios are 
+annualized. 
+ 
+ 
+ 
+ 
+* 2-year and 30-year Treasury Bond futures - 1991 to 2012 
+ 
+ 
+ 
+ 
+Panel A: U.S. Stocks spread 
+(Bps)
+Excess 
+return
+T-stat 
+Excess 
+return
+4-factor 
+Alpha
+T-stat 
+Alpha
+$Long $Short Volatility Sharpe 
+Ratio
+T-Bills 0.0 0.70 7.12 0.55 5.59 0.70 1.40 10.7 0.78
+Repo 18.2 0.69 7.01 0.54 5.49 0.70 1.40 10.7 0.77
+OIS 18.2 0.69 7.01 0.54 5.48 0.70 1.40 10.7 0.77
+Fed Funds 59.3 0.67 6.77 0.51 5.24 0.70 1.40 10.7 0.74
+Libor 1M 58.7 0.67 6.77 0.52 5.25 0.70 1.40 10.7 0.74
+Libor 3M 68.3 0.66 6.72 0.51 5.19 0.70 1.40 10.7 0.74
+Panel B: International 
+Stocks
+spread 
+(Bps)
+Excess 
+return
+T-stat 
+Excess 
+return
+4-factor 
+Alpha
+T-stat 
+Alpha
+$Long $Short Volatility Sharpe 
+Ratio
+T-Bills 0.0 0.64 4.66 0.30 2.20 0.89 1.40 8.1 0.95
+Repo 18.2 0.63 4.61 0.29 2.15 0.89 1.40 8.1 0.93
+OIS 18.2 0.63 4.61 0.29 2.14 0.89 1.40 8.1 0.93
+Fed Funds 67.7 0.62 4.57 0.28 2.10 0.89 1.40 8.1 0.93
+Libor 1M 58.7 0.61 4.50 0.27 2.04 0.89 1.40 8.1 0.91
+Libor 3M 68.3 0.61 4.47 0.27 2.00 0.89 1.40 8.1 0.91
+Panel C: Treasury spread 
+(Bps)
+Excess 
+return
+T-stat 
+Excess 
+return
+4-factor 
+Alpha
+T-stat 
+Alpha
+$Long $Short Volatility Sharpe 
+Ratio
+T-Bills 0.0 0.17 6.26 0.16 6.18 0.59 3.38 2.4 0.81
+Repo 18.2 0.12 4.69 0.12 4.59 0.59 3.38 2.5 0.61
+OIS 18.2 0.12 4.72 0.12 4.64 0.59 3.38 2.4 0.61
+Fed Funds 59.2 0.06 2.09 0.05 1.95 0.59 3.38 2.5 0.27
+Libor 1M 58.7 0.04 1.45 0.04 1.37 0.59 3.38 2.5 0.19
+Libor 3M 68.3 0.02 0.61 0.01 0.53 0.59 3.38 2.5 0.08
+Bond Futures* 0.34 2.59 0.39 2.95 0.58 5.04 6.3 0.65
+
+--- PAGE 72 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B12 
+ 
+Table B7 
+International Equities. Out of Sample: DataStream Data 
+This table shows calendar -time portfolio returns of BAB factors . To construct the BAB factor, all stocks are assigned to one of 
+two portfolios: low beta and hi gh beta. The low (high) beta portfolio is comprised of all stocks with a beta below (above) its 
+country median. Stocks are weigh ted by the ranked betas  (lower beta security have larger weight in the low -beta portfolio and 
+higher beta securities have larger weights in the high-beta portfolio) and the portfolios are rebalanced every calendar month. Both 
+portfolios are rescaled to have a beta of 1 at portfolio formation. The BAB factor is a self -financing portfolio that is long the low-
+beta portfolio and shorts the high-beta portfolio. This table includes all available common stocks on the DataStream database for 
+the 19 markets in listed table I.  Alpha is the intercept in a regression of monthly excess return . The explanatory variables are the 
+monthly returns from Fama and French (1993), Carhart (1997) and Asness and Frazzini (2011) mimicking portfolios. Returns 
+and alphas are in monthly percent, t -statistics are shown below the coefficient estimates, and 5% statistical significance is 
+indicated in bold. $ Long (Short) is the average dollar value of the long (short) position.  Volatilities and Sharpe ratios are 
+annualized. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Excess 
+return
+T-stat 
+Excess 
+return
+4-factor 
+alpha
+T-stat 
+Alpha
+SR Start End Num of 
+months
+Australia 0.55 1.20 0.60 1.30 0.33 1977 1990 158
+Austria 1.34 1.84 1.42 1.92 0.50 1977 1990 164
+Belgium 0.38 1.38 0.26 0.92 0.39 1977 1989 154
+Canada 0.65 1.84 0.39 1.11 0.56 1977 1987 131
+Switzerland 0.25 1.02 0.04 0.18 0.28 1977 1989 154
+Germany 0.35 1.48 0.26 1.07 0.41 1977 1989 154
+Denmark 0.22 0.51 -0.06 -0.14 0.14 1977 1990 161
+France 0.82 2.37 0.66 1.87 0.66 1977 1989 156
+United Kingdom 0.67 2.99 0.68 3.02 0.66 1969 1989 249
+Hong Kong 0.84 1.76 0.68 1.40 0.48 1977 1990 161
+Italy 0.31 1.06 0.20 0.68 0.29 1977 1989 155
+Japan 0.93 2.57 0.80 2.17 0.72 1977 1989 154
+Nethenrlands 0.47 1.56 0.32 1.06 0.43 1977 1989 155
+Norway 1.20 2.03 1.21 2.00 0.55 1977 1990 161
+Singapore 0.62 1.40 0.65 1.45 0.38 1977 1990 162
+Sweden -1.60 -0.81 -2.15 -1.04 -0.32 1977 1989 79
+
+--- PAGE 73 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B13 
+ 
+Table B8 
+All Assets. Robustness: Betas with Respect to a Global Market Portfolio, 1973 – 2009 
+  
+This table shows calendar -time portfolio returns. The test assets are cash equities, bonds, futures, forwards or swap returns in 
+excess of the relevant financing rate. To construct the BAB factor, all securities are assigned to one of two portfolios: low b eta 
+and high beta. Securities are weighted by the ranked betas (lower beta security have larger weight in the low -beta portfolio and 
+higher beta securities have larger weights in the high -beta portfolio)  and the portfolios are r ebalanced every calendar mon th. 
+Betas as computed with respect to the global market portfolio from Asness, Frazzini and Pedersen (2011). Both portfolios are 
+rescaled to have a beta of 1 at portfolio formation. The BAB factor is a self-financing portfolio that is long the low-beta portfolio 
+and shorts the high-beta portfolio. Alpha is the intercept in a regre ssion of monthly excess return. The explanatory variable is the 
+monthly return of the global market portfolio. All Bonds and Credit  includes U.S. treasury bonds, U .S. corporate bonds, U .S. 
+credit indices (hedged and unhedged) and country bonds indices. All Equities included U.S. equities, international equities and 
+equity indices. All Assets includes all the assets listed in table I and II.  The All Equities and All Assets combo portfolios have 
+equal risk in each individual BAB and 10% ex ante volatility. To construct combo portfolios, at the b eginning of each calendar 
+month, we rescale each return series to 10% annualized volatility using rolling 3 -year estimate up to moth  t-1 and then e qually 
+weight the return series. Returns and alphas are in monthly percent, t -statistics are shown below the coefficient estimates and 5% 
+statistical significance is indicated in bold. Volatilities and Sharpe ratios are annualized.  
+ 
+ 
+ 
+* Equal risk, 10% ex ante volatility 
+  
+Panel A: Global results Excess 
+Return
+T-stat   
+Excess 
+Return
+Alpha T-stat 
+Alpha 
+$Short $Long Volatility SR
+US Stocks 0.77 5.10 0.68 4.59 0.47 1.38 0.10 0.91
+International Stocks 0.82 3.45 0.67 2.98 0.60 1.49 0.13 0.73
+All Bonds and Credit 1.33 2.93 1.26 2.74 22.66 25.81 31.99 0.50
+All Futures 1.25 2.45 1.10 2.16 1.22 3.02 0.36 0.41
+All Equities* 0.66 4.73 0.53 4.06 9.71 0.82
+All Assets* 0.67 4.21 0.57 3.66 11.00 0.73
+
+--- PAGE 74 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B14 
+ 
+Table B9 
+U.S. and International Equities. Robustness: Value-Weighted BAB Factors  
+This table shows calendar-time portfolio returns of value-weighted BAB factors. The BAB factor is constructed using six value -
+weighted portfolios formed on size and beta. We form one set of portfolios in each country and compute an international 
+portfolio by weighting each country’s portfolio by the country’s total (lagged) market capitalization. At the end of each calendar 
+month, stocks are assigned to two size -sorted portfolios based on their market capitalization and to three beta -sorted portfolios 
+(low, medium and high) based on the 30th and 70th percentile. For U.S. securities, th e size breakpoint is the median NYSE 
+market equity. For International securities the size breakpoint is the 80th percentile by country.  For the international sam ple we 
+use conditional sorts (first sorting on size , then on beta) in order to ensure we have enough securities in each portfolio (U.S. sorts 
+are independent). Portfolios are value -weighted, refreshed every calendar month, and rebalanced every calendar month to 
+maintain value weights.  We average the small and large portfolio to form a low be ta and high beta portfolio. The dollar neutral 
+BAB is a self -financing portfolio long the low beta portfolio an d short the high beta portfolio. The beta-neutral BAB is a self -
+financing portfolio long the low beta portfolio levered to a beta of 1 and short the h igh beta portfolio dele vered to a beta of 1 . 
+This table includes all available common stocks on the CRSP database, and all available  common stocks on the Xpressfeed 
+Global database for the 19 markets in listed Table I. Alpha is the intercept in a regression of monthly excess return.  The 
+explanatory variables are the monthly retu rns from Fama and French (1993), Carhart (1997) and Asness and Frazzini (2011) 
+mimicking portfolios. Returns and alphas are in monthly percent, t -statistics are shown below the coefficient estimates, and 5% 
+statistical significance is indicated in bold. $ Long (Short) is the average dollar value of the long (short) position.  Volatilities and 
+Sharpe ratios are annualized. 
+ 
+ 
+  
+Universe Method $Short $Long Volatility Sharpe 
+Ratio
+Excess 
+Return
+CAPM 3-factor 4-factor Excess 
+Return
+CAPM 3-factor 4-factor
+U.S. Beta neutral 0.51 0.60 0.59 0.45 5.22 6.30 6.25 4.72 0.71 1.31 10.77 0.57
+U.S. Dollar neutral 0.03 0.51 0.61 0.45 0.20 5.08 6.59 4.88 1.00 1.00 19.20 0.02
+International Beta neutral 0.68 0.70 0.75 0.33 4.85 4.99 5.31 2.42 0.89 1.44 8.30 0.98
+International Dollar neutral 0.23 0.34 0.51 0.22 1.26 2.61 4.02 1.74 1.00 1.00 10.77 0.26
+t-statisticsAlpha
+
+--- PAGE 75 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B15 
+ 
+Figure B1 
+Sharpe Ratios of Beta-Sorted Portfolios 
+This figure shows Sharpe Ratios. The test assets are beta-sorted portfolios. At the beginning of each calendar month , 
+securities are ranked in ascending order on the basis of their estimated beta at the end of the previous month. The 
+ranked securities are assigned to beta -sorted portfolios. This figure plots Sharpe ratio s from low beta (left) to high 
+beta (right). Sharpe ratios are annualized.  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+U.S. Stocks
+global
+Equity Indices
+Commodities
+Country bonds
+Foreign Exchange
+0.00
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+0.70
+0.80
+P1 (low
+beta)
+P2 P3 P4 P5 P6 P7 P8 P9 P10
+(high
+beta)
+Alpha
+U.S. Equities
+0.00
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+P1 (low
+beta)
+P2 P3 P4 P5 P6 P7 P8 P9 P10
+(high
+beta)
+Alpha
+International Equities 
+0.00
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+0.70
+0.80
+1 to 12
+months
+13 to 24 25 to 36 37 to 48 49 to 60 61 to 120 > 120
+Alpha
+Treasury 
+0.66
+0.68
+0.70
+0.72
+0.74
+0.76
+0.78
+0.80
+0.82
+0.84
+1-3 years 3-5 year 5-10 years 7-10 years
+Alpha
+Credit Indices 
+0.00
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+0.70
+0.80
+0.90
+1-3 years 3-5 year 5-10 years 7-10 years
+Alpha
+Credit - CDS 
+-0.40
+-0.20
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+Alpha
+Credit  - Corporate 
+0.00
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Low beta High beta
+Alpha
+Equity Indices 
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+0.30
+0.35
+0.40
+0.45
+Low beta High beta
+Alpha
+Commodities 
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+Low beta High beta
+Alpha
+Foreign Exchange
+-0.04
+-0.03
+-0.03
+-0.02
+-0.02
+-0.01
+-0.01
+0.00
+0.01
+0.01
+0.02
+0.02
+Low beta High beta
+Alpha
+Country Bonds 
+
+--- PAGE 76 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B16 
+ 
+Figure B2 
+International Equities. Out of Sample: DataStream Data 
+This figures shows annualized Sharpe ratios of BAB factors. To construct the BAB factor, all securities are assigned to 
+one of two portfolios: low beta and high beta. Securities are weighted by the ranked betas and the portfolios are 
+rebalanced every calendar month. Both portfolios are rescaled to have a beta of 1 at portfolio formation. The BAB 
+factor is a self -financing portfolio that is long the low -beta portfolio and shorts the high -beta portfolio. Sharpe ratios 
+are annualized.  
+ 
+ 
+ 
+ 
+ 
+  
+-0.40
+-0.20
+0.00
+0.20
+0.40
+0.60
+0.80
+Australia
+Austria
+Belgium
+Canada
+Switzerland
+Germany
+Denmark
+France
+United Kingdom
+Hong Kong
+Italy
+Japan
+Nethenrlands
+Norway
+Singapore
+Sweden
+Sharpe Ratio
+
+--- PAGE 77 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix B - Page B17 
+ 
+Figure B3 
+U.S. Equities. Beta Compression: Simulation Results 
+This Figure reports the distribution of the difference in cross sectional standard deviation of estimated betas between 
+high (P3) and low (P1) funding liquidity risk periods under the null hypothesis of no time -variation in the cross 
+sectional dispersion of true betas. We compute a bootstrap sample under the null hypothesis of no variation in the 
+cross sectional dispersion of betas by fixing each stock’s beta to its full sample realized beta and sampling with 
+replacement from the time series distribution of idiosyncratic returns. We use monthly data, estimate rolling betas on 
+the simulated sample (as described in section II) , and compute beta compression statistics of T able X, panel A.  We 
+repeat this procedure 10,000 times. This figure includes all available common stocks on the CRSP database. 
+ 
+ 
+0
+50
+100
+150
+200
+250
+300
+350
+-0.100
+-0.040
+-0.025
+-0.024
+-0.023
+-0.022
+-0.022
+-0.021
+-0.020
+-0.019
+-0.019
+-0.018
+-0.017
+-0.016
+-0.016
+-0.015
+-0.014
+-0.013
+-0.013
+-0.012
+-0.011
+-0.011
+-0.010
+-0.009
+-0.008
+-0.008
+-0.007
+-0.006
+-0.005
+-0.005
+-0.004
+-0.003
+-0.002
+-0.002
+-0.001
+Frequency
+Standard Deviation of Betas - P3 (Hgh Ted Volatility) minus P1 (Low Ted Volatility)
+Data: -0.079 
+P-value: 0.00
+
+--- PAGE 78 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix C - Page C1 
+ 
+Appendix C: Calibration 
+ 
+We consider a simple calibration exercise to see if the model can generate the 
+quantitative as well as the qualitative features of the data. In particular, a 
+calibration can shed light on what is required to generate the empirically observed 
+flatness of the security market line and BAB performance in terms of the severity of  
+funding restrictions and/or the cross-sectional dispersion of risk aversions.  
+ For this exercise, we consider the parameterization s of the model  that are 
+indicated in Table C1. We consider a single-period version of the model , although it 
+could be embedded into a stationary OLG setting.  There are two types of agents, 1 
+and 2, and the table indicates each a gent’s leverage constraint given by the (margin 
+requirement) mi, his “relative ris k aversion,” and the fraction of agents of type 1. 
+The representative agent of type i is therefore assumed to have an absolute risk 
+aversion which is the relative risk aversion divided by the wealth of that group of 
+agents. The total wealth is normalized to 100. Hence, in a calibration in which 50% 
+of the agents are of type 1, the absolute  risk aversion will b e the relative risk 
+aversion divided by 100×0.50 = 50. 
+ The risk-free interest rate is set at    3.6% to match the average T -bill rate 
+and there are two risky assets, each in unit supply. T he low-risk asset is denoted 
+asset L and the high-risk asset is denoted H. We set the expected payment of each 
+risky asset at             so that the total payment is in line with aggregate 
+wealth. Further, we assume the final payoff of asset 1 has variance 40, the variance 
+of asset 2 is 205, and the covariance of these payoffs is 84. These numbers are chosen 
+to roughly match the empirical volatilities and correlations of the asset returns. (The 
+asset returns are endogenous variables so they differ slightly across calibrations).  
+The first column of Table C1 has the CAPM benchmark in which no agent is 
+constrained (m1=m2=0). Naturally, the expected return of the BAB factor is zero in 
+this case. The last column shows, as a benchmark, the empirical counterparts of the 
+outcome variables. As an empirical  proxy for asset L, we use the unleveraged low-
+beta portfolio rL defined in Equation (17), and, similarly, asset H is the high -beta 
+portfolio rH. To be consistent with the calibration, we let the market be the average 
+
+--- PAGE 79 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix C - Page C2 
+ 
+of rL and rH (but we could also use the standard value-weighted market).  
+ Columns 2 -4 are three calibrations with constrained agents for different 
+parameter values. The parameters are not chosen to maximize the fit, but simply 
+illustrate the model’s predictions for the BAB return in differe nt economic settings. 
+In the first of these calibrations, both agents are leverage constrained with m1=m2=1 
+and the agents differ in their risk aversion. In this calibration, the risk -averse 
+investor requires a higher risk premium, chooses a smaller positi on, and is not 
+constrained in equilibrium. The more risk -tolerant investor, on the other hand, hits 
+his leverage constraint and, therefore, tilts his portfolio towards the high -beta asset, 
+thus flattening the security market line. The BAB portfolio therefo re has a positive 
+return premium of 4% per year, corresponding to a Sharpe ratio of 0.47. While this 
+calibration naturally does not match all the moments of the data  exactly, it gets in 
+the ballpark.  
+ The next calibration with constrained agents considers  agents who have the 
+same risk aversion, but one of the m has the severe capital constraint that he must 
+keep almost 20% of his capital in cash ( m1=1.2). While this constraint is binding in 
+equilibrium, the effect on asset prices is very small, and the BAB portfolio has a 
+Sharpe ratio of 0.01.  
+ The last calibration has agents with dif ferent risk aversions of which 8 0% are 
+more risk tolerant and face  severe capital constraints. In this calibration, the BAB 
+portfolio has a Sharpe ratio of 0.78, similar to the empirical counterpart.  
+ These calibrations illustrate that severe capital constraints for a sizable 
+fraction of the investors can potentially ex plain a significant flattening of the 
+security market line with an associated return premium for the BAB portfolio. An 
+interesting (and challenging) project for future research is to more formally calibrate 
+the model using data on the relative sizes of different investor groups, the severity of 
+their capital constraints, and their risk preferences.    
+ 
+  
+
+--- PAGE 80 ---
+
+Betting Against Beta - Andrea Frazzini and Lasse H. Pedersen – Appendix C - Page C3 
+ 
+Table C1 
+Model Calibrations 
+Each of the first 5 columns illustrate a calibration of the model and the last column shows the same 
+quantities using estimated  values from US equities, 1926 -2011. The top panel shows the exogenous 
+variables. The bottom panel shows the endogenous outcome variables, namely the annual volatility, 
+excess return, and betas of, respectively, the low -risk (L) asset, the high -risk asset (H), the market 
+portfolio (MKT), and the BAB factor. 
+ 
+      
+ 
+ 
+ 
+* Here, MKT is the average of the low-beta and high-beta portfolio for consistency with the calibration. 
+Standard 
+CAPM
+Constrained 
+agents I
+Constrained 
+agents II
+Constrained 
+agents III Data
+Exogenous variables
+Risk aversion, agent 1 1 1 1 1 NA
+Risk aversion, agent 2 1 10 1 10 NA
+Fraction of type-1 agents any 50% 50% 80% NA
+Funding constraint, m1 0 1.0 1.2 1.2 NA
+Funding constraint, m2 0 1.0 0.0 0.0 NA
+Endogenous variables
+Volatility, L 13% 14% 13% 14% 18%
+Volatility, H 30% 33% 30% 33% 35%
+Volatility, MKT* 21% 23% 21% 23% 26%
+Volatility, BAB 8% 9% 8% 9% 11%
+Excess return, L 3% 9% 3% 10% 11%
+Excess return, H 6% 16% 6% 15% 12%
+Excess return, MKT* 4% 12% 4% 13% 12%
+Excess return, BAB 0% 4% 0% 7% 8%
+Beta^L 0.6 0.6 0.6 0.6 0.7
+Beta^H 1.4 1.4 1.4 1.4 1.3
