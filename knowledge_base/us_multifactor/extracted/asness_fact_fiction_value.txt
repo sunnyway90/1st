@@ -1,0 +1,373 @@
+
+
+--- PAGE 1 ---
+
+№ 2Volume 5
+www.practicalapplications.com
+The V oices of Influence  |  iijournals.com
+CLIFFORD ASNESS, ANDREA FRAZZINI,  
+RONEN ISRAEL, and TOBIAS MOSKOWITZ  
+Fact, Fiction, and 
+V alue Investing
+№ 4Volume 3
+
+
+--- PAGE 2 ---
+
+1 //   Practical Applications
+Practical Applications of
+Fact, Fiction,  
+and V alue Investing
+Authors: Clifford Asness, Andrea Frazzini, Ronen Israel and Tobias Moskowitz
+Source: The Journal of Portfolio Management,  Vol. 42, No. 1.
+Report Written By:  Aimee Picchi
+Keywords: Value Investing, Momentum Investing, AQR Capital Management 
+Overview
+Value investing has a long history in the financial markets, with Benjamin Graham  
+and David Dodd advocating for the strategy in their 1934 classic book Security 
+Analysis. It is practiced today by many well-known practitioners, including 
+Berkshire Hathaway  CEO Warren Buffett. Yet, the strategy is subject to a 
+number of faulty beliefs from both adherents and opponents. In an interview with 
+Institutional Investor Journals , Andrea Frazzini and Ronen Israel provide 
+insights into what many get wrong—and right—about value strategies. 
+Their award-winning research appeared in The Journal of Portfolio Management . 
+It was co-written with AQR Capital Management  colleagues Cliff Asness and 
+Tobias Moskowitz (who is also a professor at the University of Chicago Booth 
+School of Business ). Their article— Fact, Fiction, and Value Investing —was named 
+Outstanding Article in the 17th Annual Bernstein Fabozzi/Jacobs Levy Awards . 
+Practical Applications
+• Look beyond Buffett. Many believe value investing only works best in a 
+concentrated stock-picking style, similar to Buffett’s approach. In fact, a 
+systematic, diversified value strategy also produces strong long-term results.
+• Think beyond equities. Other asset classes, even currencies and commodities, 
+demonstrate reliable value premiums. 
+• Act beyond single strategies. A system that incorporates value and momentum can 
+boost returns.
+Practical Applications Report
+Value investing remains subject to a number of misperceptions, despite dating back 
+to Victorian England and being popularized by Graham and Dodd in the early 20th 
+century. This disconnect between reality and perception became clear to principals at 
+AQR while they were working on a previous article that sought to dispel myths about 
+momentum investing. That article, Fact, Fiction, and Momentum Investing , was 
+published in JPM in 2014.
+Clifford S. Asness
+cliff.asness@aqr.com
+Cliff is a Founder, Managing Principal and 
+Chief Investment Officer at AQR Capital 
+Management. He is an active researcher 
+and has authored articles on a variety of 
+financial topics for many publications, 
+including The Journal of Portfolio 
+Management, Financial Analysts 
+Journal and Journal of Finance. 
+He has received five Bernstein Fabozzi/
+Jacobs Levy Awards from The Journal 
+of Portfolio Management, in 2002, 2004, 
+2005, 2014 and 2015. The Financial 
+Analysts Journal has twice awarded him 
+the Graham and Dodd Award for the 
+year’s best paper, as well as a Graham 
+and Dodd Excellence Award, the award 
+for the best perspectives piece, and 
+the Graham and Dodd Readers’ Choice 
+Award. In 2006, CFA Institute presented 
+Cliff with the James R. Vertin Award, 
+which is periodically given to individuals 
+who have produced a body of research 
+notable for its relevance and enduring 
+value to investment professionals. 
+Prior to co-founding AQR Capital 
+Management, he was a managing director 
+and director of quantitative research 
+for the Asset Management Division of 
+Goldman, Sachs & Co. He is on the 
+editorial board of The Journal of Portfolio 
+Management, the governing board of 
+the Courant Institute of Mathematical 
+Bernstein Fabozzi / Jacobs Levy Awards Winner
+
+--- PAGE 3 ---
+
+2 //   Practical Applications
+“We realized that something like value, which has perhaps been talked about and traded 
+on for a longer period time, had an equal number of misunderstandings, and we felt it 
+was the natural thing to try to attack the problem in a similar way,” Israel reports. 
+The AQR team identified nine myths and unrealized truths about value investing 
+by assessing academic research, evaluating perspectives from the trenches and 
+incorporating their firm’s own empirical analysis. The authors point out that even 
+value supporters can spread confusion about the strategy.
+You can read about the myths—why they persist and how they are debunked—in the 
+full article. Here are some of them: 
+• A value portfolio’s Sharpe ratio almost doubles when combined with stocks chosen 
+for momentum and profitability. 
+• An HML-style portfolio ( Fama and French’s high minus low ) that uses a 
+composite of four value measures provides similar average returns as those built 
+with just a single value measure, but with 20% less volatility. 
+• During the past 88 years, the market-adjusted return to value within large-
+capitalization stocks has only been 1.7% annually, or one-third of the return for 
+small-cap value stocks.
+THE BUFFETT PROBLEM
+Warren Buffett became a legend through his success at picking and holding 
+individual cheap stocks and thereby delivering strong, long-term results. Conversely, 
+Buffett has dismissed diversification as “protection against ignorance,” Frazzini, 
+Israel and their co-authors note in the article. They repeat another Buffett quote that 
+elaborates: “It makes little sense if you know what you are doing.” 
+That feeds into a widespread belief that a successful value investor must eschew 
+diversification in favor of a concentrated number of deeply researched stocks, the 
+authors point out. But in this case, Buffett is promoting a “fiction” about value that 
+won’t necessarily benefit investors as a whole, they argue. 
+“You are always going to find people who did well like Buffett, but that doesn’t 
+mean you can’t capture value in a systematic way,” Israel says. “A diversified value 
+approach is very valuable in an investor’s portfolio.”
+Strong, long-term evidence demonstrates that a systematic value approach to 
+diversified assets can provide solid returns over a long period. Buffett’s approach is 
+just one aspect of value investing, and limiting oneself to picking idiosyncratic value 
+stocks can add further risks, as well as higher fees, Frazzini and Israel point out.
+THE FLIP SIDE TO BUFFETT
+Representing the flip side to Buffett is a group of pure value investors, who claim 
+they aren’t using a value strategy. This is an example of an unrealized truth. Their 
+portfolios are labeled with terms such as “fundamental indexing” and “smart beta.” 
+But the authors argue that these approaches that weight by fundamentals—such as 
+book value, dividends and other measures—instead of the market-cap weighting used 
+in traditional indexing are simply implementing a value tilt.
+Key Definitions
+Momentum investing
+An investment strategy that buys or 
+overweights stocks with high recent 
+returns and underweights or shorts stocks 
+with low recent returns.
+Value investing 
+An investment strategy that buys or 
+overweights stocks with low prices relative 
+to their fundamentals and underweights or 
+shorts stocks with high prices relative to 
+their fundamentals.
+Finance at New York University, the 
+board of directors of the Q-Group and 
+the board of the International Rescue 
+Committee. Cliff holds a BS in economics 
+from the Wharton School and a BS in 
+engineering from the Moore School of 
+Electrical Engineering at the University 
+of Pennsylvania, graduating summa cum 
+laude in both. He received an MBA with 
+high honors and a PhD in finance from 
+the University of Chicago, where he was 
+Eugene Fama’s student and teaching 
+assistant for two years (so he still feels 
+guilty when trying to beat the market).
+     
+      
+  
+The Authors
+✓ Assessed academic 
+research.
+✓ Evaluated perspectives 
+from the trenches.
+✓ Incorporated AQR’s 
+own empirical analysis.
+
+--- PAGE 4 ---
+
+3 //   Practical Applications
+Back-testing a fundamental index, using data from large-cap stocks from 1962 
+through early 2014, verified this. Fundamental indexing “is capturing the value 
+premium,” Israel notes. 
+LOOK BEYOND EQUITIES
+Another widely held myth about value investing is that it’s only applicable to 
+equities, which may be tied to the fact that most of the academic literature has 
+focused on stocks, the authors note. But that means that investors may be missing out 
+on applying value to other asset classes.
+Frazzini recommends investors revisit a 2013 research paper by Asness, Moskowitz 
+and another AQR colleague (and professor at New York University’s Stern School 
+of Business), Lasse Heje Pedersen , called Value and Momentum Everywhere . It 
+documents significant value return premia in assets including bonds, currencies and 
+commodities from 1972 through 2011.
+“Value isn’t just a stock-oriented phenomenon,” Israel says. “That’s a power in 
+understanding value. The fact that it works in so many contexts gives us confidence.”
+A COMPOSITE OF VALUE MEASURES
+Aside from applying value principles across asset classes, investors should take 
+an “intuitive” approach to measuring value, the authors recommend. That is, use a 
+composite of variables, Frazzini and Israel explain. 
+Academia predominantly measures value through the book-to-market ratio, but 
+using multiple measures of value—such as earnings-to-price and cash-flow-to-price 
+ratios—helps produce more stable value portfolios with higher Sharpe ratios and 
+stronger returns, they report. 
+RETHINKING LARGE-CAP VALUE 
+Bucking earlier academic research that relied on data from 1963 to the early 1980s, 
+the authors find that there’s no strong value premium among large-cap stocks when 
+considering a longer, 88-year period. Still, there’s value in the segment. Combining 
+large-cap value with large-cap momentum boosts the Sharpe ratio to close to that 
+seen with the small-cap stocks using a similar mix of value and momentum, Frazzini 
+and Israel report.
+“From an investor perspective, putting these things together and taking advantage 
+of multiple factors like momentum and profitability, we think, is the most important 
+thing,” Israel says.
+Frazzini adds, “An important point we make is that value should not be considered as 
+a stand-alone strategy.”
+“ From an investor 
+perspective, putting 
+these things together 
+and taking advantage 
+of multiple factors 
+like momentum and 
+profitability, we think, 
+is the most important 
+thing. ”
+—Ronen Israel
+“ An important 
+point we make is that 
+value should not be 
+considered as a stand-
+alone strategy. ”
+—Andrea Frazzini
+
+--- PAGE 5 ---
+
+4 //   Practical Applications
+HELICOPTERS, ROCK N’ ROLL, FAMI LY & TENNIS
+Frazzini spends little time away from the world of fin ance, but he’s learning to fly  
+helicopters. He is a guitarist in a band that plays classic rock, such as Rolling Sto nes 
+songs. 
+Israel jokes he has limitations that Frazzini doesn’t.  “First, I’m not Italian , and I have 
+three kids!” He spends his time outside of AQR with his family, and he plays tennis. 
+To order reprints of this report, p lease contact Dew ey Palmieri 
+at dpalmieri@iijournals.com or 212-224-3675
+The views and opinions expressed are those of the authors and do not necessarily reflect the views 
+of AQR Capital Management, its affiliates, or its employees; do not constitute an offer, 
+solicitation of an offer, or any advice or recommendation, to purchase any securities or other 
+financial instruments, and may not be construed as such. Diversification does not eliminate the 
+risk of experiencing investment losses. 
+Hypothetical performance results (e.g., quantitative backtests) have many inherent limitations, 
+some of which, but not all, are described herein.  No representation is being made that any fund or 
+account will or is likely to achieve profits or losses similar to those shown herein.  In fact, there 
+are frequently sharp differences between hypothetical performance results and the actual results 
+subsequently realized by any particular trading program.  One of the limitations of hypothetical 
+performance results is that they are generally prepared with the benefit of hindsight.  In addition, 
+hypothetical trading does not involve financial risk, and no hypothetical trading record can 
+completely account for the impact of financial risk in actual trading.  For example, the ability to 
+withstand losses or adhere to a particular trading program in spite of trading losses are material 
+points which can adversely affect actual trading results.  The hypothetical performance results 
+contained herein represent the application of the quantitative models as currently in effect on the 
+date first written above and there can be no assurance that the models will remain the same in the 
+future or that an application of the current models in the future will produce similar results 
+because the relevant market and economic conditions that prevailed during the hypothetical 
+performance period will not necessarily recur.  There are numerous other factors related to the 
+markets in general or to the implementation of any specific trading program which cannot be fully 
+accounted for in the preparation of hypothetical performance results, all of which can adversely 
+affect actual trading results. Discounting factors may be applied to reduce suspected anomalies.  
+This backtest’s return, for this period, may vary depending on the date it is run. 
+
+--- PAGE 6 ---
+
+5 //   Practical Applications
+Ronen Israel
+ronen.israel@aqr.com
+Ronen is a Principal at AQR Capital 
+Management. His primary focus is on 
+portfolio management and research. He 
+was instrumental in helping to build AQR’s 
+Global Stock Selection group and its initial 
+algorithmic trading capabilities, and he 
+now runs the Global Alternative Premia 
+group, which employs various investing 
+styles across asset classes. 
+He received an Outstanding Article Award 
+as part of the 17th Annual Bernstein 
+Fabozzi/Jacobs Levy Awards from The 
+Journal of Portfolio Management in 
+2015 and the Special Distinction Award as 
+part of the Harry M. Markowitz Prize for 
+the best paper published in the Journal 
+of Investment Management in 2015. 
+He is on the executive board of the 
+University of Pennsylvania’s Jerome 
+Fisher Program in Management and 
+Technology and is an adjunct professor 
+of finance at New York University. Ronen 
+has been a guest speaker at Harvard, 
+Columbia, the University of Pennsylvania 
+and the University of Chicago and is a 
+frequent conference speaker. 
+Prior to joining AQR, he was a senior 
+analyst at Quantitative Financial 
+Strategies. He holds a BS in economics 
+from the Wharton School at the 
+University of Pennsylvania, a BAS in 
+biomedical science from the University 
+of Pennsylvania’s School of Engineering 
+and Applied Science and an MA in 
+mathematics, specializing in mathematical 
+finance, from Columbia University.
+Tobias J. Moskowitz
+tobias.moskowitz@chicagobooth.edu
+Toby is a Principal at AQR Capital 
+Management. He contributes to research on 
+asset pricing and investment issues related 
+to domestic and international strategies 
+for AQR’s Global Alternative Premia 
+team. He holds the Fama Family Chaired 
+Professorship in Finance at the University 
+of Chicago’s Booth School of Business 
+and is a Research Associate at the National 
+Bureau of Economic Research. 
+He has won the Amundi Smith Breeden 
+Award for the best paper published in the 
+Journal of Finance, the Brattle Group 
+Prize for the best corporate finance 
+paper published in the Journal of Finance, 
+the BGI Michael Brennan Award for 
+the best paper published in the Review 
+of Financial Studies, twice, the 2015 
+Bernstein Fabozzi/Jacobs Levy Awards 
+for Outstanding Article in The Journal of 
+Portfolio Management. In 2007, he was 
+awarded the Fischer Black Prize by the 
+American Finance Association, which 
+recognizes the best financial economist 
+under the age of 40, and the Ewing Marion 
+Kauffman Prize Medal for Distinguished 
+Research in Entrepreneurship in 2012 by 
+the Kauffman Foundation, which recognizes 
+the largest contribution to entrepreneurial 
+research under the age of 40. 
+His work has been cited in numerous print 
+media, television appearances and in a 
+2005 speech by former Federal Reserve 
+Chairman Alan Greenspan. Toby earned 
+a BS in industrial management/industrial 
+engineering with honors and an MS in 
+finance from Purdue University, as well 
+as a PhD in finance from the University of 
+California at Los Angeles.
+Andrea Frazzini
+andrea.frazzini@aqr.com
+Andrea is a Principal on AQR Capital 
+Management’s Global Stock Selection 
+team, focusing on research and portfolio 
+management of the firm’s long/short and 
+long-only equity strategies. 
+He is also an Adjunct Professor of Finance 
+at New York University’s Stern School 
+of Business. He has published in top 
+academic journals and won several 
+awards for his research, including the 
+Smith Breeden Award, the Fama-
+DFA Prize, the BGI best paper award, 
+several Bernstein Fabozzi/Jacobs Levy 
+Awards, and the PanAgora Crowell 
+Memorial Prize. Prior to joining AQR, 
+Andrea was an associate professor of 
+finance at the University of Chicago’s 
+Graduate School of Business and a 
+research associate at the National Bureau 
+of Economic Research. 
+He also served as a consultant for 
+DKR Capital Partners and J.P . Morgan 
+Securities and on the board of directors of 
+the Center for Research in Security Prices 
+at the University of Chicago. He earned 
+a BS in economics from the University of 
+Roma Tre, an MS in economics from the 
+London School of Economics and a PhD 
+in economics from Yale University.

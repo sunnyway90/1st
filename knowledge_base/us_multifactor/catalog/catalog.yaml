@@ -1,0 +1,256 @@
+# 美股多因子资料库目录
+# 用途：LLM / RAG 检索入口。书籍仅列合法购买/图书馆渠道，不收录盗版全文。
+
+version: 1
+topic: us_equity_multifactor
+language: zh-CN
+updated: "2026-08-04"
+
+factors_covered:
+  - market_beta
+  - size
+  - value
+  - momentum
+  - profitability
+  - investment
+  - quality
+  - low_beta_bab
+  - q_factor
+
+data_sources:
+  - name: Ken French Data Library
+    url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html
+    note: Fama-French 因子日/月收益、组合收益公开下载
+  - name: AQR Data Sets
+    url: https://www.aqr.com/Insights/Datasets
+    note: QMJ、BAB、Value/Momentum 等因子数据
+  - name: Global-q
+    url: https://global-q.org/
+    note: Hou-Xue-Zhang q-factor 数据
+
+papers:
+  - id: fama_french_1992
+    title: "The Cross-Section of Expected Stock Returns"
+    authors: ["Eugene F. Fama", "Kenneth R. French"]
+    year: 1992
+    venue: Journal of Finance
+    factors: [size, value]
+    tags: [foundational, cross_section, beta_puzzle]
+    pdf: papers/fama_french_1992_cross_section.pdf
+    extracted: extracted/fama_french_1992_cross_section.txt
+    digest: digests/fama_french_1992.md
+    open_url: https://www.ivey.uwo.ca/media/3775518/the_cross-section_of_expected_stock_returns.pdf
+    summary_zh: >
+      发现市值与账面市值比能解释美股横截面平均收益；
+      在控制规模后，市场β与平均收益关系趋平。
+
+  - id: fama_french_1993
+    title: "Common Risk Factors in the Returns on Stocks and Bonds"
+    authors: ["Eugene F. Fama", "Kenneth R. French"]
+    year: 1993
+    venue: Journal of Financial Economics
+    factors: [market_beta, size, value]
+    tags: [foundational, three_factor, time_series]
+    pdf: papers/fama_french_1993_common_risk_factors.pdf
+    extracted: extracted/fama_french_1993_common_risk_factors.txt
+    digest: digests/fama_french_1993.md
+    open_url: https://people.hec.edu/rosu/wp-content/uploads/sites/43/2023/09/Fama-French-Common-risk-factors-1993.pdf
+    summary_zh: >
+      提出三因子模型（市场、SMB、HML），用时间序列回归解释股票与债券收益共同变动。
+
+  - id: carhart_1997
+    title: "On Persistence in Mutual Fund Performance"
+    authors: ["Mark M. Carhart"]
+    year: 1997
+    venue: Journal of Finance
+    factors: [momentum]
+    tags: [four_factor, mutual_funds]
+    pdf: null
+    extracted: null
+    digest: digests/carhart_1997.md
+    open_url: https://doi.org/10.1111/j.1540-6261.1997.tb03808.x
+    ssrn: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=8036
+    summary_zh: >
+      在三因子上加入一年动量（WML/UMD），解释共同基金业绩持续性；
+      持久性多来自动量与费用，而非选股技能。
+
+  - id: jegadeesh_titman_1993
+    title: "Returns to Buying Winners and Selling Losers"
+    authors: ["Narasimhan Jegadeesh", "Sheridan Titman"]
+    year: 1993
+    venue: Journal of Finance
+    factors: [momentum]
+    tags: [foundational, momentum]
+    pdf: null
+    extracted: null
+    digest: digests/jegadeesh_titman_1993.md
+    open_url: https://doi.org/10.1111/j.1540-6261.1993.tb04702.x
+    summary_zh: >
+      买入过去3–12个月赢家、卖出输家可获显著超额收益；动量经典文献。
+
+  - id: fama_french_2015
+    title: "A Five-Factor Asset Pricing Model"
+    authors: ["Eugene F. Fama", "Kenneth R. French"]
+    year: 2015
+    venue: Journal of Financial Economics
+    factors: [market_beta, size, value, profitability, investment]
+    tags: [five_factor, RMW, CMA]
+    pdf: papers/fama_french_2015_five_factor.pdf
+    extracted: extracted/fama_french_2015_five_factor.txt
+    digest: digests/fama_french_2015.md
+    open_url: https://tevgeniou.github.io/EquityRiskFactors/bibliography/FiveFactor.pdf
+    ssrn: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2287202
+    summary_zh: >
+      在三因子上加入盈利（RMW）与投资（CMA）；样本内 HML 常显冗余；
+      难解释“小市值+低盈利+高投资”股票的低收益。
+
+  - id: novy_marx_2013
+    title: "The Other Side of Value: The Gross Profitability Premium"
+    authors: ["Robert Novy-Marx"]
+    year: 2013
+    venue: Journal of Financial Economics
+    factors: [profitability, value]
+    tags: [gross_profitability, quality]
+    pdf: papers/novy_marx_gross_profitability.pdf
+    extracted: extracted/novy_marx_gross_profitability.txt
+    digest: digests/novy_marx_2013.md
+    open_url: https://oldschoolvalue-files.s3.amazonaws.com/pdf/Novy-Marx_Gross-Profitability-Anomaly_JFE_2013.pdf
+    summary_zh: >
+      毛利率/总资产（GP/A）与 B/M 预测力相当；盈利策略与价值负相关，
+      组合可提升夏普。
+
+  - id: hou_xue_zhang_2015
+    title: "Digesting Anomalies: An Investment Approach"
+    authors: ["Kewei Hou", "Chen Xue", "Lu Zhang"]
+    year: 2015
+    venue: Review of Financial Studies
+    factors: [size, investment, profitability, q_factor]
+    tags: [q_factor, anomalies]
+    pdf: papers/hou_xue_zhang_q_factor.pdf
+    extracted: extracted/hou_xue_zhang_q_factor.txt
+    digest: digests/hou_xue_zhang_2015.md
+    open_url: https://global-q.org/uploads/1/2/2/6/122679606/houxuezhang2015rfs.pdf
+    nber_pdf: papers/hou_xue_zhang_q_factor_nber.pdf
+    summary_zh: >
+      q-factor：市场、规模、投资、ROE；能消化约一半异常，
+      许多情况下优于 FF3 与 Carhart4。
+
+  - id: asness_value_momentum_2013
+    title: "Value and Momentum Everywhere"
+    authors: ["Clifford S. Asness", "Tobias J. Moskowitz", "Lasse Heje Pedersen"]
+    year: 2013
+    venue: Journal of Finance
+    factors: [value, momentum]
+    tags: [global, multi_asset, AQR]
+    pdf: papers/asness_value_momentum_everywhere.pdf
+    extracted: extracted/asness_value_momentum_everywhere.txt
+    digest: digests/asness_value_momentum_2013.md
+    open_url: https://w4.stern.nyu.edu/facdir/lpederse/papers/ValMomEverywhere.pdf
+    summary_zh: >
+      价值与动量在八类全球资产中普遍存在；二者负相关，
+      联合配置可显著改善风险收益。
+
+  - id: asness_qmj
+    title: "Quality Minus Junk"
+    authors: ["Clifford S. Asness", "Andrea Frazzini", "Lasse Heje Pedersen"]
+    year: 2019
+    venue: Review of Accounting Studies / AQR WP
+    factors: [quality]
+    tags: [QMJ, profitability, growth, safety]
+    pdf: papers/asness_quality_minus_junk.pdf
+    extracted: extracted/asness_quality_minus_junk.txt
+    digest: digests/asness_qmj.md
+    open_url: https://www.aqr.com/-/media/AQR/Documents/Insights/Working-Papers/Quality-Minus-Junk.pdf
+    summary_zh: >
+      质量（盈利、成长、安全、分红）高的股票相对“垃圾股”有溢价；
+      QMJ 因子构建仿 FF 规模交叉。
+
+  - id: frazzini_bab_2014
+    title: "Betting Against Beta"
+    authors: ["Andrea Frazzini", "Lasse Heje Pedersen"]
+    year: 2014
+    venue: Journal of Financial Economics
+    factors: [low_beta_bab]
+    tags: [leverage_constraint, BAB, AQR]
+    pdf: papers/frazzini_betting_against_beta.pdf
+    extracted: extracted/frazzini_betting_against_beta.txt
+    digest: digests/frazzini_bab.md
+    open_url: https://w4.stern.nyu.edu/facdir/lpederse/papers/BettingAgainstBeta.pdf
+    summary_zh: >
+      杠杆约束使高β被追捧、低α；BAB 做多杠杆低β、做空高β，
+      在多市场多资产中稳健。
+
+  - id: asness_fact_fiction_value
+    title: "Fact, Fiction, and Value Investing"
+    authors: ["Clifford Asness", "Andrea Frazzini", "Ronen Israel", "Tobias Moskowitz"]
+    year: 2015
+    venue: Journal of Portfolio Management
+    factors: [value, momentum, profitability]
+    tags: [practitioner, myths]
+    pdf: papers/asness_fact_fiction_value.pdf
+    extracted: extracted/asness_fact_fiction_value.txt
+    digest: digests/asness_fact_fiction_value.md
+    open_url: https://www.aqr.com/-/media/AQR/Documents/Insights/Interviews/PA--Fact-Fiction-and-Value-Investing-vF.pdf
+    summary_zh: >
+      澄清价值投资常见误区：应用多指标合成、与动量/盈利结合，
+      不宜单独把价值当唯一策略。
+
+books:
+  - id: berkin_swedroe_2016
+    title: "Your Complete Guide to Factor-Based Investing"
+    authors: ["Andrew L. Berkin", "Larry E. Swedroe"]
+    year: 2016
+    isbn: "978-0692783658"
+    level: beginner_intermediate
+    tags: [factor_criteria, implementation]
+    buy_url: https://www.amazon.com/dp/0692783652
+    digest: digests/book_berkin_swedroe.md
+    note: >
+      五条因子标准：持续性、普遍性、稳健性、可投资性、直觉性。
+      请合法购买；本库仅提供导读。
+
+  - id: chincarini_kim_qepm
+    title: "Quantitative Equity Portfolio Management (2nd ed.)"
+    authors: ["Ludwig B. Chincarini", "Daehwan Kim"]
+    year: 2022
+    level: advanced
+    tags: [portfolio_construction, optimization, backtesting]
+    buy_url: https://ludwigbc.com/books/qepm-2/
+    digest: digests/book_chincarini_kim.md
+    note: 量化组合构建教科书级参考，含因子定义与回测实务。
+
+  - id: gray_carlisle_qv
+    title: "Quantitative Value"
+    authors: ["Wesley R. Gray", "Tobias E. Carlisle"]
+    year: 2012
+    level: intermediate
+    tags: [value, quant, practitioner]
+    buy_url: https://www.wiley.com/en-us/Quantitative+Value-p-9781119205456
+    digest: digests/book_gray_carlisle.md
+    note: 把价值投资规则化/系统化，偏实务选股流程。
+
+  - id: antonacci_dual_momentum
+    title: "Dual Momentum Investing"
+    authors: ["Gary Antonacci"]
+    year: 2014
+    level: intermediate
+    tags: [momentum, timing]
+    buy_url: https://www.amazon.com/dp/0071849440
+    digest: digests/book_antonacci.md
+    note: 绝对动量+相对动量的实务框架（偏配置，非纯横截面）。
+
+  - id: lopez_prado_afml
+    title: "Advances in Financial Machine Learning"
+    authors: ["Marcos López de Prado"]
+    year: 2018
+    level: advanced
+    tags: [ml, backtest_overfitting, meta_labeling]
+    buy_url: https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086
+    digest: digests/book_lopez_prado.md
+    note: 虽非传统多因子，但对因子研究中的过拟合与样本切割极重要。
+
+guides:
+  - path: digests/00_overview.md
+    title: 美股多因子总览（给 LLM / 读者的路线图）
+  - path: digests/01_how_to_ask.md
+    title: 如何向本资料库提问（Prompt 模板）

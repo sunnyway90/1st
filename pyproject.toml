@@ -1,13 +1,14 @@
 [project]
 name = "bond-yield-curve"
 version = "0.1.0"
-description = "Bond yield curve calculation module with a runnable demo."
+description = "Bond yield curve, options utilities, and a US multifactor knowledge base."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "beautifulsoup4",
     "matplotlib",
     "numpy",
+    "pypdf",
     "requests",
     "scipy",
 ]

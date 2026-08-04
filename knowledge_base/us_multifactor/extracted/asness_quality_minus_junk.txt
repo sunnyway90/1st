@@ -1,0 +1,2576 @@
+
+
+--- PAGE 1 ---
+
+ Electronic copy available at: http://ssrn.com/abstract=2312432 
+ 
+ 
+ 
+Quality Minus Junk 
+ 
+ 
+Clifford S. Asness, Andrea Frazzini , and Lasse H. Pedersen * 
+ 
+This draft: October 9, 2013 
+ 
+ 
+Abstract 
+We define a quality security as one that has characteristics that , all-else-equal, an investor should be 
+willing to pay a higher price for : stocks that are safe, profitable, growing, and well managed. High-
+quality stocks do have higher prices on average, but  not by a very large margin . Perhaps because of 
+this puzzlingly modest impact of quality on price, high-quality stocks have high risk-adjusted returns. 
+Indeed, a quality-minus-junk (QMJ) factor that goes long high -quality stocks and shorts low -quality 
+stocks earns significant risk-adjusted returns in the U.S. and globally across 24 countries. The price of 
+quality – i.e., how much investors pay extra for higher quality stocks – varies over time, reaching a 
+low during the internet bubble . Further, a low price of quality predicts a high f uture return of QMJ. 
+Finally, controlling for quality resurrects the otherwise moribund size effect.  
+                                                 
+ 
+* Andrea Frazzini is at AQR Capital Management, Two Greenwich Plaza, Greenwich, CT 06830, e-mail: 
+andrea.frazzini@aqr.com; web: http://www.econ.yale.edu/~af227/. Cliff Asness is at AQR Capital Management, Two 
+Greenwich Plaza, Greenwich, CT 06830. Lasse H. Pedersen is at New York University, Copenhagen Business School, AQR 
+Capital Manag ement, CEPR and NBER, 44 West Fourth Street, NY 10012 -1126; e -mail: lpederse@stern.nyu.edu; web: 
+http://www.stern.nyu.edu/~lpederse/. We thank Antti Ilmanen, Ronen Israel, Johnny Kang, John Liew, Toby Moskowitz, 
+Per Olsson, and Scott Richardson  for helpful comments and discussions  as well as participants in the SIFR Institute of 
+Financial Research Conference on Re-Thinking Beta.  
+
+--- PAGE 2 ---
+
+ Electronic copy available at: http://ssrn.com/abstract=2312432 
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 2 
+ 
+When did our field stop being “asset pricing” and become “asset expected  
+returning?” … Market-to-book ratios should be our left -hand variable, the thing we 
+are trying to explain, not a sorting characteristic for expected returns.  
+– Cochrane, Presidential Address, American Finance Association, 2011 
+ 
+The asset pricing  literature in financial economics  studies the drivers of returns, but , 
+while linked, the economic consequences of market efficiency ultimately depend on prices, 
+not returns, as emphasized by Summers (1986)  and Cochrane (2011). D o the highest quality 
+firms command the highest price so that these firms can finance their operations and invest?  
+To address this question, w e define quality as characteristics that investors should be 
+willing to pay a higher price for, everything else equal.  We show that quality is priced, that 
+is, investors pay more for firms with higher quality characteristics. However, the explanatory 
+power of quality for price s is limited, presenting a puzzle for asset pricing. This puzzle for 
+asset prices is analogous to the famous puzzle of the low R2 of asset returns presented by 
+Roll (1984, 1988). Consistent with the limited pricing of quality, high -quality stocks have 
+historically delivered high risk -adjusted returns while low -quality junk stocks delivered 
+negative risk-adjusted returns. Hence, a quality-minus-junk (QMJ) portfolio that invests long 
+quality stocks and short s junk stocks produces high risk -adjusted returns . Further, we find 
+that the price of quality  (the marginal amount extra investors pay for higher quality 
+characteristics) has varied over time as the market has sometimes put a larger or smaller price 
+premium on quality stocks vs. junk stocks. For instance, the price of quality was particularly 
+low during the internet bubble. Since prices and returns are linked, the price of  quality 
+predicts the future return to the QMJ factor. Lastly, we show that QMJ has broader asset 
+pricing implications, including resurrecting the size effect.  
+To apply the general definit ion of quality, we must identify stock  characteristics that 
+should command a higher price. Gordon’s growth model presents a simple framework to get 
+
+--- PAGE 3 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 3 
+ 
+intuition for the natural quality characteristics. Indeed, rewriting Gordon’s growth model, we 
+can express a stock’s price-to-book value (P/B) as follows:1 
+ 
+                                                         
+                            
+                                                                         
+ 
+We scale prices by book values to make them more stationary over time and in the cross 
+section. The four right-hand side variables form the basi s for our definition of quality.  These 
+variables are intuitive and extend beyond the Gordon model in terms of their relevance for 
+stock prices.2 For each quality characteristic, we consider several measures in order to have a 
+robust analysis and ensure that the explanatory power of quality on price (or the lack thereof) 
+is not driven by a specific measurement choice:  
+ 
+i. Profitability. Profitability is the profits per unit of book value . All else equal, more 
+profitable companies should command a higher stock price . We measure profits in 
+several ways, including gross profits, margins, earnings, accruals and cash flows, and 
+focus on each stock’s average rank across these metrics. 
+ii. Growth. Investors should also pay a higher price for stocks with growing pro fits. We 
+measure growth as the prior five-year growth in each of our profitability measures. 
+iii. Safety. Investors should also pay, all -else-equal, a higher price for a stock with a 
+lower required return, that is, a safer stock. What should enter into required return is 
+still a very contentious part of the literature. We do not attempt to resolve those issues 
+here, rather we take a simple common sense approach. We consider both return-based 
+measure of safety (e.g., ma rket beta and volatility) and fundamental-based measures 
+                                                 
+ 
+1 We rewrite the Gordon model simply as 
+ 
+  
+ 
+ 
+        
+        -              
+                          
+        -              .   
+2 Equation (1)  is a special case of the general present -value relation. We use the Gordon model to simplify 
+notation but the same intuition applies to the general present-value relation.  
+
+--- PAGE 4 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 4 
+ 
+of safety (e.g., stocks with low leverage, low volatility of profitability, and low credit 
+risk).  
+iv. Payout. The payout ratio is the fraction of profits paid out to shareholders. This 
+characteristic is  determined by management and can be seen as a measure of 
+shareholder friendliness. Management’s agency problems are diminished if free cash 
+flows are reduced through higher dividends ( Jensen (1986)). We also consider both 
+net payout as well as issuance (d ilution). Payout is an example of how each of these 
+measures is about their marginal effect, all else being equal.  Indeed, if a higher 
+payout is associated with a lower future profitability or growth, then this should not 
+command a higher price , but a higher payout should be positive when we hold all 
+other factors constant. 
+ 
+For the market to rationally put a price on these quality characteristics, they need to 
+be measured in advance and predict future quality characteristics , that is, they need to be 
+persistent. We show that this is indeed the case; profitable, growing, safe, and high-payout 
+stocks continue on average to display these characteristics over the following five or ten 
+years.  
+We test the pricing of quality over a  long sample of U.S. stocks from 1956 to 2012 
+and a broad sample of stocks from 24 developed markets from 1986 to 2012. To evaluate the 
+pricing of quality, we first run cross -sectional regressions of price -to-book on each stock’s 
+overall quality score. Both in the long and broad sample, we find that higher quality is 
+significantly associated with higher price s. However, the explanatory power of quality on 
+price is limited as the average R2 is only 12% in the long sample and 6% in the broad sample. 
+When we also control for the firm’s size and past 12 -month stock returns, the cross-sectional 
+R2 increases to, respectively, 31% and 26 %, still leaving unexplained a large amount of the 
+cross sectional distribution of prices . Interestingly, larger firms are more  expensive 
+controlling for quality, the analogue of the size effect on returns (Banz (1981)).  
+We also regress the price -to-book on the four quality measures separately and in a 
+joint regression. Having all four quality measures separately modestly increases the R2. 
+Further, while profitability and growth are unambiguously associated with higher prices, 
+
+--- PAGE 5 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 5 
+ 
+safety is mixed and even negative controlling for size and past returns, and stocks with high 
+payout appear to command a lower, not a higher, price. 
+There could be several potential reasons for  the limited explanatory power of  quality 
+on prices: ( a) market prices fail to fully refl ect these characteristics  for reasons linked to 
+behavioral finance or constraints (e.g., an inability to lever) , (b) market prices are based on 
+superior quality characteristics than the one s we consider, and (c) the quality characteristics 
+are correlated to risk factors not captur ed in our risk adjustments  (so while the quality 
+measure alone might command a higher P/B, the risk increase we fail to capture could imply 
+an offsetting lower one).  
+To examine these potential explanations, we first consider the return s of high - vs. 
+low-quality stocks. We sort stocks into ten deciles based on their quality score and consider 
+the value -weighted return in each portfolio. We find that high -quality stocks have 
+significantly higher raw returns than junk stocks. The difference in their risk-adjusted returns 
+(i.e., 4-factor alphas) is even larger since high-quality stocks have relatively lower market, 
+size, value and momentum exposures than junk stocks.  
+We then construct a QMJ factor with a methodology that follows that of Fama and 
+French (1993) and Asness and Frazzini (2013 ). The factor is long the top 30% high -quality 
+stocks and short the bottom 30% junk stocks within the universe of large stocks and similarly 
+within the universe of small stocks.3 This QMJ factor (as well as its large-cap only and small-
+cap only components) delivers positive returns in 23 out of 24 countries that we study and  
+highly significant risk -adjusted returns in our long and broad sample . QMJ portfolios have 
+negative market, value, and size  exposures, positive alpha, rela tively small residual risk and 
+QMJ returns are high during market downturns , presenting a challenge to risk -based 
+explanations relying on covariance with market crises . Rather than exhibiting crash risk, if 
+anything QMJ exhibits  a mild positive convexity, that is, it benefits from flight to quality  
+during crises. 
+                                                 
+ 
+3 As noted by Fama and French (2013) we can chose to orthogonalize each factor (size, value, momentum, 
+quality) to each other in a potential nightmare of choices and dimensionality, or  to to construct our factors more 
+simply allowing some correlation among them.  We choose the latter. 
+
+--- PAGE 6 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 6 
+ 
+It is interesting to consider how the pricing of quality varies over time: Each month, 
+we cross-sectionally regress price -to-book on quality and consider the time series of these 
+cross-sectional regression coefficients that reflect the pricing of quality at each time. 
+Consistent with conventional wisdom, the price of quality reached its lowest level in 
+February 2000 during the height of the internet bubble. The price of quality was also 
+relatively low leading into the 1987 crash and leading into the Global Financial Crisis of 
+2007-2009. Following each of these three eye -opening events, the price of quality increased, 
+reaching highs in late 1990 (first gulf war), in late 2002  (after the Enr on and WorldCom 
+scandals), and in early 2009 (during the height of the banking crisis). Prices and returns are 
+naturally connected, and we show that the price of quality negatively predicts the future 
+return on QMJ; that is, a higher price of quality is na turally associated with a lower return on 
+buying high-quality stocks. 
+We note that the QMJ strategy of buying profitable, safe, growing, high payout stocks 
+while shorting unprofitable, risky, shrinking , low-yielding stocks is very different from the 
+standard value strategy HML  (in fact the two are negatively correlated). QMJ is buying and 
+selling based on quality characteristics irrespective of stock prices , while HML is buying 
+based on stock prices irrespective of quality. Naturally, the two concepts can be combined, 
+which we call quality at a reasonable price  (QARP). This concept goes back at least to 
+Graham and Dodd (1934) who stated that “ investment must always the price as well as the 
+quality of the security.” Naturally, value investing is improved by QARP, consistent with the 
+finding in the accounting literature that accounting information can improve value investing 
+(e.g., Frankel and Lee (1998) and Piotroski (2000)). 
+Last, we show what happens when we switch things aro und and put QMJ on the 
+right-hand-side to help explain other factors . We find that controlling for quality makes the 
+value effect stronger , just like QARP is stronger than HML alone .  This makes sense as 
+quality is positively associated with future returns, and negatively correlated with value.   
+Further, controlling for quality has a surprisingly significant effect on the size factor.  
+We show that including quality on the right -hand-side resurrects the formerly moribund size 
+effect. Indeed, the small-minus-big (SMB) factor is highly negatively correlated to the strong 
+quality factor since small firms are junky and large firms are high quality, on average. While 
+SMB has an insignificant alpha of 13 basis points per month controlling for the other 
+
+--- PAGE 7 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 7 
+ 
+standard factors, this increases to a highly significant alpha of 64 basis points ( t-statistic of 
+6.39). In other words, when comparing stocks of similar quality, smaller stocks significantly 
+outperform larger ones on average, which corresponds to our finding in  price space that 
+larger firms are more expensive.     
+Our paper is related to a large literature. A number of papers study return -based 
+anomalies. It has been documented that stocks with high profitability outperform (Novy -
+Marx (2013)), stocks that repurchase tend to do well (Baker and Wurgler (2002) , Pontiff and 
+Woodgate (2008), McLean, Pontiff, and Watanabe (2009) ), low beta is associated with high 
+alpha for stocks, bonds, credit, and futures ( Black, Jensen, and Scholes (1972) , Frazzini and 
+Pedersen (2013)), firms with low leverage have high alpha ( George and Hwang (2010), 
+Penman, Richardson, and Tuna (2007) ), firms with high credit risk tend to under -perform 
+(Altman (1968), Ohlson (1980), Campbell, Hilscher, and Szilagyi (2008)), growing firms  
+outperform firms with poor growth (Mohanram (2005)), and f irms with high accruals are 
+more likely to suffer subsequent earnings disappointments and their stocks tend to 
+underperform peers with low accruals (Sloan (1996), and Richardson, Sloan, Soliman, a nd 
+Tuna (2005)). While these papers are very different and appear disconnected, our framework 
+illustrates a  unifying theme, namely that all these effects are about the outperformance of 
+high-quality stocks, and we link returns and prices.  
+Our paper is also related to the literature that considers how the price-to-book predicts 
+future returns and future fundamentals based on the present-value relationship. Campbell and 
+Shiller (1988) consider the overall market, and their dividend growth variable can be 
+interpreted an as aggregate quality variable. Vuolteenaho (2002) and  Fama and French 
+(2006) consider individual stocks. Cohen, Polk, and Vuolteenaho (2009) consider how cash -
+flow betas affect price levels and long -run returns, but they do not consider the pricing of 
+other quality measures. See also the overview by Cochrane (2011) and references therein. 
+In summary, most of the characteristics that we study are well -known accounting 
+variables, but we complement the literature by studying (i) how quality affect price multiples 
+and how much of the cross-sectional variation of price multiples can be explained by quality; 
+(ii) how the price of quality varies over time ; (iii) how the current p rice of quality predicts 
+the future return on quality factors; (iv) how our quality framework unifies a number of 
+
+--- PAGE 8 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 8 
+ 
+anomalies; and (v) how a unified quality factor can be used in asset pricing more broadly 
+and, importantly, how it resurrects the size effect. 
+Our evidence presents a puzzle: why is the price of quality (the amount investors are 
+willing to pay for higher quality characteristics)  positive but still quite low and why, 
+presumably a related or even the same question, is the return to QMJ so high? Our results are 
+consistent with a too low market price of quality and inconsistent with an alternative view 
+that t he market prices simply reflect  better measures of quality due to the high returns of 
+QMJ. Furthermore, o ur QMJ fa ctor has a ne gative market beta  and factor loadings  and 
+performs well in recessions and crises, presenting a challenge to risk -based explanations , 
+although that possibility, as always, remains open.  
+The rest of the paper is organized as follows. Section 1  presents our data and quality 
+measures. Section 2 shows that ex ante quality forecasts  future quality (i.e., quality is sticky 
+as would be necessary for it to be priced) . Section 3 analyzes the price of quality. Section 4 
+considers the return of quality stocks and Section 5 the return of QMJ. Section 6 connects the 
+current price and future return of quality . Section 7 considers QARP . Section 8 shows how 
+QMJ affects the standard factors. Section 9 concludes. The appendix contains a number of 
+additional results and robustness checks. 
+ 
+ 
+ 
+1. Data, Methodology, and Quality Measures 
+In this section we describe our data sources and the methodology for constructing our 
+quality measures. 
+Data Sources 
+Our sample consists of 39,308 stocks covering 24 countries between June 1951 and 
+December 2012. The 24 markets in our sample correspond to the countries belonging to the 
+MSCI World Developed Index as of December 31, 2012.  We report summary stat istics in 
+Table I. Stock returns and accounting data are from the union of the CRSP tape and the 
+
+--- PAGE 9 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 9 
+ 
+XpressFeed Global database . All returns are in USD, do not include any currency hedging, 
+and are measured as excess returns above the U.S. Treasury bill rate.4 We follow the standard 
+convention and align accounting variables at the end of the firm’s fiscal year ending 
+anywhere in calendar year t-1 to June of calendar year t. 
+We focus on a long sample of U.S. stocks and a broad sample of global stocks. Our 
+long sample of U.S. data include s all available co mmon stocks  on the merged 
+CRSP/XpressFeed data . 5  The CRSP/XpressFeed database’s first available date for U.S. 
+securities is June 1951 since accounting data starts in fiscal year 1950. However, since some 
+of our variables are five-year growth measures, the first available date for our regressions and 
+return test is June 1956. 
+Our broad sample of global data includes all available common stocks on the union 
+of the CRSP tape and the XpressFeed Global database  for 24 developed markets.6 We assign 
+individual issues to the corresponding market based on the location of the primary exchange. 
+For companies traded in multiple markets we use the primary trading vehicle identified by 
+XpressFeed. As shown in Table I, with the exception of Canada (whose coverage starts in 
+1982) for most countries XpressFeed’s Global coverage starts in 1986. Our sample runs from 
+January 1986 to December 2012. 
+Quality Score 
+We use  a variety of quality measure s. We are interested in identifying stocks o f 
+profitable, stable, safe and high payout companies. To avoid data mining, we use a broad set 
+of measures for each aspect of quality and average them to compute four composite proxies: 
+Profitability, Growth, Safety and Payout. We then average the four proxies to compute a 
+single quality score. Our results are qualitatively robust to the specific choices of factors. 
+                                                 
+ 
+4 We include delisting returns when available in CRSP. Delisting returns are not available for our international 
+sample. If a firm is delisted but the del isting return is missing, we investigate the reason for disappearance. If 
+the delisting is performance-related, we follow Shumway (1997) and assume a -30% delisting return. 
+5 Common stocks are identified by a CRSP share code (SHRCD) of 10 or 11. 
+6 Common stocks are identified by an XpressFeed issue code (TPCI) of 0.  
+ 
+
+--- PAGE 10 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 10 
+ 
+Having multiple measures of quality makes our finding of a low explanatory power of 
+quality on prices all the more surprising.  
+Our quality measures are constr ucted as follows ( details are in the a ppendix). We 
+measure profitability by gross profits over assets (GPOA), return on equity (ROE), return on 
+assets (ROA), cash flow over assets  (CFOA), gross margin (GMAR), and the fraction of 
+earnings composed of cash ( i.e. low accruals, ACC ). In order  to put each measure on equal 
+footing and combine them, each month we convert each variable into ranks and standardize  
+to obtain a z-score. More f ormally, let   be the variable of interest and   be the vector of 
+ranks,            . Then the z-score of x is given by                  , where    
+and    are the cross sectional mean and standard deviation  of r. Our              score is 
+the average of the individual z-scores:  
+ 
+               (                                )    (2) 
+ 
+Similarly, we measure growth as the five-year prior growth in profitability, averaged across 
+over measures of profitability: 
+        (                                      )    (3) 
+Here,   denotes five -year growth. Specifically, f or each profitability measure, we definite 
+five-year growth as the change in the numerator (e.g. profits) divided by the lag ged 
+denominator (e.g. assets). We define safe securities as companies with low beta (BAB),  low 
+idiosyncratic volatility (IVOL), low leverage (LEV) , low bankruptcy risk ( O-Score and Z -
+Score) and low ROE volatility (EVOL):  
+                                           (4) 
+We define our payout score using equity and debt net issuance (EISS, DISS) and total net 
+payout over profits (NPOP): 
+        (                 )         (5) 
+Finally, we combine the four measures into a single quality score: 
+
+--- PAGE 11 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 11 
+ 
+                                                (6) 
+ 
+Portfolios 
+Our portfolio analysis relies on two sets of test  factors: quality-sorted portfolios and 
+quality-minus-junk factors (hereafter, QMJ factors). For both approaches, we form one set of 
+portfolios in each c ountry and compute global portfolios by weighting each country’s 
+portfolio by the country’s total (lagged) market capitalization.  
+To form quality-sorted portfolios, at the end of each calendar month, we assign stocks 
+in each country to ten quality-sorted portfolios. U.S. sorts are based on NYSE breakpoints.  
+Portfolios are value -weighted, refreshed every calendar month, and rebalanced every 
+calendar month to maintain value weights.  
+The QMJ portfolio construction follows Fama and French (1992, 1993 and 1996) and 
+Asness and Frazzini  (2013). QMJ factors are constructed as the intersection of six value -
+weighted portfolios formed on size and quality. At the end of each calendar month, we assign 
+stocks to two size -sorted portfolios based on their market capitalization. For U.S. securities, 
+the size breakpoint is the median NYSE market equity. For International securities the size 
+breakpoint is the 80th percentile by country  (which in the U.S. corresponds appr oximately to 
+NYSE breakpoints). We use conditional sorts, first sorting on size, then on quality. Portfolios 
+are value-weighted, refreshed every calendar month, and rebalanced every calendar month to 
+maintain value weights. The QMJ factor return is the average return  on the two high-quality 
+portfolios minus the average return on the two low-quality (junk) portfolios: 
+ 
+      
+ 
+                             
+ 
+                       
+          
+ 
+   mall  ualit              
+ 
+               ig  un                       (7) 
+                                  
+                in small stocks                          in big stocks      
+ 
+Separate sub-portfolios based on the four components of quality (profitability, growth, safety 
+and payout score) are constructed in a sim ilar manner. We consider alphas with respect to a 
+
+
+--- PAGE 12 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 12 
+ 
+domestic and global factors for the market  (MKT), size (small-minus-big, SMB), book -to-
+market (high-minus-low, HML), and momentum (up-minus-down, UMD).7 
+ 
+2. Ex Ante Quality Forecasts Fundamentals 
+We start by showing that a stock’s quality is a persistent characteristic. That is, by 
+picking stocks that were profitable, gr owing, safe, and well managed in  the recent past, we 
+succeed in picking stocks that display these characteristics in the future. This step is 
+important when we turn to the central analysis of whether the  high quality firms command 
+higher prices since, in a forward-looking rational market , prices should be related to future 
+quality characteristics. Of course, predictability of quality is perfectly consistent with an 
+efficient market – market efficiency says only that, since price s should reflect quality, stock 
+returns should be unpredictable (or only predictable due to risk premia) not that quality itself 
+should be unpredictable. 
+Table II analyzes the predictability of quality as follows. Each month, we sort stocks 
+into ten portfolios by their quality scores (as defined in Section 1). The table then reports the 
+value-weighted average of our quality measures across stocks in the portfolio at the time of 
+the portfolio formation (time t) and in the subsequent ten years  (t + 120 months). We report 
+the time series average of the value -weighted cross sectional means. The standard errors are 
+adjusted for heter oskedasticity and autocorrelation with a lag length of five years (Newey 
+and West (1987) ). Table II shows that , on average, quality firms today remain high quality 
+firms five and ten years into the future  (conditional on survival) and we can reject the null  
+hypothesis of no difference in each of qualit y characteristics up to ten years. Table A1 in the 
+appendix reports  additional results: we sort firms separately using each component of our 
+quality score (profitability, growth, safety and payout) and report the spread in each variable 
+up to 10 years, yielding similarly consistent results.  
+                                                 
+ 
+7 The risk factors follow Fama and French (1992, 1993, 199 6) and Asness and Frazzini (2013 ). We report a 
+detailed description of their construction in the Appendix. The data can be downloa ded at 
+http://www.econ.yale.edu/~af227/data_library.htm.  
+
+--- PAGE 13 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 13 
+ 
+To summarize, qualit y is a per sistent characteristic such that  high quality today 
+predicts future  high quality . For both the U.S. long and global sample , profitability is the  
+most persistent and, while still surprisingly stable, growth and payout are the least persistent.   
+ 
+3. The Price of Quality 
+Given that quality can be measured in advance, we now turn to the central question of 
+how quality is priced: Do high-quality stocks trade at higher prices than low-quality ones?  
+To address this question,  we run a cross-sectional regression of the z-score of each 
+stock i's market-to-book (MB) ratio on its overall quality score,  ualit  
+   (defined in Section 
+1). Specifically, we let   
+        
+  and run the regression: 
+ 
+  
+             
+    
+                  (8) 
+ 
+This regression tests whether high quality is associated with high prices  in the cross section . 
+Using z-scores limits the effect of outliers and it implies that the regression coefficient b has 
+a simple interpretation: if quality improves by one standard deviation, then the price-to-book 
+increases by b standard deviations.8 
+Panel A of Table III  reports results of Fama and MacBeth (1973) regressions of 
+prices on q uality. Every month, we regress scaled prices on quality measures and we report 
+time series ave rages of the c ross sectional slope estimates . Standard errors are adjusted for 
+heteroskedasticity and autocorrelation (Newey and West (1987)) with a lag length of 12 
+months. We run the regression with and without country-industry fixed effects. These fixed 
+effects are implemented by varying the standardization universe of our z-scores. That is, to 
+implement country-industry fixed effects , we convert each variable into ranks  by country -
+industry and standardize to obtain a z-score by country-industry pair , ea ch month.  In this 
+case, b has the interpretation that, if quality improves by one standard deviation above its 
+                                                 
+ 
+8 Using (log) market -to-book on the left hand side as opposed to z -scores does not impact any of the results  
+qualitatively. For brevity we only report results based on z-scores. 
+
+--- PAGE 14 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 14 
+ 
+country-industry mean, then the price -to-book increases by b standard deviations above its 
+country-industry mean. 
+Columns (1) -(8) in Table III panel A show that the price of quality  b is generally 
+positive: high quality firms command higher (scaled) prices. Indeed, the price of quality is 
+positive both in the U.S. and global samples and across specifications with controls and fixed 
+effects. The highest estimated price of quality is 0.32, in the univariate specification, and it is 
+highly statistically significant . This coefficients means that a one standard deviation change 
+in a stock’s quality score is associated (in the cross section) with a 0.32  standard deviation 
+change in its price-to-book score.  
+While theory does not provide specific guidance on what the R2 “should” be, t he 
+explanatory power of quality on price appears limited. Quality explains only 12% of the 
+cross sectional variation in prices in our U.S. sample and only 6% in our global sample. 
+ We also include controls for firm size and stock return over the prior year. We 
+measure each of these controls as the z-score of their cross-sectional rank for consistency and 
+ease of interpretation of the coefficients. We see that larger firms are more expensive 
+controlling for quality. This result is the analogue of the size effect on returns ( Banz (1981), 
+see also Berk (1995) ) expre ssed in terms of prices.   That is, big firms, even for the same 
+quality, are more expensive, possibly leading to the return effect observed by Banz.  The size 
+effect could arise as large firms have less liquidity risk than small firms (Acharya  and 
+Pedersen (2005)) and thus we cannot dismiss that these higher prices are rational.   
+Past returns have a pos itive effect on current prices. We include past returns to 
+account for the fact that prices and book values are not measured at the same time. Hence, 
+the positive coefficients on the past returns simply reflect that high recent returns will raise 
+prices while the book value has not had t ime to adjust . 9 We see that the R2 increases 
+markedly with these controls, but both the magnitude and the significance of the coefficient 
+on quality actually drops with the inclusion of controls. The maximum R2 is below 31% in all 
+                                                 
+ 
+9 See Asness and Frazzini (2013). 
+
+--- PAGE 15 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 15 
+ 
+of these specifications, leaving the vast majority of cross sectional variation on prices 
+unexplained. . 
+  Panel B of Table III  considers cross -sectional regressions on each separate quality 
+score, univariately and multivariately: 
+ 
+       
+                     
+           
+           
+           
+    
+   (9) 
+ 
+We see that prices of profitability and growth are unambiguously positive, the price of safety 
+is positive in a univariate regression but negative in the presence of other quality measures  
+and controls, and the p rice of payout is consistently estimated to be negative.10 It is natural 
+that the market pays a price for profitability and growth. The surprisingly  low price of safety 
+is a price-based analogue to the flat security market line ( Black, Jensen, and Scholes (1972) 
+and Frazzini and P edersen (2013)) and it is consistent with Black (1972) and Frazzini and 
+Pedersen (2013) theory of leverage constraints. If investors are constrained from leveraging , 
+risky assets command higher prices (and lower returns) while safe  assets have lower prices 
+(and higher returns). The negative price of payout could be driven by reverse causality: firms 
+that have high (low) prices may opportunistically issue (repurchase) shares.  
+ The average R2 increases when we include all four quality components, reaching 40% 
+in the U.S. and 31% in the global sample but still leaving a large part of the cross section of 
+prices unexplained.  
+ 
+4. The Return of Quality Stocks  
+We turn from the pricing of quality to the closely related issue of the return of  quality 
+stocks. The return of quality stocks is important as it can help us further interpret our findings 
+on the price of quality. We would like to shed light on our finding that quality explains prices 
+only to a limited extent: is this finding because o f (a) limited market efficiency ; (b) the 
+                                                 
+ 
+10 Regressing prices on safety alone and controlling for size and past returns also yields an (insignificant) 
+negative price of safety. 
+
+--- PAGE 16 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 16 
+ 
+market uses superior quality measures (and, if we observed these measures,  they would be 
+strongly related to prices) or in some cases reverse causality; or (c) quality is linked to risk in 
+a way not captured by  our safety measure. Explanation (a) implies that high -quality stocks 
+have higher risk -adjusted returns than  low-quality stocks as investors are underpricing high 
+quality characteristics ; ( b) implies no relation between our measured quality and ex post 
+returns or at least a greatly attenuated one ; while (c) implies a univariate relation between 
+quality and future returns which is reduced or eliminated by an effective risk model. 
+Table IV reports the returns of stocks sorted into ten deciles based on their qualit y 
+score. The table reports both excess returns over T -bills and alphas with respect to, 
+respectively, the CAPM 1 -factor model, the Fama and French (1993) 3 -factor model (which 
+includes the size factor SMB and the value factor HML in addition to the market factor 
+MKT), and the 4-factor model that also includes the momentum factor UMD (Jegadeesh  and 
+Titman (1993),  Asness (1994) , and Carhart (1997) ). Specifically, these alp has are the 
+intercepts from the following regression with the first 1, 3, or 4 right -hand-side variables 
+included: 
+ 
+                                                   (10) 
+    
+  We see that excess return s increase almost monotonically in quality such that high -
+quality stocks outperform low -quality stocks. The right -most column reports the return 
+difference between the highest and lowest deciles  and the associated t-statistic, showing that 
+high quality st ocks earn higher average returns than low quality stocks (between 47 and 68 
+basis points per month depending on the sample) and we can reject the null hypothesis of no 
+difference in average returns (t-statistics ranging between 2.80 and 3.22).  
+When we control for market risk and other factor exposures, the outperformance in 
+the alpha of high -quality stocks  is in fact even larger. This higher outperformance arises  
+because high -quality stocks actually have lower market and factor exposures than low -
+quality stocks.  Adjusting by the CA PM alone  materially strengthens our results as higher 
+quality stocks are, partly by construction, lower beta stocks.  Across our three risk models i n 
+our long U.S. sample, a portfolio that is long high quality stocks and short low quality stocks 
+earns average abnormal returns ranging from 71 to 97 basis points per month with associated 
+
+--- PAGE 17 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 17 
+ 
+t-statistics ranging between 4.92 and 9.02. In our broad global sample , we obtain similar 
+results with abnormal returns between 89 to 112 basis point s and t-statistics between 5.00 
+and 6.06. 
+ Our results are thus inconsistent with explanation (b) discussed above. Further, a 
+simple risk explanation (c) is inconsistent with our finding that  high-quality stocks have 
+lower market exposures than junk stocks, but we study risk in more detail by considering the 
+performance of the QMJ factor.  
+ 
+5. Quality Minus Junk 
+In this section we examine the returns of our QMJ factor s. As described in Section 1 
+(Equation 7), QMJ is long the average of the               and             portfolios and 
+short the average of the             and          portfolios. We also construct long/short 
+factors based on each separate quality component using the same method. Hence, in addition 
+to QMJ, we have quality factors based on profitability, safety, growth, and payout. 
+ Table V reports the correlations between the different quality components. The table 
+reports the correlation both for the excess returns and for the abnormal returns relative to a 4 -
+factor model (i.e., the correlations of the regression residuals). We see that all of the pairwise 
+correlations among the quality components are positive, except the correlation between 
+growth and payout. The negative correlation reflects that higher payout is naturally 
+associated with lower growth. The average pairwise correlation among the quality 
+components is 0.40 in the US and 0.45 in the global sample, and 0.38 for abnormal returns in 
+both samples. Hence, while the quality components measure different firm characteristics 
+that investors should be wi lling to pay for, firms that are high quality in one respect tend to 
+also be high quality in other respects. This did not have to be.  Each of these  variables, we 
+argue, are quality measures investors should pay for at the margin, but they did not ha ve to 
+be related to one another.  While theory is no guide here , we think these significant positive 
+correlations lend support to our practical decision to combine these four thematic sets of 
+measures as one quality variable. 
+ Table VI reports the performance of  each of our quality factors in the US  (panel A) 
+and globally (panel  B). Specifically, the table reports the average exc ess return s and the 
+alphas with respect to the 1 -, 3 -, and 4 - factor models.  We see that e ach quality factor 
+
+--- PAGE 18 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 18 
+ 
+delivers a statistically significant positive excess return and alpha with respect to the 1 -, 3-, 
+and 4-factor models in the U.S. sample and significant 4-factor alphas in the global sample as 
+well (the 3- and 4-factor results are quite similar as momentum, or UMD,  does not change 
+much). Naturally, the overall QMJ factor is the strongest  or the four, with highly significant 
+alphas in the U.S. and global samples.  The abnormal returns  are large in magnitude a nd 
+highly statistically significant. In our U.S. long sample  a QMJ portfolio that is long high 
+quality stocks and short junk stocks delivers 1 -, 3-, and 4-factor abnormal returns of 55, 68 , 
+and 66 basis point s per month ( with corresponding t-statistics of  7.27, 11.10 , and 11.20).  
+Similarly, in our Global broad samp le, the QMJ factor earns abnormal returns of 52, 61 and 
+45 basis points per month (with corresponding t-statistics of 5.75, 7.68, 5.50).   
+ Panels A and B of Table VI also report the risk-factor loadings for the 4-factor model.  
+We see that the QMJ factor has a significantly negative market and size exposures.   That is, 
+QMJ is long low-beta and large stocks, while being short high-beta small ones. As would be 
+expected, the safety factor has the  most negative market exposure , though only  growth 
+attains a zero or small positive market beta, the other quality composites also show negative 
+beta. The value exposure of QMJ is negative in the U.S . Since we expect that high -quality 
+stocks have high prices while the value factor HML is long cheap  stocks, we would expect a 
+negative HML loading . We see that the profitability, safety, and growth  factors do have 
+significantly negative HML loadings in the U.S. and global samples.  The payout factor has a 
+positive loading in the U.S. and global samples.  As discussed above, this positive payout 
+loading could be driven by cheap stocks endogenously choosing a low payout.   
+ Panel C of Table VI and Figure 1 report  the performance of the QMJ factor across 
+countries. Remarkably, the QMJ factor delivers positiv e returns and alphas in all but one of 
+the 24 countries that we study, displaying a strikingly consistent pattern  (with the only small 
+negative being in New Zealand , one of the smallest countries in market capitalization and 
+number of stocks) . Furthermore 4-factors alphas are statistically significant in 17 out of 24 
+countries which is striking given the fact that many individual count ries have a small cross 
+section of securities and a short time series.  
+ Figures 2 and 3 show  the performance of the QMJ fa ctor over time  in the U.S. and 
+global samples. Specifically, Figure 2 shows the cumulative return of the QMJ factor (plotted 
+as the cumulative sum of excess returns to avoid compounding issues) and Figure 3 shows 
+
+--- PAGE 19 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 19 
+ 
+the cumulative sum of QMJ’s 4-factor risk-adjusted returns  (the sum of the monthly in -
+sample regression alpha plus the regression error) . Clearly, the QMJ factor has consistently 
+delivered positive excess returns and risk -adjusted returns over time with no subsample 
+driving our results.  
+ We report  a series of robustness checks in the appendix. In Table A3 we split the 
+sample in 20 -year subsamples and report QMJ returns by size (10 size -sorted based on 
+NYSE-breakpoints). Table A4 and Figure A1 report results for large and small cap stocks 
+within each country. Finally, Table A5 reports results for an alternative definition of the QMJ 
+factor: we build a factor for each of the 22 quality measures we use and simply average the 
+resulting portfolios returns to compute our profitability, growth, safety, pay out and QMJ 
+factors. All the results point in the same direction with consistency across size, time period s, 
+countries and construction methodology: QMJ portfolios that are long high quality stocks 
+and short junk stocks earn large and significant 1- , 3- and 4-factor abnormal returns. 
+ The return evidence on the QMJ  factors could potentially be consistent with both 
+mispricing (quality stocks are underpriced and junk stocks are overpriced), or risk (quality 
+stocks underperform junk stocks in bad states of the world). Although a full explanation of 
+the driver of quality returns is beyond the scope of this paper, we can nonetheless provide 
+some stylized fact s that either explanation should generat e in order to fit the available 
+evidence.  
+The evidence does no t point tow ard compensation for tail risk  as seen in Table VII . 
+We compute the return of the QMJ factors during recession and expansions, during severe 
+bear and bull markets (defined as total market returns in the past 12  months below -25% or 
+above +25%), during periods of high and low market volatility ( we measure volatility as the 
+1-month standard deviation of daily returns of the CRSP-value weighted index or the MSCI-
+World index and split the sample in the 30% top and bottom time periods) and during periods 
+of a large increase or drop in aggregate volatility (  again, we split the sample into the 30% 
+top and bottom time periods in terms of the 1 -month change in volatility ). We find no 
+evidence of compensation for tail risk, if anything quality appears to hedge (as opposed being 
+correlated to periods) of market distress.  
+ To study further the risk of QMJ, Figure 4 plots the performance of QMJ against the 
+return on th e market. The negative beta of QMJ is clearly visible by the downward sloping 
+
+--- PAGE 20 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 20 
+ 
+relation of the excess return of QMJ and the market. Further, the relatively tight fit around 
+the curve shows the limited residual risk, implying a strong and consistent historical 
+performance of QMJ duri ng down periods for the market. QMJ also performs well in 
+extreme down markets; in fact, the second -order polynomial showed in the graph has a 
+positive (but insignificant) quadratic term (meaning that the fitted curve  bends upward in the 
+extreme). This mild concavity is mostly driven by the returns to the profitability 
+subcomponent of quality . In fact, the quadratic term is marginally significan t (t-statistic of 
+2.0) for the profitability factor. The strong return in extreme down markets is consistent with  
+a flight to quality  (or at least profitability).  That is, in dow n markets, investors may exhibit 
+flight to quality in the sense that prices of unprofitable stocks drop more than the prices of 
+profitable stocks, even adjusting for their betas.  The strong performance of QMJ in down 
+markets is robust to considering longer down periods for the market such as down quarters or 
+down years (not shown). Further, looking at the alphas reveal a similar pattern of mild flight 
+to quality.   
+Overall, our findings present a serious challe nge for risk -based explanations (to the 
+extent that bad states of the world are related to large negative realization of market returns) 
+as high quality stocks appear to protect investor s from severe market downturns.  Of course, 
+alternative risk-based explanations are always possible. 
+ 
+6. The Time Variation of the Price of Quality: Predicting QMJ 
+It is interesting to consider how the price of quality varies ov er time. To study this, 
+Figure 5 shows the time series of the price of quality, that is, the time series of the Fama -
+MacBeth regression coefficients that we estimate above in Equation 8. We see that the price 
+of quality varies significantly over time. As one might expect, the price of quality is lowest 
+during the height of the internet bubble in early 2000 and has other large swings during time 
+periods consistent with economics intuition as discussed in the introduction.  
+The intuitive pattern of the price of quality suggests that the variation is not jus t 
+driven by noise. To explore further the variation in the price of quality, it is interesting to link 
+prices and subsequent returns in the time series. Specifically, if this time variation is not due 
+to mis-measurement noise, then a high price of quality should predict low subsequent returns 
+
+--- PAGE 21 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 21 
+ 
+of QMJ. Table VIII provides evidence of such predictability. This table reports the regression 
+coefficients of time-series regressions of future QMJ returns on the ex ante price of quality:  
+ 
+                                                                         (11)        
+                                                         
+Said simply,          is the return of QMJ over the future k months,      is the lagged price 
+of quality (the variable of interest), and             controls for past returns. Let us describe 
+each of these variables in detail. 
+We run the regression in two ways: Using the “raw” excess returns of the QMJ factor 
+on the left hand side (“raw”) and using the alpha of the QMJ factor on the left hand side 
+(“alpha”). The future excess return on the raw QMJ factor is computed simply by cumulating 
+returns,          ∏ (             
+ )  ∏ (      
+ ) 
+ 
+   . To compute the alphas, we regress 
+QMJ on the contemporaneous returns of the market, size, value, an d momentum factors and 
+compute the alpha as the regression residual plus the intercept (i.e., as the return of QMJ with 
+its factor exposures hedged out) . We then cumulate these alphas          ∏ (        
+   
+    
+ )  ∏ (      
+ )  and use them on t he left hand side of (11). We consider alphas to ensure 
+that the predictability of the price of quality on QMJ is not driven  by any potential 
+predictability of other factors. 
+The price of quality ,      is the lagged Fama -MacBeth regression coefficient fr om 
+Equation (8) that gives the connection between price and quality at each time. Specifically, 
+the price of quality is estimated as column (1) in Table III for the U.S. and column (5) for the 
+global sample. We are interested in testing the hypothesis that a high lagged price of quality 
+predicts lower subsequent returns, that is,          
+Last,             is defined as the portfolio –weighted average of the past 1 -year 
+returns of the stocks in the QMJ portfolio. This captures standard momentum effects, again 
+to ensure that the predictability of the price of quality is a novel finding.  
+Table VIII reports only the regression coefficient for the variable of interest,     , the 
+ex ante price of quality.  We run overlapping forecasting regressions predicting returns from 
+one month up to five years. We adjust standard errors for heteroskedasticity and 
+autocorrelation induced by the overlapping returns (Newey and West (1987))  by setting the 
+lag length equal to the forecasting horizon. 
+
+--- PAGE 22 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 22 
+ 
+Table VIII shows that a high price of quality indeed predicts  lower future returns on 
+QMJ. In our U.S. long sample shown in Panel A, all the coefficient s have th e expected 
+negative sign and we are able to reject the null hypothesis of no predictability in all but one 
+specification. Predictability rise s with the forecasting horizon, indicating slowly changing 
+expected returns. The results for our shorter global sample in Panel B are noisier, but we see 
+that all of the statistically significant coefficients are negative as expected. The bottom rows 
+of Table VIII similarly test whether the price of the separate quality characteristics predict 
+the returns of the corresponding long/short factors. While thes e results are noisier , the 
+estimates tend  to be negative and all of the statistically significant coefficients are again 
+negative, as expected.  We also run these test s using cross sectional coefficients obtained 
+from a regression of the log book-to-market (as opposed to ranks) on the quality scores, thus 
+preserving the scale of the spread in book to market ratios. Results are in general stronger for 
+the U.S. sample and similar for our global sample. We report these results in Table A6 of the 
+Appendix. To summarize, the results in Table VIII and Table A6 are consistent with the 
+hypothesis that the variation of the price of quality is no t pure noise but, rather, reflects 
+changes in the market pricing of quality characteristics, generating variation in QMJ returns.  
+ 
+7. Quality at a Reasonable Price 
+It is interesting to consider what is the “fair” price of quality? That is, if we suppose 
+that a stock’s fundamental value V is a multiple of its quality,            , then what is 
+the fair value of m? Relatedly, if the market pays a price for quality different from m, then 
+what is the best way to buy cheap quality stocks? 
+To answer these questions, we construct a long -short portfolio that we call quality at 
+a reasonable price  (QARP) as follows. Using the same factor construction as for QMJ, we 
+construct a long-short portfolio based on the signal           
+    
+  for various choices of n. 
+That is, QARP is based on the difference between a stock’s quality times n minus its price-
+to-book score. We should get the highest alpha if we let    , that is, base the signal on the 
+quality multiple that corresponds to the fundamental value  (m is of course unobservable) . 
+
+--- PAGE 23 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 23 
+ 
+Indeed, in this case, the portfolio is long the highest -alpha securities and short the lowest -
+alpha securities.11 
+If the highest-quality stocks were the most expensive, then the quality and price ranks 
+would line up, implying that     . When we construct QARP empirically, we do find that 
+the alpha is highest for n close to 1 both in the U.S. and globally. 
+Another way to consider QARP is to simply form a portfolio of quality (QMJ) and  
+value (HML).  The combination of QMJ and HML that has the highest Sharpe ratio puts a 
+weight of about 70% on QMJ ( and, hence, the remaining 30% on HML) in the U.S. and 
+about 60% weight on QMJ globally.  
+The Sharpe ratio of QARP (whether constructed based on combining signals or 
+combining factor returns) is naturally higher than either quality or value alone, about 0.7 in 
+the U.S. and  0.9 globally. QARP performs well as q uality strategies complement value by 
+helping an investor avoid the “value trap,” namely the trap of buying securities that look 
+cheap but deserve to be cheap. Instead, QARP buys securities that are cheap relative to t heir 
+quality. Our evidence suggests that the fair price of quality is above the level paid by the 
+market. 
+ 
+8. QMJ on the Right-Hand-Side of a Factor Model 
+                                                 
+ 
+11 For simplicity consider a 2 -period model  so that the fundamental value is the expected payoff at 
+time 2 discounted at the required return,   
+     
+   , where k is the required return. The alpha of the security, that 
+is, the expected excess return above the required return is then 
+ 
+   (  
+  
+)          
+  
+      
+ 
+Naturally, the alpha depends on the difference between the fundamental value   and the price   . Since our 
+measures of quality and price are based on z-scores, we simply subtract the two (rather than dividing by price as 
+above). 
+ 
+
+--- PAGE 24 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 24 
+ 
+We have seen that QMJ is an intuitive and powerful factor that has significant alpha 
+relative to the standard factors. It is also interesting to switch things around and put QMJ on 
+the right-hand-side to see how it affects the alphas  and interpretation of the standard factors. 
+More broadly, QMJ is a useful factor to add to the toolbox of global factors, e.g., when 
+researchers need to test whether new phenomena are driven by quality.  
+Table IX reports the results of regressing each of the SMB, HML, and UM D on the 
+other standard factors, wi th and without QMJ on the right -hand-side. Let us first consider 
+SMB, that is, the size effect. SMB has a modest, but significant, excess return in our US 
+sample and an insignificant excess return in the global sample.  I n both samples, however, 
+SMB actually has a small and insignificant alpha when controlling for the other standard 
+factors (the market, HML, and UMD). The size effect could appear to be a fluke, an artifact 
+of SMB’s market exposure.12 
+Controlling for QMJ com pletely changes this conclusion. SMB has a very large 
+negative exposure to QMJ. Clearly, small stocks are junky relative to big stocks. This finding 
+is intuitive as small stocks could, for instance, be young firms that are yet to be profitable, 
+safe, and h igh payout. Moreover, controlling for QMJ, the size effect becomes large and 
+highly sign ificant in both samples. The size effect is alive and well when we account for 
+quality as small stocks outperform large stocks when we compare firms of similar quality  
+(and market beta, value and momentum exposure) . This finding in return space is the analog 
+of the strong size effect for prices that we documented in Table III. 
+Table IX further shows that HML has a negative loading on QMJ. This is also 
+intuitive as cheap stocks (with high book -to-market) are naturally lower quality than 
+expensive stocks. This negative loading implies that controlling for QMJ increases the alpha 
+of HML, strengthening the value effect.  
+Lastly, UMD has positive loading on QMJ, which is signi ficant in the global but not 
+U.S. sample. Controlling for this exposure to quality lowers the alpha of UMD, but the 
+momentum effect remains highly significant in both samples.  Quality has several other 
+                                                 
+ 
+12 This alpha is further reduced if we include lagged versions of the market return on the right -hand-side to 
+account for possible illiquidity in SMB, a complication we do not pursue in this paper.  
+
+--- PAGE 25 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 25 
+ 
+interesting implications for the standard factors and asset pricing more broadly , which  we 
+intend to explore further in future research. 
+ 
+9. Conclusion 
+In this paper we define a quality security as one t hat has characteristics that  should 
+command a higher (scaled) price . Following from the Gordon Growth Model, quality stocks 
+are safe, profi table, growing, an d have high payout ratio . We create definitions of all four 
+quality subcomponents, and quality in general, which are robust and inclusive from across 
+the literature and test the hypothesis that high quality firms have higher scaled prices.   
+Consistent with market efficiency, we find that high quality firms do exhibit higher 
+prices on average. H owever, the explanatory power of quality on prices is low, leaving the 
+majority of cross sectional dispersion in scaled prices unexplained. As a result , high quality 
+firms exhibit high risk-adjusted returns. A quality-minus-junk ( QMJ) factor that goes long 
+high-quality stocks and shorts low -quality stocks earns significant risk-adjusted returns with 
+an information ratio  above 1 (i.e., a Sharpe ratio above 1 after hedging its other factor 
+exposures) in the U.S. and globally across 24 countries.  
+Our results present a puzzle for asset pricing. They are  consistent with quality stocks 
+being underpriced and junk stocks overprice d or, alternatively,  with quality stocks  being 
+riskier than junk stocks. However, while one can never rule out a risk explanation for the 
+high return of quality stocks , we are unable to identify this risk ; in anything, we find  
+evidence of the opposite. We show that quality stocks are low beta and, rather than exhibiting 
+crash risk, if anything they benefit from  “flight to quality,” that is , they have a tendency to 
+perform well during period s of extreme market d istress. These findings  present a challenge 
+for risk-based explanations where bad states of the world are negatively correlated to extreme 
+return realizations of the market factor.  
+Finally, we show that the price of quality varies over time , generating a time-varying 
+expected return on quality-minus-junk portfolios: a low price of quality predicts a high future 
+return of quality stocks relative to junk stocks.  
+In summary, w e document strong and consistent abnormal returns to quality, and do 
+so in a far mo re inclusive and complete setting than prior papers using all four components 
+
+--- PAGE 26 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 26 
+ 
+implied by the Gordon Growth Model simultaneously.  We also tie these results to the cross -
+section and time-series of the pricing of quality in novel ways.  
+Our results present an important puzzle for asset pricing:  We cannot tie the returns of 
+quality to risk, or, in a highly related finding, demonstrate that prices cross -sectionally vary 
+“enough” with quality measures. At this point the returns to quality must be either a n 
+anomaly, data mining (incredibly robust data mining  - including across countries , size and 
+time periods, and encompassing the strong consistent U.S. and global correlations of quality 
+to size), or the results of a still-to-be-identified risk factor not from the 4-factor model. 
+ 
+  
+
+--- PAGE 27 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 27 
+ 
+References  
+ 
+Acharya, Viral and Lasse Heje Pedersen (2005), “Asset Pricing with Liquidity Risk,” Journal 
+of Financial Economics, 77, 375-410.   
+ 
+Ang, A., R. Hodrick, Y. Xing, X. Zhang (2006), “The Cross -Section of Volatility and 
+Expected Returns,” Journal of Finance, 61, pp. 259-299. 
+  
+– (2009), “High Idiosyncratic Volatility and Low Returns: International and Further U.S. 
+Evidence,” Journal of Financial Economics, 91, pp. 1-23.  
+ 
+Asness, Cliff., (1994), “Variables that Explain Stock Returns”, Ph.D. Dissertation, University 
+of Chicago. 
+ 
+Asness, C liff and A.  Frazzini (2013), “The Devil in HML’s Detail”, Journal of Portfolio 
+Management, 39, 49-68. 
+ 
+Asness, C., A. Fr azzini, and L. H. Pedersen (2012 ), “Leverage Aversion and Risk Parity”, 
+Financial Analysts Journal, 68, 47-59. 
+ 
+Baker, Malcolm and Jeff Wurgler (2002), “Market timing and capital structure,” Journal of 
+Finance 57, 1-32. 
+ 
+Banz, Rolf W.  (1981), “The relationship between return and market val ue of common 
+stocks,” Journal of Financial Economics 9, 3–18. 
+ 
+Berk, Jonathan B. (1995), “A Critique of Size-Related Anomalies,” The Review of Financial 
+Studies, 8, 2, 275-286. 
+ 
+Black, F. (1972), “Capital market equilibrium with restricted borrowing,” Journal of 
+business, 45, 3, pp. 444-455. 
+
+--- PAGE 28 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 28 
+ 
+ 
+– (1992), “Beta and Return,” The Journal of Portfolio Management, 20, pp. 8-18.  
+ 
+Black, F., M.C. Jensen, and M. Scholes (1972), “The Capital Asset Pricing Model: Some 
+Empirical Tests.” In Michael C. Jensen (ed.), Studies in the Theory of Capital Markets, New 
+York, pp. 79-121. 
+ 
+Campbell, John Y. and Robert J. Shiller (1988), “The dividend-price ratio and expectations 
+of future dividends and discount factors,” Review of Financial Studies 1, 195–228. 
+ 
+Campbell, John Y ., J ens Hilscher, and Jan Szilagyi ( 2008), “In search of distress risk ”, 
+Journal of Finance 63, 2899–2939. 
+ 
+Carhart, Mark M. (1997)  “On persistence in mutual fund performan ce,” The Journal of 
+Finance, 52, 1, 57-82. 
+ 
+Cohen, Randolph B., Christopher Polk,  and Tuomo Vuolteenaho  (2009), “The price is 
+(almost) right,” The Journal of Finance, 64, 2739-2782. 
+ 
+Cochrane, John (2011), “Presidential Address: Discount Rates,” The Journal of Finance, 66, 
+4, 1047-1108. 
+ 
+Daniel, Kent and Sheridan Titman, (2006), “Market reaction to tangible and intangible 
+information,” Journal of Finance 61, 1605-1643. 
+ 
+Falkenstein, E.G. (1994), “Mutual funds, idiosyncratic variance, and asset returns”, 
+Dissertation, Northwestern University. 
+ 
+Fama, E.F. and French, K.R. (2013), “A Four -Factor Model for the Size, Value and 
+Profitability Patterns in Stock Returns,” Working Paper. 
+ 
+
+--- PAGE 29 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 29 
+ 
+Fama, E.F. and French, K.R. (1993), “ Common risk factors in the returns on stocks and 
+bonds,” Journal of Financial Economics 33, 3–56. 
+ 
+Fama, E.F. and French, K.R. (2006), “ Profitability, investment and average returns ,” Journal 
+of Financial Economics, 82, 461-518. 
+ 
+Fama, Eugene F., and James D. MacBeth (1973),  “Risk, return, and equilibrium: Empirical 
+tests,” The Journal of Political Economy, 81, 607-636. 
+ 
+Frankel, Richard and Charles Lee. (1998) , “Accounting valuation, market expectation, and 
+cross-sectional stock returns,” Journal of Accounting and Economics, 25 ,283-319. 
+ 
+Frazzini, A. and L. H. Pedersen (2013 ), “Betting Against Beta”,  Journal of Financial 
+Economics, forthcoming. 
+ 
+Fu, F. (2009), “Idiosyncratic risk and the cross -section of expected stock returns,” Journal of 
+Financial Economics, vol. 91:1, 24-37. 
+ 
+Garleanu, N., and L. H. Pedersen (2009), “Margin -Based Asset Pricing and Deviations from 
+the Law of One Price," UC Berkeley and NYU, working paper. 
+ 
+George, Thomas J., and C.Y. Hwang (2010), “A Resolution of the Distress Risk and 
+Leverage Puzzles in the Cross Section of Stock Returns,” Journal of Financial Economics, 
+96, 56-79. 
+ 
+Gibbons, M. (1982), “Multivariate tests of financial models: A new approach,” Journal of 
+Financial Economics, 10, 3-27. 
+ 
+Jegadeesh, Narasimhan and Sheridan Titman (1993), “Returns to Buying Winners and 
+Selling Losers: Implications for Stock Market Efficiency,” The Journal of Finance, 48(1), 65-
+91. 
+
+--- PAGE 30 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 30 
+ 
+ 
+Jensen, Michael C . (1986), “Agency costs of free cash flow, corporate finance, and 
+takeovers,” The American Economic Review 76(2), 323-329. 
+ 
+Kandel, S. (1984), “The likelihood ratio test statistic of mean -variance efficiency without a 
+riskless asset,” Journal of Financial Economics, 13, pp. 575-592. 
+ 
+Karceski, J. (2002), “Returns -Chasing Behavior, Mutual Funds, and Beta’s Death,” Journal 
+of Financial and Quantitative Analysis, 37:4, 559-594. 
+ 
+McLean, David, Jeffrey Pontiff, and Akiko Watanabe (2009), “Share Issuance and Cross -
+Sectional Returns: International Evidence,” Journal of Financial Economics 94, 1-17. 
+ 
+Myers, Stewart, and N. Majluf (1984), “Corporate financing and investment decisions when 
+firms have information that investors do not have,” Journal of Financial Economics 13, 187 –
+221.  
+ 
+Mohanram, Partha (2005), “ Separating Winners from Losers among Low  Book-to-Market 
+Stocks using Financial Statement Analysis”, Review of Accounting Studies, 10, 133–170. 
+ 
+Novy-Marx, Robert (2013), “ The Other Side of Value: The Gross Profitability Premium, ” 
+Journal of Financial Economics 108(1), 2013, 1-28. 
+ 
+Penman, Stephen H. (1996), “The articulation of price -earnings ratios and market -to-book 
+ratios and the evaluation of growth,” Journal of Accounting Research, 34 (2), 235-259. 
+ 
+Penman, Stephen, Scott Richardson, and Irem Tuna (2007), “The Book -to-Price Effect in 
+Stock Returns: Accounting for Leverage,” Journal of Accounting Research, 45 (2), 427-467. 
+ 
+Piotroski, Joseph D . (2000), “ Value Investing: The Use  of Historical Financial  Statement 
+Information to Separate Winners from Losers,” Journal of Accounting Research, 38, 1-41. 
+
+--- PAGE 31 ---
+
+Quality Minus Junk - Asness, Frazzini, and Pedersen - Page 31 
+ 
+ 
+Pontiff, J., W. Woodgate (2008), “Share issuance and cross -sectional returns,” Journal of 
+Finance 63, 921-945. 
+ 
+Richardson, Scott, Richard G. Slo an, Mark Soliman, and Irem Tuna (2005), “Accrual 
+Reliability, Earnings Persistence and Stock Prices,” Journal of Accounting and Economics 39 
+(3), 437-485. 
+ 
+Roll, Richard (1984), “Orange juice and weather,” American Economic Review, 74 (5), 861-
+880. 
+ 
+Roll, R. (1988), “R2,” Journal of Finance 43, 541–566. 
+ 
+Scholes, M., and J. Williams (1977), “Estimating Betas from Nonsynchronous Data" Journal 
+of Financial Economics ,5 ,309-327. 
+ 
+Shanken, J. (1985), “Multivariate tests of the zero -beta CAPM,” Journal of Financial 
+Economics, 14,. 327-348. 
+ 
+Sloan, Richard G. (1996), "Do Stock Prices Reflect Information in Accruals and Cash Flows 
+About Future Earnings?", The Accounting Review 71, 289-315. 
+ 
+Summer, Lawren ce H. (1986), “Does the Stock Market Rationally Reflect Fundamental 
+Values?,” The Journal of Finance 41, 3, 591-601. 
+ 
+Vuolteenaho, Tuomo (2002), “ What Drives Firm -Level Stock Returns? ,” The Journal of 
+Finance, 57, 1, 233-264. 
+
+--- PAGE 32 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T1 
+Table I 
+Summary Statistics 
+This table shows summary statistics  as of June of each year. The sample includes all U.S. common stocks 
+(CRSP “shrcd” equal to 10 or 11) and  all global stocks (“tcpi” equal to 0) in the merged CRSP/ Xpressfeed 
+global databases. 
+ 
+ 
+ 
+Country Total number of 
+stocks
+Average number 
+of stocks
+Firm size  
+(Billion-USD) 
+Weight in global 
+portfolio
+ Start Year End Year
+Australia 2,142                 660                    0.63 0.018 1986 2012
+Austria 126                    56                      0.70 0.002 1990 2012
+Belgium 231                    91                      2.37 0.009 1990 2012
+Canada 1,901                 541                    1.08 0.022 1982 2012
+Switzerland 343                    135                    4.06 0.023 1986 2012
+Germany 1,492                 596                    3.01 0.061 1989 2012
+Denmark 227                    85                      1.08 0.004 1986 2012
+Spain 212                    82                      4.48 0.014 1986 2012
+Finland 202                    83                      1.66 0.005 1986 2012
+France 1,088                 397                    2.85 0.044 1986 2012
+United Kingdom 3,312                 1,103                 1.83 0.095 1986 2012
+Greece 239                    132                    0.48 0.002 1995 2012
+Hong Kong 1,351                 516                    1.21 0.026 1989 2012
+Ireland 106                    38                      1.58 0.002 1987 2012
+Israel 284                    97                      0.64 0.003 1995 2012
+Italy 356                    129                    2.37 0.018 1986 2012
+Japan 3,856                 1,988                 1.29 0.202 1986 2012
+Netherlands 250                    109                    4.70 0.021 1986 2012
+Norway 429                    120                    0.96 0.004 1986 2012
+New Zealand 176                    69                      1.26 0.003 1990 2012
+Portugal 92                      38                      1.96 0.002 1990 2012
+Singapore 860                    353                    0.60 0.009 1990 2012
+Sweden 677                    203                    1.35 0.012 1986 2012
+United States 19,356               3,594                 1.31 0.399 1951 2012
+
+--- PAGE 33 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T2 
+Table II 
+Persistence of Quality Measures 
+This table shows average quality score s. Each calendar month, stocks in each country in are ranked in ascending 
+order on the basis of their quality score. The ranked stocks are assigned t o one of ten portfolios. U.S. sorts are 
+based on NYSE breakpoints. This table reports the value-weighted average of quality measures across stocks in the 
+portfolio at portfolio formation (t) up to the  subsequent ten years (t + 120 months). We report the time series 
+average of the value -weighted cross sectional means. Panel A reports results from our Long Sample  of domestic 
+stocks. The sample period runs from June 1956 to December 2012. Panel B reports results from our Broad Sample 
+of global stocks. The sample period runs from June 1986 to December 2012. Standard errors are  adjusted for 
+heteroskedasticity and autocorrelation with a lag length of five  years (Newey and West (1987)) and 5% 
+significance is indicated in bold.  
+ 
+ 
+ 
+ 
+ 
+  
+P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P10 - P1 P10 - P1
+U.S., 1956 - 2012 (Low) (High) t-stat
+Quality t -1.38 -0.71 -0.39 -0.15 0.05 0.25 0.46 0.69 1.00 1.56 2.94 47.46
+Quality t + 12M -0.60 -0.29 -0.14 0.00 0.14 0.29 0.45 0.63 0.86 1.31 1.92 37.42
+Quality t + 36M -0.33 -0.12 -0.05 0.05 0.15 0.27 0.40 0.54 0.74 1.16 1.49 33.01
+Quality t + 60M -0.16 -0.02 0.04 0.09 0.16 0.22 0.35 0.46 0.68 1.04 1.20 20.68
+Quality t + 120M -0.09 0.00 0.03 0.07 0.09 0.21 0.30 0.38 0.62 0.89 0.98 20.70
+Profit t + 120M -0.37 -0.19 -0.10 0.05 0.12 0.18 0.29 0.35 0.59 1.08 1.44 20.74
+Growth t + 120M -0.23 -0.19 -0.13 -0.12 -0.10 -0.12 -0.02 0.11 0.11 0.34 0.57 6.10
+Safety t + 120M -0.28 -0.15 -0.03 0.08 0.15 0.21 0.35 0.49 0.63 0.67 0.95 9.68
+Payout t + 120M 0.12 0.29 0.28 0.29 0.38 0.39 0.49 0.49 0.56 0.61 0.49 17.31
+P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 H-L H-L
+Global, 1956 - 
+2012
+(Low) (High) t-stat
+Quality t -1.45 -0.79 -0.45 -0.19 0.04 0.25 0.47 0.72 1.04 1.62 3.07 42.28
+Quality t + 12M -0.59 -0.29 -0.14 0.01 0.13 0.27 0.44 0.60 0.85 1.28 1.87 39.05
+Quality t + 36M -0.30 -0.13 -0.05 0.06 0.13 0.23 0.36 0.48 0.70 1.07 1.37 44.95
+Quality t + 60M -0.10 0.00 0.04 0.10 0.13 0.20 0.32 0.42 0.61 0.93 1.03 35.22
+Quality t + 120M -0.08 -0.01 0.07 0.07 0.10 0.19 0.27 0.36 0.52 0.75 0.82 35.47
+Profit t + 120M -0.28 -0.08 0.00 0.10 0.14 0.23 0.34 0.37 0.53 0.90 1.19 22.77
+Growth t + 120M -0.19 -0.16 -0.15 -0.14 -0.12 -0.09 -0.07 0.00 0.09 0.18 0.37 6.40
+Safety t + 120M -0.22 -0.14 -0.09 0.02 0.06 0.11 0.20 0.32 0.50 0.52 0.74 13.59
+Payout t + 120M 0.17 0.28 0.35 0.31 0.42 0.42 0.49 0.48 0.51 0.57 0.40 8.15
+Panel B: Broad Sample
+Panel A: Long Sample
+
+--- PAGE 34 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T3 
+Table III 
+Results: Cross Sectional Regressions, the Price of Quality 
+This table reports coefficients from Fama-Macbeth regressions. The dependent variable is the  z-score of a stock’s 
+market to book ratio (MB) in month t. The explanatory variables are the quality scores in month t and a series of 
+controls. Size is the z-score of the stock’s market equity (ME).        is the stock return in month t. R            
+is the stock return in the prior year . All variables are rescaled to have a zero mean and a standard deviation of one. 
+When indicated (“Industry FE”, “Country FE”) variables are standardized by industry-country pairs. Average R2 is 
+the time series averages of the adjusted  R-square of the cross sectional regression.  Standard errors are adju sted for 
+heteroskedasticity and autocorrelation (Newey and West (1 987)) with a  lag length of 12 months. T -statistics are 
+shown below the coefficient estimates and 5% statistical significance is indicated in bold. 
+ 
+ 
+ 
+  
+Panel A: The Price of Quality
+(1) (2) (3) (4) (5) (6) (7) (8)
+Quality 0.32 0.19 0.32 0.20 0.24 0.10 0.22 0.09
+(22.47) (1 5.94) (23.92) (1 3.94) (23.33) (1 7.20) (24.39) (1 5.54)
+Size . 0.31 . 0.30 . 0.29 . 0.31
+. (1 9.1 9) . (27.08) . (1 7.71 ) . (20.91 )
+Ret(t-12,t) . 0.27 . 0.28 . 0.27 . 0.28
+. (21 .36) . (26.50) . (1 8.60) . (22.54)
+Industry FE No No Yes Yes No No Yes Yes
+Country FE Yes Yes Yes Yes
+Average R2 0.12 0.31 0.11 0.30 0.06 0.25 0.05 0.26
+Long Sample (U.S. , 1956 - 2012) Broad Sample (Global, 1986 - 2012)
+Panel B: The Price of Each Quality Component
+(1) (2) (3) (4) (5) (6) (7) (8) (9) (10)
+Profitability 0.41 . . . 0.30 0.29 . . . 0.19
+(26.1 9) . . . (23.64) (33.76) . . . (31 .37)
+Growth . 0.38 . . 0.11 . 0.28 . . 0.08
+. (31 .1 8) . . (1 2.25) . (35.02) . . (1 2.67)
+Safety . . 0.14 . -0.08 . . 0.11 . -0.10
+. . (9.95) . -(1 1 .38) . . (8.1 9) . -(1 2.59)
+Payout . . . -0.10 -0.13 . . . -0.06 -0.10
+. . . -(1 1 .1 1 ) -(1 8.41 ) . . . -(4.69) -(1 1 .23)
+Size . . . . 0.28 . . . . 0.31
+. . . . (26.22) . . . . (21 .67)
+Ret(t-12,t) . . . . 0.28 . . . . 0.28
+. . . . (28.69) . . . . (23.33)
+Industry FE No No No No Yes No No No No Yes
+Country FE Yes Yes Yes Yes Yes
+Average R2 0.18 0.15 0.03 0.01 0.40 0.09 0.08 0.02 0.01 0.31
+Long Sample (U.S., 1956 - 2012) Broad Sample (Global, 1986 - 2012)
+
+--- PAGE 35 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T4 
+Table IV 
+Quality-Sorted Portfolios 
+This table shows calendar -time portfolio returns. Each calendar month, stocks  in each country in are ranked in 
+ascending order on the basis of their quality score. The ranked stocks are assigned t o one of ten portfolios. U.S. 
+sorts are based on NYSE breakpoints. Portfolios are value -weighted, refreshed every calendar month, and 
+rebalanced every cal endar month to maintain value weights. We form one set of portfolios in each country and 
+compute global portfolios by weighting each country’s portfolio by the country’s total (lagged) market 
+capitalization. The rightmost column reports returns of a self -financing portfolio that is long the high quality 
+portfolio and shorts the low quality portfolio. This table includes all available common stocks on the 
+CRSP/Xpressfeed merged  database for the markets listed in Table I. Alpha is the intercept in a  time-series 
+regression of monthly excess return. The explanatory variables are the monthly returns from the market portfolio 
+(MKT) and size (SMB), book -to-market (HML), and momentum (UMD) factor -mimicking portfolios.  Panel A 
+reports results from our Long Sample  of domestic stocks. The sample period runs from June 1956 to  December 
+2012. Panel B reports results from our Broad Sample of global stocks. The sample period runs from June 1986 to 
+December 2012.  Returns are in USD, do not include currency hedging, and ex cess returns are above the U.S. 
+Treasury bill rate. Returns and alphas are in monthly percent, t-statistics are shown below the coefficient estimates, 
+and 5% statistical significance is indicated in bold. Beta is the realized loading on the market portfolio. Information 
+ratio is equal to 4 -factor alpha (intercept) divided by the standard deviation of the estimated residuals in the time -
+series regression. Sharpe ratios and information ratios are annualized. 
+ 
+  
+Panel A: Long Sample P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 H-L
+U.S. , 1956 - 2012 (Low) (High)
+Excess return 0.15 0.36 0.38 0.39 0.45 0.45 0.57 0.47 0.58 0.61 0.47
+(0.55) (1 .56) (1 .90) (2.04) (2.51 ) (2.60) (3.42) (2.75) (3.48) (3.68) (2.80)
+CAPM alpha -0.53 -0.24 -0.15 -0.12 -0.02 -0.01 0.13 0.01 0.14 0.18 0.71
+(-4.62) (-2.85) (-2.25) (-2.01 ) (-0.33) (-0.1 8) (2.41 ) (0.23) (2.71 ) (2.86) (4.92)
+3-factor alpha -0.67 -0.38 -0.25 -0.21 -0.08 -0.06 0.12 0.01 0.16 0.29 0.97
+(-7.83) (-5.47) (-4.47) (-4.1 1 ) (-1 .44) (-1 .09) (2.26) (0.1 2) (3.37) (5.24) (9.02)
+4-factor alpha -0.56 -0.42 -0.26 -0.29 -0.14 -0.12 0.04 -0.05 0.19 0.41 0.97
+(-6.24) (-5.73) (-4.26) (-5.39) (-2.37) (-2.22) (0.68) (-1 .08) (3.62) (7.1 0) (8.55)
+Beta 1.28 1.22 1.08 1.09 1.03 1.01 0.97 1.00 0.95 0.90 -0.38
+Sharpe Ratio 0.07 0.21 0.25 0.27 0.33 0.35 0.46 0.37 0.46 0.49 0.37
+Information Ratio -0.90 -0.82 -0.61 -0.77 -0.34 -0.32 0.10 -0.15 0.52 1.02 1.23
+Adjusted R2 0.90 0.91 0.92 0.93 0.90 0.91 0.91 0.93 0.92 0.90 0.60
+Panel B: Broad Sample P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 H-L
+Global , 1986 - 2012 (Low) (High)
+Excess return -0.03 0.35 0.43 0.38 0.52 0.46 0.57 0.52 0.61 0.65 0.68
+(-0.08) (1 .01 ) (1 .42) (1 .25) (1 .85) (1 .74) (2.29) (2.08) (2.54) (2.78) (3.22)
+CAPM alpha -0.61 -0.20 -0.06 -0.12 0.07 0.03 0.17 0.11 0.22 0.28 0.89
+(-3.20) (-1 .1 9) (-0.42) (-0.90) (0.53) (0.25) (1 .52) (1 .05) (2.05) (2.44) (5.00)
+3-factor alpha -0.73 -0.33 -0.18 -0.24 -0.02 -0.04 0.10 0.11 0.24 0.39 1.12
+(-4.1 4) (-2.08) (-1 .33) (-1 .98) (-0.1 7) (-0.35) (0.92) (0.98) (2.1 7) (3.49) (7.68)
+4-factor alpha -0.46 -0.24 -0.09 -0.23 0.01 -0.04 0.10 0.11 0.23 0.47 0.93
+(-2.49) (-1 .44) (-0.63) (-1 .75) (0.06) (-0.36) (0.91 ) (0.95) (1 .97) (3.96) (6.06)
+Beta 1.14 1.12 1.00 1.03 0.94 0.91 0.85 0.87 0.82 0.78 -0.36
+Sharpe Ratio -0.01 0.20 0.27 0.24 0.36 0.33 0.44 0.40 0.49 0.53 0.62
+Information Ratio -0.53 -0.30 -0.13 -0.37 0.01 -0.08 0.19 0.20 0.41 0.84 1.28
+Adjusted R2 0.79 0.80 0.81 0.84 0.81 0.82 0.82 0.82 0.80 0.79 0.56
+
+--- PAGE 36 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T5 
+Table V 
+Quality Minus Junk: Correlations 
+This table shows correlation of monthly returns. Quality minus Junk (QMJ) factors are constructed as the intersection of six 
+value-weighted portfolios formed on size and quality. At the end of each calendar month, stocks are assigned to two size -sorted 
+portfolios based on their market capitalization. For U.S. securities, the size breakpoint is the median NYSE market equity. For 
+International securities the size breakpoint is the 80th percentile by country. We use conditional sorts, first sorting on si ze, then 
+on quality. Portfolios are value -weighted, refreshed every calendar month, and rebalanced every calendar month to maintain 
+value weights. The QMJ factor return is the average return on the two high quality portfolios minus the average return on the  
+two low quality (junk) portfolios. Portfolios based on profitability, growth, safety and payout score are constructed in a simila r 
+manner. We form one set of portfolios in each country and compute global portfolios by weighting each country’s portfolio by 
+the country’s total (lagged) market capitalization. This table includes all available common stocks on the CRSP/Xpressfeed 
+merged database for the markets listed in Table I. Alpha is the intercept in a time -series regression of monthly excess return. 
+The explanatory variables are the monthly returns from the market portfolio (MKT) and size (SMB), book -to-market (HML), 
+and momentum (UMD) factor -mimicking portfolios. Panel A reports results from our Long Sample of domestic stocks. The 
+sample period runs from June  1956 to December 2012. Panel B reports results from our Broad Sample of global stocks.  The 
+sample period runs from June 1986 to December 2012. Returns are in USD, do not include currency hedging, and excess returns 
+are abo ve the U.S. Treasury bill rate. Abnormal returns are constructed as the intercept plus the residual of a time-series 
+regression of monthly excess return. The explanatory variables are the monthly returns from the market portfolio (MKT) and 
+size (SMB), book-to-market (HML), and momentum (UMD) factor-mimicking portfolios. 
+ 
+QMJ Profitability Safety Growth Payout QMJ Profitability Safety Growth Payout
+QMJ 1.00 1.00
+Profitability 0.82 1.00 0.79 1.00
+Safety 0.88 0.64 1.00 0.86 0.84 1.00
+Growth 0.24 0.52 0.15 1.00 0.28 0.36 0.27 1.00
+Payout 0.69 0.35 0.53 -0.34 1.00 0.76 0.46 0.51 -0.19 1.00
+QMJ 1.00 1.00
+Profitability 0.82 1.00 0.70 1.00
+Safety 0.72 0.43 1.00 0.71 0.76 1.00
+Growth 0.42 0.49 0.18 1.00 0.35 0.30 0.15 1.00
+Payout 0.62 0.44 0.30 -0.06 1.00 0.69 0.36 0.33 -0.09 1.00
+Panel A: Long Sample (U.S. , 1956 - 2012) Panel B: Broad Sample (Global, 1986 - 2012)
+Returns
+Abnormal Returns (4-factor)
+Returns
+Abnormal Returns (4-factor)
+
+--- PAGE 37 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T6 
+Table VI 
+Quality Minus Junk: Returns 
+This table shows calendar -time portfolio returns  and factor loadings. Quality minus Junk (QMJ) factors are constructed as the 
+intersection of six value-weighted portfolios formed on size and quality. At the end of each calendar month, stocks are assigned 
+to two size -sorted portfolios based on their market capitalization. For U.S. securities, the si ze breakpoint is the median NYSE 
+market equity. For International securities the size breakpoint is the 80th percentile by country. We use conditional sorts, first 
+sorting on size, then on quality. Portfolios are value -weighted, refreshed every calendar mo nth, and rebalanced every calendar 
+month to maintain value weights. The QMJ factor return is the average return on the two high quality portfolios minus the 
+average return on the two low quality (junk) portfolios. Portfolios based on profitability, growth,  safety and payout score are 
+constructed in a similar manner. We form one set of portfolios in each country and compute global portfolios by weighting each 
+country’s portfolio by the country’s total (lagged) market capitalization.  This table includes all available common stocks on the 
+CRSP/Xpressfeed merged database for the markets listed in Table I. Alpha is the intercept in a time -series regression of 
+monthly excess return. The explanatory variables are the monthly returns from the market portfolio (MKT) and size (SMB), 
+book-to-market (HML), and momentum (UMD) factor -mimicking portfolios. Panel A reports results from our Long Sample of 
+domestic stocks. The sample period runs from June 1956 to December 2012. Panel B reports results from our Broad Sample of 
+global stocks.  The sample period runs from June 1986 to December 2012. Returns are in USD, do not include currency 
+hedging, and excess returns are above the U.S. Treasury bill rate. Returns and alphas are in monthly percent, t -statistics are 
+shown below the coefficient estimates, and 5% statistical significance is indicated in bold.  Information ratio is equal to 4 -factor 
+alpha (intercept) divided by the standard deviation of the estimated residuals in the time -series regression. Sharpe ratios and 
+information ratios (i.e., the Sharpe ratio of the regression residual) are annualized. 
+QMJ Profitability Safety Growth Payout QMJ Profitability Safety Growth Payout
+Excess Returns 0.40 0.27 0.23 0.12 0.31 0.38 0.34 0.19 0.02 0.38
+(4.38) (3.81 ) (2.06) (1 .63) (3.37) (3.22) (3.30) (1 .33) (0.24) (3.41 )
+CAPM-alpha 0.55 0.33 0.42 0.08 0.46 0.52 0.43 0.34 0.02 0.49
+(7.27) (4.78) (4.76) (1 .06) (6.1 0) (5.75) (4.61 ) (3.07) (0.1 8) (5.29)
+3-factor alpha 0.68 0.45 0.59 0.20 0.43 0.61 0.53 0.50 0.14 0.44
+(1 1 .1 0) (7.82) (8.68) (3.32) (6.86) (7.68) (6.1 1 ) (5.40) (1 .92) (5.1 7)
+4-factor alpha 0.66 0.53 0.57 0.38 0.21 0.45 0.49 0.39 0.29 0.19
+(1 0.20) (8.71 ) (7.97) (6.1 3) (3.43) (5.50) (5.34) (4.00) (3.91 ) (2.26)
+MKT -0.25 -0.11 -0.34 0.05 -0.20 -0.24 -0.16 -0.28 0.00 -0.18
+(-1 7.02) (-8.08) (-20.77) (3.35) (-1 4.47) (-1 4.36) (-8.33) (-1 3.74) (-0.06) (-1 0.50)
+SMB -0.38 -0.21 -0.41 -0.05 -0.30 -0.33 -0.20 -0.31 -0.18 -0.23
+(-1 7.50) (-1 0.21 ) (-1 7.00) (-2.53) (-1 4.82) (-9.46) (-5.07) (-7.48) (-5.62) (-6.58)
+HML -0.12 -0.28 -0.23 -0.44 0.39 -0.01 -0.16 -0.22 -0.38 0.36
+(-5.03) (-1 2.1 6) (-8.50) (-1 8.81 ) (1 6.68) (-0.31 ) (-3.95) (-5.23) (-1 1 .62) (9.89)
+UMD 0.02 -0.07 0.01 -0.17 0.21 0.15 0.03 0.10 -0.14 0.24
+(0.82) (-3.80) (0.64) (-8.55) (1 0.79) (5.54) (1 .01 ) (3.07) (-5.64) (8.57)
+Sharpe Ratio 0.58 0.51 0.27 0.22 0.45 0.62 0.63 0.26 0.05 0.66
+Information Ratio 1.46 1.25 1.14 0.88 0.49 1.16 1.13 0.84 0.83 0.48
+Adjusted R2 0.57 0.37 0.63 0.40 0.60 0.60 0.34 0.58 0.35 0.52
+Panel A: Long Sample (U.S. , 1956 - 2012) Panel B: Broad Sample (Global , 1986 - 2012)
+
+--- PAGE 38 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T7 
+Table VI (Continued) 
+Quality Minus Junk: By Country 
+This table shows calendar -time portfolio returns and factor loadings. Quality minus Junk (QMJ) factors are constructed as the 
+intersection of six value-weighted portfolios formed on size and quality. At the end of each calendar month, stocks are assigned 
+to two size -sorted portfolios based on their market capitalization. For U.S. securities, the size breakpoint  is the median NYSE 
+market equity. For International securities the size breakpoint is the 80th percentile by country. We use conditional sorts, first 
+sorting on size, then on quality. Portfolios are value -weighted, refreshed every calendar month, and reba lanced every calendar 
+month to maintain value weights. The QMJ factor return is the average return on the two high quality portfolios minus the 
+average return on the two low quality (junk) portfolios. Portfolios based on profitability, growth, safety and p ayout score are 
+constructed in a similar manner. We form one set of portfolios in each country and compute global portfolios by weighting eac h 
+country’s portfolio by the country’s total (lagged) market capitalization. This table includes all available comm on stocks on the 
+CRSP/Xpressfeed merged database for the markets listed in Table I. Alpha is the intercept in a time -series regression of 
+monthly excess return. The explanatory variables are the monthly returns from the market portfolio (MKT) and size (SMB ), 
+book-to-market (HML), and momentum (UMD) factor -mimicking portfolios. Panel A reports results from our Long Sample of 
+domestic stocks. The sample period runs from June 1956 to December 2012. Panel B reports results from our Broad Sample of 
+global stocks.  Panel C report s results by country. The sample period runs from June 1986 to December 2012. Returns are in 
+USD, do not include currency hedging, and excess returns are above the U.S. Treasury bill rate. Returns and alphas are in 
+monthly percent, t -statistics are shown below the coefficient estimates, and 5% statistical significance is indicated in bold. 
+Information ratio is equal to 4 -factor alpha (intercept) divided by the standard deviation of the estimated residuals in the time -
+series regression. Sharpe ratios and information ratios are annualized. 
+ 
+ 
+ 
+  
+MKT SMB HML UMD
+Australia 0.34 1.51 0.55 2.73 -0.17 -0.40 0.10 0.00 0.36 0.75 210          1995-2012
+Austria 0.21 0.66 0.38 1.42 -0.33 -0.04 -0.15 0.11 0.16 0.36 198          1996-2012
+Belgium 0.43 1.59 0.36 1.57 -0.16 -0.09 -0.16 0.27 0.38 0.41 210          1995-2012
+Canada 0.61 2.98 0.39 2.05 -0.19 -0.07 0.28 0.21 0.59 0.43 306          1987-2012
+Switzerland 0.39 1.41 0.64 3.17 -0.35 -0.31 -0.33 0.08 0.34 0.79 210          1995-2012
+Germany 0.48 2.35 0.59 3.56 -0.24 -0.11 -0.19 0.05 0.56 0.92 210          1995-2012
+Denmark 0.66 2.08 0.49 1.90 -0.20 -0.25 -0.34 0.17 0.50 0.48 204          1996-2012
+Spain 0.15 0.58 0.20 0.88 -0.25 -0.08 -0.06 0.18 0.14 0.22 210          1995-2012
+Finland 0.53 1.40 0.59 1.93 -0.08 -0.17 -0.51 -0.01 0.34 0.48 210          1995-2012
+France 0.45 1.86 0.53 2.96 -0.27 -0.04 -0.17 0.16 0.45 0.76 210          1995-2012
+United Kingdom 0.17 0.69 0.32 1.35 -0.27 -0.16 -0.15 0.08 0.15 0.33 246          1992-2012
+Greece 1.35 2.54 1.06 3.07 -0.07 -0.21 -0.19 0.34 0.79 0.98 126          2002-2012
+Hong Kong 0.61 1.72 1.02 4.15 -0.27 -0.42 -0.18 0.08 0.41 1.04 210          1995-2012
+Ireland 0.53 0.85 0.84 1.59 -0.53 0.04 -0.17 0.12 0.20 0.39 208          1995-2012
+Israel 0.66 1.72 0.85 2.67 -0.33 -0.13 -0.12 0.07 0.51 0.85 138          2001-2012
+Italy 0.72 2.54 0.69 3.60 -0.21 -0.12 -0.22 0.26 0.62 0.91 198          1996-2012
+Japan 0.22 1.02 0.38 2.40 -0.31 -0.28 -0.15 0.10 0.23 0.59 246          1992-2012
+Netherlands 0.10 0.33 0.34 1.43 -0.37 -0.08 -0.15 0.04 0.08 0.35 210          1995-2012
+Norway 0.61 1.95 0.68 2.47 -0.19 -0.23 -0.13 0.18 0.47 0.61 210          1995-2012
+New Zealand 0.07 0.22 -0.05 -0.17 -0.15 -0.06 -0.14 0.16 0.05 -0.04 210          1995-2012
+Portugal 0.86 1.87 0.89 2.30 -0.26 -0.08 -0.26 0.18 0.53 0.67 150          2000-2012
+Singapore 0.26 0.90 0.44 2.38 -0.22 -0.31 -0.11 0.06 0.22 0.60 210          1995-2012
+Sweden 0.40 1.49 0.50 2.36 -0.22 -0.26 -0.22 0.15 0.32 0.53 256          1991-2012
+United States 0.40 4.38 0.66 10.20 -0.25 -0.38 -0.12 0.02 0.58 1.46 678          1956-2012
+Global 0.38 3.22 0.45 5.50 -0.24 -0.33 -0.01 0.15 0.62 1.16 324          1986-2012
+Date RangeNumber of 
+months
+Factor LoadingsExcess 
+return
+T-stat 
+Excess 
+return
+4-factor 
+Alpha
+T-stat 
+Alpha
+Sharpe 
+Ratio
+Information 
+Ratio
+
+--- PAGE 39 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T8 
+Table VII 
+QMJ: Recessions, Severe Bear and Bull Markets and Volatility Environment 
+This table shows calendar-time portfolio returns of QMJ factors in different macroeconomic environments. Quality minus Junk 
+(QMJ) factors are constructed as the intersection of six value-weighted portfolios formed on size and quality. At the end of each 
+calendar month, stocks are assigned to two size -sorted portfolios based on their market capitalization. For U.S. securit ies, the 
+size breakpoint is the median NYSE market equity. For International securities the size breakpoint is the 80th percentile by 
+country. We use conditional sorts, first sorting on size, then on quality. Portfolios are value -weighted, refreshed every calendar 
+month, and rebalanced every calendar month to maintain value weights. The QMJ factor return is the average return on the two 
+high quality portfolios minus the average return on the two low quality (junk) portfolios. Portfolios based on profitabili ty, 
+growth, safety and payout score are constructed in a similar manner. We form one set of portfolios in each country and comput e 
+global portfolios by weighting each country’s portfolio by the country’s total (lagged) market capitalization. This table inc ludes 
+all available common stocks on the CRSP/Xpressfeed merged database for the markets listed in Table I. Alpha is the intercept 
+in a time -series regression of monthly excess return. The explanatory variables are the monthly returns from the market 
+portfolio (MKT) and size (SMB), book-to-market (HML), and momentum (UMD) factor-mimicking portfolios. Panel A reports 
+results from our Long Sample of domestic stocks. The sample period runs from June 1956 to December 2012. Panel B reports 
+results from our Broad Sample of global stocks.  The sample period runs from June 1986 to December 2012. Returns are in 
+USD, do not include currency hedging, and excess returns are above the U.S. Treasury bill rate. Returns and alphas are in 
+monthly percent, t -statistics are shown below the coefficient e stimates, and 5% statistical significance is indicated in bold. 
+Information ratio is equal to 4 -factor alpha (intercept) divided by the standard deviation of the estimated residuals in the time -
+series regression. Sharpe ratios and information ratios are an nualized. “Recession” indicates NBER recessions. “Expansion” 
+indicates all other months. “Severe bear (bull) market” is defined as a total market return in the past 12 -month below (above) -
+25% (25%).  “Low (high) volatility” indicated periods of low (high) market volatility. We measure volatility as the 1 -month 
+standard deviation of daily returns of the CRSP -value weighted index or the MSCI -World index and split the sample in the top 
+and bottom 30% high and low periods . “Spike Up (down) in Volatility ” indicate periods of large increases or drops in market 
+volatility. We measure volatility changes as the 1-month change in market volatility and split the sample into the top and bottom 
+30% high and low periods. 
+ 
+Panel A: Long Sample
+U.S., 1956 - 2012 Excess 
+Return
+CAPM 
+Alpha
+3-Factor 
+Alpha
+4-Factor 
+Alpha
+Excess 
+Return
+CAPM 
+Alpha
+3-Factor 
+Alpha
+4-Factor 
+Alpha
+Number 
+of months
+All Periods 0.40 0.55 0.68 0.66 4.38 7.27 11.10 10.20 678
+Recession 0.76 0.73 0.96 0.95 2.77 3.55 5.76 5.61 110
+Expansion 0.33 0.52 0.63 0.60 3.48 6.30 9.81 8.63 568
+Severe Bear market 0.07 0.39 0.76 0.87 0.07 0.57 1.52 1.65 21
+Severe Bull Market 0.42 0.42 0.56 0.68 2.39 2.67 4.49 5.07 135
+Low Volatility 0.52 0.78 0.88 0.83 2.37 4.64 6.42 5.93 227
+High Volatility 0.25 0.43 0.60 0.73 2.24 4.20 7.64 8.60 227
+Spike Up in Volatility 0.49 0.57 0.65 0.67 2.68 3.97 5.48 5.39 226
+Spike Down in Volatility 0.30 0.60 0.87 0.73 1.90 4.42 8.36 6.62 226
+Broad Sample
+Global, 1986 - 2012 Excess 
+Return
+CAPM 
+Alpha
+3-Factor 
+Alpha
+4-Factor 
+Alpha
+Excess 
+Return
+CAPM 
+Alpha
+3-Factor 
+Alpha
+4-Factor 
+Alpha
+Number 
+of months
+All Periods 0.38 0.52 0.61 0.45 3.22 5.75 7.68 5.50 324
+Recession 0.84 0.46 0.89 0.92 1.70 1.60 3.84 4.51 37
+Expansion 0.32 0.51 0.59 0.41 2.74 5.36 7.01 4.67 287
+Severe Bear market 0.15 0.32 0.52 0.59 0.13 0.89 2.30 2.18 15
+Severe Bull Market 0.71 0.73 0.59 0.61 2.95 3.13 3.17 3.15 55
+Low Volatility 0.62 0.69 0.75 0.61 2.73 4.65 5.61 4.87 144
+High Volatility 0.07 0.26 0.36 0.45 0.45 1.89 2.85 2.95 75
+Spike Up in Volatility 0.34 0.48 0.45 0.35 1.52 2.97 3.15 2.48 114
+Spike Down in Volatility 0.40 0.56 0.77 0.52 2.12 3.65 5.74 3.91 120
+Return t-statistics
+Return t-statistics
+
+--- PAGE 40 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T9 
+Table VIII 
+Time Variation of the Price of Quality: High Price of Quality Predicts Low QMJ Returns 
+This table shows the time series regression of future quality factor returns on the lagged price of quality. The left hand side i s the cumulative excess return of the QMJ factor (or 
+profitability, growth, safety and payout factor)  over the future 1, 12, 36, or 60 months . Each regression is run in two ways: Using the “raw” quality factor returns on the left hand 
+side (“raw”) or using the quality factor with its exposures to the market, size (SMB), book-to-market (HML), and momentum (UMD) hedged out (denoted “alpha”). The right hand 
+side variables are the lagged price of quality and past quality returns. The lagged price of quality is the cross-sectional regression coefficient of market to book score on quality 
+(Table III, Panel A column (1) and (5) and Panel B columns (1)-(4) and (6)-(9)). The past quality return is defined as the portfolio–weighted average of the past 1 -year returns of 
+the stocks in the quality portfolio. Panel A reports results from our Long Sample of U.S. stocks from June 1956 to December 2012. Panel B reports results from our Broad Sample 
+of global stocks  from June 1986 to December 2012. We report only the coefficient on the variable of interest, the lagged price of quality . T-statistics are shown below the 
+coefficient estimates, and 5% statistical significance is indicated in bold.  Standard errors are adjusted for heteroskedasticity and autocorrelation (Newey and West (1987)) with lag 
+length equal to the forecasting horizon. “Mean Adj R2 ” is the average adjusted R-squared across all the regression above. The intercept and prior returns are included in all 
+regressions but not reported.  
+ 
+ 
+  
+Left-hand side
+Raw Alpha Raw Alpha Raw Alpha Raw Alpha Raw Alpha Raw Alpha Raw Alpha Raw Alpha
+QMJ -0.02 -0.01 -0.27 -0.17 -0.67 -0.52 -1.01 -1.32 -0.02 0.00 -0.41 0.05 -0.69 0.14 -1.06 -2.14
+(-2.70) (-2.06) (-2.50) (-1 .73) (-2.61 ) (-2.08) (-2.27) (-2.77) (-1 .02) (0.40) (-2.31 ) (0.34) (-2.04) (0.35) (-2.40) (-4.33)
+Profitability -0.02 -0.01 -0.20 -0.16 -0.58 -0.49 -0.86 -1.01 0.00 0.01 -0.17 0.07 -0.41 0.02 -1.36 -1.63
+(-3.06) (-2.87) (-3.03) (-2.30) (-3.54) (-2.79) (-2.91 ) (-3.58) (0.21 ) (0.95) (-0.86) (0.41 ) (-0.73) (0.04) (-1 .64) (-2.1 7)
+Growth -0.01 0.00 -0.07 0.00 -0.12 0.18 0.49 -0.20 -0.05 -0.04 -0.55 -0.53 -0.94 -1.21 -1.92 -0.61
+(-0.92) (0.23) (-0.79) (-0.02) (-0.37) (0.68) (0.95) (-0.37) (-2.09) (-2.07) (-2.66) (-2.62) (-1 .37) (-2.81 ) (-3.1 6) (-0.81 )
+Safety -0.03 0.00 -0.37 -0.11 -1.10 -0.67 -1.30 -1.84 -0.03 0.01 -0.38 0.07 -0.65 0.27 0.28 -0.53
+(-2.62) (-0.35) (-3.27) (-1 .29) (-3.85) (-1 .46) (-1 .38) (-3.1 1 ) (-1 .41 ) (0.67) (-2.44) (1 .1 4) (-2.76) (1 .76) (0.75) (-1 .55)
+Payout -0.03 -0.02 -0.30 -0.06 -0.66 -0.28 -0.91 -1.58 -0.05 -0.01 -0.37 0.02 -0.19 0.14 -0.77 -1.02
+(-2.04) (-1 .54) (-2.06) (-0.64) (-1 .53) (-1 .26) (-1 .91 ) (-2.29) (-2.08) (-0.87) (-1 .59) (0.21 ) (-0.34) (0.31 ) (-1 .68) (-2.36)
+Mean Adj R2 0.01 0.00 0.08 0.07 0.19 0.15 0.17 0.22 0.01 0.00 0.10 0.05 0.22 0.12 0.25 0.25
+Panel A: Long Sample (U.S. , 1956 - 2012) Panel B: Broad Sample (Global, 1986 - 2012)
+Return (t) Return (t, t+12) Return (t, t+36) Return (t, t+60) Return (t) Return (t, t+12) Return (t, t+36) Return (t, t+60)
+
+--- PAGE 41 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T10 
+Table IX 
+Pricing HML, SMB and UMD 
+This table shows calendar-time portfolio returns and factor loadings. Quality minus Junk (QMJ) factors are constructed as the 
+intersection of six value-weighted portfolios formed on size and quality. At the end of each calendar month, stocks are assigned 
+to two size -sorted portfolios based on their market capitalization. For U.S. securities, the size breakpoint is the median NYSE 
+market equity. For International securities the size breakpoint is the 80th percentile by country. We use conditional sorts, first 
+sorting on size , then on quality. Portfolios are value -weighted, refreshed every calendar month, and rebalanced every calendar 
+month to maintain value weights. The QMJ factor return is the average return on the two high quality portfolios minus the 
+average return on the two low quality (junk) portfolios. Portfolios based on profitability, growth, safety and payout score are 
+constructed in a similar manner. We form one set of portfolios in each country and compute global portfolios by weighting eac h 
+country’s portfolio by the country’s total (lagged) market capitalization. This table includes all available common stocks on the 
+CRSP/Xpressfeed merged database for the markets listed in Table I. Alpha is the intercept in a time -series regression of 
+monthly excess return. The other variables are the monthly returns from the market portfolio (MKT) and size (SMB), book -to-
+market (HML), and momentum (UM D) factor-mimicking portfolios. We run a regression of the SMB, HML and UMD factors 
+of the remaining ones excluding and including t he QMJ factor. Panel A reports results from our Long Sample  of domestic 
+stocks. The sample period runs from June 1956 to December 2012. Panel B reports results from our Broad Sample of global 
+stocks.  The sample period runs from June 1986 to December 2012. Returns are in USD, do not include currency hedging, and 
+excess returns are above the U.S. Treasury bill rate. Returns and alphas are in monthly percent, t -statistics are shown below the 
+coefficient estimates, and 5% statistical significance is indicated in bold. Information ratio is equal to 4 -factor alpha (intercept) 
+divided by the standard deviation of the estimated residuals in the time -series regression. Sharpe ratios and information ratios 
+are annualized. 
+ 
+Left-hand side SMB SMB HML HML UMD UMD SMB SMB HML HML UMD UMD
+Excess Returns 0.28 0.28 0.34 0.34 0.70 0.70 0.11 0.11 0.45 0.45 0.58 0.58
+(2.54) (2.54) (2.66) (2.66) (4.52) (4.52) (0.92) (0.92) (2.77) (2.77) (2.69) (2.69)
+Alpha 0.13 0.64 0.77 0.94 1.05 1.01 0.08 0.36 0.79 0.81 1.07 0.72
+(1 .1 6) (6.39) (8.01 ) (9.35) (9.1 1 ) (8.05) (0.62) (3.02) (6.62) (6.39) (6.90) (4.44)
+MKT 0.19 -0.08 -0.16 -0.23 -0.20 -0.18 0.06 -0.12 -0.09 -0.09 -0.20 -0.04
+(7.38) (-3.06) (-7.04) (-8.74) (-7.39) (-5.61 ) (2.09) (-3.90) (-3.27) (-2.73) (-6.04) (-0.94)
+SMB . 0.08 -0.03 0.04 0.07 -0.01 -0.02 0.02 0.21
+. (2.34) (-0.86) (1 .05) (1 .33) (-0.24) (-0.36) (0.34) (2.80)
+HML 0.10 -0.03 -0.81 -0.80 -0.01 -0.02 -0.89 -0.81
+(2.34) (-0.86) (-23.24) (-22.1 0) (-0.24) (-0.36) (-1 6.81 ) (-1 5.23)
+UMD 0.04 0.04 -0.55 -0.53 0.02 0.11 -0.53 -0.52
+(1 .05) (1 .33) (-23.24) (-22.1 0) (0.34) (2.80) (-1 6.81 ) (-1 5.23)
+QMJ -0.83 -0.29 0.06 -0.67 -0.03 0.58
+(-1 7.50) (-5.03) (0.82) (-9.46) (-0.31 ) (5.54)
+Sharpe Ratio 0.34 0.34 0.35 0.35 0.60 0.60 0.18 0.18 0.53 0.53 0.52 0.52
+Information Ratio 0.17 0.96 1.10 1.36 1.23 1.18 0.13 0.66 1.31 1.33 1.36 0.95
+Adjusted R2 0.07 0.36 0.45 0.47 0.46 0.46 0.01 0.22 0.47 0.46 0.50 0.55
+Panel A: Long Sample (U.S. , 1956 - 2012) Panel B: Broad Sample (Global , 1986 - 2012)
+
+--- PAGE 42 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T11 
+Figure 1 
+QMJ: 4-Factor Adjusted Information Ratios 
+This figure shows 4-factor adjusted information ratios of  Quality minus Junk (QMJ) factors . This figure includes all available 
+common stocks on the CRSP/Xpressfeed merged database for the markets listed in Table I. Alpha is the intercept in a time -
+series regression of monthly excess return. The explanatory variables are the monthly returns from the market portfolio (MKT)  
+and size (SMB), book -to-market (HML), and momentum (UMD) factor-mimicking portfolios.  Returns are in USD, do not 
+include currency hedging, and excess returns are abo ve the U.S. Treasury bill rate. Information ratios are equal to alpha divided 
+by the standard deviation of the estimated residuals in the time-series regression. Information ratios are annualized. 
+ 
+  
+ 
+  
+-0.20
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+1.40
+1.60
+Australia
+Austria
+Belgium
+Canada
+Switzerland
+Germany
+Denmark
+Spain
+Finland
+France
+United Kingdom
+Greece
+Hong Kong
+Ireland
+Israel
+Italy
+Japan
+Netherlands
+Norway
+New Zealand
+Portugal
+Singapore
+Sweden
+United States
+Global
+
+--- PAGE 43 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T12 
+Figure 2 
+QMJ: Cumulative Returns 
+This figure shows  cumulative returns of Quality minus Junk (QMJ) factors. This figure includes all available 
+common stocks on the CRSP/Xpressfeed  merged database for the markets listed in Table I. Panel A reports results 
+from our Long Sample  of domestic stocks. The sample period runs from June 1956 to December 2012. Panel B 
+reports results from our Broad Sample of global stocks. The sample period runs from June 1986 to December 2012. 
+Returns are in USD, do not include currency hedging. 
+ 
+Panel A: Long Sample (U.S. , 1956 - 2012)
+Panel B: Broad Sample (Global , 1986 - 2012)
+-50%
+0%
+50%
+100%
+150%
+200%
+250%
+300%
+350%
+1956
+1959
+1962
+1965
+1968
+1971
+1974
+1977
+1980
+1983
+1986
+1989
+1992
+1995
+1998
+2001
+2004
+2007
+2010
+QMJ Cumulative Return, Long Sample (U.S.)
+-20%
+0%
+20%
+40%
+60%
+80%
+100%
+120%
+140%
+1986
+1987
+1988
+1989
+1990
+1991
+1992
+1993
+1994
+1995
+1996
+1997
+1998
+1999
+2000
+2001
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+QMJ Cumulative Return , Broad Sample (Global)
+
+--- PAGE 44 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T13 
+Figure 3 
+QMJ: Cumulative 4-Factor Alphas 
+This figure shows 4 -factor adjusted cumulative returns of Quality minus Junk (QMJ) factors. This figure includes 
+all available common stocks on the CRSP/Xpressfeed merged database for the markets listed in Table I. Panel A 
+reports results from our Long Sample  of domestic stocks. The sample period runs from June 1956 to December 
+2012. Panel B reports results from our Broad Sample of global stocks. The sample period runs from June 1986 to 
+December 2012. Alpha is the intercept in a time -series regression of monthly excess return. The explanatory 
+variables are the monthly returns from the market portfolio (MKT) and size (SMB), book -to-market (HML), and 
+momentum (UMD) factor-mimicking portfolios. Returns are in USD, do not include currency hedging, and excess 
+returns are above the U.S. Treasury bill rate. We plot cumulative abnormal returns (alpha plus regression residual) 
+from the time series regression. 
+ 
+Panel A: Long Sample (U.S. , 1956 - 2012)
+Panel B: Broad Sample (Global , 1986 - 2012)
+-50%
+0%
+50%
+100%
+150%
+200%
+250%
+300%
+350%
+400%
+450%
+500%
+1956 1959 1962 1965 1968 1971 1974 1977 1980 1983 1986 1989 1992 1995 1998 2001 2004 2007 2010
+Cumulative 4-Factor Alpha, Long Sample (U.S.)
+-20%
+0%
+20%
+40%
+60%
+80%
+100%
+120%
+140%
+160%
+1986
+1987
+1988
+1989
+1990
+1991
+1992
+1993
+1994
+1995
+1996
+1997
+1998
+1999
+2000
+2001
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+Cumulative 4-Factor Alpha , Broad Sample (Global)
+
+--- PAGE 45 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T14 
+Figure 4 
+QMJ: Flight to Quality 
+This figure shows monthly excess returns and 4-factor alpha of Quality minus Junk (QMJ) factors. This figure 
+includes all available common stocks on the CRSP/Xpressfeed  merged database for the markets listed in Table I. 
+Panel A reports results from our Long Sample  of domestic stocks. The sample period runs from June 1956 to 
+December 2012. Panel B reports results from our Broad Sample  of global stocks. The sample period r uns from 
+June 1986 to December 2012. Alpha is the intercept in a time -series regression of monthly excess return. The 
+explanatory variables are the monthly returns from the market portfolio (MKT) and size (SMB), book -to-market 
+(HML), and momentum (UMD) fac tor-mimicking portfolios. Returns are in USD, do not include currency 
+hedging, and excess returns are above the U.S. Treasury bill rate. Monthly excess returns and alphas on the y -axes 
+and market excess returns on the x-axes. 
+ 
+ 
+Panel A: Long Sample (U.S. , 1956 - 2012)
+Panel B: Broad Sample (Global, 1986 - 2012)
+-15.00%
+-10.00%
+-5.00%
+0.00%
+5.00%
+10.00%
+15.00%
+-30% -25% -20% -15% -10% -5% 0% 5% 10% 15% 20%
+QMJ - excess returns
+Market Excess Return
+-10.00%
+-8.00%
+-6.00%
+-4.00%
+-2.00%
+0.00%
+2.00%
+4.00%
+6.00%
+8.00%
+10.00%
+-25% -20% -15% -10% -5% 0% 5% 10% 15%
+QMJ - excess returns
+Market Excess Return
+-10.00%
+-8.00%
+-6.00%
+-4.00%
+-2.00%
+0.00%
+2.00%
+4.00%
+6.00%
+8.00%
+10.00%
+12.00%
+-30% -25% -20% -15% -10% -5% 0% 5% 10% 15% 20%
+QMJ - 4-factor alpha
+Market Excess Return
+-8.00%
+-6.00%
+-4.00%
+-2.00%
+0.00%
+2.00%
+4.00%
+6.00%
+8.00%
+-25% -20% -15% -10% -5% 0% 5% 10% 15%
+QMJ - 4-factor alpha
+Market Excess Return
+
+--- PAGE 46 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Tables and Figures – Page T15 
+Figure 5 
+Cross Sectional Regressions Coefficient, the Price of Quality 
+This figure reports coefficients from Fama -Macbeth regressions. The dependent variable is the z -score of a stock’s 
+market to book ratio (MB) in month t. The explanatory variables are the quality scores in month t . We plot the time 
+series of the cross sectional coefficients from table III, panel A, column (1) and (7).  
+ 
+ 
+ 
+ 
+0.000
+0.100
+0.200
+0.300
+0.400
+0.500
+0.600
+0.700
+1956
+1959
+1962
+1965
+1968
+1971
+1974
+1977
+1980
+1983
+1986
+1989
+1992
+1995
+1998
+2001
+2004
+2007
+2010
+Time Series of FMB Coefficients
+Long Sample (U.S.) Broad Sample (Global)
+
+--- PAGE 47 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Appendix – Page A1 
+Appendix A 
+ 
+A1: Variable Definitions 
+In th is section we  report details of each variable used on our quality score.  Our 
+variables’ definitions are based on Altman (1968), Ohlson (1980), Ang, Hodrick, Xing, and 
+Zhang (2006), Danile and Titman (2006), Penman, Richardson, and Tuna (2007), Campbell, 
+Hilscher, and Szilagyi (2008),  Chen, Novy -Marx and Zhang (2011), Novy -Marx (2012),  
+Frazzini and Pedersen (2013) and Asness and Frazzini (2013). Variable names correspond to 
+CRSP/XpressFeed data items and we omit the time subscript   for contemporaneous 
+variables. Finally, unless specified, XpressFeed data items refer to annual  items and time 
+subscripts refer to years. 
+Profitability 
+We compute  a profitability z -score by averaging z -scores of gross profits over assets 
+(GPOA), return on equity (ROE), return on assets (ROA), cash flow over assets (CFOA), 
+gross margin (GMAR) and low accruals (ACC): 
+              (                                ) 
+      is equal to r evenue minus costs of goods sold divided by total assets (     
+    )    .     is net income divided by book -equity      .     is net income divided 
+by total asset s      .      is n et income  plus depreciation minus c hanges in working 
+capital and capital expenditures  divided by total assets : (              )    . 
+     is revenue minus costs of goods sold divided by total sales: (         )      . 
+    is depreciation minus changes in working capital  (      )    . Working capital 
+   is defined as current assets minus current liabilities minus cash and short term 
+instruments plus short term debt and income taxes payable                  
+   . Book equity    is defined as s hareholders’ equity minus preferred stock. To obtain 
+shareholders’ equity we use we use stockholders’ equity (   ) but if not available, we use 
+the sum of common e quity (    ) and preferred s tocks (     ). If both     and     are 
+unavailable, we proxy shareholders’ equity by total a ssets (   ) minus the sum of t otal 
+
+--- PAGE 48 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Appendix – Page A2 
+liability (   ) and minority i nterest (    ). To obtain book equity  (BE), we subtract from 
+shareholders’ equity the preferred stock value (       ,       or      depending on 
+availability). 
+Growth 
+We compute a growth z-score by averaging z -scores of five -year growth in gross 
+profits over assets (         )       where              , five -year growth in 
+return on equity (         )       , five -year growth in return over assets (    
+     )       , five -year growth in cash flow over assets (         )       where 
+                 , five-year growth in gross margin (         )        , 
+and five-year growth in (low)  accruals (               )      where       
+ (      ) : 
+        (                                      ) 
+Safety 
+We compute a safety z-score by averaging z -scores of low beta (BAB),  low idiosyncratic 
+volatility (IVOL), low leverage (LEV), low bankruptcy risk ( Ohlson’s O and Altman’s Z ) 
+and low earnings volatility (EVOL): 
+        (                           ) 
+    is equal to m inus market beta –  . Betas are estima ted as in Frazzini and Pedersen 
+(2013) based on the product of the rolling one -year daily standard deviation and the rolling 
+five-year three -day correlations. For correlations, we use three -day returns to account for 
+nonsynchronous trading and a longer hor izon because correlations are more stable  than 
+volatilities.      is m inus a stock’s idiosyncratic volatility     . Idiosyncratic volatility is 
+equal to the rolling one-year standard deviation of daily beta-adjusted excess return, skipping 
+the most recent trading day.      is minus total debt ( the sum of long term debt, short term 
+debt, minority interest and preferr ed stock ) over total assets   (              
+    )   . We compute Ohlson’s O-Score as  
+
+--- PAGE 49 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Appendix – Page A3 
+    (                (            )             –                   
+      –                                              
+           )  
+where          is adjusted total assets equal to total assets plus 10% of the difference 
+between book equity and market equity       (     ).     is the consumer price 
+index.      is equal to book value of debt (         ) divided by         .      is 
+current assets minus current liabilities scaled by adjusted assets (       )          . 
+     is current liabilities divided by current assets        .       is a dummy equal to 
+1 if total liabiliti es exceed total assets  (     ) .      is net income over assets      . 
+     is pre-tax income over total liabilities      .       is a dummy equal to one if net 
+income is negative for the current and prior fiscal year  (   *         +   ).      is 
+changes in net income  defined as  (         ) (|  |  |     |). Altman’s Z-Score is a 
+weighted average of working capital, retained earnings, earnings before interest and taxes , 
+market equity and sales, all over total assets:  
+  (                                )    
+     is the standard deviation of quarterly     over the past 60 quarters.  We require at 
+least twelve  non missing quarter s. If quarterly data is unavailable  we use the standard 
+deviation of annual     over the past 5 years and we require five non missing fiscal years1. 
+Payout 
+We compute a payout z-score by averaging z -scores of net equity issuance (    ), net debt 
+issuance (    ) and total net payout over profits (    ): 
+        (                 ) 
+                                                 
+ 
+1 Quarterly data is unavailable for some of our international sample. 
+
+--- PAGE 50 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Appendix – Page A4 
+     is minus  one-year percent change in split -adjusted number of shares 
+     (                          )  where            is split-adjusted shares 
+outstanding.      is minus one-year percent change in total debt      (             ) 
+where      is the sum of long term debt, short term debt, minority interest and preferred 
+stocks                   .      is equal the sum of total net payout (net 
+income minus changes in book equi ty       )  over the past 5 years divided by total 
+profits (         ) over the past 5 years. 
+Book-to-Market 
+Book-to-market ratios follow  Asness and Frazzini (2013). We require stocks to have a 
+positive book equity and compute book-to-market as book equity divided by the most recent 
+market equity      .  
+ 
+  
+
+--- PAGE 51 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Appendix – Page A5 
+A2: Global Factor Returns 
+In this section we report details of the construction of the market (MKT), size (SMB), 
+book-to-market (HML), and momentum (UMD) portfolios used on the analysis. The data can 
+be downloaded at http://www.econ.yale.edu/~af227/data_library.htm. The portfolio 
+construction follows Fama and French ( 1992, 1993 and 1996) and Asness and Frazzini 
+(2013). We form one set of portfolios in each country and compute global factor portfolios 
+by weighting each country’s portfolio by the country’s total (lagged) market capitalization. 
+The market factor MKT is the value -weighted return on all available stocks minus the one -
+month Treasury bill rate. The size, value and momentum factors are constructed using six 
+value-weighted portfolios formed on size  (market value of equity ME)  and book-to-market 
+(book equity divided by the most rec ent market equity      ) and 1-year return ( return 
+over the prior 12 month s, skipping the most recent month) . At the end of each calendar  
+month, stocks are assigned to two size -sorted portfolios based on their market capitalization. 
+For U.S. securities, the size breakpoint is the median NYSE market equity. For International 
+securities the size breakpoint is the 80th percentile by country. We use conditional sorts, first 
+sorting on size, then on the second variable . Portfolios are value -weighted, refreshed every 
+calendar month, and rebalanced every calendar month to maintain value weights. The size 
+factor SMB is the average return on the 3 small portfolios minus the average return on the 3 
+big portfolios: 
+          (                                          ) 
+                   (                                    ) 
+The value factors HML is the average return on the two value portfolios minus the average 
+return on the two growth portfolios: 
+          (                       )       (                         ) 
+The momentum factor UMD is the average return on the two high return portfolios minus the 
+average return on the two low return portfolios: 
+           (                     )       (                   ) 
+
+--- PAGE 52 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Appendix – Page A6 
+Portfolio returns are in USD and do not include any currency hedging. E xcess returns are 
+above the U.S. Treasury bill rate. 
+ 
+
+--- PAGE 53 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Appendix – Page A7 
+Table A1 
+Persistence of Quality Measures 
+This table shows average quality scores. Each calendar month, stocks in each country in are ranked in ascending 
+order on the basis of their profitability, growth, safety and payout. The ranked stocks are assigned t o one of ten 
+portfolios. U.S. sorts are based on NYSE breakpoints.  We form one set of portfolios in each country and 
+compute global portfolios by weighting each country’s portfolio by the country’s total (lagged) market 
+capitalization. Portfolios are value -weighted, refreshed every calendar month, and rebalanced every calendar 
+month to maintain value weights.  This table reports the value -weighted average of quality measures across 
+stocks in the portfolio at portfolio formation (t) up to the subsequent ten years (t + 120 months). We report the 
+time series average of the value -weighted cross sectional means. Panel A reports results from our Long Sample 
+of domestic stocks. The sample period runs from June 1956 to December 2012. Panel B reports results from our 
+Broad Sample of global stocks. The sample period runs from June 1986 to December 2012. Standard errors are 
+adjusted for heterskedasticity and autocorrelation with a lag length of five  years (Newey and West (1987)) and 
+5% significance is indicated in bold.  
+  
+Panel A: Long Sample (U.S.) P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 H-L H-L
+1956 - 2012 (Low) (High) t-stat
+Profit (t) -1.44 -0.80 -0.46 -0.20 0.03 0.25 0.49 0.76 1.11 1.76 3.20 63.62
+Profit (t + 12M) -0.90 -0.49 -0.28 -0.05 0.10 0.27 0.44 0.66 0.99 1.51 2.41 41.39
+Profit (t + 36M) -0.65 -0.40 -0.24 -0.03 0.11 0.23 0.37 0.56 0.82 1.40 2.05 31.26
+Profit (t + 60M) -0.56 -0.36 -0.17 -0.03 0.13 0.22 0.32 0.50 0.76 1.34 1.90 24.06
+Profit (t + 120M) -0.39 -0.22 -0.14 0.02 0.11 0.19 0.30 0.37 0.65 1.14 1.53 25.58
+Growth (t) -1.48 -0.97 -0.66 -0.38 -0.12 0.13 0.39 0.68 1.03 1.67 3.15 101.83
+Growth (t + 12M) -0.78 -0.60 -0.41 -0.21 -0.04 0.13 0.30 0.58 0.80 1.25 2.03 30.85
+Growth (t + 36M) -0.43 -0.38 -0.28 -0.17 -0.07 0.02 0.18 0.36 0.51 0.93 1.36 21.52
+Growth (t + 60M) 0.01 -0.10 -0.12 -0.09 -0.08 -0.03 0.02 0.15 0.25 0.52 0.51 4.15
+Growth (t + 120M) -0.23 -0.25 -0.14 -0.10 -0.14 -0.12 -0.06 0.12 0.12 0.35 0.58 5.89
+Safety (t) -1.49 -0.85 -0.48 -0.21 0.01 0.22 0.44 0.69 0.99 1.45 2.95 49.61
+Safety (t + 12M) -1.11 -0.66 -0.34 -0.14 0.04 0.23 0.44 0.65 0.93 1.28 2.39 44.71
+Safety (t + 36M) -0.74 -0.49 -0.22 -0.07 0.06 0.24 0.42 0.58 0.81 1.04 1.78 20.97
+Safety (t + 60M) -0.56 -0.38 -0.11 -0.02 0.11 0.23 0.39 0.55 0.75 0.91 1.46 16.01
+Safety (t + 120M) -0.28 -0.20 -0.03 0.03 0.12 0.25 0.35 0.45 0.65 0.71 0.98 9.67
+Payout (t) -1.46 -0.82 -0.46 -0.17 0.07 0.30 0.54 0.80 1.11 1.57 3.03 70.25
+Payout (t + 12M) -0.67 -0.39 -0.20 0.00 0.20 0.36 0.50 0.66 0.81 0.95 1.63 38.22
+Payout (t + 36M) -0.38 -0.19 0.06 0.17 0.26 0.38 0.52 0.61 0.71 0.80 1.18 38.26
+Payout (t + 60M) -0.15 0.02 0.19 0.25 0.32 0.41 0.49 0.59 0.68 0.71 0.86 27.71
+Payout (t + 120M) 0.12 0.22 0.33 0.26 0.40 0.43 0.49 0.53 0.57 0.58 0.46 14.43
+Panel B: Broad Sample (Global) P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 H-L H-L
+1986 - 2012 (Low) (High) t-stat
+Profit (t) -1.48 -0.86 -0.50 -0.22 0.02 0.26 0.51 0.78 1.13 1.72 3.19 68.73
+Profit (t + 12M) -0.91 -0.49 -0.24 -0.08 0.08 0.27 0.45 0.65 0.94 1.45 2.36 50.94
+Profit (t + 36M) -0.63 -0.36 -0.18 -0.03 0.09 0.24 0.37 0.56 0.78 1.29 1.91 44.82
+Profit (t + 60M) -0.46 -0.27 -0.10 0.02 0.13 0.25 0.36 0.50 0.69 1.19 1.65 34.78
+Profit (t + 120M) -0.31 -0.12 -0.02 0.08 0.15 0.24 0.35 0.41 0.58 0.98 1.29 17.41
+Growth (t) -1.50 -1.01 -0.69 -0.41 -0.15 0.11 0.37 0.66 1.03 1.68 3.18 57.38
+Growth (t + 12M) -0.71 -0.53 -0.40 -0.21 -0.07 0.13 0.29 0.54 0.75 1.23 1.94 41.03
+Growth (t + 36M) -0.29 -0.27 -0.24 -0.13 -0.06 0.07 0.15 0.30 0.48 0.80 1.08 23.00
+Growth (t + 60M) 0.19 -0.04 -0.11 -0.08 -0.09 -0.04 0.03 0.11 0.19 0.38 0.18 4.35
+Growth (t + 120M) -0.19 -0.21 -0.14 -0.11 -0.15 -0.14 -0.12 0.04 0.11 0.18 0.37 5.83
+Safety (t) -1.58 -0.92 -0.54 -0.25 0.00 0.22 0.45 0.69 1.01 1.51 3.09 62.54
+Safety (t + 12M) -1.06 -0.66 -0.38 -0.15 0.02 0.23 0.39 0.61 0.89 1.25 2.31 61.28
+Safety (t + 36M) -0.63 -0.45 -0.26 -0.10 0.02 0.17 0.31 0.47 0.72 0.93 1.55 37.58
+Safety (t + 60M) -0.45 -0.34 -0.17 -0.07 0.03 0.11 0.23 0.39 0.60 0.79 1.24 26.36
+Safety (t + 120M) -0.21 -0.17 -0.09 -0.02 0.05 0.12 0.18 0.29 0.49 0.55 0.77 13.00
+Payout (t) -1.51 -0.86 -0.48 -0.19 0.06 0.30 0.54 0.81 1.13 1.60 3.12 54.93
+Payout (t + 12M) -0.54 -0.27 -0.12 0.07 0.24 0.34 0.52 0.64 0.76 0.90 1.43 54.37
+Payout (t + 36M) -0.25 -0.05 0.11 0.21 0.31 0.39 0.50 0.58 0.65 0.73 0.98 32.25
+Payout (t + 60M) -0.02 0.15 0.25 0.35 0.38 0.43 0.50 0.54 0.60 0.65 0.68 18.32
+Payout (t + 120M) 0.16 0.26 0.36 0.31 0.42 0.45 0.49 0.50 0.51 0.59 0.43 7.42
+
+--- PAGE 54 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Appendix – Page A8 
+Table A2 
+ Quality Minus Junk Components 
+This table shows calendar -time portfolio returns and factor loadings. Quality minus Junk (QMJ) factors are constructed as 
+the intersection of six value -weighted portfolios formed on size and quali ty. At the end of each calendar month, stocks are 
+assigned to two size -sorted portfolios based on their market capitalization. For U.S. securities, the size breakpoint is the 
+median NYSE market equity. For International securities the size breakpoint is th e 80th percentile by country. We use 
+conditional sorts, first sorting on size, then on quality. Portfolios are value -weighted, refreshed every calendar month, and 
+rebalanced every calendar month to maintain value weights. The QMJ factor return is the avera ge return on the two high 
+quality portfolios minus the average return on the two low quality (junk) portfolios. Portfolios based on profitability, 
+growth, safety and payout score are constructed in a similar manner. We form one set of portfolios in each co untry and 
+compute global portfolios by weighting each country’s portfolio by the country’s total (lagged) market capitalization. This 
+table includes all available common stocks on the CRSP/Xpressfeed merged database for the markets listed in Table I. 
+Alpha is the intercept in a time-series regression of monthly excess return. The explanatory variables are the monthly returns 
+from the market portfolio (MKT) and size (SMB), book -to-market (HML), and momentum (UMD) factor -mimicking 
+portfolios. Panel A reports results from our Long Sample of domestic stocks. The sample period runs from June 1956 to 
+December 2012. Panel B reports results from our Broad Sample of global stocks.  Panel C report results by country. The 
+sample period runs from June 1986 to December 2 012. Returns are in USD, do not include currency hedging, and excess 
+returns are above the U.S. Treasury bill rate. Returns and alphas are in monthly percent, t -statistics are shown below the 
+coefficient estimates, and 5% statistical significance is indica ted in bold. Information ratio is equal to 4 -factor alpha 
+(intercept) divided by the standard deviation of the estimated residuals in the time -series regression. Sharpe ratios and 
+information ratios are annualized. 
+ 
+ 
+ 
+  
+QMJ QMJ
+Small Big Small Big Small Big Small Big
+Excess Returns 0.92 0.56 0.36 0.30 0.40 0.75 0.50 0.19 0.30 0.38
+(4.70) (3.44) (1 .30) (1 .51 ) (4.38) (2.95) (2.1 0) (0.54) (0.96) (3.22)
+CAPM-alpha 0.43 0.12 -0.31 -0.24 0.55 0.32 0.08 -0.38 -0.24 0.52
+(4.85) (2.80) (-2.23) (-4.57) (7.27) (3.37) (1 .35) (-2.45) (-3.22) (5.75)
+3-factor alpha 0.25 0.21 -0.59 -0.32 0.68 0.21 0.17 -0.52 -0.32 0.61
+(5.79) (6.05) (-9.70) (-6.71 ) (1 1 .1 0) (3.55) (3.1 0) (-5.1 0) (-4.50) (7.68)
+4-factor alpha 0.31 0.27 -0.40 -0.34 0.66 0.25 0.14 -0.23 -0.26 0.45
+(6.91 ) (7.56) (-6.67) (-6.83) (1 0.20) (4.00) (2.51 ) (-2.33) (-3.43) (5.50)
+MKT 0.90 0.93 1.19 1.14 -0.25 0.85 0.90 1.11 1.13 -0.24
+(87.91 ) (1 1 5.82) (86.43) (99.31 ) (-1 7.02) (64.43) (75.37) (53.65) (71 .27) (-1 4.36)
+SMB 0.70 -0.18 1.15 0.12 -0.38 0.61 -0.20 1.00 0.06 -0.33
+(46.84) (-1 5.27) (57.1 7) (7.32) (-1 7.50) (22.42) (-8.22) (23.61 ) (1 .94) (-9.46)
+HML 0.07 -0.18 -0.02 0.16 -0.12 0.10 -0.13 -0.13 0.12 -0.01
+(4.23) (-1 3.21 ) (-0.87) (8.51 ) (-5.03) (3.67) (-5.26) (-2.89) (3.54) (-0.31 )
+UMD -0.06 -0.06 -0.17 0.02 0.02 -0.04 0.02 -0.27 -0.06 0.15
+(-4.1 5) (-5.28) (-9.1 4) (1 .49) (0.82) (-1 .88) (1 .05) (-7.98) (-2.1 8) (5.54)
+Sharpe Ratio 0.63 0.46 0.17 0.20 0.58 0.57 0.40 0.10 0.19 0.62
+Information Ratio (4-factor) 0.99 1.08 -0.96 -0.98 1.46 0.84 0.53 -0.49 -0.72 1.16
+Adjusted R-square 0.95 0.96 0.96 0.95 0.57 0.95 0.95 0.93 0.95 0.60
+         Panel A: Long Sample (U.S. , 1956 - 2012)        Panel B: Broad Sample (Global , 1986 - 2012)
+           High  Quality       Low Quality            High  Quality       Low Quality
+
+--- PAGE 55 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Appendix – Page A9 
+Table A3 
+Robustness Checks: QMJ by Time Period and by Size 
+This table shows calendar -time portfolio returns and factor loadings. Quality minus Junk (QMJ) factors are constructed as 
+the intersection of six value -weighted portfolios formed on size and quality. At the end of each calendar mont h, stocks are 
+assigned to two size -sorted portfolios based on their market capitalization. For U.S. securities, the size breakpoint is the 
+median NYSE market equity. For International securities the size breakpoint is the 80th percentile by country. We use  
+conditional sorts, first sorting on size, then on quality. Portfolios are value -weighted, refreshed every calendar month, and 
+rebalanced every calendar month to maintain value weights. The QMJ factor return is the average return on the two high 
+quality po rtfolios minus the average return on the two low quality (junk) portfolios. Portfolios based on profitability, 
+growth, safety and payout score are constructed in a similar manner. We form one set of portfolios in each country and 
+compute global portfolios by weighting each country’s portfolio by the country’s total (lagged) market capitalization. This 
+table includes all available common stocks on the CRSP/Xpressfeed merged database for the markets listed in Table I. 
+Alpha is the intercept in a time-series regression of monthly excess return. The explanatory variables are the monthly returns 
+from the market portfolio (MKT) and size (SMB), book -to-market (HML), and momentum (UMD) factor -mimicking 
+portfolios. Panel A reports results from our Long Sample of domestic stocks. The sample period runs from June 1956 to 
+December 2012. Panel B reports results from our Broad Sample of global stocks.  Panel C report results by country. The 
+sample period runs from June 1986 to December 2012. Returns are in USD, do not incl ude currency hedging, and excess 
+returns are above the U.S. Treasury bill rate. Returns and alphas are in monthly percent, t -statistics are shown below the 
+coefficient estimates, and 5% statistical significance is indicated in bold. Information ratio is eq ual to 4 -factor alpha 
+(intercept) divided by the standard deviation of the estimated residuals in the time -series regression. Sharpe ratios and 
+information ratios are annualized. 
+ 
+ 
+ 
+  
+Panel A: QMJ by 
+Sub-period
+Universe Sample Period Firm 
+Size
+Excess 
+return
+T-stat 
+Excess 
+return
+4-factor 
+alpha
+T-stat 
+Alpha
+Sharpe 
+Ratio
+Information 
+Ratio              
+(4-factor)
+Number of 
+months
+Long Sample United States 1956 - 1985 All 0.34 3.35 0.72 9.70 0.62 2.01 354
+Long Sample United States 1986 - 2005 All 0.50 2.82 0.67 5.22 0.63 1.28 240
+Long Sample United States 2006 - 2012 All 0.37 1.13 0.55 3.26 0.43 1.27 84
+Broad Sample Global 1986 - 2005 All 0.32 2.54 0.31 2.99 0.57 0.76 240
+Broad Sample Global 2006 - 2012 All 0.54 1.97 0.69 7.62 0.74 3.07 84
+Panel B : QMJ by 
+Size Decile
+Universe Sample Period Excess 
+return
+T-stat 
+Excess 
+return
+4-factor 
+alpha
+T-stat 
+Alpha
+Sharpe 
+Ratio
+Information 
+Ratio
+Number of 
+months
+P1 (small) United States 1956 - 1985 0.86 5.41 0.90 6.87 0.72 0.98 678
+P2 United States 1956 - 1985 0.51 3.83 0.61 5.82 0.51 0.83 678
+P3 United States 1957 - 1985 0.43 3.26 0.60 5.48 0.43 0.79 678
+P4 United States 1958 - 1985 0.52 4.41 0.70 6.93 0.59 0.99 678
+P5 United States 1959 - 1985 0.39 3.49 0.60 6.00 0.46 0.86 678
+P6 United States 1960 - 1985 0.22 2.14 0.40 4.21 0.28 0.60 678
+P7 United States 1961 - 1985 0.33 3.22 0.52 5.37 0.43 0.77 678
+P8 United States 1962 - 1985 0.36 3.66 0.59 6.03 0.49 0.86 678
+P9 United States 1963 - 1985 0.25 2.87 0.48 5.34 0.38 0.77 678
+P10 (Large) United States 1964 - 1985 0.33 3.26 0.66 7.22 0.43 1.04 678
+P1 (small) Global 1986 - 2012 0.91 3.98 0.77 3.64 0.77 0.77 324
+P2 Global 1987 - 2012 1.15 2.50 0.58 1.20 0.48 0.25 324
+P3 Global 1988 - 2012 0.73 4.89 0.73 6.03 0.94 1.27 324
+P4 Global 1989 - 2012 0.63 4.47 0.65 5.55 0.86 1.17 324
+P5 Global 1990 - 2012 0.45 3.32 0.44 3.97 0.64 0.84 324
+P6 Global 1991 - 2012 0.46 3.79 0.48 4.55 0.73 0.96 324
+P7 Global 1992 - 2012 0.44 3.60 0.46 4.38 0.69 0.93 324
+P8 Global 1993 - 2012 0.33 2.52 0.44 3.54 0.49 0.75 324
+P9 Global 1994 - 2012 0.29 2.71 0.41 4.13 0.52 0.87 324
+P10 (Large) Global 1995 - 2012 0.24 1.83 0.53 5.03 0.35 1.06 324
+
+--- PAGE 56 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Appendix – Page A10 
+Table A4 
+Robustness Checks: QMJ among Small and Large by Country 
+This table shows calendar -time portfolio returns and factor loadings. Quality minus Junk (QMJ) factors are constructed as 
+the intersection of six value -weighted portfolios formed on size and quality. At the end of each calendar month, stocks are 
+assigned to two  size-sorted portfolios based on their market capitalization. For U.S. securities, the size breakpoint is the 
+median NYSE market equity. For International securities the size breakpoint is the 80th percentile by country. We use 
+conditional sorts, first sor ting on size, then on quality. Portfolios are value -weighted, refreshed every calendar month, and 
+rebalanced every calendar month to maintain value weights. The QMJ factor return is the average return on the two high 
+quality portfolios minus the average re turn on the two low quality (junk) portfolios. Portfolios based on profitability, 
+growth, safety and payout score are constructed in a similar manner. We form one set of portfolios in each country and 
+compute global portfolios by weighting each country’s p ortfolio by the country’s total (lagged) market capitalization. This 
+table includes all available common stocks on the CRSP/Xpressfeed merged database for the markets listed in Table I. 
+Alpha is the intercept in a time-series regression of monthly excess return. The explanatory variables are the monthly returns 
+from the market portfolio (MKT) and size (SMB), book -to-market (HML), and momentum (UMD) factor -mimicking 
+portfolios. Panel A reports results from our Long Sample of domestic stocks. The sample period runs from June 1956 to 
+December 2012. Panel B reports results from our Broad Sample of global stocks.  Panel C report results by country. The 
+sample period runs from June 1986 to December 2012. Returns are in USD, do not include currency hedging, and excess 
+returns are above the U.S. Treasury bill rate. Returns and alphas are in monthly percent, t -statistics are shown below the 
+coefficient estimates, and 5% statistical significance is indicated in bold. Information rat io is equal to 4 -factor alpha 
+(intercept) divided by the standard deviation of the estimated residuals in the time -series regression. Sharpe ratios and 
+information ratios are annualized. 
+ 
+ 
+ 
+ 
+  
+Australia 0.19 0.73 0.37 1.35 0.17 0.37 0.49 1.66 0.73 2.81 0.40 0.77
+Austria 0.16 0.34 0.28 0.63 0.08 0.16 0.27 0.78 0.49 1.62 0.19 0.41
+Belgium -0.01 -0.02 0.05 0.13 -0.01 0.03 0.87 3.56 0.66 2.75 0.85 0.71
+Canada 0.56 1.93 0.25 0.88 0.38 0.19 0.67 3.04 0.53 2.59 0.60 0.55
+Switzerland 0.33 0.76 0.72 2.10 0.18 0.52 0.45 1.75 0.55 2.40 0.42 0.60
+Germany -0.03 -0.11 0.46 1.74 -0.03 0.45 1.00 4.01 0.72 3.18 0.96 0.82
+Denmark 0.16 0.31 -0.10 -0.23 0.08 -0.06 1.16 3.79 1.07 3.72 0.92 0.94
+Spain -0.16 -0.46 -0.04 -0.12 -0.11 -0.03 0.47 1.42 0.43 1.47 0.34 0.36
+Finland 0.45 0.69 0.48 0.95 0.16 0.24 0.61 2.05 0.70 2.37 0.49 0.59
+France 0.42 1.25 0.59 2.19 0.30 0.56 0.48 2.06 0.46 2.25 0.49 0.58
+United Kingdom -0.06 -0.26 0.26 1.33 -0.06 0.32 0.41 0.98 0.39 0.87 0.22 0.21
+Greece 1.18 1.59 0.89 1.58 0.49 0.50 1.53 2.93 1.22 3.35 0.90 1.07
+Hong Kong 0.72 1.90 1.20 4.17 0.45 1.04 0.50 1.08 0.84 2.24 0.26 0.56
+Ireland 0.09 0.09 1.22 1.62 0.02 0.40 0.97 1.26 0.47 0.69 0.30 0.17
+Israel 0.63 1.14 0.98 2.02 0.34 0.64 0.68 1.93 0.72 2.14 0.57 0.68
+Italy 0.55 1.60 0.61 2.42 0.39 0.61 0.89 2.43 0.78 2.51 0.60 0.63
+Japan 0.09 0.38 0.31 1.39 0.08 0.34 0.35 1.47 0.45 2.77 0.32 0.68
+Netherlands -0.32 -0.80 0.07 0.20 -0.19 0.05 0.51 1.56 0.61 2.01 0.37 0.50
+Norway 0.50 1.21 0.50 1.24 0.29 0.30 0.72 1.94 0.87 2.78 0.46 0.68
+New Zealand 0.37 0.76 0.24 0.47 0.18 0.12 -0.23 -0.65 -0.35 -0.98 -0.16 -0.25
+Portugal 0.62 1.09 0.69 1.37 0.31 0.40 1.10 1.85 1.09 1.95 0.52 0.57
+Singapore -0.21 -0.47 0.22 0.69 -0.11 0.17 0.73 2.65 0.66 2.69 0.63 0.68
+Sweden 0.10 0.26 0.45 1.51 0.06 0.34 0.71 2.42 0.55 2.03 0.52 0.46
+United States 0.25 2.70 0.61 8.23 0.36 1.18 0.55 4.77 0.71 8.23 0.63 1.18
+Global 0.20 1.60 0.41 4.36 0.31 0.92 0.56 3.98 0.49 4.60 0.77 0.97
+Sharpe 
+Ratio
+Information 
+Ratio         
+(4-factor)
+Panel A: Small Cap 
+Information 
+Ratio         
+(4-factor)
+Panel B: Large Cap
+Sharpe 
+Ratio
+Excess 
+return
+T-stat 
+Excess 
+return
+4-factor 
+Alpha
+T-stat 
+Alpha
+Excess 
+return
+T-stat 
+Excess 
+return
+4-factor 
+Alpha
+T-stat 
+Alpha
+
+--- PAGE 57 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Appendix – Page A11 
+Table A5 
+QMJ, Alternative Definition, Averaging Portfolios 
+This table shows calendar -time portfolio returns and factor loadings . Portfolios are constructed as the intersection of six 
+value-weighted portfolios formed on size and a quality measure. At the end of each calendar month, stocks are assigned to 
+two size-sorted portfolios based on their market capitalization. For U.S. securities, the size breakpoint is the median NYSE 
+market equity. For International securities the size breakpoint is the 80th percentile by country. We use conditional sorts, 
+first sorting on si ze, then on quality. Portfolios are value -weighted, refreshed every calendar month, and rebalanced every 
+calendar month to maintain value weights. The factor return is the average return on the two high quality portfolios minus 
+the average return on the tw o low quality  (junk) portfolios. We build one portfolio for each measure and average the 
+portfolio return to obtain a QMJ factor       (                                  )  where        
+ (                              )    ,                          (                    
+                )    ,          (                )   and          (              ). 
+We form one set of portfolios in each country and compute global portfolios by weighting each country’s portfolio by the 
+country’s total (lagged) market capitalization. This table includes all available common stocks on the CRSP/Xpressfeed 
+merged database for the markets listed in Table I. Alpha is the intercept in a time-series regression of monthly excess return. 
+The explanatory variables are the monthly returns from the market portfolio (MKT) and size (SMB), book -to-market 
+(HML), and momentum (UMD) factor -mimicking portfolios. Panel A reports results from our Long Sample  of domestic 
+stocks. The sample period runs from June 1956 to December 2012. Panel B reports results from our Broad Sample of global 
+stocks.  Panel C report results by country. The sample period runs from Ju ne 1986 to December 2012. Returns are in USD, 
+do not include currency hedging, and excess returns are above the U.S. Treasury bill rate. Returns and alphas are in monthly 
+percent, t -statistics are shown below the coefficient estimates, and 5% statistical s ignificance is indicated in bold. 
+Information ratio is equal to 4 -factor alpha (intercept) divided by the standard deviation of the estimated residuals in the 
+time-series regression. Sharpe ratios and information ratios are annualized. 
+ 
+ 
+  
+QMJ Profitability Safety Growth Payout QMJ Profitability Safety Growth Payout
+Excess Returns 0.16 0.17 0.14 0.12 0.21 0.19 0.25 0.13 0.06 0.33
+(3.96) (4.01 ) (1 .91 ) (2.44) (3.49) (3.49) (4.37) (1 .51 ) (0.99) (4.1 1 )
+CAPM-alpha 0.22 0.21 0.27 0.10 0.31 0.25 0.31 0.24 0.06 0.41
+(6.37) (5.01 ) (4.70) (2.00) (6.23) (5.69) (6.1 1 ) (3.45) (0.99) (6.35)
+3-factor alpha 0.28 0.28 0.36 0.19 0.29 0.30 0.38 0.32 0.15 0.37
+(1 0.32) (8.42) (8.00) (4.69) (6.97) (8.37) (9.20) (5.71 ) (3.08) (6.28)
+4-factor alpha 0.27 0.33 0.31 0.30 0.15 0.26 0.37 0.22 0.26 0.19
+(9.46) (9.1 9) (6.63) (7.55) (3.63) (6.77) (8.41 ) (3.85) (5.1 9) (3.30)
+MKT -0.10 -0.06 -0.22 0.02 -0.14 -0.11 -0.10 -0.18 -0.01 -0.14
+(-1 4.98) (-7.90) (-1 9.87) (2.1 9) (-1 4.39) (-1 3.31 ) (-1 0.69) (-1 4.88) (-0.75) (-1 1 .94)
+SMB -0.17 -0.15 -0.30 -0.05 -0.20 -0.20 -0.19 -0.30 -0.13 -0.16
+(-1 8.1 3) (-1 2.44) (-1 8.81 ) (-4.07) (-1 4.43) (-1 1 .89) (-9.96) (-1 1 .86) (-6.26) (-6.82)
+HML -0.06 -0.16 -0.06 -0.30 0.26 -0.04 -0.12 -0.06 -0.28 0.28
+(-5.84) (-1 1 .96) (-3.1 9) (-1 9.61 ) (1 6.50) (-2.63) (-6.26) (-2.1 8) (-1 2.74) (1 1 .32)
+UMD 0.01 -0.04 0.04 -0.11 0.14 0.04 0.01 0.09 -0.10 0.17
+(0.83) (-3.56) (2.91 ) (-8.70) (1 0.41 ) (3.20) (0.44) (4.54) (-6.01 ) (9.05)
+Sharpe Ratio 0.53 0.53 0.25 0.32 0.46 0.67 0.84 0.29 0.19 0.79
+Information Ratio 1.36 1.32 0.95 1.08 0.52 1.43 1.78 0.81 1.10 0.70
+Adjusted R2 0.56 0.40 0.63 0.42 0.60 0.59 0.52 0.64 0.39 0.58
+Panel A: Long Sample (U.S. , 1956 - 2012) Panel B: Broad Sample (Global , 1986 - 2012)
+
+--- PAGE 58 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Appendix – Page A12 
+Table A6 
+Time Variation of the Price of Quality: High Price of Quality Predicts Low QMJ Returns. Using raw Book-to-Market 
+This table shows time series regression of future factor returns on lagged cross sectional regression coefficients. The left hand side is the future cumulative excess return (or 
+cumulative 4-factor alphas) of the QMJ factor (or profitability, growth, safet y and payout factor). Alpha is the intercept in a time -series regression of monthly excess return. The 
+explanatory variables are the monthly returns from the market portfolio (MKT) and size (SMB), book -to-market (HML), and momentum (UMD) factor-mimicking portfolios. The 
+right hand side variables are the lagged cross sectional regression coefficient of log of market to book on quality  z-score. The prior return is defined as the portfolio –weighted 
+average of the past 1 -year returns of the stocks in the portfolio. Panel A reports results from our Long Sample of domestic stocks. The sample period runs from June  1956 to 
+December 2012. Panel B reports  results from our Broad Sample of global stocks. The sample period runs from June 1986 to December 2012. We report the coefficient on the 
+lagged cross sectional regression slope. T -statistics are shown below the coefficient estimates, and 5% statistical significance is indicated in bold.  Standard errors are adjusted for 
+heteroskedasticity and autocorrelation (Newey and West (1987)) with lag length equal to the forecasting  horizon. “Mean Adj R2” is the average adjusted r -squared across all the 
+regression above. The intercept and prior returns are included in all regressions but not reported.  
+ 
+ 
+ 
+  
+Left-hand side
+Raw Alpha Raw Alpha Raw Alpha Raw Alpha Raw Alpha Raw Alpha Raw Alpha Raw Alpha
+QMJ -0.04 -0.01 -0.42 -0.24 -1.19 -0.79 -1.83 -2.50 -0.02 0.01 -0.27 0.12 -0.46 0.37 -0.69 -2.09
+(-2.63) (-1 .68) (-3.22) (-2.1 9) (-4.05) (-2.35) (-3.1 1 ) (-4.79) (-0.67) (1 .34) (-1 .79) (1 .24) (-1 .58) (1 .47) (-2.23) (-5.30)
+Profitability -0.03 -0.01 -0.37 -0.22 -1.28 -0.81 -1.65 -2.35 0.01 0.03 -0.10 0.20 -0.42 0.36 -1.20 -2.59
+(-2.58) (-1 .63) (-3.64) (-2.36) (-6.22) (-3.07) (-3.55) (-6.81 ) (0.39) (2.53) (-0.63) (2.06) (-0.85) (1 .1 2) (-2.41 ) (-5.22)
+Growth -0.03 0.00 -0.44 -0.12 -1.32 -0.16 0.15 -1.67 -0.03 0.01 -0.40 -0.07 -1.26 -0.66 -1.65 -1.67
+(-2.1 4) (-0.1 4) (-3.1 3) (-0.99) (-3.1 0) (-0.37) (0.20) (-2.1 9) (-1 .28) (0.48) (-2.48) (-0.48) (-2.20) (-1 .35) (-3.40) (-4.89)
+Safety -0.04 0.00 -0.48 -0.17 -1.42 -0.81 -1.64 -2.38 -0.04 0.00 -0.35 0.05 -0.68 0.24 0.21 -0.84
+(-2.37) (-0.50) (-3.44) (-1 .69) (-4.82) (-1 .57) (-1 .36) (-3.33) (-1 .33) (0.45) (-2.43) (0.95) (-3.26) (1 .97) (0.66) (-3.42)
+Payout -0.05 -0.02 -0.49 -0.13 -0.95 -0.46 -1.35 -2.06 -0.06 -0.01 -0.48 0.01 -0.39 0.11 -0.66 -1.23
+(-2.31 ) (-1 .61 ) (-2.85) (-0.95) (-2.07) (-1 .87) (-2.66) (-2.80) (-2.1 1 ) (-0.83) (-1 .89) (0.1 0) (-0.68) (0.26) (-1 .53) (-4.08)
+Mean Adj R2 0.01 0.00 0.12 0.07 0.28 0.16 0.19 0.33 0.01 0.00 0.09 0.03 0.26 0.11 0.21 0.37
+Return (t, t+36) Return (t, t+60)Return (t) Return (t, t+12) Return (t, t+36) Return (t, t+60) Return (t) Return (t, t+12)
+Panel A: Long Sample (U.S. , 1956 - 2012) Panel B: Broad Sample (Global, 1986 - 2012)
+
+--- PAGE 59 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Appendix – Page A13 
+Figure A1 
+QMJ: 4-Factor Adjusted Information Ratios by Size 
+This figure shows 4-factor adjusted information ratios of  Quality minus Junk (QMJ) factors. This figure includes all 
+available common stocks on the CRSP/Xpressfeed merged database for the markets listed in Table I. For U.S. securities, the 
+size breakpoint is the median NYSE market equity. For International securities the size breakpoint is the 80th percentile by 
+country. Alpha is the intercept in a time -series regression of  monthly excess return. The explanatory variables are the 
+monthly returns from the market portfolio (MKT) and size (SMB), book -to-market (HML), and momentum (UMD) factor -
+mimicking portfolios. Returns are in USD, do not include currency hedging, and excess returns are above the U.S. Treasury 
+bill rate. Information ratios are equal to alpha divided by the standard deviation of the estimated residuals  in the time-series 
+regression. Information ratios are annualized. 
+ 
+ 
+  
+-0.40
+-0.20
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+1.40
+Australia
+Austria
+Belgium
+Canada
+Switzerland
+Germany
+Denmark
+Spain
+Finland
+France
+United Kingdom
+Greece
+Hong Kong
+Ireland
+Israel
+Italy
+Japan
+Netherlands
+Norway
+New Zealand
+Portugal
+Singapore
+Sweden
+United States
+Global
+Panel A: Small Cap Panel B: Large Cap
+
+--- PAGE 60 ---
+
+Quality Minus Junk – Asness, Frazzini, and Pedersen – Appendix – Page A14 
+Figure A2 
+Cross Sectional Regressions Coefficient, the Price of Quality 
+This figure reports coefficients from Fama -Macbeth regressions. The dependent variable is the z -score of a 
+stock’s market to book ratio (MB) in month t. The explanatory variables are the quality scores in month t . We 
+plot the time series of the cross sectional coefficients from table III, panel A, column (1) and (7) .  
+ 
+ 
+ 
+ 
+-0.400
+-0.200
+0.000
+0.200
+0.400
+0.600
+0.800
+1956
+1959
+1962
+1965
+1968
+1971
+1974
+1977
+1980
+1983
+1986
+1989
+1992
+1995
+1998
+2001
+2004
+2007
+2010
+Time Series of FMB Coefficients - Long Sample (U.S.)
+Profitability Growth Safety Payout
+-0.300
+-0.200
+-0.100
+0.000
+0.100
+0.200
+0.300
+0.400
+0.500
+1985
+1987
+1989
+1991
+1993
+1995
+1997
+1999
+2001
+2003
+2005
+2007
+2009
+2011
+Time Series of FMB Coefficients - Broad Sample (Global)
+Profitability Growth Safety Payout
