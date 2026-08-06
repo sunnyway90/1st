@@ -1,6 +1,70 @@
+# Workspace modules
+
+本仓库包含多个独立的 Python 模块。其中 **LiteWork** 是面向约 10 人 / 约 10 家小公司的轻量协作 CLI（钉钉风格：可插拔模块、互相约时间、共享进度）。
+
+---
+
+## LiteWork — 轻量模块化团队协作 CLI
+
+面向小团队的本地优先协作系统：无服务器、SQLite 单文件、按需启用模块。
+
+### 设计要点
+
+- **轻**：标准库 + SQLite，一条命令即可用
+- **可插拔**：`schedule` / `progress` 等模块可 enable / disable；新增模块只需注册到 plugin registry
+- **互相约时间**：发布空闲时段，同事可预订；也可查找共同空闲窗口
+- **共享进度**：发进展更新，团队时间线查看
+- **规模**：按公司隔离数据；每公司建议 ≤10 人
+
+### 快速开始
+
+```bash
+python3 -m pip install -e .
+# 或：PYTHONPATH=src python3 -m litework ...
+
+litework org create "Acme"
+litework org add-user Acme Alice --role owner
+litework org add-user Acme Bob
+litework org login Acme Alice
+
+# Alice 放出可约时段
+litework schedule offer 2026-08-10T10:00 2026-08-10T11:00 --title "可协作"
+
+# Bob 预订
+litework org login Acme Bob
+litework schedule show --day 2026-08-10
+litework schedule book <slot_id> --note "设计评审"
+
+# 共享进度
+litework org login Acme Alice
+litework progress post "Landing page" --body "Hero 完成" --percent 40 --tag web
+litework progress feed
+```
+
+数据默认写在 `~/.litework/litework.db`，可用 `--db` 或环境变量 `LITEWORK_DB` 覆盖（便于多公司/测试隔离）。
+
+### 模块管理
+
+```bash
+litework module list
+litework module disable progress
+litework module enable progress
+```
+
+内置模块：`org`（必需）、`schedule`、`progress`。扩展方式：在 `src/litework/modules/` 增加模块并在 `core/plugins.py` 的 `_load_builtin_modules` 中注册。
+
+### 测试
+
+```bash
+PYTHONPATH=src python3 -m unittest tests.test_litework -v
+```
+
+---
+
 # 债券收益率曲线计算模块
 
 这是一个使用 Python、numpy、scipy、matplotlib 编写的债券收益率曲线计算示例项目。
+
 
 ## 功能
 
