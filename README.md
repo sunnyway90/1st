@@ -86,3 +86,41 @@ python3 -m wechat_scraper download --fakeid <fakeid> --limit 20 --format md
 ```
 
 注意：批量模式调用的是公众号后台搜索/列表接口，请控制频率，避免账号被限制。仅建议用于个人学习、备份自己关注的公开内容。
+
+## 基本面统计套利 / 配对交易模块 (`stat_arb`)
+
+`stat_arb` 实现的是「基本面筛选 + 协整/价差建模 + OU 均值回归交易 + 风控」框架，而不是把收益率 Pearson correlation 直接当成交易关系。
+
+核心对象是 spread
+
+```text
+S_t = log P_A - α - β log P_B
+```
+
+以及它是否均值回复。模块包含：
+
+- 同行业 / 财务距离 / fair price ratio 基本面筛选
+- Engle-Granger、Johansen、ADF、Hurst、variance ratio、OU half-life
+- 统计 hedge ratio（不是简单 1:1 市值对冲）
+- 价差 / 成交量 / 波动率 z-score 合成信号
+- walk-forward 回测：下一根 K 线成交、交易成本、止损、最长持仓、regime-break
+- 可用 CSV 接入真实价格，也可用合成协整样本做演示
+
+运行演示：
+
+```bash
+PYTHONPATH=src python3 -m stat_arb
+```
+
+演示会打印筛选报告和 walk-forward 绩效，并在当前目录生成 `stat_arb_demo.png`。
+
+把两列收盘价放进 CSV 后可以直接回测：
+
+```python
+from stat_arb import PairStrategyConfig, load_pair_csv, run_pair_backtest, screen_pair
+
+data = load_pair_csv("pair.csv", column_a="close_a", column_b="close_b")
+print(screen_pair(data["prices_a"], data["prices_b"]))
+result = run_pair_backtest(data["prices_a"], data["prices_b"], config=PairStrategyConfig())
+print(result.sharpe, result.n_trades)
+```
