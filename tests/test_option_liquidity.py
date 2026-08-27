@@ -56,6 +56,8 @@ class OptionLiquidityTests(unittest.TestCase):
 
         self.assertAlmostEqual(buy_limit or 0.0, 0.016)
         self.assertAlmostEqual(sell_limit or 0.0, 0.028)
+        cheap = _quote(bid=0.0001, ask=0.0004)
+        self.assertIsNone(predetermined_limit_price(cheap, side="buy", passive_spreads=1.0))
 
     def test_ohlc_fill_uses_limit_not_bar_low(self) -> None:
         """Buying the day's low would look ahead; the fill price must stay at the limit."""

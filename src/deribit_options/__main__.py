@@ -99,7 +99,15 @@ def main() -> None:
         if quotes is None:
             quotes = fetch_btc_option_snapshot()
         if args.liquidity:
-            _print_liquidity(quotes, size=args.size, side=_side(args.side), passive_spreads=args.passive_spreads)
+            _print_liquidity(
+                quotes,
+                size=args.size,
+                side=_side(args.side),
+                passive_spreads=args.passive_spreads,
+                target_expiration=args.target_expiration,
+                target_days_to_expiration=args.target_days_to_expiration,
+                min_days_to_expiration=args.min_days_to_expiration,
+            )
         if args.fill_sim and args.history_csv is None:
             _print_ohlc_fill_sim(
                 quotes,
@@ -144,6 +152,9 @@ def _print_liquidity(
     size: float,
     side: Side,
     passive_spreads: float,
+    target_expiration: date | None,
+    target_days_to_expiration: int | None,
+    min_days_to_expiration: int,
 ) -> None:
     quote_times = {quote.snapshot_time for quote in quotes}
     if quote_times:
@@ -161,12 +172,20 @@ def _print_liquidity(
     )
     print("bucket_counts," + ",".join(f"{name}={count}" for name, count in sorted(summary.bucket_counts.items())))
 
-    point = select_atm_option_pair(quotes)
+    point = select_atm_option_pair(
+        quotes,
+        target_expiration=target_expiration,
+        target_days_to_expiration=target_days_to_expiration,
+        min_days_to_expiration=min_days_to_expiration,
+    )
     examples: list[DeribitOptionQuote] = []
     if point and point.call_instrument_name:
         atm = _quote_by_name(quotes, point.call_instrument_name)
         if atm:
             examples.append(atm)
+    two_sided = [quote for quote in quotes if quote.bid_price is not None and quote.ask_price is not None]
+    if two_sided:
+        examples.append(min(two_sided, key=lambda quote: liquidity_features(quote, size=size).liquidity_score))
     if quotes:
         examples.append(min(quotes, key=lambda quote: liquidity_features(quote, size=size).liquidity_score))
 
@@ -188,7 +207,7 @@ def _print_liquidity(
             f"{_format_optional(features.relative_spread)},{_format_optional(features.iv_spread)},"
             f"{_format_optional(features.volume)},{_format_optional(features.open_interest)},"
             f"{report.verdict},{_format_optional(report.limit_price)},{_format_optional(report.required_edge)},"
-            f"{'|'.join(report.notes)}"
+            f"{'|'.join(note.replace(',', ';') for note in report.notes)}"
         )
 
 
@@ -235,6 +254,9 @@ def _print_ohlc_fill_sim(
     spread = quote.ask_price - quote.bid_price
     if side == "buy":
         limit_price = bars[0].close - passive_spreads * spread
+        if limit_price <= 0:
+            print(f"fill_sim,{quote.instrument_name},non_positive_limit")
+            return
     else:
         limit_price = bars[0].close + passive_spreads * spread
     result = simulate_resting_limit_on_ohlc(
@@ -251,7 +273,7 @@ def _print_ohlc_fill_sim(
         passive_spreads=passive_spreads,
         fill_result=result,
     )
-    _print_fill_result(quote, report, bar_count=len(bars), source="ohlc")
+    _print_fill_result(quote, report, bar_count=len(bars) - 1, source="ohlc")
 
 
 def _print_snapshot_fill_sim(

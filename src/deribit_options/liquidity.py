@@ -266,7 +266,8 @@ def predetermined_limit_price(
         return None
     spread = quote.ask_price - quote.bid_price
     if side == "buy":
-        return quote.bid_price - passive_spreads * spread
+        limit = quote.bid_price - passive_spreads * spread
+        return limit if limit > 0 else None
     return quote.ask_price + passive_spreads * spread
 
 
@@ -487,6 +488,9 @@ def assess_strategy_plausibility(
     elif features.relative_spread is not None and features.relative_spread >= 0.5:
         verdict = "spread_dominates"
         notes.append("relative spread is at least 50% of premium")
+    elif limit_price is None:
+        verdict = "spread_dominates"
+        notes.append("a more passive buy limit would be at or below zero")
     elif (
         assumed_edge is not None
         and required_edge is not None
