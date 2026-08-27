@@ -52,6 +52,39 @@ PYTHONPATH=src python3 -m deribit_options --history-csv data/btc_option_snapshot
 
 模块会在每个交易日选取最新快照，按目标到期日或目标剩余期限选择期权到期月，再用标的价格与行权价距离最小的 call/put 组合计算 ATM 的标的价格、行权价、平均 mark IV、跨式 mark price 及其日度变化。
 
+快照 CSV 还会保存 24h `high` / `low` / `last` / `volume_usd`，供没有 tick 时估计流动性和限价成交。
+
+### 无 tick 时的流动性与挂单成交
+
+不要用 mark / mid 当成交价。小资金、宽价差、等恐慌成交时，回测至少要同时看四件事：
+
+1. **流动性刻画**：相对价差 `(ask-bid)/mid`、用 Black-76 vega 把价差换成 IV 点、是否双边报价、24h 成交量、持仓量、换手、last 是否还在买卖价之间。
+2. **预定限价**：限价只能用上一根快照的买一/卖一生成，例如买单挂在 `bid - k * spread`。不能用当天的 low 当买入价，那是偷看了当天最低点。
+3. **触及 + 成交量**：只有 24h low/high 或 OHLC bar 真正穿越该限价，并且 bar 成交量足够覆盖你的张数（默认最多吃该 bar 成交量的 10%）才算成交。成交价是限价，不是 bar 的最低/最高。
+4. **逆向选择**：成交后用买一（多头）或卖一（空头）或 bar close 盯市。恐慌里成交后价格继续走坏，会记成 adverse selection，而不是完美抄底。
+
+评分桶：`liquid` / `tradable_passive` / `fragile` / `unusable`。策略是否靠谱看 `verdict`：`plausible_if_patient`、`fragile`、`spread_dominates`、`no_capacity`、`untradable`。`required_edge` 是半价差加上成交后的中位逆向选择，你的信号优势必须明显大于它。
+
+对整条期权链打流动性分：
+
+```bash
+PYTHONPATH=src python3 -m deribit_options --liquidity --size 0.1 --side buy --passive-spreads 1.0
+```
+
+用小时 OHLC（不是 tick）估计“先看第一根收盘，再把限价挂到价差之外，后面会不会成交”：
+
+```bash
+PYTHONPATH=src python3 -m deribit_options --fill-sim --size 0.1 --side buy --passive-spreads 1.0 --resolution 60 --lookback-hours 168
+```
+
+如果已经按天存了快照，用快照里的 24h high/low 做同样的无前瞻成交估计：
+
+```bash
+PYTHONPATH=src python3 -m deribit_options --history-csv data/btc_option_snapshots.csv --fill-sim --require-panic
+```
+
+`--require-panic` 只统计标的大动、IV 跳升或期权自身振幅很大的 bar。更细的 OHLC 来自 `public/get_tradingview_chart_data`；当前买一/卖一数量和 bid IV / ask IV 来自 `public/ticker`。
+
 ## 微信公众号文章抓取工具 (`wechat_scraper`)
 
 项目包含 `wechat_scraper` 模块，用于抓取微信公众号文章并导出为 Markdown / HTML / JSON / TXT。
