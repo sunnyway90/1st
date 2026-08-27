@@ -42,6 +42,12 @@ CSV_FIELDS = [
     "mid_price",
     "open_interest",
     "volume",
+    "volume_usd",
+    "last_price",
+    "high_price",
+    "low_price",
+    "price_change",
+    "interest_rate",
 ]
 
 
@@ -76,6 +82,24 @@ class DeribitOptionQuote:
     mid_price: float | None = None
     open_interest: float | None = None
     volume: float | None = None
+    volume_usd: float | None = None
+    last_price: float | None = None
+    high_price: float | None = None
+    low_price: float | None = None
+    price_change: float | None = None
+    interest_rate: float | None = None
+
+
+@dataclass(frozen=True)
+class OhlcBar:
+    """One OHLC bar from Deribit's trading-view chart endpoint."""
+
+    timestamp: datetime
+    open: float
+    high: float
+    low: float
+    close: float
+    volume: float = 0.0
 
 
 @dataclass(frozen=True)
@@ -172,6 +196,58 @@ class DeribitPublicClient:
 
         return list(self.request("public/get_historical_volatility", {"currency": currency}))
 
+    def get_ticker(self, instrument_name: str) -> dict[str, Any]:
+        """Return the current ticker, including bid/ask IV and top-of-book size."""
+
+        result = self.request("public/ticker", {"instrument_name": instrument_name})
+        if not isinstance(result, dict):
+            raise DeribitAPIError(f"malformed ticker payload for {instrument_name}")
+        return result
+
+    def get_tradingview_chart_data(
+        self,
+        instrument_name: str,
+        *,
+        start_timestamp_ms: int,
+        end_timestamp_ms: int,
+        resolution: str = "60",
+    ) -> list[OhlcBar]:
+        """Return OHLC bars for an instrument, useful when tick data is unavailable."""
+
+        result = self.request(
+            "public/get_tradingview_chart_data",
+            {
+                "instrument_name": instrument_name,
+                "start_timestamp": start_timestamp_ms,
+                "end_timestamp": end_timestamp_ms,
+                "resolution": resolution,
+            },
+        )
+        if not isinstance(result, dict):
+            raise DeribitAPIError(f"malformed chart payload for {instrument_name}")
+        if result.get("status") != "ok":
+            return []
+
+        ticks = result.get("ticks") or []
+        opens = result.get("open") or []
+        highs = result.get("high") or []
+        lows = result.get("low") or []
+        closes = result.get("close") or []
+        volumes = result.get("volume") or []
+        bars: list[OhlcBar] = []
+        for index, tick in enumerate(ticks):
+            bars.append(
+                OhlcBar(
+                    timestamp=datetime.fromtimestamp(float(tick) / 1000.0, tz=timezone.utc),
+                    open=float(opens[index]),
+                    high=float(highs[index]),
+                    low=float(lows[index]),
+                    close=float(closes[index]),
+                    volume=float(volumes[index]) if index < len(volumes) else 0.0,
+                )
+            )
+        return bars
+
 
 def parse_option_instrument_name(instrument_name: str) -> ParsedOptionName:
     """Parse Deribit option names such as ``BTC-9DEC24-102000-C``."""
@@ -239,6 +315,12 @@ def build_option_quotes(
                 mid_price=_optional_float(summary.get("mid_price")),
                 open_interest=_optional_float(summary.get("open_interest")),
                 volume=_optional_float(summary.get("volume")),
+                volume_usd=_optional_float(summary.get("volume_usd")),
+                last_price=_optional_float(summary.get("last")),
+                high_price=_optional_float(summary.get("high")),
+                low_price=_optional_float(summary.get("low")),
+                price_change=_optional_float(summary.get("price_change")),
+                interest_rate=_optional_float(summary.get("interest_rate")),
             )
         )
 
@@ -432,6 +514,12 @@ def _quote_to_row(quote: DeribitOptionQuote) -> dict[str, str | float]:
         "mid_price": _csv_number(quote.mid_price),
         "open_interest": _csv_number(quote.open_interest),
         "volume": _csv_number(quote.volume),
+        "volume_usd": _csv_number(quote.volume_usd),
+        "last_price": _csv_number(quote.last_price),
+        "high_price": _csv_number(quote.high_price),
+        "low_price": _csv_number(quote.low_price),
+        "price_change": _csv_number(quote.price_change),
+        "interest_rate": _csv_number(quote.interest_rate),
     }
 
 
@@ -450,6 +538,12 @@ def _quote_from_row(row: dict[str, str]) -> DeribitOptionQuote:
         mid_price=_optional_float(row.get("mid_price")),
         open_interest=_optional_float(row.get("open_interest")),
         volume=_optional_float(row.get("volume")),
+        volume_usd=_optional_float(row.get("volume_usd")),
+        last_price=_optional_float(row.get("last_price")),
+        high_price=_optional_float(row.get("high_price")),
+        low_price=_optional_float(row.get("low_price")),
+        price_change=_optional_float(row.get("price_change")),
+        interest_rate=_optional_float(row.get("interest_rate")),
     )
 
 
